@@ -1,0 +1,74 @@
+digraph drawLabels {
+12 [label="12\n2871-2876"]
+0 [label="0\n2847-2856"]
+16 [label="16\n2867-2867"]
+11 [label="11\n2883-2883"]
+22 [label="22\n2863-2863"]
+3 [label="3\n2902-2904"]
+2 [label="2\n2885-2896"]
+20 [label="20\n2863-2863"]
+21 [label="21\n2863-2863"]
+18 [label="18\n2867-2867"]
+6 [label="6\n2866-2867"]
+17 [label="17\n2867-2867"]
+5 [label="5\n2858-2862"]
+7 [label="7\n2867-2867"]
+4 [label="4\n2897-2899"]
+23 [label="23"]
+9 [label="9\n2867-2867"]
+15 [label="15\n2867-2867"]
+1 [label="1\n2857-2857"]
+14 [label="14\n2877-2877"]
+8 [label="8\n2867-2867"]
+10 [label="10\n2870-2870"]
+13 [label="13\n2880-2880"]
+19 [label="19\n2863-2863"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_12 [label="def(12)={runningTotal,mid}\nuse(12)={this,plotArea,this.direction,this.labelGenerator,key,v}"];
+setsNode_0 [label="def(0)={this,g2,totalValue,plotArea,linkArea,state,this.dataset,this.ignoreNullValues,this.ignoreZeroValues,this.startAngle,this.direction,this.interiorGap,this.labelGap,this.labelPadding,this.labelGenerator,originalComposite,leftKeys,rightKeys,runningTotal,iterator}"];
+setsNode_3 [label="use(3)={g2,this.ignoreNullValues}"];
+setsNode_2 [label="def(2)={labelWidth}\nuse(2)={this,g2,linkArea,state,n,include,labelWidth}"];
+setsNode_21 [label="def(21)={include}"];
+setsNode_6 [label="def(6)={v}\nuse(6)={originalComposite}"];
+setsNode_5 [label="def(5)={key,v,n}\nuse(5)={this,this.interiorGap,leftKeys}"];
+setsNode_4 [label="use(4)={this,g2,linkArea,state,this.dataset,this.ignoreZeroValues,this.startAngle,mid}"];
+setsNode_9 [label="def(9)={include}"];
+setsNode_14 [label="use(14)={this.ignoreZeroValues,this.labelGap,iterator}"];
+setsNode_13 [label="use(13)={this.startAngle,this.labelGap,iterator}"];
+}
+{rank = same; 12 ;  setsNode_12}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 21 ;  setsNode_21}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 9 ;  setsNode_9}
+{rank = same; 14 ;  setsNode_14}
+{rank = same; 13 ;  setsNode_13}
+12 -> 14[label="use(12,14)={iterator}",fontsize=14];12 -> 13[label="use(12,13)={iterator}",fontsize=14];
+0 -> 1;
+16 -> 18[label="use(16,18)={this.labelGenerator}",fontsize=14];16 -> 17[label="use(16,17)={this.labelGenerator}",fontsize=14];
+11 -> 1;
+22 -> 21;
+3 -> 23;
+2 -> 4[label="use(2,4)={this}",fontsize=14];2 -> 3[label="use(2,3)={this}",fontsize=14];
+20 -> 21;
+21 -> 10;
+18 -> 9;
+6 -> 16[label="use(6,16)={this,runningTotal}",fontsize=14];6 -> 7[label="use(6,7)={this,runningTotal}",fontsize=14];
+17 -> 9;
+5 -> 19[label="use(5,19)={originalComposite}",fontsize=14];5 -> 6[label="use(5,6)={originalComposite}",fontsize=14];
+7 -> 15[label="use(7,15)={this.labelGenerator}",fontsize=14];7 -> 8[label="use(7,8)={this.labelGenerator}",fontsize=14];
+4 -> 3;
+9 -> 10;
+15 -> 9;
+1 -> 5[label="use(1,5)={this.interiorGap}",fontsize=14];1 -> 2[label="use(1,2)={this.interiorGap}",fontsize=14];
+14 -> 11;
+8 -> 9;
+10 -> 12[label="use(10,12)={this.labelPadding}",fontsize=14];10 -> 11[label="use(10,11)={this.labelPadding}",fontsize=14];
+13 -> 11;
+19 -> 22[label="use(19,22)={this,rightKeys}",fontsize=14];19 -> 20[label="use(19,20)={this,rightKeys}",fontsize=14];
+}

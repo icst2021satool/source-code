@@ -1,0 +1,14 @@
+digraph enableTypeMaps {
+0 [label="0\n593-593"]
+3 [label="3"]
+2 [label="2\n594-596"]
+1 [label="1\n598-598"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_0 [label="def(0)={typeToCountMap}"];
+}
+{rank = same; 0 ;  setsNode_0}
+0 -> 2[label="use(0,2)={typeToCountMap}",fontsize=14];0 -> 1[label="use(0,1)={typeToCountMap}",fontsize=14];
+2 -> 1;
+1 -> 3;
+}

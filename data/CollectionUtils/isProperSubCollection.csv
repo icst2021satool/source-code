@@ -1,0 +1,35 @@
+Number of Variables;2;
+Variables:;
+0;;a;
+1;;b;
+
+Number of Block duas;8;
+Line Duas for method; isProperSubCollection;
+Number;Def Line; Origin Line; Use Line; Var Id; Var Name;
+1;500;500;500;0;a;
+2;500;500;500;0;a;
+3;500;500;500;0;a;
+4;500;500;500;0;a;
+5;500;500;500;1;b;
+6;500;500;500;1;b;
+7;500;500;500;1;b;
+8;500;500;500;1;b;
+
+Block Duas for method; isProperSubCollection;
+Number;Def Block; Origin Block; Use Block; Var Id; Var Name;
+1;0;0;3;0;a;
+;500;500;500;0;a;
+2;0;0;1;0;a;
+;500;500;500;0;a;
+3;0;3;4;0;a;
+;500;500;500;0;a;
+4;0;3;1;0;a;
+;500;500;500;0;a;
+5;0;0;3;1;b;
+;500;500;500;1;b;
+6;0;0;1;1;b;
+;500;500;500;1;b;
+7;0;3;4;1;b;
+;500;500;500;1;b;
+8;0;3;1;1;b;
+;500;500;500;1;b;

@@ -1,0 +1,44 @@
+digraph setup {
+0 [label="0\n2381-2387"]
+1 [label="1\n2391-2392"]
+2 [label="2\n2394-2394"]
+3 [label="3\n2392-2392"]
+4 [label="4\n2401-2405"]
+5 [label="5\n2405-2405"]
+6 [label="6\n2409-2409"]
+7 [label="7\n2414-2432"]
+8 [label="8\n2410-2410"]
+9 [label="9\n2406-2405"]
+10 [label="10\n2388-2388"]
+11 [label="11"]
+{
+node [shape=plaintext, fontsize=12];
+setsNode_0 [label="def(0)={this,lowerBound,upperBound,dimension,this.numberOfInterpolationPoints,NUMBER_OF_INTERPOLATION_POINTS,this.initialTrustRegionRadius}"];
+setsNode_1 [label="def(1)={nPointsInterval}\ncuse(1)={dimension}"];
+setsNode_2 [label="cuse(2)={this,nPointsInterval,this.numberOfInterpolationPoints,NUMBER_OF_INTERPOLATION_POINTS}"];
+setsNode_4 [label="def(4)={this.boundDifference,requiredMinDiff,minDiff,i}\ncuse(4)={this,dimension,this.initialTrustRegionRadius}"];
+setsNode_7 [label="cuse(7)={this,dimension,this.numberOfInterpolationPoints}"];
+setsNode_8 [label="cuse(8)={this,minDiff}"];
+setsNode_9 [label="def(9)={minDiff,i}\ncuse(9)={this,lowerBound,upperBound,this.boundDifference,minDiff,i}"];
+setsNode_10 [label="cuse(10)={dimension}"];
+}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 7 ;  setsNode_7}
+{rank = same; 8 ;  setsNode_8}
+{rank = same; 9 ;  setsNode_9}
+{rank = same; 10 ;  setsNode_10}
+0 -> 10[label="puse(0,10)={dimension}",fontsize=12];0 -> 1[label="puse(0,1)={dimension}",fontsize=12];
+1 -> 3[label="puse(1,3)={this,nPointsInterval,this.numberOfInterpolationPoints}",fontsize=12];1 -> 2[label="puse(1,2)={this,nPointsInterval,this.numberOfInterpolationPoints}",fontsize=12];
+2 -> 11;
+3 -> 2[label="puse(3,2)={this,nPointsInterval,this.numberOfInterpolationPoints}",fontsize=12];3 -> 4[label="puse(3,4)={this,nPointsInterval,this.numberOfInterpolationPoints}",fontsize=12];
+4 -> 5;
+5 -> 9[label="puse(5,9)={dimension,i}",fontsize=12];5 -> 6[label="puse(5,6)={dimension,i}",fontsize=12];
+6 -> 8[label="puse(6,8)={requiredMinDiff,minDiff}",fontsize=12];6 -> 7[label="puse(6,7)={requiredMinDiff,minDiff}",fontsize=12];
+7 -> 11;
+8 -> 7;
+9 -> 5;
+10 -> 11;
+}

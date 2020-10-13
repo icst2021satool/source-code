@@ -1,0 +1,40 @@
+digraph filterForGeneralSiblings {
+10 [label="10\n305-305"]
+3 [label="3\n302-303"]
+1 [label="1\n302-302"]
+8 [label="8\n312-312"]
+5 [label="5\n313-313"]
+7 [label="7\n306-308"]
+4 [label="4\n303-303"]
+9 [label="9\n309-310"]
+11 [label="11"]
+2 [label="2\n314-314"]
+0 [label="0\n301-302"]
+6 [label="6\n303-304"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_3 [label="def(3)={c,i$}\nuse(3)={elements,c}"];
+setsNode_7 [label="def(7)={ePos,cPos}\nuse(7)={i$,ePos}"];
+setsNode_9 [label="use(9)={i$,i$}"];
+setsNode_2 [label="use(2)={i$}"];
+setsNode_0 [label="def(0)={elements,output,i$}"];
+setsNode_6 [label="def(6)={e}\nuse(6)={e}"];
+}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 7 ;  setsNode_7}
+{rank = same; 9 ;  setsNode_9}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 6 ;  setsNode_6}
+10 -> 4;
+3 -> 4;
+1 -> 3[label="use(1,3)={c}",fontsize=14];1 -> 2[label="use(1,2)={c}",fontsize=14];
+8 -> 4;
+5 -> 1;
+7 -> 9[label="use(7,9)={cPos}",fontsize=14];7 -> 8[label="use(7,8)={cPos}",fontsize=14];
+4 -> 6[label="use(4,6)={e}",fontsize=14];4 -> 5[label="use(4,5)={e}",fontsize=14];
+9 -> 1;
+2 -> 11;
+0 -> 1;
+6 -> 10[label="use(6,10)={i$,ePos}",fontsize=14];6 -> 7[label="use(6,7)={i$,ePos}",fontsize=14];
+}

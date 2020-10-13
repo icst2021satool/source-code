@@ -1,0 +1,44 @@
+digraph nextLongValue {
+1 [label="1\n775-775"]
+4 [label="4\n775-775"]
+3 [label="3\n775-775"]
+7 [label="7\n769-769"]
+11 [label="11\n765-765"]
+0 [label="0\n759-759"]
+12 [label="12"]
+5 [label="5\n760-764"]
+9 [label="9\n770-770"]
+2 [label="2\n775-775"]
+10 [label="10\n768-768"]
+8 [label="8\n772-772"]
+6 [label="6\n767-767"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_3 [label="use(3)={this,defaultValue}"];
+setsNode_11 [label="use(11)={this}"];
+setsNode_0 [label="def(0)={this,defaultValue,FIELD_NAME,this._currToken,this._nextToken,VALUE_NUMBER_INT,START_ARRAY,this._parsingContext,this._tokenInputRow,this._tokenInputCol,START_OBJECT}"];
+setsNode_5 [label="def(5)={t}\nuse(5)={this,START_ARRAY}"];
+setsNode_9 [label="use(9)={this,this._tokenInputCol,START_OBJECT,t}"];
+setsNode_10 [label="use(10)={this,this._tokenInputCol,START_OBJECT,t}"];
+setsNode_8 [label="use(8)={defaultValue}"];
+}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 11 ;  setsNode_11}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 9 ;  setsNode_9}
+{rank = same; 10 ;  setsNode_10}
+{rank = same; 8 ;  setsNode_8}
+1 -> 4[label="use(1,4)={this,this._parsingContext}",fontsize=14];1 -> 2[label="use(1,2)={this,this._parsingContext}",fontsize=14];
+4 -> 3;
+3 -> 12;
+7 -> 9[label="use(7,9)={VALUE_NUMBER_INT,null}",fontsize=14];7 -> 8[label="use(7,8)={VALUE_NUMBER_INT,null}",fontsize=14];
+11 -> 12;
+0 -> 5[label="use(0,5)={this,FIELD_NAME,this._currToken}",fontsize=14];0 -> 1[label="use(0,1)={this,FIELD_NAME,this._currToken}",fontsize=14];
+5 -> 11[label="use(5,11)={VALUE_NUMBER_INT,this._parsingContext}",fontsize=14];5 -> 6[label="use(5,6)={VALUE_NUMBER_INT,this._parsingContext}",fontsize=14];
+9 -> 8;
+2 -> 3;
+10 -> 8;
+8 -> 12;
+6 -> 10[label="use(6,10)={VALUE_NUMBER_INT,this._tokenInputRow}",fontsize=14];6 -> 7[label="use(6,7)={VALUE_NUMBER_INT,this._tokenInputRow}",fontsize=14];
+}

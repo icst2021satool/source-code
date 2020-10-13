@@ -1,0 +1,30 @@
+digraph contentsAsDecimal {
+3 [label="3\n398-398"]
+1 [label="1\n390-390"]
+0 [label="0\n386-386"]
+7 [label="7"]
+6 [label="6\n387-387"]
+5 [label="5\n391-391"]
+2 [label="2\n394-394"]
+4 [label="4\n395-395"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_3 [label="use(3)={this}"];
+setsNode_0 [label="def(0)={this,this._resultArray,this._inputStart,this._inputBuffer,this._inputLen,this._segmentSize,this._currentSegment,this._currentSize}"];
+setsNode_6 [label="use(6)={this,this._resultArray}"];
+setsNode_5 [label="use(5)={this,this._inputStart,this._inputBuffer,this._inputLen}"];
+setsNode_4 [label="use(4)={this,this._currentSegment,this._currentSize}"];
+}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 4 ;  setsNode_4}
+3 -> 7;
+1 -> 5[label="use(1,5)={this,this._inputStart}",fontsize=14];1 -> 2[label="use(1,2)={this,this._inputStart}",fontsize=14];
+0 -> 6[label="use(0,6)={this,this._resultArray}",fontsize=14];0 -> 1[label="use(0,1)={this,this._resultArray}",fontsize=14];
+6 -> 7;
+5 -> 7;
+2 -> 4[label="use(2,4)={this,this._segmentSize}",fontsize=14];2 -> 3[label="use(2,3)={this,this._segmentSize}",fontsize=14];
+4 -> 7;
+}

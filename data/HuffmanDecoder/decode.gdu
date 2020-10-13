@@ -1,0 +1,48 @@
+digraph decode {
+10 [label="10\n149-149"]
+4 [label="4\n135-135"]
+2 [label="2\n152-152"]
+1 [label="1\n134-134"]
+8 [label="8\n142-143"]
+5 [label="5\n135-137"]
+3 [label="3\n135-135"]
+6 [label="6\n145-147"]
+11 [label="11\n135-135"]
+14 [label="14"]
+0 [label="0\n133-133"]
+12 [label="12\n133-133"]
+9 [label="9\n139-140"]
+13 [label="13\n155-155"]
+7 [label="7\n151-151"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_10 [label="use(10)={FIXED_CODES}"];
+setsNode_2 [label="use(2)={this,b,off,len,this.state}"];
+setsNode_8 [label="use(8)={this,FIXED_LITERALS,FIXED_DISTANCE,DYNAMIC_CODES}"];
+setsNode_5 [label="def(5)={mode}\nuse(5)={this}"];
+setsNode_6 [label="use(6)={this,null}"];
+setsNode_0 [label="def(0)={this,b,off,len,this.finalBlock,this.state,INITIAL,FIXED_CODES,FIXED_LITERALS,FIXED_DISTANCE,DYNAMIC_CODES}"];
+setsNode_9 [label="use(9)={this}"];
+}
+{rank = same; 10 ;  setsNode_10}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 8 ;  setsNode_8}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 9 ;  setsNode_9}
+10 -> 14;
+4 -> 5;
+2 -> 14;
+1 -> 3[label="use(1,3)={this,this.state,INITIAL}",fontsize=14];1 -> 2[label="use(1,2)={this,this.state,INITIAL}",fontsize=14];
+8 -> 7;
+5 -> 10[label="use(5,10)={FIXED_CODES}",fontsize=14];5 -> 9[label="use(5,9)={FIXED_CODES}",fontsize=14];5 -> 8[label="use(5,8)={FIXED_CODES}",fontsize=14];5 -> 6[label="use(5,6)={FIXED_CODES}",fontsize=14];
+3 -> 11[label="use(3,11)={this}",fontsize=14];3 -> 4[label="use(3,4)={this}",fontsize=14];
+6 -> 7;
+11 -> 5;
+0 -> 12[label="use(0,12)={this,this.finalBlock}",fontsize=14];0 -> 1[label="use(0,1)={this,this.finalBlock}",fontsize=14];
+12 -> 1[label="use(12,1)={this,this.state}",fontsize=14];12 -> 13[label="use(12,13)={this,this.state}",fontsize=14];
+9 -> 7;
+13 -> 14;
+7 -> 0;
+}

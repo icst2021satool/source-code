@@ -1,0 +1,26 @@
+digraph setAttributeColor {
+0 [label="0\n258-258"]
+1 [label="1\n260-260"]
+3 [label="3\n265-265"]
+4 [label="4\n261-261"]
+2 [label="2\n263-263"]
+5 [label="5\n259-259"]
+6 [label="6"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_0 [label="def(0)={attr,c,Comment,DEFAULT_COMMENT,Quote,DEFAULT_STRING,DEFAULT_NORMAL}"];
+setsNode_4 [label="use(4)={Comment,DEFAULT_NORMAL}"];
+setsNode_2 [label="use(2)={Comment,null}"];
+setsNode_5 [label="use(5)={Comment,Quote}"];
+}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 5 ;  setsNode_5}
+0 -> 5[label="use(0,5)={c,DEFAULT_COMMENT}",fontsize=14];0 -> 1[label="use(0,1)={c,DEFAULT_COMMENT}",fontsize=14];
+1 -> 4[label="use(1,4)={c,DEFAULT_STRING}",fontsize=14];1 -> 2[label="use(1,2)={c,DEFAULT_STRING}",fontsize=14];
+3 -> 6;
+4 -> 3;
+2 -> 3;
+5 -> 3;
+}

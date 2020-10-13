@@ -1,0 +1,32 @@
+digraph { 
+42 [shape=box,style=filled,color=".0 .0 .83",label="(0,(0,16), this.tq)\n(0,16, this)\n(0,(0,16), this)"];
+43 [shape=box,style=filled,color=".0 .0 .83",label="(0,(1,15), this.tq)\n(0,15, this)\n(0,(1,15), this)"];
+44 [shape=box,style=filled,color=".0 .0 .83",label="(0,(2,14), this.tq)\n(0,14, this)\n(0,(2,14), this)"];
+45 [shape=box,style=filled,color=".0 .0 .83",label="(0,(3,13), this.tq)\n(0,13, this)\n(0,(3,13), this)"];
+46 [shape=box,style=filled,color=".0 .0 .83",label="(0,(4,12), this.tq)\n(0,12, this)\n(0,(4,12), this)"];
+47 [shape=box,style=filled,color=".0 .0 .83",label="(0,(5,11), this.tq)\n(0,11, this)\n(0,(5,11), this)"];
+48 [shape=box,style=filled,color=".0 .0 .83",label="(0,(6,10), this.tq)\n(0,10, this)\n(0,(6,10), this)"];
+49 [shape=box,style=filled,color=".0 .0 .83",label="(0,(7,9), this.tq)\n(0,9, this)\n(0,(7,9), this)"];
+50 [shape=box,style=filled,color=".0 .0 .83",label="(0,8, this.query)\n(0,(7,8), this.tq)\n(0,8, this)\n(0,(7,8), this)"];
+51 [label="(0,(6,7), this.tq)\n(0,(6,7), this)"];
+52 [label="(0,(5,6), this.tq)\n(0,(5,6), this)"];
+53 [label="(0,(4,5), this.tq)\n(0,(4,5), this)"];
+54 [label="(0,(3,4), this.tq)\n(0,(3,4), this)"];
+55 [label="(0,(2,3), this.tq)\n(0,(2,3), this)"];
+56 [label="(0,(1,2), this.tq)\n(0,(1,2), this)"];
+57 [label="(0,(0,1), this.tq)\n(0,(0,1), this)"];
+51 -> 49;
+51 -> 50;
+52 -> 48;
+52 -> 51;
+53 -> 47;
+53 -> 52;
+54 -> 46;
+54 -> 53;
+55 -> 45;
+55 -> 54;
+56 -> 44;
+56 -> 55;
+57 -> 43;
+57 -> 56;
+}

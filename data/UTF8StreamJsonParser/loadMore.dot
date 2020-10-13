@@ -1,0 +1,12 @@
+digraph { 
+2 [shape=box,style=filled,color=".0 .0 .83",label="(2,(3,4), count)\n(0,4, this._inputBuffer)\n(0,4, this)"];
+3 [shape=box,style=filled,color=".0 .0 .83",label="(2,(3,1), count)"];
+4 [label="(2,(2,3), count)\n(0,3, this)"];
+5 [shape=box,style=filled,color=".0 .0 .83",label="(2,5, count)\n(2,(2,5), count)\n(0,5, this)"];
+6 [label="(0,2, this._inputBuffer)\n(0,2, this._inputStream)\n(0,(0,2), this._inputStream)\n(0,2, this)\n(0,(0,2), this)"];
+7 [shape=box,style=filled,color=".0 .0 .83",label="(0,(0,1), this._inputStream)\n(0,(0,1), this)"];
+4 -> 2;
+4 -> 3;
+6 -> 4;
+6 -> 5;
+}

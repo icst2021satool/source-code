@@ -1,0 +1,35 @@
+Number of Variables;2;
+Variables:;
+0;;collection;
+1;;object;
+
+Number of Block duas;8;
+Line Duas for method; addIgnoreNull;
+Number;Def Line; Origin Line; Use Line; Var Id; Var Name;
+1;1274;1274;1275;0;collection;
+2;1274;1274;1277;0;collection;
+3;1274;1277;1277;0;collection;
+4;1274;1277;1277;0;collection;
+5;1274;1277;1277;1;object;
+6;1274;1277;1277;1;object;
+7;1274;1277;1277;1;object;
+8;1274;1277;1277;1;object;
+
+Block Duas for method; addIgnoreNull;
+Number;Def Block; Origin Block; Use Block; Var Id; Var Name;
+1;0;0;6;0;collection;
+;1274;1274;1275;0;collection;
+2;0;0;1;0;collection;
+;1274;1274;1277;0;collection;
+3;0;4;5;0;collection;
+;1274;1277;1277;0;collection;
+4;0;4;2;0;collection;
+;1274;1277;1277;0;collection;
+5;0;1;4;1;object;
+;1274;1277;1277;1;object;
+6;0;1;2;1;object;
+;1274;1277;1277;1;object;
+7;0;4;5;1;object;
+;1274;1277;1277;1;object;
+8;0;4;2;1;object;
+;1274;1277;1277;1;object;

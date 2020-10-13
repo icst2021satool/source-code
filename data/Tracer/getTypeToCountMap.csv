@@ -1,0 +1,19 @@
+Number of Variables;1;
+Variables:;
+0;;typeToCountMap;
+
+Number of Block duas;3;
+Line Duas for method; getTypeToCountMap;
+Number;Def Line; Origin Line; Use Line; Var Id; Var Name;
+1;606;606;606;0;typeToCountMap;
+2;606;606;606;0;typeToCountMap;
+3;606;;606;0;typeToCountMap;
+
+Block Duas for method; getTypeToCountMap;
+Number;Def Block; Origin Block; Use Block; Var Id; Var Name;
+1;0;0;3;0;typeToCountMap;
+;606;606;606;0;typeToCountMap;
+2;0;0;1;0;typeToCountMap;
+;606;606;606;0;typeToCountMap;
+3;0;;2;0;typeToCountMap;
+;606;;606;0;typeToCountMap;

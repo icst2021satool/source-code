@@ -1,0 +1,19 @@
+Number of Variables;1;
+Variables:;
+0;;index;
+
+Number of Block duas;3;
+Line Duas for method; checkIndexBounds;
+Number;Def Line; Origin Line; Use Line; Var Id; Var Name;
+1;1375;1375;1376;0;index;
+2;1375;1375;1378;0;index;
+3;1375;;1376;0;index;
+
+Block Duas for method; checkIndexBounds;
+Number;Def Block; Origin Block; Use Block; Var Id; Var Name;
+1;0;0;2;0;index;
+;1375;1375;1376;0;index;
+2;0;0;1;0;index;
+;1375;1375;1378;0;index;
+3;0;;2;0;index;
+;1375;;1376;0;index;

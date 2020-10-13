@@ -1,0 +1,31 @@
+digraph { 
+15 [shape=box,style=filled,color=".0 .0 .83",label="(7,(7,10), bit)"];
+16 [shape=box,style=filled,color=".0 .0 .83",label="(7,(7,8), bit)"];
+17 [shape=box,style=filled,color=".0 .0 .83",label="(9,9, node.leftNode)\n(9,9, node.rightNode)\n(9,(6,7), node.literal)\n(9,9, node)\n(9,(6,7), node)"];
+18 [shape=box,style=filled,color=".0 .0 .83",label="(9,(6,2), node.literal)\n(9,(6,2), node)"];
+19 [label="(9,(1,6), node)"];
+20 [shape=box,style=filled,color=".0 .0 .83",label="(9,(1,2), node)"];
+21 [shape=box,style=filled,color=".0 .0 .83",label="(9,(2,5), node)"];
+22 [shape=box,style=filled,color=".0 .0 .83",label="(9,(2,3), node)"];
+23 [label="(9,4, node.literal)\n(9,4, node)\n(0,(6,7), node.literal)\n(0,9, node)\n(0,(6,7), node)\n(0,7, reader)"];
+24 [shape=box,style=filled,color=".0 .0 .83",label="(0,(6,2), node.literal)\n(0,(6,2), node)"];
+25 [label="(0,(1,6), node)"];
+26 [shape=box,style=filled,color=".0 .0 .83",label="(0,(1,2), node)"];
+27 [shape=box,style=filled,color=".0 .0 .83",label="(0,(2,5), node)"];
+28 [shape=box,style=filled,color=".0 .0 .83",label="(0,(2,3), node)"];
+29 [label="(0,4, node.literal)\n(0,4, node)"];
+19 -> 17;
+19 -> 18;
+23 -> 15;
+23 -> 16;
+23 -> 19;
+23 -> 20;
+23 -> 21;
+23 -> 22;
+25 -> 23;
+25 -> 24;
+29 -> 24;
+29 -> 26;
+29 -> 27;
+29 -> 28;
+}

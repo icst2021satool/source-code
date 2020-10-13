@@ -1,0 +1,36 @@
+digraph calculateLinkAndExplodeAreas {
+3 [label="3\n2549-2554"]
+6 [label="6\n2494-2494"]
+0 [label="0\n2490-2494"]
+8 [label="8"]
+1 [label="1\n2497-2520"]
+2 [label="2\n2530-2546"]
+4 [label="4\n2547-2547"]
+5 [label="5\n2521-2525"]
+7 [label="7\n2495-2495"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_3 [label="use(3)={this.simpleLabels,linkY,linkW,linkH,linkArea}"];
+setsNode_0 [label="def(0)={this,plotArea,this.labelGenerator,this.simpleLabels,this.labelGap,this.maximumLabelWidth,this.interiorGap,this.circular,this.labelLinkMargin,result,labelReserve}"];
+setsNode_1 [label="def(1)={linkX,linkY,linkW,linkH}\nuse(1)={this,this.labelGenerator,this.labelGap,labelReserve}"];
+setsNode_2 [label="def(2)={linkArea,lm}\nuse(2)={this.simpleLabels,linkY,linkW,linkH,linkArea}"];
+setsNode_4 [label="def(4)={lm}\nuse(4)={this}"];
+setsNode_5 [label="def(5)={linkX,linkY,linkW,linkH}\nuse(5)={linkY,linkW,linkH,linkArea}"];
+setsNode_7 [label="def(7)={labelReserve}\nuse(7)={this,this.circular,this.labelLinkMargin}"];
+}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 7 ;  setsNode_7}
+3 -> 8;
+6 -> 7[label="use(6,7)={this,this.interiorGap}",fontsize=14];6 -> 1[label="use(6,1)={this,this.interiorGap}",fontsize=14];
+0 -> 6[label="use(0,6)={this,this.maximumLabelWidth}",fontsize=14];0 -> 1[label="use(0,1)={this,this.maximumLabelWidth}",fontsize=14];
+1 -> 5[label="use(1,5)={this,lm}",fontsize=14];1 -> 2[label="use(1,2)={this,lm}",fontsize=14];
+2 -> 4[label="use(2,4)={this,this.interiorGap}",fontsize=14];2 -> 3[label="use(2,3)={this,this.interiorGap}",fontsize=14];
+4 -> 3;
+5 -> 2;
+7 -> 1;
+}

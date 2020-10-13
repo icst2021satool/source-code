@@ -1,0 +1,23 @@
+Number of Variables;2;
+Variables:;
+0;;input;
+1;;predicate;
+
+Number of Block duas;4;
+Line Duas for method; matchesAll;
+Number;Def Line; Origin Line; Use Line; Var Id; Var Name;
+1;871;;871;0;input;
+2;871;871;871;1;predicate;
+3;871;871;871;1;predicate;
+4;871;;871;1;predicate;
+
+Block Duas for method; matchesAll;
+Number;Def Block; Origin Block; Use Block; Var Id; Var Name;
+1;0;;2;0;input;
+;871;;871;0;input;
+2;0;0;3;1;predicate;
+;871;871;871;1;predicate;
+3;0;0;1;1;predicate;
+;871;871;871;1;predicate;
+4;0;;2;1;predicate;
+;871;;871;1;predicate;

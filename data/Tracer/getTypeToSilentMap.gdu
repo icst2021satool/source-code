@@ -1,0 +1,18 @@
+digraph getTypeToSilentMap {
+3 [label="3\n615-615"]
+1 [label="1\n615-615"]
+2 [label="2\n615-615"]
+4 [label="4"]
+0 [label="0\n615-615"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_2 [label="use(2)={typeToSilentMap}"];
+setsNode_0 [label="def(0)={typeToSilentMap}"];
+}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 0 ;  setsNode_0}
+3 -> 2;
+1 -> 2;
+2 -> 4;
+0 -> 3[label="use(0,3)={typeToSilentMap}",fontsize=14];0 -> 1[label="use(0,1)={typeToSilentMap}",fontsize=14];
+}

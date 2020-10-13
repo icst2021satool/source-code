@@ -1,0 +1,20 @@
+digraph readBinaryValue {
+3 [label="3\n392-396"]
+2 [label="2\n386-386"]
+0 [label="0\n386-386"]
+4 [label="4"]
+1 [label="1\n387-389"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_3 [label="use(3)={this,b64variant,out,null}"];
+setsNode_0 [label="def(0)={this,b64variant,out,this._tokenIncomplete,VALUE_STRING,this._currToken,this._ioContext}"];
+setsNode_1 [label="use(1)={this,b64variant,out}"];
+}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 1 ;  setsNode_1}
+3 -> 4;
+2 -> 1[label="use(2,1)={this,VALUE_STRING,this._currToken}",fontsize=14];2 -> 3[label="use(2,3)={this,VALUE_STRING,this._currToken}",fontsize=14];
+0 -> 2[label="use(0,2)={this,this._tokenIncomplete}",fontsize=14];0 -> 1[label="use(0,1)={this,this._tokenIncomplete}",fontsize=14];
+1 -> 4;
+}

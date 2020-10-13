@@ -1,0 +1,40 @@
+digraph applyHighlighting {
+8 [label="8\n576-577"]
+1 [label="1\n575-575"]
+11 [label="11"]
+2 [label="2\n587-594"]
+0 [label="0\n562-568"]
+3 [label="3\n602-603"]
+4 [label="4\n594-594"]
+5 [label="5\n595-597"]
+7 [label="7\n579-581"]
+9 [label="9\n577-578"]
+10 [label="10\n569-569"]
+6 [label="6\n576-576"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_2 [label="def(2)={index}\nuse(2)={this,content,DEFAULT_COMMENT,endOffset,contentLength,null}"];
+setsNode_0 [label="def(0)={this,content,this.m_Self,DEFAULT_COMMENT,DEFAULT_NORMAL,startOffset,endOffset,lineLength,contentLength}"];
+setsNode_3 [label="use(3)={this,content,DEFAULT_COMMENT,startOffset}"];
+setsNode_5 [label="def(5)={endOffset}\nuse(5)={this,startOffset,contentLength,index,null}"];
+setsNode_7 [label="use(7)={this,DEFAULT_COMMENT,startOffset,contentLength,index}"];
+setsNode_10 [label="def(10)={endOffset}\nuse(10)={lineLength}"];
+}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 7 ;  setsNode_7}
+{rank = same; 10 ;  setsNode_10}
+8 -> 9[label="use(8,9)={this}",fontsize=14];8 -> 7[label="use(8,7)={this}",fontsize=14];
+1 -> 6[label="use(1,6)={this}",fontsize=14];1 -> 2[label="use(1,2)={this}",fontsize=14];
+2 -> 4[label="use(2,4)={null}",fontsize=14];2 -> 3[label="use(2,3)={null}",fontsize=14];
+0 -> 10[label="use(0,10)={startOffset,lineLength}",fontsize=14];0 -> 1[label="use(0,1)={startOffset,lineLength}",fontsize=14];
+3 -> 11;
+4 -> 5[label="use(4,5)={startOffset,null}",fontsize=14];4 -> 3[label="use(4,3)={startOffset,null}",fontsize=14];
+5 -> 3;
+7 -> 11;
+9 -> 7[label="use(9,7)={this,content,DEFAULT_COMMENT,startOffset}",fontsize=14];9 -> 2[label="use(9,2)={this,content,DEFAULT_COMMENT,startOffset}",fontsize=14];
+10 -> 1;
+6 -> 8[label="use(6,8)={this,content,DEFAULT_COMMENT,startOffset}",fontsize=14];6 -> 7[label="use(6,7)={this,content,DEFAULT_COMMENT,startOffset}",fontsize=14];
+}

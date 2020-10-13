@@ -1,0 +1,27 @@
+Number of Variables;2;
+Variables:;
+0;;tracingStatistic;
+1;;extraTracingStatistics;
+
+Number of Block duas;4;
+Line Duas for method; addTracingStatistic;
+Number;Def Line; Origin Line; Use Line; Var Id; Var Name;
+1;375;375;377;0;tracingStatistic;
+2;375;375;382;0;tracingStatistic;
+3;375;;377;0;tracingStatistic;
+4;375;;380;0;tracingStatistic;
+5;375;;377;1;extraTracingStatistics;
+6;375;;380;1;extraTracingStatistics;
+
+Block Duas for method; addTracingStatistic;
+Number;Def Block; Origin Block; Use Block; Var Id; Var Name;
+1;0;0;2;0;tracingStatistic;
+;375;375;377;0;tracingStatistic;
+2;0;0;1;0;tracingStatistic;
+;375;375;382;0;tracingStatistic;
+3;0;;2;0;tracingStatistic;
+;375;;377;0;tracingStatistic;
+;375;;380;0;tracingStatistic;
+4;0;;2;1;extraTracingStatistics;
+;375;;377;1;extraTracingStatistics;
+;375;;380;1;extraTracingStatistics;

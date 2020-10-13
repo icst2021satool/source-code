@@ -1,0 +1,19 @@
+digraph { 
+47 [shape=box,style=filled,color=".0 .0 .83",label="(0,4, ADDITIVE)\n(0,(2,4), expansionMode)\n(0,4, this)"];
+48 [shape=box,style=filled,color=".0 .0 .83",label="(0,5, MULTIPLICATIVE)\n(0,(1,5), expansionMode)\n(0,5, this)"];
+49 [shape=box,style=filled,color=".0 .0 .83",label="(0,(0,1), expansionMode)"];
+50 [shape=box,style=filled,color=".0 .0 .83",label="(0,(2,3), expansionMode)"];
+51 [label="(0,(1,2), expansionMode)"];
+52 [shape=box,style=filled,color=".0 .0 .83",label="(0,(6,1), expansionMode)"];
+53 [label="(0,1, this)"];
+54 [shape=box,style=filled,color=".0 .0 .83",label="(0,7, UNSUPPORTED_EXPANSION_MODE)\n(0,7, expansionMode)\n(0,(6,7), expansionMode)"];
+55 [label="(0,(0,6), expansionMode)"];
+51 -> 47;
+51 -> 50;
+53 -> 48;
+53 -> 49;
+53 -> 51;
+53 -> 52;
+55 -> 52;
+55 -> 54;
+}

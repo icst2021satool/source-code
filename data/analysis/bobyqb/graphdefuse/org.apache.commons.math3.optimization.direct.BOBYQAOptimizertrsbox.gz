@@ -1,0 +1,566 @@
+digraph trsbox {
+0 [label="0\n1810-1847"]
+1 [label="1\n1847-1847"]
+2 [label="2\n1863-1873"]
+3 [label="3\n1875-1875"]
+4 [label="4\n2240-2242"]
+5 [label="5\n2242-2242"]
+6 [label="6\n2252-2253"]
+7 [label="7\n2253-2253"]
+8 [label="8\n2260-2260"]
+9 [label="9\n2263-2263"]
+10 [label="10\n2266-2266"]
+11 [label="11\n2266-2266"]
+12 [label="12\n2269-2269"]
+13 [label="13\n2267-2266"]
+14 [label="14\n2264-2264"]
+15 [label="15\n2261-2261"]
+16 [label="16\n2254-2254"]
+17 [label="17\n2253-2253"]
+18 [label="18\n2255-2255"]
+19 [label="19\n2255-2255"]
+20 [label="20\n2256-2255"]
+21 [label="21\n2243-2244"]
+22 [label="22\n2244-2244"]
+23 [label="23\n2242-2242"]
+24 [label="24\n2245-2245"]
+25 [label="25\n2248-2244"]
+26 [label="26\n2246-2246"]
+27 [label="27\n2214-2216"]
+28 [label="28\n2216-2216"]
+29 [label="29\n2233-2233"]
+30 [label="30\n2219-2222"]
+31 [label="31\n2225-2225"]
+32 [label="32\n2228-2216"]
+33 [label="33\n2226-2226"]
+34 [label="34\n2223-2223"]
+35 [label="35\n2129-2133"]
+36 [label="36\n2133-2133"]
+37 [label="37\n2145-2149"]
+38 [label="38\n2149-2149"]
+39 [label="39\n2167-2167"]
+40 [label="40\n2170-2170"]
+41 [label="41\n2174-2178"]
+42 [label="42\n2186-2188"]
+43 [label="43\n2188-2188"]
+44 [label="44\n2199-2200"]
+45 [label="45\n2209-2209"]
+46 [label="46\n2210-2210"]
+47 [label="47\n2200-2200"]
+48 [label="48\n2201-2203"]
+49 [label="49\n2189-2190"]
+50 [label="50\n2197-2188"]
+51 [label="51\n2191-2195"]
+52 [label="52\n2179-2179"]
+53 [label="53\n2171-2172"]
+54 [label="54\n2168-2168"]
+55 [label="55\n2150-2154"]
+56 [label="56\n2158-2158"]
+57 [label="57\n2161-2149"]
+58 [label="58\n2159-2159"]
+59 [label="59\n2155-2157"]
+60 [label="60\n2134-2134"]
+61 [label="61\n2133-2133"]
+62 [label="62\n2135-2137"]
+63 [label="63\n2058-2061"]
+64 [label="64\n2064-2065"]
+65 [label="65\n2065-2065"]
+66 [label="66\n2072-2081"]
+67 [label="67\n2081-2081"]
+68 [label="68\n2126-2126"]
+69 [label="69\n2082-2082"]
+70 [label="70\n2081-2081"]
+71 [label="71\n2083-2085"]
+72 [label="72\n2089-2089"]
+73 [label="73\n2095-2102"]
+74 [label="74\n2111-2113"]
+75 [label="75\n2114-2115"]
+76 [label="76\n2116-2118"]
+77 [label="77\n2103-2104"]
+78 [label="78\n2105-2107"]
+79 [label="79\n2090-2092"]
+80 [label="80\n2086-2088"]
+81 [label="81\n2066-2066"]
+82 [label="82\n2069-2069"]
+83 [label="83\n2065-2065"]
+84 [label="84\n2067-2067"]
+85 [label="85\n2062-2062"]
+86 [label="86\n2031-2032"]
+87 [label="87\n2035-2038"]
+88 [label="88\n2038-2038"]
+89 [label="89\n2052-2053"]
+90 [label="90\n2039-2039"]
+91 [label="91\n2049-2049"]
+92 [label="92\n2038-2038"]
+93 [label="93\n2041-2048"]
+94 [label="94\n2033-2033"]
+95 [label="95\n2022-2023"]
+96 [label="96\n1914-1918"]
+97 [label="97\n1918-1918"]
+98 [label="98\n1927-1927"]
+99 [label="99\n1930-1931"]
+100 [label="100\n1934-1934"]
+101 [label="101\n1936-1937"]
+102 [label="102\n1945-1946"]
+103 [label="103\n1946-1946"]
+104 [label="104\n1963-1964"]
+105 [label="105\n1992-1992"]
+106 [label="106\n2010-2010"]
+107 [label="107\n2011-2011"]
+108 [label="108\n2014-2014"]
+109 [label="109\n2017-2018"]
+110 [label="110\n2015-2015"]
+111 [label="111\n2012-2012"]
+112 [label="112\n1993-1995"]
+113 [label="113\n1999-2001"]
+114 [label="114\n2004-2004"]
+115 [label="115\n2002-2002"]
+116 [label="116\n1996-1996"]
+117 [label="117\n1965-1967"]
+118 [label="118\n1973-1975"]
+119 [label="119\n1975-1975"]
+120 [label="120\n1985-1987"]
+121 [label="121\n1976-1977"]
+122 [label="122\n1982-1975"]
+123 [label="123\n1979-1980"]
+124 [label="124\n1967-1967"]
+125 [label="125\n1968-1969"]
+126 [label="126\n1970-1970"]
+127 [label="127\n1947-1947"]
+128 [label="128\n1946-1946"]
+129 [label="129\n1948-1949"]
+130 [label="130\n1952-1952"]
+131 [label="131\n1954-1954"]
+132 [label="132\n1955-1956"]
+133 [label="133\n1950-1950"]
+134 [label="134\n1939-1939"]
+135 [label="135\n1932-1932"]
+136 [label="136\n1928-1928"]
+137 [label="137\n1919-1919"]
+138 [label="138\n1918-1918"]
+139 [label="139\n1921-1924"]
+140 [label="140\n1881-1883"]
+141 [label="141\n1883-1883"]
+142 [label="142\n1895-1895"]
+143 [label="143\n1898-1898"]
+144 [label="144\n1902-1902"]
+145 [label="145\n1911-1911"]
+146 [label="146\n1903-1903"]
+147 [label="147\n1899-1900"]
+148 [label="148\n1896-1896"]
+149 [label="149\n1884-1884"]
+150 [label="150\n1886-1886"]
+151 [label="151\n1889-1889"]
+152 [label="152\n1892-1883"]
+153 [label="153\n1887-1887"]
+154 [label="154\n1885-1885"]
+155 [label="155\n1877-1878"]
+156 [label="156\n2272-2272"]
+157 [label="157\n1848-1849"]
+158 [label="158\n1853-1853"]
+159 [label="159\n1857-1857"]
+160 [label="160\n1860-1847"]
+161 [label="161\n1858-1858"]
+162 [label="162\n1853-1853"]
+163 [label="163\n1855-1855"]
+164 [label="164\n1850-1850"]
+165 [label="165\n1851-1851"]
+166 [label="166"]
+{
+node [shape=plaintext, fontsize=12];
+setsNode_0 [label="def(0)={this,delta,gnew,xbdi,s,hs,hred,n,npt,beta,iact,nact,angt,xsav,angbd,dredg,sredg,ggsav,dredsq,gredsq,itcsav,rdprev,rdnext,stepsq,itermax,iterc,i,this.trustRegionCenterOffset,this.lowerDifference,this.gradientAtTrustRegionCenter,this.upperDifference,this.trialStepPoint,this.newPoint,this.modelSecondDerivativesValues,this.interpolationPoints,this.modelSecondDerivativesParameters,SIMPLE_MESSAGE}"];
+setsNode_2 [label="def(2)={crvmin,delsq,i,qred}\ncuse(2)={delta}"];
+setsNode_4 [label="def(4)={i,j}"];
+setsNode_6 [label="def(6)={j,i}\ncuse(6)={this,s,this.interpolationPoints,this.modelSecondDerivativesParameters}"];
+setsNode_10 [label="def(10)={i}"];
+setsNode_12 [label="def(12)={i}"];
+setsNode_13 [label="def(13)={i}\ncuse(13)={hs,hred,i}"];
+setsNode_14 [label="def(14)={i}"];
+setsNode_15 [label="def(15)={i}"];
+setsNode_17 [label="def(17)={i}\ncuse(17)={i}"];
+setsNode_18 [label="def(18)={i}"];
+setsNode_20 [label="def(20)={i}\ncuse(20)={this,hs,j,i,i,this.interpolationPoints}"];
+setsNode_21 [label="def(21)={i}\ncuse(21)={hs,j}"];
+setsNode_23 [label="def(23)={j}\ncuse(23)={j}"];
+setsNode_25 [label="def(25)={i,i}\ncuse(25)={this,s,hs,i,j,i,this.modelSecondDerivativesValues}"];
+setsNode_26 [label="cuse(26)={this,s,hs,i,j,i,this.modelSecondDerivativesValues}"];
+setsNode_27 [label="def(27)={dsq,i}"];
+setsNode_29 [label="cuse(29)={dsq,crvmin}"];
+setsNode_30 [label="cuse(30)={this,this.trustRegionCenterOffset,this.lowerDifference,this.upperDifference,this.trialStepPoint,i,this.newPoint}"];
+setsNode_32 [label="def(32)={dsq,i}\ncuse(32)={this,dsq,this.trustRegionCenterOffset,this.trialStepPoint,i,this.newPoint}"];
+setsNode_33 [label="cuse(33)={this,this.upperDifference,i,this.newPoint}"];
+setsNode_34 [label="cuse(34)={this,this.lowerDifference,i,this.newPoint}"];
+setsNode_35 [label="def(35)={i,shs,dhs,dhd}"];
+setsNode_37 [label="def(37)={redmax,redsav,i,isav,iu}\ncuse(37)={angbd}"];
+setsNode_41 [label="def(41)={sdec,sth,cth}\ncuse(41)={angt,dredg,sredg,shs,dhs,dhd}"];
+setsNode_42 [label="def(42)={dredg,gredsq,i}"];
+setsNode_44 [label="def(44)={qred}\ncuse(44)={qred,sdec}"];
+setsNode_46 [label="def(46)={i}"];
+setsNode_48 [label="def(48)={nact,i}\ncuse(48)={xbdi,iact,nact,xsav}"];
+setsNode_49 [label="cuse(49)={gnew,hs,hred,i,sth,cth}"];
+setsNode_50 [label="def(50)={i}\ncuse(50)={hs,hred,i,sth,cth}"];
+setsNode_51 [label="def(51)={dredg,gredsq}\ncuse(51)={this,gnew,s,dredg,gredsq,this.trialStepPoint,i,sth,cth}"];
+setsNode_52 [label="def(52)={i}"];
+setsNode_53 [label="def(53)={angt}\ncuse(53)={angbd,redmax,rdprev,rdnext,isav,iu}"];
+setsNode_54 [label="def(54)={i}"];
+setsNode_55 [label="def(55)={angt,rednew}\ncuse(55)={angbd,dredg,sredg,i,shs,dhs,dhd,iu}"];
+setsNode_57 [label="def(57)={redsav,i}\ncuse(57)={rednew,i}"];
+setsNode_58 [label="def(58)={rdnext}\ncuse(58)={rednew}"];
+setsNode_59 [label="def(59)={redmax,rdprev,isav}\ncuse(59)={redsav,rednew,i}"];
+setsNode_61 [label="def(61)={i}\ncuse(61)={i}"];
+setsNode_62 [label="def(62)={shs,dhs,dhd}\ncuse(62)={this,s,hs,hred,this.trialStepPoint,i,shs,dhs,dhd}"];
+setsNode_63 [label="def(63)={temp,iterc}\ncuse(63)={dredg,dredsq,gredsq,iterc}"];
+setsNode_64 [label="def(64)={temp,i}\ncuse(64)={temp}"];
+setsNode_66 [label="def(66)={iact,angbd,sredg,i}\ncuse(66)={temp}"];
+setsNode_68 [label="def(68)={i}"];
+setsNode_70 [label="def(70)={i}\ncuse(70)={i}"];
+setsNode_71 [label="def(71)={tempa,tempb}\ncuse(71)={this,this.trustRegionCenterOffset,this.lowerDifference,this.upperDifference,this.trialStepPoint,i}"];
+setsNode_73 [label="def(73)={temp,ssq}\ncuse(73)={this,s,this.trustRegionCenterOffset,this.lowerDifference,this.trialStepPoint,i}"];
+setsNode_74 [label="def(74)={temp}\ncuse(74)={this,this.trustRegionCenterOffset,this.upperDifference,i,ssq}"];
+setsNode_75 [label="def(75)={temp}\ncuse(75)={s,temp,i}"];
+setsNode_76 [label="def(76)={iact,xsav,angbd}\ncuse(76)={temp,tempb,i}"];
+setsNode_77 [label="def(77)={temp}\ncuse(77)={s,temp,i}"];
+setsNode_78 [label="def(78)={iact,xsav,angbd}\ncuse(78)={temp,tempa,i}"];
+setsNode_79 [label="def(79)={nact}\ncuse(79)={xbdi,nact,i}"];
+setsNode_80 [label="def(80)={nact}\ncuse(80)={xbdi,nact,i}"];
+setsNode_82 [label="cuse(82)={s,i}"];
+setsNode_83 [label="def(83)={i}\ncuse(83)={i}"];
+setsNode_84 [label="cuse(84)={this,gnew,s,temp,dredg,dredsq,this.trialStepPoint,i}"];
+setsNode_85 [label="def(85)={i}"];
+setsNode_87 [label="def(87)={dredg,dredsq,gredsq,i}"];
+setsNode_89 [label="def(89)={itcsav,i}\ncuse(89)={iterc}"];
+setsNode_91 [label="cuse(91)={s,i}"];
+setsNode_92 [label="def(92)={i}\ncuse(92)={i}"];
+setsNode_93 [label="def(93)={dredg,dredsq,gredsq}\ncuse(93)={this,gnew,s,dredg,dredsq,gredsq,this.trialStepPoint,i}"];
+setsNode_94 [label="def(94)={i}"];
+setsNode_95 [label="def(95)={crvmin}"];
+setsNode_96 [label="def(96)={resid,i,ds,shs}\ncuse(96)={delsq}"];
+setsNode_99 [label="def(99)={temp}\ncuse(99)={resid,stepsq,ds}"];
+setsNode_100 [label="def(100)={blen}\ncuse(100)={temp,resid,ds}"];
+setsNode_101 [label="def(101)={stplen}\ncuse(101)={blen}"];
+setsNode_102 [label="def(102)={iact,i}"];
+setsNode_104 [label="def(104)={sdec}"];
+setsNode_109 [label="def(109)={beta,i}\ncuse(109)={ggsav,gredsq}"];
+setsNode_110 [label="def(110)={i}"];
+setsNode_111 [label="def(111)={i}"];
+setsNode_112 [label="def(112)={nact}\ncuse(112)={xbdi,iact,nact}"];
+setsNode_113 [label="def(113)={delsq}\ncuse(113)={this,iact,delsq,this.trialStepPoint}"];
+setsNode_114 [label="def(114)={i}"];
+setsNode_115 [label="def(115)={i}"];
+setsNode_116 [label="cuse(116)={xbdi,iact}"];
+setsNode_117 [label="def(117)={temp,iterc}\ncuse(117)={stepsq,iterc,shs}"];
+setsNode_118 [label="def(118)={ggsav,gredsq,i}\ncuse(118)={gredsq}"];
+setsNode_120 [label="def(120)={qred,sdec}\ncuse(120)={ggsav,stplen,qred,shs}"];
+setsNode_121 [label="cuse(121)={gnew,hs,stplen,i}"];
+setsNode_122 [label="def(122)={i}\ncuse(122)={this,s,stplen,this.trialStepPoint,i}"];
+setsNode_123 [label="def(123)={gredsq}\ncuse(123)={gnew,gredsq,i}"];
+setsNode_125 [label="def(125)={crvmin}\ncuse(125)={crvmin,temp}"];
+setsNode_126 [label="def(126)={crvmin}\ncuse(126)={temp}"];
+setsNode_128 [label="def(128)={i}\ncuse(128)={i}"];
+setsNode_129 [label="def(129)={xsum}\ncuse(129)={this,this.trustRegionCenterOffset,this.trialStepPoint,i}"];
+setsNode_130 [label="def(130)={temp}\ncuse(130)={this,s,xsum,this.lowerDifference,i}"];
+setsNode_132 [label="def(132)={iact,stplen}\ncuse(132)={temp,i}"];
+setsNode_133 [label="def(133)={temp}\ncuse(133)={this,s,xsum,this.upperDifference,i}"];
+setsNode_134 [label="def(134)={stplen}\ncuse(134)={gredsq,shs,blen}"];
+setsNode_135 [label="def(135)={blen}\ncuse(135)={temp,stepsq,ds}"];
+setsNode_136 [label="def(136)={i}"];
+setsNode_138 [label="def(138)={i}\ncuse(138)={i}"];
+setsNode_139 [label="def(139)={resid,ds,shs}\ncuse(139)={this,s,hs,resid,this.trialStepPoint,i,ds,shs}"];
+setsNode_140 [label="def(140)={stepsq,i}"];
+setsNode_145 [label="def(145)={i}"];
+setsNode_146 [label="def(146)={i}"];
+setsNode_147 [label="def(147)={gredsq,itermax}\ncuse(147)={n,nact,stepsq,iterc}"];
+setsNode_148 [label="def(148)={i}"];
+setsNode_151 [label="cuse(151)={gnew,s,beta,i}"];
+setsNode_152 [label="def(152)={stepsq,i}\ncuse(152)={s,stepsq,i}"];
+setsNode_153 [label="cuse(153)={gnew,s,i}"];
+setsNode_154 [label="cuse(154)={s,i}"];
+setsNode_155 [label="def(155)={beta}"];
+setsNode_156 [label="cuse(156)={SIMPLE_MESSAGE}"];
+setsNode_157 [label="cuse(157)={xbdi,i}"];
+setsNode_160 [label="def(160)={i}\ncuse(160)={this,gnew,i,this.gradientAtTrustRegionCenter,this.trialStepPoint}"];
+setsNode_161 [label="def(161)={nact}\ncuse(161)={nact}"];
+setsNode_163 [label="cuse(163)={xbdi,i}"];
+setsNode_165 [label="cuse(165)={xbdi,i}"];
+}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 10 ;  setsNode_10}
+{rank = same; 12 ;  setsNode_12}
+{rank = same; 13 ;  setsNode_13}
+{rank = same; 14 ;  setsNode_14}
+{rank = same; 15 ;  setsNode_15}
+{rank = same; 17 ;  setsNode_17}
+{rank = same; 18 ;  setsNode_18}
+{rank = same; 20 ;  setsNode_20}
+{rank = same; 21 ;  setsNode_21}
+{rank = same; 23 ;  setsNode_23}
+{rank = same; 25 ;  setsNode_25}
+{rank = same; 26 ;  setsNode_26}
+{rank = same; 27 ;  setsNode_27}
+{rank = same; 29 ;  setsNode_29}
+{rank = same; 30 ;  setsNode_30}
+{rank = same; 32 ;  setsNode_32}
+{rank = same; 33 ;  setsNode_33}
+{rank = same; 34 ;  setsNode_34}
+{rank = same; 35 ;  setsNode_35}
+{rank = same; 37 ;  setsNode_37}
+{rank = same; 41 ;  setsNode_41}
+{rank = same; 42 ;  setsNode_42}
+{rank = same; 44 ;  setsNode_44}
+{rank = same; 46 ;  setsNode_46}
+{rank = same; 48 ;  setsNode_48}
+{rank = same; 49 ;  setsNode_49}
+{rank = same; 50 ;  setsNode_50}
+{rank = same; 51 ;  setsNode_51}
+{rank = same; 52 ;  setsNode_52}
+{rank = same; 53 ;  setsNode_53}
+{rank = same; 54 ;  setsNode_54}
+{rank = same; 55 ;  setsNode_55}
+{rank = same; 57 ;  setsNode_57}
+{rank = same; 58 ;  setsNode_58}
+{rank = same; 59 ;  setsNode_59}
+{rank = same; 61 ;  setsNode_61}
+{rank = same; 62 ;  setsNode_62}
+{rank = same; 63 ;  setsNode_63}
+{rank = same; 64 ;  setsNode_64}
+{rank = same; 66 ;  setsNode_66}
+{rank = same; 68 ;  setsNode_68}
+{rank = same; 70 ;  setsNode_70}
+{rank = same; 71 ;  setsNode_71}
+{rank = same; 73 ;  setsNode_73}
+{rank = same; 74 ;  setsNode_74}
+{rank = same; 75 ;  setsNode_75}
+{rank = same; 76 ;  setsNode_76}
+{rank = same; 77 ;  setsNode_77}
+{rank = same; 78 ;  setsNode_78}
+{rank = same; 79 ;  setsNode_79}
+{rank = same; 80 ;  setsNode_80}
+{rank = same; 82 ;  setsNode_82}
+{rank = same; 83 ;  setsNode_83}
+{rank = same; 84 ;  setsNode_84}
+{rank = same; 85 ;  setsNode_85}
+{rank = same; 87 ;  setsNode_87}
+{rank = same; 89 ;  setsNode_89}
+{rank = same; 91 ;  setsNode_91}
+{rank = same; 92 ;  setsNode_92}
+{rank = same; 93 ;  setsNode_93}
+{rank = same; 94 ;  setsNode_94}
+{rank = same; 95 ;  setsNode_95}
+{rank = same; 96 ;  setsNode_96}
+{rank = same; 99 ;  setsNode_99}
+{rank = same; 100 ;  setsNode_100}
+{rank = same; 101 ;  setsNode_101}
+{rank = same; 102 ;  setsNode_102}
+{rank = same; 104 ;  setsNode_104}
+{rank = same; 109 ;  setsNode_109}
+{rank = same; 110 ;  setsNode_110}
+{rank = same; 111 ;  setsNode_111}
+{rank = same; 112 ;  setsNode_112}
+{rank = same; 113 ;  setsNode_113}
+{rank = same; 114 ;  setsNode_114}
+{rank = same; 115 ;  setsNode_115}
+{rank = same; 116 ;  setsNode_116}
+{rank = same; 117 ;  setsNode_117}
+{rank = same; 118 ;  setsNode_118}
+{rank = same; 120 ;  setsNode_120}
+{rank = same; 121 ;  setsNode_121}
+{rank = same; 122 ;  setsNode_122}
+{rank = same; 123 ;  setsNode_123}
+{rank = same; 125 ;  setsNode_125}
+{rank = same; 126 ;  setsNode_126}
+{rank = same; 128 ;  setsNode_128}
+{rank = same; 129 ;  setsNode_129}
+{rank = same; 130 ;  setsNode_130}
+{rank = same; 132 ;  setsNode_132}
+{rank = same; 133 ;  setsNode_133}
+{rank = same; 134 ;  setsNode_134}
+{rank = same; 135 ;  setsNode_135}
+{rank = same; 136 ;  setsNode_136}
+{rank = same; 138 ;  setsNode_138}
+{rank = same; 139 ;  setsNode_139}
+{rank = same; 140 ;  setsNode_140}
+{rank = same; 145 ;  setsNode_145}
+{rank = same; 146 ;  setsNode_146}
+{rank = same; 147 ;  setsNode_147}
+{rank = same; 148 ;  setsNode_148}
+{rank = same; 151 ;  setsNode_151}
+{rank = same; 152 ;  setsNode_152}
+{rank = same; 153 ;  setsNode_153}
+{rank = same; 154 ;  setsNode_154}
+{rank = same; 155 ;  setsNode_155}
+{rank = same; 156 ;  setsNode_156}
+{rank = same; 157 ;  setsNode_157}
+{rank = same; 160 ;  setsNode_160}
+{rank = same; 161 ;  setsNode_161}
+{rank = same; 163 ;  setsNode_163}
+{rank = same; 165 ;  setsNode_165}
+0 -> 1;
+1 -> 157[label="puse(1,157)={n,i}",fontsize=12];1 -> 2[label="puse(1,2)={n,i}",fontsize=12];
+2 -> 3;
+3 -> 156[label="puse(3,156)={i}",fontsize=12];3 -> 155[label="puse(3,155)={i}",fontsize=12];3 -> 140[label="puse(3,140)={i}",fontsize=12];3 -> 96[label="puse(3,96)={i}",fontsize=12];3 -> 95[label="puse(3,95)={i}",fontsize=12];3 -> 86[label="puse(3,86)={i}",fontsize=12];3 -> 63[label="puse(3,63)={i}",fontsize=12];3 -> 35[label="puse(3,35)={i}",fontsize=12];3 -> 27[label="puse(3,27)={i}",fontsize=12];3 -> 4[label="puse(3,4)={i}",fontsize=12];
+4 -> 5;
+5 -> 21[label="puse(5,21)={n,j}",fontsize=12];5 -> 6[label="puse(5,6)={n,j}",fontsize=12];
+6 -> 7;
+7 -> 16[label="puse(7,16)={npt,i}",fontsize=12];7 -> 8[label="puse(7,8)={npt,i}",fontsize=12];
+8 -> 15[label="puse(8,15)={crvmin}",fontsize=12];8 -> 9[label="puse(8,9)={crvmin}",fontsize=12];
+9 -> 14[label="puse(9,14)={itcsav,iterc}",fontsize=12];9 -> 10[label="puse(9,10)={itcsav,iterc}",fontsize=12];
+10 -> 11;
+11 -> 13[label="puse(11,13)={n,i}",fontsize=12];11 -> 12[label="puse(11,12)={n,i}",fontsize=12];
+12 -> 3;
+13 -> 11;
+14 -> 3;
+15 -> 3;
+16 -> 18[label="puse(16,18)={this,i,this.modelSecondDerivativesParameters}",fontsize=12];16 -> 17[label="puse(16,17)={this,i,this.modelSecondDerivativesParameters}",fontsize=12];
+17 -> 7;
+18 -> 19;
+19 -> 20[label="puse(19,20)={n,i}",fontsize=12];19 -> 17[label="puse(19,17)={n,i}",fontsize=12];
+20 -> 19;
+21 -> 22;
+22 -> 24[label="puse(22,24)={j,i}",fontsize=12];22 -> 23[label="puse(22,23)={j,i}",fontsize=12];
+23 -> 5;
+24 -> 26[label="puse(24,26)={j,i}",fontsize=12];24 -> 25[label="puse(24,25)={j,i}",fontsize=12];
+25 -> 22;
+26 -> 25;
+27 -> 28;
+28 -> 30[label="puse(28,30)={n,i}",fontsize=12];28 -> 29[label="puse(28,29)={n,i}",fontsize=12];
+29 -> 166;
+30 -> 34[label="puse(30,34)={xbdi,i}",fontsize=12];30 -> 31[label="puse(30,31)={xbdi,i}",fontsize=12];
+31 -> 33[label="puse(31,33)={xbdi,i}",fontsize=12];31 -> 32[label="puse(31,32)={xbdi,i}",fontsize=12];
+32 -> 28;
+33 -> 32;
+34 -> 31;
+35 -> 36;
+36 -> 60[label="puse(36,60)={n,i}",fontsize=12];36 -> 37[label="puse(36,37)={n,i}",fontsize=12];
+37 -> 38;
+38 -> 55[label="puse(38,55)={i,iu}",fontsize=12];38 -> 39[label="puse(38,39)={i,iu}",fontsize=12];
+39 -> 54[label="puse(39,54)={isav}",fontsize=12];39 -> 40[label="puse(39,40)={isav}",fontsize=12];
+40 -> 53[label="puse(40,53)={isav,iu}",fontsize=12];40 -> 41[label="puse(40,41)={isav,iu}",fontsize=12];
+41 -> 52[label="puse(41,52)={sdec}",fontsize=12];41 -> 42[label="puse(41,42)={sdec}",fontsize=12];
+42 -> 43;
+43 -> 49[label="puse(43,49)={n,i}",fontsize=12];43 -> 44[label="puse(43,44)={n,i}",fontsize=12];
+44 -> 47[label="puse(44,47)={iact}",fontsize=12];44 -> 45[label="puse(44,45)={iact}",fontsize=12];
+45 -> 46[label="puse(45,46)={qred,sdec}",fontsize=12];45 -> 27[label="puse(45,27)={qred,sdec}",fontsize=12];
+46 -> 3;
+47 -> 48[label="puse(47,48)={isav,iu}",fontsize=12];47 -> 45[label="puse(47,45)={isav,iu}",fontsize=12];
+48 -> 3;
+49 -> 51[label="puse(49,51)={xbdi,i}",fontsize=12];49 -> 50[label="puse(49,50)={xbdi,i}",fontsize=12];
+50 -> 43;
+51 -> 50;
+52 -> 3;
+53 -> 41;
+54 -> 3;
+55 -> 59[label="puse(55,59)={redmax,rednew}",fontsize=12];55 -> 56[label="puse(55,56)={redmax,rednew}",fontsize=12];
+56 -> 58[label="puse(56,58)={i,isav}",fontsize=12];56 -> 57[label="puse(56,57)={i,isav}",fontsize=12];
+57 -> 38;
+58 -> 57;
+59 -> 57;
+60 -> 62[label="puse(60,62)={xbdi,i}",fontsize=12];60 -> 61[label="puse(60,61)={xbdi,i}",fontsize=12];
+61 -> 36;
+62 -> 61;
+63 -> 85[label="puse(63,85)={temp,qred}",fontsize=12];63 -> 64[label="puse(63,64)={temp,qred}",fontsize=12];
+64 -> 65;
+65 -> 81[label="puse(65,81)={n,i}",fontsize=12];65 -> 66[label="puse(65,66)={n,i}",fontsize=12];
+66 -> 67;
+67 -> 69[label="puse(67,69)={n,i}",fontsize=12];67 -> 68[label="puse(67,68)={n,i}",fontsize=12];
+68 -> 3;
+69 -> 71[label="puse(69,71)={xbdi,i}",fontsize=12];69 -> 70[label="puse(69,70)={xbdi,i}",fontsize=12];
+70 -> 67;
+71 -> 80[label="puse(71,80)={tempa}",fontsize=12];71 -> 72[label="puse(71,72)={tempa}",fontsize=12];
+72 -> 79[label="puse(72,79)={tempb}",fontsize=12];72 -> 73[label="puse(72,73)={tempb}",fontsize=12];
+73 -> 77[label="puse(73,77)={temp}",fontsize=12];73 -> 74[label="puse(73,74)={temp}",fontsize=12];
+74 -> 75[label="puse(74,75)={temp}",fontsize=12];74 -> 70[label="puse(74,70)={temp}",fontsize=12];
+75 -> 76[label="puse(75,76)={temp,angbd,tempb}",fontsize=12];75 -> 70[label="puse(75,70)={temp,angbd,tempb}",fontsize=12];
+76 -> 70;
+77 -> 78[label="puse(77,78)={temp,angbd,tempa}",fontsize=12];77 -> 74[label="puse(77,74)={temp,angbd,tempa}",fontsize=12];
+78 -> 74;
+79 -> 68;
+80 -> 68;
+81 -> 84[label="puse(81,84)={xbdi,i}",fontsize=12];81 -> 82[label="puse(81,82)={xbdi,i}",fontsize=12];
+82 -> 83;
+83 -> 65;
+84 -> 83;
+85 -> 3;
+86 -> 94[label="puse(86,94)={n,nact}",fontsize=12];86 -> 87[label="puse(86,87)={n,nact}",fontsize=12];
+87 -> 88;
+88 -> 90[label="puse(88,90)={n,i}",fontsize=12];88 -> 89[label="puse(88,89)={n,i}",fontsize=12];
+89 -> 3;
+90 -> 93[label="puse(90,93)={xbdi,i}",fontsize=12];90 -> 91[label="puse(90,91)={xbdi,i}",fontsize=12];
+91 -> 92;
+92 -> 88;
+93 -> 92;
+94 -> 3;
+95 -> 86;
+96 -> 97;
+97 -> 137[label="puse(97,137)={n,i}",fontsize=12];97 -> 98[label="puse(97,98)={n,i}",fontsize=12];
+98 -> 136[label="puse(98,136)={resid}",fontsize=12];98 -> 99[label="puse(98,99)={resid}",fontsize=12];
+99 -> 135[label="puse(99,135)={ds}",fontsize=12];99 -> 100[label="puse(99,100)={ds}",fontsize=12];
+100 -> 101;
+101 -> 134[label="puse(101,134)={shs}",fontsize=12];101 -> 102[label="puse(101,102)={shs}",fontsize=12];
+102 -> 103;
+103 -> 127[label="puse(103,127)={n,i}",fontsize=12];103 -> 104[label="puse(103,104)={n,i}",fontsize=12];
+104 -> 117[label="puse(104,117)={stplen}",fontsize=12];104 -> 105[label="puse(104,105)={stplen}",fontsize=12];
+105 -> 112[label="puse(105,112)={iact}",fontsize=12];105 -> 106[label="puse(105,106)={iact}",fontsize=12];
+106 -> 107[label="puse(106,107)={stplen,blen}",fontsize=12];106 -> 95[label="puse(106,95)={stplen,blen}",fontsize=12];
+107 -> 111[label="puse(107,111)={itermax,iterc}",fontsize=12];107 -> 108[label="puse(107,108)={itermax,iterc}",fontsize=12];
+108 -> 110[label="puse(108,110)={qred,sdec}",fontsize=12];108 -> 109[label="puse(108,109)={qred,sdec}",fontsize=12];
+109 -> 3;
+110 -> 3;
+111 -> 3;
+112 -> 116[label="puse(112,116)={s,iact}",fontsize=12];112 -> 113[label="puse(112,113)={s,iact}",fontsize=12];
+113 -> 115[label="puse(113,115)={delsq}",fontsize=12];113 -> 114[label="puse(113,114)={delsq}",fontsize=12];
+114 -> 3;
+115 -> 3;
+116 -> 113;
+117 -> 124[label="puse(117,124)={iact}",fontsize=12];117 -> 118[label="puse(117,118)={iact}",fontsize=12];
+118 -> 119;
+119 -> 121[label="puse(119,121)={n,i}",fontsize=12];119 -> 120[label="puse(119,120)={n,i}",fontsize=12];
+120 -> 105;
+121 -> 123[label="puse(121,123)={xbdi,i}",fontsize=12];121 -> 122[label="puse(121,122)={xbdi,i}",fontsize=12];
+122 -> 119;
+123 -> 122;
+124 -> 125[label="puse(124,125)={temp}",fontsize=12];124 -> 118[label="puse(124,118)={temp}",fontsize=12];
+125 -> 126[label="puse(125,126)={crvmin}",fontsize=12];125 -> 118[label="puse(125,118)={crvmin}",fontsize=12];
+126 -> 118;
+127 -> 129[label="puse(127,129)={s,i}",fontsize=12];127 -> 128[label="puse(127,128)={s,i}",fontsize=12];
+128 -> 103;
+129 -> 133[label="puse(129,133)={s,i}",fontsize=12];129 -> 130[label="puse(129,130)={s,i}",fontsize=12];
+130 -> 131;
+131 -> 132[label="puse(131,132)={temp,stplen}",fontsize=12];131 -> 128[label="puse(131,128)={temp,stplen}",fontsize=12];
+132 -> 128;
+133 -> 131;
+134 -> 102;
+135 -> 101;
+136 -> 3;
+137 -> 139[label="puse(137,139)={xbdi,i}",fontsize=12];137 -> 138[label="puse(137,138)={xbdi,i}",fontsize=12];
+138 -> 97;
+139 -> 138;
+140 -> 141;
+141 -> 149[label="puse(141,149)={n,i}",fontsize=12];141 -> 142[label="puse(141,142)={n,i}",fontsize=12];
+142 -> 148[label="puse(142,148)={stepsq}",fontsize=12];142 -> 143[label="puse(142,143)={stepsq}",fontsize=12];
+143 -> 147[label="puse(143,147)={beta}",fontsize=12];143 -> 144[label="puse(143,144)={beta}",fontsize=12];
+144 -> 146[label="puse(144,146)={delsq,gredsq,qred}",fontsize=12];144 -> 145[label="puse(144,145)={delsq,gredsq,qred}",fontsize=12];
+145 -> 3;
+146 -> 3;
+147 -> 144;
+148 -> 3;
+149 -> 154[label="puse(149,154)={xbdi,i}",fontsize=12];149 -> 150[label="puse(149,150)={xbdi,i}",fontsize=12];
+150 -> 153[label="puse(150,153)={beta}",fontsize=12];150 -> 151[label="puse(150,151)={beta}",fontsize=12];
+151 -> 152;
+152 -> 141;
+153 -> 152;
+154 -> 152;
+155 -> 140;
+156 -> 166;
+157 -> 164[label="puse(157,164)={this,i,this.trustRegionCenterOffset,this.lowerDifference}",fontsize=12];157 -> 158[label="puse(157,158)={this,i,this.trustRegionCenterOffset,this.lowerDifference}",fontsize=12];
+158 -> 162[label="puse(158,162)={this,i,this.trustRegionCenterOffset,this.upperDifference}",fontsize=12];158 -> 159[label="puse(158,159)={this,i,this.trustRegionCenterOffset,this.upperDifference}",fontsize=12];
+159 -> 161[label="puse(159,161)={xbdi,i}",fontsize=12];159 -> 160[label="puse(159,160)={xbdi,i}",fontsize=12];
+160 -> 1;
+161 -> 160;
+162 -> 163[label="puse(162,163)={this,i,this.gradientAtTrustRegionCenter}",fontsize=12];162 -> 159[label="puse(162,159)={this,i,this.gradientAtTrustRegionCenter}",fontsize=12];
+163 -> 159;
+164 -> 165[label="puse(164,165)={this,i,this.gradientAtTrustRegionCenter}",fontsize=12];164 -> 159[label="puse(164,159)={this,i,this.gradientAtTrustRegionCenter}",fontsize=12];
+165 -> 159;
+}

@@ -1,0 +1,42 @@
+digraph toByteArray {
+2 [label="2\n145-145"]
+3 [label="3\n150-152"]
+8 [label="8\n145-149"]
+9 [label="9\n139-139"]
+10 [label="10"]
+0 [label="0\n136-138"]
+6 [label="6\n157-157"]
+4 [label="4\n156-156"]
+7 [label="7\n153-153"]
+1 [label="1\n142-145"]
+5 [label="5\n159-159"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_3 [label="def(3)={offset}\nuse(3)={this,this._pastBlocks,totalLen,result,null}"];
+setsNode_8 [label="def(8)={offset}\nuse(8)={totalLen,result,offset}"];
+setsNode_9 [label="use(9)={this._currBlock}"];
+setsNode_0 [label="def(0)={this,this._currBlockPtr,NO_BYTES,this._pastBlocks,this._currBlock,totalLen}"];
+setsNode_6 [label="use(6)={this}"];
+setsNode_7 [label="use(7)={this._currBlockPtr,result}"];
+setsNode_1 [label="def(1)={result,offset,i$}\nuse(1)={this,this._currBlockPtr,i$}"];
+setsNode_5 [label="use(5)={totalLen}"];
+}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 8 ;  setsNode_8}
+{rank = same; 9 ;  setsNode_9}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 7 ;  setsNode_7}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 5 ;  setsNode_5}
+2 -> 8[label="use(2,8)={offset}",fontsize=14];2 -> 3[label="use(2,3)={offset}",fontsize=14];
+3 -> 7[label="use(3,7)={this._currBlockPtr,result}",fontsize=14];3 -> 4[label="use(3,4)={this._currBlockPtr,result}",fontsize=14];
+8 -> 2;
+9 -> 10;
+0 -> 9[label="use(0,9)={this._currBlockPtr}",fontsize=14];0 -> 1[label="use(0,1)={this._currBlockPtr}",fontsize=14];
+6 -> 5;
+4 -> 6[label="use(4,6)={this,i$}",fontsize=14];4 -> 5[label="use(4,5)={this,i$}",fontsize=14];
+7 -> 10;
+1 -> 2;
+5 -> 10;
+}

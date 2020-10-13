@@ -1,0 +1,36 @@
+digraph getQuoteToken {
+3 [label="3\n732-732"]
+4 [label="4\n737-740"]
+1 [label="1\n722-722"]
+9 [label="9"]
+2 [label="2\n729-731"]
+0 [label="0\n712-720"]
+6 [label="6\n734-734"]
+7 [label="7\n722-722"]
+5 [label="5\n731-731"]
+8 [label="8\n723-724"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_3 [label="def(3)={endOfQuote}\nuse(3)={endOffset}"];
+setsNode_4 [label="use(4)={this,startOffset,quoteDelimiter,endOfQuote,index}"];
+setsNode_2 [label="def(2)={index}\nuse(2)={content,this.m_Self,quoteDelimiter}"];
+setsNode_0 [label="def(0)={this,content,startOffset,endOffset,this.m_Self,DEFAULT_STRING,quoteDelimiter,escapeString,endOfQuote,index}"];
+setsNode_6 [label="def(6)={endOfQuote}\nuse(6)={escapeString}"];
+setsNode_8 [label="def(8)={endOfQuote,index}\nuse(8)={content,DEFAULT_STRING,escapeString}"];
+}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 8 ;  setsNode_8}
+3 -> 4;
+4 -> 9;
+1 -> 7[label="use(1,7)={escapeString}",fontsize=14];1 -> 2[label="use(1,2)={escapeString}",fontsize=14];
+2 -> 5[label="use(2,5)={escapeString}",fontsize=14];2 -> 3[label="use(2,3)={escapeString}",fontsize=14];
+0 -> 1;
+6 -> 4;
+7 -> 8[label="use(7,8)={endOffset,escapeString}",fontsize=14];7 -> 2[label="use(7,2)={endOffset,escapeString}",fontsize=14];
+5 -> 3[label="use(5,3)={endOffset,escapeString}",fontsize=14];5 -> 6[label="use(5,6)={endOffset,escapeString}",fontsize=14];
+8 -> 1;
+}

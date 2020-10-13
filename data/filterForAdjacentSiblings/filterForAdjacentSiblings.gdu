@@ -1,0 +1,42 @@
+digraph filterForAdjacentSiblings {
+9 [label="9\n290-290"]
+2 [label="2\n296-296"]
+5 [label="5\n295-295"]
+7 [label="7\n289-290"]
+11 [label="11\n288-288"]
+12 [label="12"]
+10 [label="10\n291-292"]
+0 [label="0\n284-285"]
+1 [label="1\n285-285"]
+6 [label="6\n286-287"]
+3 [label="3\n285-286"]
+8 [label="8\n294-294"]
+4 [label="4\n286-286"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_2 [label="use(2)={i$}"];
+setsNode_7 [label="def(7)={previousSib}\nuse(7)={i$}"];
+setsNode_10 [label="use(10)={i$,i$}"];
+setsNode_0 [label="def(0)={elements,siblings,i$}"];
+setsNode_6 [label="def(6)={e}\nuse(6)={e}"];
+setsNode_3 [label="def(3)={c,i$}\nuse(3)={elements,c}"];
+}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 7 ;  setsNode_7}
+{rank = same; 10 ;  setsNode_10}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 3 ;  setsNode_3}
+9 -> 10[label="use(9,10)={previousSib}",fontsize=14];9 -> 8[label="use(9,8)={previousSib}",fontsize=14];
+2 -> 12;
+5 -> 1;
+7 -> 9[label="use(7,9)={}",fontsize=14];7 -> 8[label="use(7,8)={}",fontsize=14];
+11 -> 4;
+10 -> 1;
+0 -> 1;
+1 -> 3[label="use(1,3)={c}",fontsize=14];1 -> 2[label="use(1,2)={c}",fontsize=14];
+6 -> 11[label="use(6,11)={i$,previousSib}",fontsize=14];6 -> 7[label="use(6,7)={i$,previousSib}",fontsize=14];
+3 -> 4;
+8 -> 4;
+4 -> 6[label="use(4,6)={e}",fontsize=14];4 -> 5[label="use(4,5)={e}",fontsize=14];
+}

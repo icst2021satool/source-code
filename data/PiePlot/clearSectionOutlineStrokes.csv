@@ -1,0 +1,20 @@
+Number of Variables;2;
+Variables:;
+0;;this;
+1;;notify;
+
+Number of Block duas;3;
+Line Duas for method; clearSectionOutlineStrokes;
+Number;Def Line; Origin Line; Use Line; Var Id; Var Name;
+1;1462;;1464;0;this;
+2;1462;1463;1464;1;notify;
+3;1462;1463;1466;1;notify;
+
+Block Duas for method; clearSectionOutlineStrokes;
+Number;Def Block; Origin Block; Use Block; Var Id; Var Name;
+1;0;;2;0;this;
+;1462;;1464;0;this;
+2;0;0;2;1;notify;
+;1462;1463;1464;1;notify;
+3;0;0;1;1;notify;
+;1462;1463;1466;1;notify;

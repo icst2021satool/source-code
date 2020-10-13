@@ -1,0 +1,4 @@
+digraph { 
+59 [shape=box,style=filled,color=".0 .0 .83",label="(0,1, sigma)\n(0,(0,1), sigma)\n(0,1, mu)\n(0,1, this)"];
+60 [shape=box,style=filled,color=".0 .0 .83",label="(0,2, STANDARD_DEVIATION)\n(0,2, sigma)\n(0,(0,2), sigma)"];
+}

@@ -1,0 +1,5 @@
+digraph { 
+6534 [shape=box,style=filled,color=".0 .0 .83",label="(0,(0,0), this)"];
+6535 [shape=box,style=filled,color=".0 .0 .83",label="(0,(0,0), row)"];
+6536 [shape=box,style=filled,color=".0 .0 .83",label="(0,(0,0), column)"];
+}

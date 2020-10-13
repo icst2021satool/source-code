@@ -1,0 +1,30 @@
+digraph _reportInvalidToken {
+2 [label="2\n1997-1998"]
+8 [label="8"]
+0 [label="0\n1986-1986"]
+1 [label="1\n1992-1992"]
+4 [label="4\n1999-1999"]
+7 [label="7\n1994-1994"]
+3 [label="3\n2001-2003"]
+5 [label="5\n2004-2005"]
+6 [label="6\n1993-1993"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_2 [label="def(2)={c}\nuse(2)={this,c,null}"];
+setsNode_0 [label="def(0)={this,this._inputEnd,this._inputPtr,this._inputBuffer,sb}"];
+setsNode_3 [label="def(3)={this._inputPtr}\nuse(3)={this,this._inputBuffer,c,null}"];
+setsNode_5 [label="use(5)={this,this._inputBuffer}"];
+}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 5 ;  setsNode_5}
+2 -> 4[label="use(2,4)={null}",fontsize=14];2 -> 3[label="use(2,3)={null}",fontsize=14];
+0 -> 1;
+1 -> 6[label="use(1,6)={this,sb,c}",fontsize=14];1 -> 2[label="use(1,2)={this,sb,c}",fontsize=14];
+4 -> 5;
+7 -> 5;
+3 -> 1;
+5 -> 8;
+6 -> 7[label="use(6,7)={this}",fontsize=14];6 -> 2[label="use(6,2)={this}",fontsize=14];
+}

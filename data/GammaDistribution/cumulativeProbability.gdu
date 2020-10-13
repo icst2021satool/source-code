@@ -1,0 +1,22 @@
+digraph cumulativeProbability {
+2 [label="2\n282-282"]
+0 [label="0\n276-276"]
+3 [label="3\n277-277"]
+1 [label="1\n279-279"]
+4 [label="4"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_2 [label="use(2)={this.shape}"];
+setsNode_0 [label="def(0)={this,x,this.shape,this.scale}"];
+setsNode_3 [label="def(3)={ret}"];
+setsNode_1 [label="def(1)={ret}\nuse(1)={this,x,this.scale,ret}"];
+}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 1 ;  setsNode_1}
+2 -> 4;
+0 -> 3[label="use(0,3)={x}",fontsize=14];0 -> 1[label="use(0,1)={x}",fontsize=14];
+3 -> 2;
+1 -> 2;
+}

@@ -1,0 +1,18 @@
+digraph { 
+1974 [shape=box,style=filled,color=".0 .0 .83",label="(0,(4,1), this)"];
+1975 [shape=box,style=filled,color=".0 .0 .83",label="(0,(4,2), this)"];
+1976 [label="(0,(0,4), this._inputPtr)\n(0,(0,4), this._inputEnd)\n(0,(0,4), this)"];
+1977 [shape=box,style=filled,color=".0 .0 .83",label="(0,(0,1), this._inputPtr)\n(0,(0,1), this._inputEnd)\n(0,(0,1), this)"];
+1978 [shape=box,style=filled,color=".0 .0 .83",label="(3,2, this._inputPtr)\n(0,(1,3), this._inputBuffer)\n(0,3, this._inputPtr)\n(0,(1,3), this._inputPtr)\n(0,3, this)\n(0,(1,3), this)"];
+1979 [shape=box,style=filled,color=".0 .0 .83",label="(0,(1,2), this._inputBuffer)\n(0,(1,2), this._inputPtr)\n(0,(1,2), this)"];
+1980 [label="(0,2, this._inputPtr)"];
+1981 [label="(0,2, this._currInputRow)\n(0,2, this)"];
+1976 -> 1974;
+1976 -> 1975;
+1980 -> 1975;
+1980 -> 1979;
+1981 -> 1976;
+1981 -> 1977;
+1981 -> 1978;
+1981 -> 1980;
+}

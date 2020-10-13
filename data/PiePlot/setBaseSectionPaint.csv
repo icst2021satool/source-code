@@ -1,0 +1,25 @@
+Number of Variables;2;
+Variables:;
+0;;this;
+1;;paint;
+
+Number of Block duas;4;
+Line Duas for method; setBaseSectionPaint;
+Number;Def Line; Origin Line; Use Line; Var Id; Var Name;
+1;1073;;1076;0;this;
+2;1073;;1077;0;this;
+3;1073;1073;1074;1;paint;
+4;1073;1073;1076;1;paint;
+5;1073;;1076;1;paint;
+
+Block Duas for method; setBaseSectionPaint;
+Number;Def Block; Origin Block; Use Block; Var Id; Var Name;
+1;0;;1;0;this;
+;1073;;1076;0;this;
+;1073;;1077;0;this;
+2;0;0;2;1;paint;
+;1073;1073;1074;1;paint;
+3;0;0;1;1;paint;
+;1073;1073;1076;1;paint;
+4;0;;1;1;paint;
+;1073;;1076;1;paint;

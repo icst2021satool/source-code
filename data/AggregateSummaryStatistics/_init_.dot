@@ -1,0 +1,11 @@
+digraph { 
+202 [shape=box,style=filled,color=".7 .3 1.0",label="(0,(0,6), prototypeStatistics)"];
+203 [shape=box,style=filled,color=".7 .3 1.0",label="(0,(0,1), prototypeStatistics)"];
+204 [shape=box,style=filled,color=".7 .3 1.0",label="(0,(2,5), initialStatistics)"];
+205 [shape=box,style=filled,color=".7 .3 1.0",label="(0,(2,3), initialStatistics)"];
+206 [label="(0,4, initialStatistics)\n(0,2, prototypeStatistics)\n(0,4, this)\n(0,2, this)"];
+206 -> 202;
+206 -> 203;
+206 -> 204;
+206 -> 205;
+}

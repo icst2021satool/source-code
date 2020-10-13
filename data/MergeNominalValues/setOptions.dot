@@ -1,0 +1,11 @@
+digraph { 
+6 [shape=box,style=filled,color=".7 .3 1.0",label="(0,(0,1), significanceLevelString)\n(0,1, this)"];
+7 [shape=box,style=filled,color=".7 .3 1.0",label="(2,(2,3), tmpStr)\n(0,3, this)"];
+8 [shape=box,style=filled,color=".7 .3 1.0",label="(2,5, tmpStr)\n(2,(2,5), tmpStr)\n(0,5, this)"];
+9 [shape=box,style=filled,color=".7 .3 1.0",label="(0,6, significanceLevelString)\n(0,(0,6), significanceLevelString)\n(0,6, this)"];
+10 [label="(0,4, options)\n(0,2, options)\n(0,4, this)"];
+10 -> 6;
+10 -> 7;
+10 -> 8;
+10 -> 9;
+}

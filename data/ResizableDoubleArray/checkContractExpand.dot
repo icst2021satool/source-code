@@ -1,0 +1,12 @@
+digraph { 
+17 [shape=box,style=filled,color=".0 .0 .83",label="(0,6, CONTRACTION_CRITERIA_SMALLER_THAN_EXPANSION_FACTOR)\n(0,6, expansion)\n(0,(0,6), expansion)\n(0,6, contraction)\n(0,(0,6), contraction)"];
+18 [shape=box,style=filled,color=".0 .0 .83",label="(0,5, CONTRACTION_CRITERIA_SMALLER_THAN_ONE)\n(0,5, contraction)\n(0,(1,5), contraction)"];
+19 [shape=box,style=filled,color=".0 .0 .83",label="(0,4, EXPANSION_FACTOR_SMALLER_THAN_ONE)\n(0,4, expansion)\n(0,(2,4), expansion)\n(0,4, contraction)"];
+20 [shape=box,style=filled,color=".0 .0 .83",label="(0,(2,3), expansion)"];
+21 [label="(0,(1,2), contraction)"];
+22 [label="(0,(0,1), expansion)\n(0,(0,1), contraction)"];
+21 -> 19;
+21 -> 20;
+22 -> 18;
+22 -> 21;
+}

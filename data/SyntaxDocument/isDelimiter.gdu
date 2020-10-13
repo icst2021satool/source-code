@@ -1,0 +1,18 @@
+digraph isDelimiter {
+4 [label="4\n844-844"]
+2 [label="2\n843-843"]
+3 [label="3\n843-844"]
+1 [label="1\n844-844"]
+0 [label="0\n843-843"]
+5 [label="5"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_0 [label="def(0)={this,character,this.m_Delimiters}"];
+}
+{rank = same; 0 ;  setsNode_0}
+4 -> 2;
+2 -> 5;
+3 -> 1[label="use(3,1)={this,character,this.m_Delimiters}",fontsize=14];3 -> 4[label="use(3,4)={this,character,this.m_Delimiters}",fontsize=14];
+1 -> 2;
+0 -> 3[label="use(0,3)={character}",fontsize=14];0 -> 1[label="use(0,1)={character}",fontsize=14];
+}

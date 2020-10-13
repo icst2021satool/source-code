@@ -1,0 +1,28 @@
+digraph { 
+3601 [shape=box,style=filled,color=".0 .0 .83",label="(5,5, i)\n(5,(3,5), i)"];
+3602 [label="(5,(3,4), i)\n(2,5, i)\n(2,(3,5), i)\n(0,5, this.labelDistributor)\n(0,(3,5), this.labelDistributor)\n(0,5, state)\n(0,5, g2)\n(0,5, this)\n(0,(3,5), this)"];
+3603 [shape=box,style=filled,color=".0 .0 .83",label="(8,11, labelBox)\n(0,11, this.labelShadowPaint)\n(0,(8,11), this.shadowGenerator)\n(0,11, this)\n(0,(8,11), this)"];
+3604 [shape=box,style=filled,color=".0 .0 .83",label="(8,9, labelBox)\n(0,(8,9), this.shadowGenerator)\n(0,(8,9), this)"];
+3605 [shape=box,style=filled,color=".0 .0 .83",label="(0,10, i)"];
+3606 [shape=box,style=filled,color=".0 .0 .83",label="(7,10, i)"];
+3607 [label="(8,10, labelBox)\n(6,8, label)\n(6,(6,8), label)\n(0,10, verticalLinkRadius)\n(0,10, lGap)\n(0,10, this.labelPadding)\n(0,8, this.labelOutlineStroke)\n(0,8, this.labelOutlinePaint)\n(0,8, this.labelBackgroundPaint)\n(0,8, this.labelPaint)\n(0,8, this.labelFont)\n(0,10, this.labelDistributor)\n(0,10, state)\n(0,8, maxLabelWidth)\n(0,10, g2)\n(0,8, g2)\n(0,10, keys)\n(0,10, this)\n(0,8, this)"];
+3608 [shape=box,style=filled,color=".0 .0 .83",label="(6,(6,7), label)"];
+3609 [label="(7,7, i)\n(7,6, i)\n(7,(1,6), i)"];
+3610 [label="(7,(1,2), i)\n(0,7, i)\n(0,6, i)\n(0,(1,6), i)\n(0,6, this.dataset)\n(0,6, this.labelGenerator)\n(0,6, keys)\n(0,(1,6), keys)\n(0,6, this)"];
+3611 [shape=box,style=filled,color=".0 .0 .83",label="(0,(1,2), i)"];
+3612 [shape=box,style=filled,color=".0 .0 .83",label="(2,(3,4), i)"];
+3613 [label="(0,(3,4), this.labelDistributor)\n(0,2, this.labelDistributor)\n(0,2, plotArea)\n(0,(1,2), keys)\n(0,(3,4), this)\n(0,2, this)"];
+3602 -> 3601;
+3607 -> 3603;
+3607 -> 3604;
+3607 -> 3605;
+3607 -> 3606;
+3609 -> 3606;
+3610 -> 3607;
+3610 -> 3608;
+3610 -> 3609;
+3613 -> 3602;
+3613 -> 3610;
+3613 -> 3611;
+3613 -> 3612;
+}

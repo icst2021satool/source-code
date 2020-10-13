@@ -1,0 +1,52 @@
+digraph getTextCharacters {
+4 [label="4\n349-349"]
+1 [label="1\n362-362"]
+12 [label="12\n339-339"]
+0 [label="0\n331-331"]
+5 [label="5\n350-351"]
+7 [label="7\n346-346"]
+11 [label="11\n341-341"]
+6 [label="6\n335-335"]
+10 [label="10\n343-344"]
+13 [label="13\n359-359"]
+14 [label="14"]
+3 [label="3\n356-356"]
+8 [label="8\n336-338"]
+2 [label="2\n332-332"]
+9 [label="9\n340-340"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_12 [label="def(12)={this._nameCopyBuffer}\nuse(12)={this,this._ioContext,this._textBuffer}"];
+setsNode_0 [label="def(0)={this,this._currToken,$SwitchMap$com$fasterxml$jackson$core$JsonToken,this._nameCopied,this._parsingContext,this._nameCopyBuffer,this._ioContext,this._tokenIncomplete,this._textBuffer}"];
+setsNode_5 [label="use(5)={this}"];
+setsNode_7 [label="use(7)={this,this._tokenIncomplete}"];
+setsNode_11 [label="def(11)={this._nameCopyBuffer}\nuse(11)={this,this._ioContext}"];
+setsNode_10 [label="use(10)={this,this._parsingContext,this._ioContext,this._tokenIncomplete}"];
+setsNode_13 [label="use(13)={this,this._currToken}"];
+setsNode_3 [label="use(3)={this,nameLen}"];
+setsNode_8 [label="def(8)={name,nameLen}\nuse(8)={this,this._nameCopyBuffer}"];
+}
+{rank = same; 12 ;  setsNode_12}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 7 ;  setsNode_7}
+{rank = same; 11 ;  setsNode_11}
+{rank = same; 10 ;  setsNode_10}
+{rank = same; 13 ;  setsNode_13}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 8 ;  setsNode_8}
+4 -> 5[label="use(4,5)={this,name}",fontsize=14];4 -> 3[label="use(4,3)={this,name}",fontsize=14];
+1 -> 14;
+12 -> 10;
+0 -> 2[label="use(0,2)={this,this._currToken}",fontsize=14];0 -> 1[label="use(0,1)={this,this._currToken}",fontsize=14];
+5 -> 3;
+7 -> 14;
+11 -> 10;
+6 -> 8[label="use(6,8)={this,this._nameCopied}",fontsize=14];6 -> 7[label="use(6,7)={this,this._nameCopied}",fontsize=14];
+10 -> 7;
+13 -> 14;
+3 -> 14;
+8 -> 12[label="use(8,12)={this,this._tokenIncomplete}",fontsize=14];8 -> 9[label="use(8,9)={this,this._tokenIncomplete}",fontsize=14];
+2 -> 13[label="use(2,13)={this,this._currToken,$SwitchMap$com$fasterxml$jackson$core$JsonToken}",fontsize=14];2 -> 6[label="use(2,6)={this,this._currToken,$SwitchMap$com$fasterxml$jackson$core$JsonToken}",fontsize=14];2 -> 4[label="use(2,4)={this,this._currToken,$SwitchMap$com$fasterxml$jackson$core$JsonToken}",fontsize=14];2 -> 3[label="use(2,3)={this,this._currToken,$SwitchMap$com$fasterxml$jackson$core$JsonToken}",fontsize=14];
+9 -> 11[label="use(9,11)={this,this._ioContext,this._tokenIncomplete}",fontsize=14];9 -> 10[label="use(9,10)={this,this._ioContext,this._tokenIncomplete}",fontsize=14];
+}

@@ -1,0 +1,14 @@
+digraph { 
+82 [shape=box,style=filled,color=".0 .0 .83",label="(5,5, i)\n(5,(3,5), i)"];
+83 [label="(5,(3,4), i)\n(2,5, i)\n(2,(3,5), i)\n(2,5, result)\n(2,5, index)\n(2,5, objects)\n(0,(3,5), k)"];
+84 [shape=box,style=filled,color=".0 .0 .83",label="(2,(3,4), i)"];
+85 [label="(2,4, result)\n(0,2, len)\n(0,(3,4), k)\n(0,2, k)\n(0,(1,2), k)\n(0,2, c)\n(0,2, this)"];
+86 [shape=box,style=filled,color=".0 .0 .83",label="(0,7, len)\n(0,(0,7), len)\n(0,7, SAMPLE_SIZE_EXCEEDS_COLLECTION_SIZE)\n(0,7, k)\n(0,(0,7), k)"];
+87 [shape=box,style=filled,color=".0 .0 .83",label="(0,6, NUMBER_OF_SAMPLES)\n(0,6, k)\n(0,(1,6), k)"];
+88 [label="(0,(0,1), len)\n(0,(0,1), k)"];
+83 -> 82;
+85 -> 83;
+85 -> 84;
+88 -> 85;
+88 -> 87;
+}

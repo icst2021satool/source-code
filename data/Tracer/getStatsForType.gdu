@@ -1,0 +1,18 @@
+digraph getStatsForType {
+3 [label="3\n630-630"]
+2 [label="2\n630-630"]
+0 [label="0\n629-630"]
+4 [label="4"]
+1 [label="1\n630-630"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_2 [label="use(2)={stat,null}"];
+setsNode_0 [label="def(0)={ZERO_STAT,stat}"];
+}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 0 ;  setsNode_0}
+3 -> 2;
+2 -> 4;
+0 -> 3[label="use(0,3)={stat}",fontsize=14];0 -> 1[label="use(0,1)={stat}",fontsize=14];
+1 -> 2;
+}

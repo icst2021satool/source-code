@@ -1,0 +1,60 @@
+digraph findElements {
+14 [label="14\n149-149"]
+13 [label="13\n151-151"]
+6 [label="6\n156-156"]
+16 [label="16\n145-145"]
+15 [label="15\n147-147"]
+1 [label="1\n146-146"]
+17 [label="17"]
+0 [label="0\n144-144"]
+2 [label="2\n148-148"]
+12 [label="12\n153-153"]
+3 [label="3\n150-150"]
+10 [label="10\n157-157"]
+11 [label="11\n155-155"]
+4 [label="4\n152-152"]
+8 [label="8\n161-161"]
+9 [label="9\n159-159"]
+5 [label="5\n154-154"]
+7 [label="7\n158-158"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_14 [label="use(14)={this}"];
+setsNode_13 [label="use(13)={this}"];
+setsNode_16 [label="use(16)={this}"];
+setsNode_15 [label="use(15)={this}"];
+setsNode_0 [label="def(0)={this,this.tq,this.query}"];
+setsNode_12 [label="use(12)={this}"];
+setsNode_10 [label="use(10)={this}"];
+setsNode_11 [label="use(11)={this}"];
+setsNode_8 [label="use(8)={this,this.query}"];
+setsNode_9 [label="use(9)={this}"];
+}
+{rank = same; 14 ;  setsNode_14}
+{rank = same; 13 ;  setsNode_13}
+{rank = same; 16 ;  setsNode_16}
+{rank = same; 15 ;  setsNode_15}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 12 ;  setsNode_12}
+{rank = same; 10 ;  setsNode_10}
+{rank = same; 11 ;  setsNode_11}
+{rank = same; 8 ;  setsNode_8}
+{rank = same; 9 ;  setsNode_9}
+14 -> 17;
+13 -> 17;
+6 -> 10[label="use(6,10)={this,this.tq}",fontsize=14];6 -> 7[label="use(6,7)={this,this.tq}",fontsize=14];
+16 -> 17;
+15 -> 17;
+1 -> 15[label="use(1,15)={this,this.tq}",fontsize=14];1 -> 2[label="use(1,2)={this,this.tq}",fontsize=14];
+0 -> 16[label="use(0,16)={this,this.tq}",fontsize=14];0 -> 1[label="use(0,1)={this,this.tq}",fontsize=14];
+2 -> 14[label="use(2,14)={this,this.tq}",fontsize=14];2 -> 3[label="use(2,3)={this,this.tq}",fontsize=14];
+12 -> 17;
+3 -> 13[label="use(3,13)={this,this.tq}",fontsize=14];3 -> 4[label="use(3,4)={this,this.tq}",fontsize=14];
+10 -> 17;
+11 -> 17;
+4 -> 12[label="use(4,12)={this,this.tq}",fontsize=14];4 -> 5[label="use(4,5)={this,this.tq}",fontsize=14];
+8 -> 17;
+9 -> 17;
+5 -> 11[label="use(5,11)={this,this.tq}",fontsize=14];5 -> 6[label="use(5,6)={this,this.tq}",fontsize=14];
+7 -> 9[label="use(7,9)={this,this.tq}",fontsize=14];7 -> 8[label="use(7,8)={this,this.tq}",fontsize=14];
+}

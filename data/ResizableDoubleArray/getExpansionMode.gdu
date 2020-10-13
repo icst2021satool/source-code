@@ -1,0 +1,16 @@
+digraph getExpansionMode {
+1 [label="1\n816-816"]
+2 [label="2\n814-814"]
+0 [label="0\n812-812"]
+4 [label="4"]
+3 [label="3\n818-818"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_0 [label="def(0)={this,$SwitchMap$org$apache$commons$math3$util$ResizableDoubleArray$ExpansionMode,this.expansionMode}"];
+}
+{rank = same; 0 ;  setsNode_0}
+1 -> 4;
+2 -> 4;
+0 -> 3[label="use(0,3)={this,$SwitchMap$org$apache$commons$math3$util$ResizableDoubleArray$ExpansionMode,this.expansionMode}",fontsize=14];0 -> 2[label="use(0,2)={this,$SwitchMap$org$apache$commons$math3$util$ResizableDoubleArray$ExpansionMode,this.expansionMode}",fontsize=14];0 -> 1[label="use(0,1)={this,$SwitchMap$org$apache$commons$math3$util$ResizableDoubleArray$ExpansionMode,this.expansionMode}",fontsize=14];
+3 -> 4;
+}

@@ -1,0 +1,25 @@
+Number of Variables;2;
+Variables:;
+0;;this;
+1;;padding;
+
+Number of Block duas;4;
+Line Duas for method; setLabelPadding;
+Number;Def Line; Origin Line; Use Line; Var Id; Var Name;
+1;2067;;2070;0;this;
+2;2067;;2071;0;this;
+3;2067;2067;2068;1;padding;
+4;2067;2067;2070;1;padding;
+5;2067;;2070;1;padding;
+
+Block Duas for method; setLabelPadding;
+Number;Def Block; Origin Block; Use Block; Var Id; Var Name;
+1;0;;1;0;this;
+;2067;;2070;0;this;
+;2067;;2071;0;this;
+2;0;0;2;1;padding;
+;2067;2067;2068;1;padding;
+3;0;0;1;1;padding;
+;2067;2067;2070;1;padding;
+4;0;;1;1;padding;
+;2067;;2070;1;padding;

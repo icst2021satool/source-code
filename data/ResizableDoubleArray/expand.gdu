@@ -1,0 +1,22 @@
+digraph expand {
+2 [label="2\n698-703"]
+3 [label="3\n694-694"]
+4 [label="4"]
+0 [label="0\n692-693"]
+1 [label="1\n696-696"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_2 [label="use(2)={this,MULTIPLICATIVE,this.expansionFactor}"];
+setsNode_3 [label="def(3)={newSize}\nuse(3)={this,this.expansionFactor,newSize}"];
+setsNode_0 [label="def(0)={this,MULTIPLICATIVE,this.expansionMode,this.internalArray,this.expansionFactor}"];
+setsNode_1 [label="def(1)={newSize}\nuse(1)={this,this.expansionFactor,newSize}"];
+}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 1 ;  setsNode_1}
+2 -> 4;
+3 -> 2;
+0 -> 3[label="use(0,3)={this,this.expansionMode,this.internalArray}",fontsize=14];0 -> 1[label="use(0,1)={this,this.expansionMode,this.internalArray}",fontsize=14];
+1 -> 2;
+}

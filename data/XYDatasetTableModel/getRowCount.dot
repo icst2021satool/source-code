@@ -1,0 +1,4 @@
+digraph { 
+6522 [shape=box,style=filled,color=".0 .0 .83",label="(0,(0,2), this.model)\n(0,(0,2), this)"];
+6523 [shape=box,style=filled,color=".0 .0 .83",label="(0,1, this.model)\n(0,(0,1), this.model)\n(0,1, this)\n(0,(0,1), this)"];
+}

@@ -1,0 +1,20 @@
+digraph <init> {
+1 [label="1\n71-71"]
+2 [label="2\n73-73"]
+0 [label="0\n66-68"]
+3 [label="3\n69-69"]
+4 [label="4"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_1 [label="use(1)={this,br,null}"];
+setsNode_0 [label="def(0)={this,br,firstBlockSize,WRITE_CONCAT_BUFFER}"];
+setsNode_3 [label="use(3)={this,firstBlockSize}"];
+}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 3 ;  setsNode_3}
+1 -> 2;
+2 -> 4;
+0 -> 3[label="use(0,3)={br}",fontsize=14];0 -> 1[label="use(0,1)={br}",fontsize=14];
+3 -> 2;
+}

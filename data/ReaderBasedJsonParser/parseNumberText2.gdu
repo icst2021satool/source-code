@@ -1,0 +1,200 @@
+digraph parseNumberText2 {
+41 [label="41\n1016-1016"]
+51 [label="51\n990-991"]
+40 [label="40\n1028-1028"]
+15 [label="15\n1050-1050"]
+24 [label="24\n1056-1057"]
+28 [label="28\n1063-1064"]
+58 [label="58\n971-971"]
+45 [label="45\n1017-1017"]
+50 [label="50\n985-986"]
+9 [label="9\n1034-1034"]
+37 [label="37\n1011-1011"]
+36 [label="36\n1007-1007"]
+7 [label="7\n1004-1006"]
+21 [label="21\n1076-1076"]
+52 [label="52\n997-997"]
+1 [label="1\n975-976"]
+13 [label="13\n1044-1044"]
+12 [label="12\n1040-1043"]
+2 [label="2\n976-976"]
+55 [label="55\n987-988"]
+57 [label="57\n976-976"]
+6 [label="6\n1000-1000"]
+30 [label="30\n1050-1050"]
+18 [label="18\n1069-1069"]
+27 [label="27\n1062-1062"]
+33 [label="33\n1040-1040"]
+49 [label="49\n984-984"]
+53 [label="53\n991-991"]
+4 [label="4\n980-980"]
+59 [label="59"]
+54 [label="54\n993-995"]
+31 [label="31\n1045-1046"]
+19 [label="19\n1075-1075"]
+42 [label="42\n1019-1020"]
+14 [label="14\n1048-1050"]
+26 [label="26\n1066-1066"]
+32 [label="32\n1043-1043"]
+47 [label="47\n1012-1013"]
+5 [label="5\n984-984"]
+46 [label="46\n1011-1011"]
+11 [label="11\n1040-1040"]
+39 [label="39\n1027-1027"]
+56 [label="56\n978-978"]
+0 [label="0\n966-970"]
+23 [label="23\n1055-1055"]
+20 [label="20\n1078-1080"]
+10 [label="10\n1038-1040"]
+34 [label="34\n1035-1036"]
+48 [label="48\n1001-1001"]
+35 [label="35\n1033-1033"]
+17 [label="17\n1055-1055"]
+29 [label="29\n1058-1059"]
+43 [label="43\n1024-1024"]
+8 [label="8\n1032-1033"]
+16 [label="16\n1050-1050"]
+22 [label="22\n1070-1070"]
+25 [label="25\n1061-1062"]
+38 [label="38\n1015-1016"]
+44 [label="44\n1021-1022"]
+3 [label="3\n976-977"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_51 [label="def(51)={outPtr}\nuse(51)={this._textBuffer,this._inputPtr,intLen}"];
+setsNode_40 [label="use(40)={this,intLen}"];
+setsNode_24 [label="def(24)={expLen}\nuse(24)={expLen}"];
+setsNode_28 [label="def(28)={eof}"];
+setsNode_58 [label="def(58)={outPtr}\nuse(58)={this._textBuffer,this._inputPtr}"];
+setsNode_50 [label="def(50)={intLen}\nuse(50)={this._inputBuffer}"];
+setsNode_36 [label="def(36)={outPtr}\nuse(36)={this._textBuffer,this._inputPtr,intLen}"];
+setsNode_7 [label="def(7)={fractLen}"];
+setsNode_21 [label="use(21)={this,outPtr}"];
+setsNode_52 [label="def(52)={this._inputPtr,c}\nuse(52)={this,outPtr,c}"];
+setsNode_1 [label="def(1)={intLen}"];
+setsNode_12 [label="def(12)={c}\nuse(12)={this,outPtr,c}"];
+setsNode_55 [label="def(55)={outBuf,outPtr}\nuse(55)={this,this._inputEnd}"];
+setsNode_57 [label="def(57)={this._inputPtr}\nuse(57)={this,outPtr}"];
+setsNode_30 [label="def(30)={this._inputPtr}\nuse(30)={this,outPtr}"];
+setsNode_33 [label="def(33)={this._inputPtr}\nuse(33)={this,outPtr}"];
+setsNode_4 [label="def(4)={eof}"];
+setsNode_54 [label="def(54)={c,eof}"];
+setsNode_31 [label="def(31)={outBuf,outPtr}\nuse(31)={this,this._inputEnd}"];
+setsNode_42 [label="def(42)={fractLen}\nuse(42)={fractLen}"];
+setsNode_14 [label="def(14)={outPtr}\nuse(14)={this._textBuffer,this._inputPtr,intLen}"];
+setsNode_26 [label="def(26)={this._inputPtr,c}\nuse(26)={this,outPtr,c}"];
+setsNode_47 [label="def(47)={eof}"];
+setsNode_56 [label="def(56)={c}\nuse(56)={this}"];
+setsNode_0 [label="def(0)={this,negative,this._textBuffer,this._inputEnd,this._inputPtr,this._inputBuffer,outBuf,outPtr}"];
+setsNode_20 [label="use(20)={this,negative,this._inputEnd,this._inputPtr,this._inputBuffer,fractLen,expLen}"];
+setsNode_10 [label="def(10)={outPtr}\nuse(10)={this._textBuffer,this._inputPtr,intLen}"];
+setsNode_34 [label="def(34)={outBuf,outPtr}\nuse(34)={this,this._inputEnd}"];
+setsNode_48 [label="use(48)={this,intLen}"];
+setsNode_29 [label="def(29)={outBuf,outPtr}\nuse(29)={this,this._inputEnd}"];
+setsNode_43 [label="def(43)={outPtr}\nuse(43)={this._textBuffer,this._inputPtr,intLen}"];
+setsNode_8 [label="def(8)={expLen}"];
+setsNode_16 [label="def(16)={c}\nuse(16)={this,outPtr,c}"];
+setsNode_22 [label="use(22)={this,intLen}"];
+setsNode_25 [label="def(25)={outPtr}\nuse(25)={this._textBuffer,this._inputPtr,intLen}"];
+setsNode_38 [label="def(38)={this._inputPtr,c}\nuse(38)={this,outPtr,c}"];
+setsNode_44 [label="def(44)={outBuf,outPtr}\nuse(44)={this,this._inputEnd}"];
+setsNode_3 [label="def(3)={c}\nuse(3)={this,outPtr,c}"];
+}
+{rank = same; 51 ;  setsNode_51}
+{rank = same; 40 ;  setsNode_40}
+{rank = same; 24 ;  setsNode_24}
+{rank = same; 28 ;  setsNode_28}
+{rank = same; 58 ;  setsNode_58}
+{rank = same; 50 ;  setsNode_50}
+{rank = same; 36 ;  setsNode_36}
+{rank = same; 7 ;  setsNode_7}
+{rank = same; 21 ;  setsNode_21}
+{rank = same; 52 ;  setsNode_52}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 12 ;  setsNode_12}
+{rank = same; 55 ;  setsNode_55}
+{rank = same; 57 ;  setsNode_57}
+{rank = same; 30 ;  setsNode_30}
+{rank = same; 33 ;  setsNode_33}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 54 ;  setsNode_54}
+{rank = same; 31 ;  setsNode_31}
+{rank = same; 42 ;  setsNode_42}
+{rank = same; 14 ;  setsNode_14}
+{rank = same; 26 ;  setsNode_26}
+{rank = same; 47 ;  setsNode_47}
+{rank = same; 56 ;  setsNode_56}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 20 ;  setsNode_20}
+{rank = same; 10 ;  setsNode_10}
+{rank = same; 34 ;  setsNode_34}
+{rank = same; 48 ;  setsNode_48}
+{rank = same; 29 ;  setsNode_29}
+{rank = same; 43 ;  setsNode_43}
+{rank = same; 8 ;  setsNode_8}
+{rank = same; 16 ;  setsNode_16}
+{rank = same; 22 ;  setsNode_22}
+{rank = same; 25 ;  setsNode_25}
+{rank = same; 38 ;  setsNode_38}
+{rank = same; 44 ;  setsNode_44}
+{rank = same; 3 ;  setsNode_3}
+41 -> 45[label="use(41,45)={intLen}",fontsize=14];41 -> 42[label="use(41,42)={intLen}",fontsize=14];
+51 -> 53[label="use(51,53)={this,outBuf,outPtr}",fontsize=14];51 -> 52[label="use(51,52)={this,outBuf,outPtr}",fontsize=14];
+40 -> 8;
+15 -> 16;
+24 -> 29[label="use(24,29)={this._textBuffer,this._inputPtr}",fontsize=14];24 -> 25[label="use(24,25)={this._textBuffer,this._inputPtr}",fontsize=14];
+28 -> 18;
+58 -> 1;
+45 -> 39;
+50 -> 55[label="use(50,55)={this._textBuffer,this._inputPtr}",fontsize=14];50 -> 51[label="use(50,51)={this._textBuffer,this._inputPtr}",fontsize=14];
+9 -> 34[label="use(9,34)={this._textBuffer,this._inputPtr}",fontsize=14];9 -> 10[label="use(9,10)={this._textBuffer,this._inputPtr}",fontsize=14];
+37 -> 46[label="use(37,46)={this,outBuf,outPtr}",fontsize=14];37 -> 38[label="use(37,38)={this,outBuf,outPtr}",fontsize=14];
+36 -> 37;
+7 -> 36[label="use(7,36)={intLen}",fontsize=14];7 -> 8[label="use(7,8)={intLen}",fontsize=14];
+21 -> 20;
+52 -> 5;
+1 -> 57[label="use(1,57)={this,outBuf,outPtr}",fontsize=14];1 -> 2[label="use(1,2)={this,outBuf,outPtr}",fontsize=14];
+13 -> 31[label="use(13,31)={this._textBuffer,this._inputPtr}",fontsize=14];13 -> 14[label="use(13,14)={this._textBuffer,this._inputPtr}",fontsize=14];
+12 -> 32[label="use(12,32)={intLen}",fontsize=14];12 -> 13[label="use(12,13)={intLen}",fontsize=14];
+2 -> 3;
+55 -> 51;
+57 -> 3;
+6 -> 48[label="use(6,48)={this._inputBuffer}",fontsize=14];6 -> 7[label="use(6,7)={this._inputBuffer}",fontsize=14];
+30 -> 16;
+18 -> 22[label="use(18,22)={expLen}",fontsize=14];18 -> 19[label="use(18,19)={expLen}",fontsize=14];
+27 -> 28[label="use(27,28)={this}",fontsize=14];27 -> 26[label="use(27,26)={this}",fontsize=14];
+33 -> 12;
+49 -> 50[label="use(49,50)={intLen}",fontsize=14];49 -> 6[label="use(49,6)={intLen}",fontsize=14];
+53 -> 54[label="use(53,54)={this}",fontsize=14];53 -> 52[label="use(53,52)={this}",fontsize=14];
+4 -> 5;
+54 -> 6;
+31 -> 14;
+19 -> 21[label="use(19,21)={eof}",fontsize=14];19 -> 20[label="use(19,20)={eof}",fontsize=14];
+42 -> 44[label="use(42,44)={this._textBuffer,this._inputPtr}",fontsize=14];42 -> 43[label="use(42,43)={this._textBuffer,this._inputPtr}",fontsize=14];
+14 -> 30[label="use(14,30)={this,outBuf,outPtr}",fontsize=14];14 -> 15[label="use(14,15)={this,outBuf,outPtr}",fontsize=14];
+26 -> 17;
+32 -> 13[label="use(32,13)={intLen}",fontsize=14];32 -> 17[label="use(32,17)={intLen}",fontsize=14];
+47 -> 39;
+5 -> 49[label="use(5,49)={intLen}",fontsize=14];5 -> 6[label="use(5,6)={intLen}",fontsize=14];
+46 -> 47[label="use(46,47)={this}",fontsize=14];46 -> 38[label="use(46,38)={this}",fontsize=14];
+11 -> 12;
+39 -> 40[label="use(39,40)={fractLen}",fontsize=14];39 -> 8[label="use(39,8)={fractLen}",fontsize=14];
+56 -> 4;
+0 -> 58[label="use(0,58)={negative}",fontsize=14];0 -> 1[label="use(0,1)={negative}",fontsize=14];
+23 -> 24[label="use(23,24)={intLen}",fontsize=14];23 -> 18[label="use(23,18)={intLen}",fontsize=14];
+20 -> 59;
+10 -> 33[label="use(10,33)={this,outBuf,outPtr}",fontsize=14];10 -> 11[label="use(10,11)={this,outBuf,outPtr}",fontsize=14];
+34 -> 10;
+48 -> 7;
+35 -> 9[label="use(35,9)={intLen}",fontsize=14];35 -> 19[label="use(35,19)={intLen}",fontsize=14];
+17 -> 23[label="use(17,23)={intLen}",fontsize=14];17 -> 18[label="use(17,18)={intLen}",fontsize=14];
+29 -> 25;
+43 -> 37;
+8 -> 35[label="use(8,35)={intLen}",fontsize=14];8 -> 9[label="use(8,9)={intLen}",fontsize=14];
+16 -> 17;
+22 -> 19;
+25 -> 27[label="use(25,27)={this,outBuf,outPtr}",fontsize=14];25 -> 26[label="use(25,26)={this,outBuf,outPtr}",fontsize=14];
+38 -> 41[label="use(38,41)={intLen}",fontsize=14];38 -> 39[label="use(38,39)={intLen}",fontsize=14];
+44 -> 43;
+3 -> 56[label="use(3,56)={intLen}",fontsize=14];3 -> 4[label="use(3,4)={intLen}",fontsize=14];
+}

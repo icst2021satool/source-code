@@ -1,0 +1,11 @@
+digraph { 
+39 [shape=box,style=filled,color=".0 .0 .83",label="(0,(2,1), canonicalize)"];
+40 [shape=box,style=filled,color=".0 .0 .83",label="(0,(0,1), enc)\n(0,(0,1), UTF8)"];
+41 [label="(0,1, this._context)\n(0,1, intern)\n(0,1, canonicalize)\n(0,1, rootCharSymbols)\n(0,1, codec)\n(0,1, parserFeatures)\n(0,1, this)"];
+42 [shape=box,style=filled,color=".0 .0 .83",label="(0,3, this._bufferRecyclable)\n(0,3, this._inputEnd)\n(0,3, this._inputPtr)\n(0,3, this._inputBuffer)\n(0,3, this._in)\n(0,3, this._context)\n(0,3, intern)\n(0,3, canonicalize)\n(0,(2,3), canonicalize)\n(0,3, rootByteSymbols)\n(0,3, codec)\n(0,3, parserFeatures)\n(0,3, this)"];
+43 [label="(0,(0,2), enc)\n(0,(0,2), UTF8)"];
+41 -> 39;
+41 -> 40;
+43 -> 39;
+43 -> 42;
+}

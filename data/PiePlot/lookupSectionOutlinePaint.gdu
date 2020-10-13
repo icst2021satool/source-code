@@ -1,0 +1,46 @@
+digraph lookupSectionOutlinePaint {
+9 [label="9\n1195-1195"]
+4 [label="4\n1212-1212"]
+11 [label="11"]
+1 [label="1\n1193-1194"]
+6 [label="6\n1206-1206"]
+10 [label="10\n1190-1190"]
+0 [label="0\n1187-1189"]
+8 [label="8\n1202-1203"]
+7 [label="7\n1208-1208"]
+3 [label="3\n1210-1210"]
+5 [label="5\n1200-1201"]
+2 [label="2\n1199-1199"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_9 [label="use(9)={WHITE}"];
+setsNode_4 [label="use(4)={WHITE}"];
+setsNode_1 [label="def(1)={result}\nuse(1)={this,key,this.baseSectionOutlinePaint}"];
+setsNode_6 [label="def(6)={result}\nuse(6)={this,ds}"];
+setsNode_10 [label="use(10)={this.sectionOutlinePaintMap}"];
+setsNode_0 [label="def(0)={this,key,selected,autoPopulate,WHITE,this.sectionOutlinePaintMap,this.baseSectionOutlinePaint}"];
+setsNode_8 [label="def(8)={result}\nuse(8)={this,key,this.baseSectionOutlinePaint,result}"];
+setsNode_3 [label="def(3)={result}\nuse(3)={this,ds}"];
+setsNode_5 [label="def(5)={ds}\nuse(5)={this}"];
+}
+{rank = same; 9 ;  setsNode_9}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 10 ;  setsNode_10}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 8 ;  setsNode_8}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 5 ;  setsNode_5}
+9 -> 11;
+4 -> 11;
+1 -> 9[label="use(1,9)={WHITE}",fontsize=14];1 -> 2[label="use(1,2)={WHITE}",fontsize=14];
+6 -> 7;
+10 -> 11;
+0 -> 10[label="use(0,10)={selected}",fontsize=14];0 -> 1[label="use(0,1)={selected}",fontsize=14];
+8 -> 7;
+7 -> 4;
+3 -> 4;
+5 -> 8[label="use(5,8)={result}",fontsize=14];5 -> 6[label="use(5,6)={result}",fontsize=14];
+2 -> 5[label="use(2,5)={autoPopulate}",fontsize=14];2 -> 3[label="use(2,3)={autoPopulate}",fontsize=14];
+}

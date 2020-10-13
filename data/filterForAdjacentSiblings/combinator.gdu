@@ -1,0 +1,40 @@
+digraph combinator {
+4 [label="4\n138-138"]
+5 [label="5\n136-136"]
+2 [label="2\n133-133"]
+3 [label="3\n135-135"]
+8 [label="8\n132-132"]
+1 [label="1\n131-131"]
+6 [label="6\n140-141"]
+7 [label="7\n134-134"]
+9 [label="9\n130-130"]
+0 [label="0\n125-129"]
+10 [label="10"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_4 [label="use(4)={combinator}"];
+setsNode_5 [label="def(5)={output}\nuse(5)={this,this.root}"];
+setsNode_8 [label="def(8)={output}\nuse(8)={this,this.root}"];
+setsNode_6 [label="use(6)={this,output}"];
+setsNode_7 [label="def(7)={output}\nuse(7)={this,this.root}"];
+setsNode_9 [label="def(9)={output}\nuse(9)={this,this.root}"];
+setsNode_0 [label="def(0)={this,combinator,this.elements,this.root,subQuery}"];
+}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 8 ;  setsNode_8}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 7 ;  setsNode_7}
+{rank = same; 9 ;  setsNode_9}
+{rank = same; 0 ;  setsNode_0}
+4 -> 10;
+5 -> 6;
+2 -> 7[label="use(2,7)={combinator}",fontsize=14];2 -> 3[label="use(2,3)={combinator}",fontsize=14];
+3 -> 5[label="use(3,5)={combinator}",fontsize=14];3 -> 4[label="use(3,4)={combinator}",fontsize=14];
+8 -> 6;
+1 -> 8[label="use(1,8)={combinator}",fontsize=14];1 -> 2[label="use(1,2)={combinator}",fontsize=14];
+6 -> 10;
+7 -> 6;
+9 -> 6;
+0 -> 9[label="use(0,9)={combinator}",fontsize=14];0 -> 1[label="use(0,1)={combinator}",fontsize=14];
+}

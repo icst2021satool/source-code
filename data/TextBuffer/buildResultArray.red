@@ -1,0 +1,33 @@
+digraph { 
+1226 [shape=box,style=filled,color=".0 .0 .83",label="(0,14, this._resultString)\n(0,(0,14), this._resultString)\n(0,14, this)\n(0,(0,14), this)"];
+1227 [shape=box,style=filled,color=".0 .0 .83",label="(10,11, start)\n(10,(10,11), start)\n(9,11, len)\n(0,11, this._inputBuffer)\n(0,11, this)"];
+1228 [shape=box,style=filled,color=".0 .0 .83",label="(10,(10,12), start)\n(9,12, len)\n(0,12, this._inputBuffer)\n(0,12, this)"];
+1229 [label="(9,(9,10), len)\n(0,10, this._inputStart)\n(0,10, this)"];
+1230 [shape=box,style=filled,color=".0 .0 .83",label="(9,(9,13), len)\n(0,13, NO_CHARS)"];
+1231 [label="(0,9, this._inputLen)\n(0,(1,9), this._inputStart)\n(0,9, this)\n(0,(1,9), this)"];
+1232 [shape=box,style=filled,color=".0 .0 .83",label="(7,7, i)\n(7,(6,7), i)\n(7,7, offset)"];
+1233 [label="(7,(6,4), i)\n(7,4, offset)\n(5,(6,7), len)\n(5,7, i)\n(5,(6,7), i)\n(3,7, result)\n(3,7, offset)\n(0,7, this._segments)\n(0,7, this)"];
+1234 [shape=box,style=filled,color=".0 .0 .83",label="(5,(6,4), i)"];
+1235 [label="(5,(6,4), len)\n(0,5, this._segments)\n(0,(3,5), this._segments)\n(0,5, this)\n(0,(3,5), this)"];
+1236 [shape=box,style=filled,color=".0 .0 .83",label="(0,(3,4), this._segments)\n(0,(3,4), this)"];
+1237 [label="(3,4, offset)"];
+1238 [label="(3,4, result)\n(2,3, size)\n(2,(2,3), size)\n(0,4, this._currentSize)\n(0,4, this._currentSegment)\n(0,4, this)\n(0,3, this)"];
+1239 [shape=box,style=filled,color=".0 .0 .83",label="(2,(2,8), size)\n(0,8, NO_CHARS)"];
+1240 [label="(0,(1,2), this._inputStart)\n(0,2, this)\n(0,(1,2), this)"];
+1241 [label="(0,(0,1), this._resultString)\n(0,(0,1), this)"];
+1229 -> 1227;
+1229 -> 1228;
+1231 -> 1229;
+1231 -> 1230;
+1233 -> 1232;
+1235 -> 1233;
+1235 -> 1234;
+1237 -> 1234;
+1237 -> 1236;
+1238 -> 1235;
+1238 -> 1237;
+1240 -> 1238;
+1240 -> 1239;
+1241 -> 1231;
+1241 -> 1240;
+}

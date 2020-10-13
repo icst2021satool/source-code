@@ -1,0 +1,32 @@
+digraph getMaximumExplodePercent {
+0 [label="0\n1649-1649"]
+1 [label="1\n1652-1653"]
+8 [label="8"]
+2 [label="2\n1654-1654"]
+4 [label="4\n1655-1657"]
+7 [label="7\n1650-1650"]
+5 [label="5\n1660-1660"]
+3 [label="3\n1661-1661"]
+6 [label="6\n1658-1658"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_0 [label="def(0)={this,this.dataset,this.explodePercentages}"];
+setsNode_1 [label="def(1)={result,iterator}\nuse(1)={this,this.dataset}"];
+setsNode_4 [label="def(4)={explode}\nuse(4)={this,result}"];
+setsNode_3 [label="use(3)={this.explodePercentages}"];
+setsNode_6 [label="def(6)={result}\nuse(6)={this.explodePercentages,explode}"];
+}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 6 ;  setsNode_6}
+0 -> 7[label="use(0,7)={this,this.dataset}",fontsize=14];0 -> 1[label="use(0,1)={this,this.dataset}",fontsize=14];
+1 -> 2;
+2 -> 4[label="use(2,4)={result}",fontsize=14];2 -> 3[label="use(2,3)={result}",fontsize=14];
+4 -> 6[label="use(4,6)={explode}",fontsize=14];4 -> 5[label="use(4,5)={explode}",fontsize=14];
+7 -> 8;
+5 -> 2;
+3 -> 8;
+6 -> 5;
+}

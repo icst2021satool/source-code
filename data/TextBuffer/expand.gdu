@@ -1,0 +1,26 @@
+digraph expand {
+5 [label="5"]
+3 [label="3\n672-672"]
+2 [label="2\n674-676"]
+1 [label="1\n664-671"]
+4 [label="4\n662-662"]
+0 [label="0\n661-661"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_3 [label="def(3)={sizeAddition}\nuse(3)={minNewSegmentSize}"];
+setsNode_2 [label="use(2)={this,null,null}"];
+setsNode_1 [label="def(1)={oldLen,sizeAddition}\nuse(1)={this,this._segments,this._segmentSize,sizeAddition}"];
+setsNode_4 [label="def(4)={this._segments}\nuse(4)={this}"];
+setsNode_0 [label="def(0)={this,minNewSegmentSize,this._segments,this._currentSegment,this._segmentSize}"];
+}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 0 ;  setsNode_0}
+3 -> 2;
+2 -> 5;
+1 -> 3[label="use(1,3)={minNewSegmentSize,null}",fontsize=14];1 -> 2[label="use(1,2)={minNewSegmentSize,null}",fontsize=14];
+4 -> 1;
+0 -> 4[label="use(0,4)={this,this._segments}",fontsize=14];0 -> 1[label="use(0,1)={this,this._segments}",fontsize=14];
+}

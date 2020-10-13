@@ -1,0 +1,30 @@
+digraph commentLinesAfter {
+5 [label="5\n498-498"]
+6 [label="6\n490-490"]
+7 [label="7\n486-486"]
+3 [label="3\n499-499"]
+2 [label="2\n495-498"]
+1 [label="1\n489-489"]
+4 [label="4\n502-502"]
+0 [label="0\n480-485"]
+8 [label="8"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_7 [label="def(7)={endDelimiter}\nuse(7)={this,content,DEFAULT_COMMENT}"];
+setsNode_3 [label="use(3)={this,DEFAULT_COMMENT,endDelimiter,null,null}"];
+setsNode_2 [label="def(2)={startDelimiter}\nuse(2)={this,content,endDelimiter}"];
+setsNode_0 [label="def(0)={this,content,this.m_Self,DEFAULT_COMMENT,offset,endDelimiter}"];
+}
+{rank = same; 7 ;  setsNode_7}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 0 ;  setsNode_0}
+5 -> 3[label="use(5,3)={DEFAULT_COMMENT,startDelimiter}",fontsize=14];5 -> 4[label="use(5,4)={DEFAULT_COMMENT,startDelimiter}",fontsize=14];
+6 -> 8;
+7 -> 1;
+3 -> 4;
+2 -> 5[label="use(2,5)={startDelimiter}",fontsize=14];2 -> 3[label="use(2,3)={startDelimiter}",fontsize=14];
+1 -> 6[label="use(1,6)={endDelimiter}",fontsize=14];1 -> 2[label="use(1,2)={endDelimiter}",fontsize=14];
+4 -> 8;
+0 -> 7[label="use(0,7)={this}",fontsize=14];0 -> 1[label="use(0,1)={this}",fontsize=14];
+}

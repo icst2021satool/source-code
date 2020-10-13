@@ -1,0 +1,26 @@
+digraph <init> {
+6 [label="6\n126-126"]
+2 [label="2\n126-128"]
+3 [label="3\n128-128"]
+7 [label="7"]
+1 [label="1\n126-126"]
+0 [label="0\n125-126"]
+5 [label="5\n128-128"]
+4 [label="4\n128-130"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_2 [label="use(2)={this,prototypeStatistics}"];
+setsNode_0 [label="def(0)={this,prototypeStatistics,initialStatistics}"];
+setsNode_4 [label="use(4)={this,initialStatistics}"];
+}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 4 ;  setsNode_4}
+6 -> 2;
+2 -> 5[label="use(2,5)={initialStatistics}",fontsize=14];2 -> 3[label="use(2,3)={initialStatistics}",fontsize=14];
+3 -> 4;
+1 -> 2;
+0 -> 6[label="use(0,6)={prototypeStatistics}",fontsize=14];0 -> 1[label="use(0,1)={prototypeStatistics}",fontsize=14];
+5 -> 4;
+4 -> 7;
+}

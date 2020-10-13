@@ -1,0 +1,18 @@
+digraph nextByte {
+3 [label="3"]
+0 [label="0\n2990-2990"]
+1 [label="1\n2993-2993"]
+2 [label="2\n2991-2991"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_0 [label="def(0)={this,this._inputEnd,this._inputPtr,this._inputBuffer}"];
+setsNode_1 [label="use(1)={this,this._inputPtr,this._inputBuffer}"];
+setsNode_2 [label="use(2)={this}"];
+}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 2 ;  setsNode_2}
+0 -> 2[label="use(0,2)={this,this._inputEnd,this._inputPtr}",fontsize=14];0 -> 1[label="use(0,1)={this,this._inputEnd,this._inputPtr}",fontsize=14];
+1 -> 3;
+2 -> 1;
+}

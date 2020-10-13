@@ -1,0 +1,16 @@
+digraph setBaseSectionPaint {
+0 [label="0\n1073-1073"]
+2 [label="2\n1074-1074"]
+3 [label="3"]
+1 [label="1\n1076-1078"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_0 [label="def(0)={this,paint}"];
+setsNode_1 [label="use(1)={this,paint}"];
+}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 1 ;  setsNode_1}
+0 -> 2[label="use(0,2)={paint}",fontsize=14];0 -> 1[label="use(0,1)={paint}",fontsize=14];
+2 -> 3;
+1 -> 3;
+}

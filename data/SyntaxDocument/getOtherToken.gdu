@@ -1,0 +1,32 @@
+digraph getOtherToken {
+6 [label="6\n758-758"]
+5 [label="5\n755-755"]
+7 [label="7\n756-756"]
+0 [label="0\n752-752"]
+8 [label="8"]
+2 [label="2\n761-765"]
+4 [label="4\n766-766"]
+3 [label="3\n770-770"]
+1 [label="1\n754-754"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_6 [label="def(6)={endOfToken}\nuse(6)={this.m_Self}"];
+setsNode_0 [label="def(0)={this,content,startOffset,endOffset,this.m_Self,endOfToken}"];
+setsNode_2 [label="def(2)={attr}\nuse(2)={this,content,startOffset,this.m_Self}"];
+setsNode_4 [label="use(4)={this,startOffset,this.m_Self,attr,null}"];
+setsNode_3 [label="use(3)={this.m_Self}"];
+}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 3 ;  setsNode_3}
+6 -> 1;
+5 -> 7[label="use(5,7)={this,content,this.m_Self}",fontsize=14];5 -> 6[label="use(5,6)={this,content,this.m_Self}",fontsize=14];
+7 -> 2;
+0 -> 1;
+2 -> 4[label="use(2,4)={attr}",fontsize=14];2 -> 3[label="use(2,3)={attr}",fontsize=14];
+4 -> 3;
+3 -> 8;
+1 -> 5[label="use(1,5)={endOffset,this.m_Self}",fontsize=14];1 -> 2[label="use(1,2)={endOffset,this.m_Self}",fontsize=14];
+}

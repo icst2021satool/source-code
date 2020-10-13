@@ -1,0 +1,26 @@
+digraph setAttributeFont {
+1 [label="1\n231-231"]
+6 [label="6"]
+0 [label="0\n227-229"]
+3 [label="3\n236-236"]
+5 [label="5\n230-230"]
+2 [label="2\n234-234"]
+4 [label="4\n232-232"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_0 [label="def(0)={attr,Comment,DEFAULT_COMMENT,Quote,DEFAULT_STRING,DEFAULT_NORMAL,f}"];
+setsNode_5 [label="use(5)={DEFAULT_NORMAL,null}"];
+setsNode_2 [label="use(2)={DEFAULT_NORMAL,null}"];
+setsNode_4 [label="use(4)={DEFAULT_NORMAL,null}"];
+}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 4 ;  setsNode_4}
+1 -> 4[label="use(1,4)={Comment,null}",fontsize=14];1 -> 2[label="use(1,2)={Comment,null}",fontsize=14];
+0 -> 5[label="use(0,5)={Comment,f}",fontsize=14];0 -> 1[label="use(0,1)={Comment,f}",fontsize=14];
+3 -> 6;
+5 -> 3;
+2 -> 3;
+4 -> 3;
+}

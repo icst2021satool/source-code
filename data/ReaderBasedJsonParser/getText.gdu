@@ -1,0 +1,24 @@
+digraph getText {
+2 [label="2\n203-203"]
+0 [label="0\n201-202"]
+1 [label="1\n209-209"]
+3 [label="3\n207-207"]
+4 [label="4\n204-205"]
+5 [label="5"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_0 [label="def(0)={this,VALUE_STRING,this._tokenIncomplete,this._textBuffer,t}"];
+setsNode_1 [label="use(1)={this,VALUE_STRING}"];
+setsNode_3 [label="use(3)={this,null}"];
+setsNode_4 [label="use(4)={this}"];
+}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 4 ;  setsNode_4}
+2 -> 4[label="use(2,4)={this,t}",fontsize=14];2 -> 3[label="use(2,3)={this,t}",fontsize=14];
+0 -> 2[label="use(0,2)={VALUE_STRING,this._textBuffer}",fontsize=14];0 -> 1[label="use(0,1)={VALUE_STRING,this._textBuffer}",fontsize=14];
+1 -> 5;
+3 -> 5;
+4 -> 3;
+}

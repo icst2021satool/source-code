@@ -1,0 +1,42 @@
+digraph _skipComment {
+10 [label="10\n2603-2603"]
+1 [label="1\n2606-2606"]
+4 [label="4\n2615-2615"]
+7 [label="7\n2611-2611"]
+8 [label="8\n2606-2606"]
+11 [label="11"]
+9 [label="9\n2607-2607"]
+5 [label="5\n2617-2617"]
+6 [label="6\n2613-2613"]
+0 [label="0\n2602-2602"]
+2 [label="2\n2609-2610"]
+3 [label="3\n2612-2612"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_10 [label="use(10)={this}"];
+setsNode_4 [label="use(4)={this,this._inputBuffer}"];
+setsNode_7 [label="use(7)={this}"];
+setsNode_9 [label="use(9)={this}"];
+setsNode_6 [label="use(6)={this}"];
+setsNode_0 [label="def(0)={this,ALLOW_COMMENTS,this._inputEnd,this._inputPtr,this._inputBuffer}"];
+setsNode_2 [label="def(2)={c}\nuse(2)={this,this._inputPtr,c}"];
+}
+{rank = same; 10 ;  setsNode_10}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 7 ;  setsNode_7}
+{rank = same; 9 ;  setsNode_9}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 2 ;  setsNode_2}
+10 -> 1;
+1 -> 8[label="use(1,8)={this,this._inputEnd,this._inputPtr}",fontsize=14];1 -> 2[label="use(1,2)={this,this._inputEnd,this._inputPtr}",fontsize=14];
+4 -> 5;
+7 -> 5;
+8 -> 9[label="use(8,9)={this}",fontsize=14];8 -> 2[label="use(8,2)={this}",fontsize=14];
+9 -> 2;
+5 -> 11;
+6 -> 5;
+0 -> 10[label="use(0,10)={this,ALLOW_COMMENTS}",fontsize=14];0 -> 1[label="use(0,1)={this,ALLOW_COMMENTS}",fontsize=14];
+2 -> 7[label="use(2,7)={this._inputBuffer}",fontsize=14];2 -> 3[label="use(2,3)={this._inputBuffer}",fontsize=14];
+3 -> 6[label="use(3,6)={this._inputBuffer}",fontsize=14];3 -> 4[label="use(3,4)={this._inputBuffer}",fontsize=14];
+}

@@ -1,0 +1,26 @@
+digraph shouldContract {
+9 [label="9"]
+2 [label="2\n1085-1085"]
+1 [label="1\n1085-1085"]
+3 [label="3\n1085-1085"]
+6 [label="6\n1083-1083"]
+7 [label="7\n1083-1083"]
+4 [label="4\n1085-1085"]
+8 [label="8\n1083-1083"]
+0 [label="0\n1082-1082"]
+5 [label="5\n1083-1083"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_0 [label="def(0)={this,MULTIPLICATIVE,this.expansionMode,this.internalArray,this.numElements,this.contractionCriterion}"];
+}
+{rank = same; 0 ;  setsNode_0}
+2 -> 3;
+1 -> 4[label="use(1,4)={this,this.internalArray,this.numElements,this.contractionCriterion}",fontsize=14];1 -> 2[label="use(1,2)={this,this.internalArray,this.numElements,this.contractionCriterion}",fontsize=14];
+3 -> 9;
+6 -> 7;
+7 -> 9;
+4 -> 3;
+8 -> 7;
+0 -> 5[label="use(0,5)={this,MULTIPLICATIVE,this.expansionMode}",fontsize=14];0 -> 1[label="use(0,1)={this,MULTIPLICATIVE,this.expansionMode}",fontsize=14];
+5 -> 8[label="use(5,8)={this,this.internalArray,this.numElements,this.contractionCriterion}",fontsize=14];5 -> 6[label="use(5,6)={this,this.internalArray,this.numElements,this.contractionCriterion}",fontsize=14];
+}

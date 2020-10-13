@@ -1,0 +1,24 @@
+digraph setInteriorGap {
+5 [label="5\n781-782"]
+0 [label="0\n775-775"]
+1 [label="1\n776-776"]
+3 [label="3\n780-780"]
+2 [label="2\n775-775"]
+4 [label="4\n785-785"]
+6 [label="6"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_5 [label="use(5)={this,percent}"];
+setsNode_0 [label="def(0)={this,percent,this.interiorGap}"];
+setsNode_1 [label="use(1)={percent}"];
+}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 1 ;  setsNode_1}
+5 -> 4;
+0 -> 2[label="use(0,2)={percent}",fontsize=14];0 -> 1[label="use(0,1)={percent}",fontsize=14];
+1 -> 6;
+3 -> 5[label="use(3,5)={this,percent,this.interiorGap}",fontsize=14];3 -> 4[label="use(3,4)={this,percent,this.interiorGap}",fontsize=14];
+2 -> 1[label="use(2,1)={percent}",fontsize=14];2 -> 3[label="use(2,3)={percent}",fontsize=14];
+4 -> 6;
+}

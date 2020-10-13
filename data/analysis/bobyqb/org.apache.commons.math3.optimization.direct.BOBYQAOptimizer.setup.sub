@@ -1,0 +1,99 @@
+Subsumption Graph: 
+(0,(1,3), this) -> 
+	(0,(1,3), this) (0,(3,2), this) (0,(3,4), this) (0,4, this) (0,7, this) (0,8, this) (0,9, this) (0,9, lowerBound) (0,9, upperBound) (0,(1,3), this.numberOfInterpolationPoints) (0,(3,2), this.numberOfInterpolationPoints) (0,(3,4), this.numberOfInterpolationPoints) (0,7, this.numberOfInterpolationPoints) (0,4, this.initialTrustRegionRadius) (0,4, dimension) (0,(5,9), dimension) (0,(5,6), dimension) (0,7, dimension) (1,(1,3), nPointsInterval) (1,(3,2), nPointsInterval) (1,(3,4), nPointsInterval) (4,9, this.boundDifference) (4,(6,8), requiredMinDiff) (4,(6,7), requiredMinDiff) (4,(6,8), minDiff) (4,(6,7), minDiff) (4,8, minDiff) (4,9, minDiff) (4,(5,9), i) (4,(5,6), i) (4,9, i) (9,(6,8), minDiff) (9,(6,7), minDiff) (9,8, minDiff) (9,9, minDiff) (9,(5,9), i) (9,(5,6), i) (9,9, i) 
+(0,(1,2), this) -> 
+	(0,(1,2), this) (0,(1,2), this.numberOfInterpolationPoints) (1,(1,2), nPointsInterval) 
+(0,2, this) -> 
+	(0,(1,2), this) (0,2, this) (0,(3,2), this) (0,(1,2), this.numberOfInterpolationPoints) (0,2, this.numberOfInterpolationPoints) (0,(3,2), this.numberOfInterpolationPoints) (0,2, NUMBER_OF_INTERPOLATION_POINTS) (1,(1,2), nPointsInterval) (1,2, nPointsInterval) (1,(3,2), nPointsInterval) 
+(0,(3,2), this) -> 
+	(0,(3,2), this) (0,(3,2), this.numberOfInterpolationPoints) (1,(3,2), nPointsInterval) 
+(0,(3,4), this) -> 
+	(0,(3,4), this) (0,4, this) (0,7, this) (0,8, this) (0,9, this) (0,9, lowerBound) (0,9, upperBound) (0,(3,4), this.numberOfInterpolationPoints) (0,7, this.numberOfInterpolationPoints) (0,4, this.initialTrustRegionRadius) (0,4, dimension) (0,(5,9), dimension) (0,(5,6), dimension) (0,7, dimension) (1,(3,4), nPointsInterval) (4,9, this.boundDifference) (4,(6,8), requiredMinDiff) (4,(6,7), requiredMinDiff) (4,(6,8), minDiff) (4,(6,7), minDiff) (4,8, minDiff) (4,9, minDiff) (4,(5,9), i) (4,(5,6), i) (4,9, i) (9,(6,8), minDiff) (9,(6,7), minDiff) (9,8, minDiff) (9,9, minDiff) (9,(5,9), i) (9,(5,6), i) (9,9, i) 
+(0,4, this) -> 
+	(0,(3,4), this) (0,4, this) (0,7, this) (0,8, this) (0,9, this) (0,9, lowerBound) (0,9, upperBound) (0,(3,4), this.numberOfInterpolationPoints) (0,7, this.numberOfInterpolationPoints) (0,4, this.initialTrustRegionRadius) (0,4, dimension) (0,(5,9), dimension) (0,(5,6), dimension) (0,7, dimension) (1,(3,4), nPointsInterval) (4,9, this.boundDifference) (4,(6,8), requiredMinDiff) (4,(6,7), requiredMinDiff) (4,(6,8), minDiff) (4,(6,7), minDiff) (4,8, minDiff) (4,9, minDiff) (4,(5,9), i) (4,(5,6), i) (4,9, i) (9,(6,8), minDiff) (9,(6,7), minDiff) (9,8, minDiff) (9,9, minDiff) (9,(5,9), i) (9,(5,6), i) (9,9, i) 
+(0,7, this) -> 
+	(0,(3,4), this) (0,4, this) (0,7, this) (0,8, this) (0,9, this) (0,9, lowerBound) (0,9, upperBound) (0,(3,4), this.numberOfInterpolationPoints) (0,7, this.numberOfInterpolationPoints) (0,4, this.initialTrustRegionRadius) (0,4, dimension) (0,(5,9), dimension) (0,(5,6), dimension) (0,7, dimension) (1,(3,4), nPointsInterval) (4,9, this.boundDifference) (4,(6,8), requiredMinDiff) (4,(6,7), requiredMinDiff) (4,(6,8), minDiff) (4,(6,7), minDiff) (4,8, minDiff) (4,9, minDiff) (4,(5,9), i) (4,(5,6), i) (4,9, i) (9,(6,8), minDiff) (9,(6,7), minDiff) (9,8, minDiff) (9,9, minDiff) (9,(5,9), i) (9,(5,6), i) (9,9, i) 
+(0,8, this) -> 
+	(0,8, this) (4,(6,8), requiredMinDiff) (4,(6,8), minDiff) (4,8, minDiff) (9,(6,8), minDiff) (9,8, minDiff) 
+(0,9, this) -> 
+	(0,9, this) (0,9, lowerBound) (0,9, upperBound) (0,(5,9), dimension) (4,9, this.boundDifference) (4,9, minDiff) (4,(5,9), i) (4,9, i) (9,(6,8), minDiff) (9,(6,7), minDiff) (9,8, minDiff) (9,9, minDiff) (9,(5,9), i) (9,(5,6), i) (9,9, i) 
+(0,9, lowerBound) -> 
+	(0,9, this) (0,9, lowerBound) (0,9, upperBound) (0,(5,9), dimension) (4,9, this.boundDifference) (4,9, minDiff) (4,(5,9), i) (4,9, i) (9,(6,8), minDiff) (9,(6,7), minDiff) (9,8, minDiff) (9,9, minDiff) (9,(5,9), i) (9,(5,6), i) (9,9, i) 
+(0,9, upperBound) -> 
+	(0,9, this) (0,9, lowerBound) (0,9, upperBound) (0,(5,9), dimension) (4,9, this.boundDifference) (4,9, minDiff) (4,(5,9), i) (4,9, i) (9,(6,8), minDiff) (9,(6,7), minDiff) (9,8, minDiff) (9,9, minDiff) (9,(5,9), i) (9,(5,6), i) (9,9, i) 
+(0,(1,3), this.numberOfInterpolationPoints) -> 
+	(0,(1,3), this) (0,(3,2), this) (0,(3,4), this) (0,4, this) (0,7, this) (0,8, this) (0,9, this) (0,9, lowerBound) (0,9, upperBound) (0,(1,3), this.numberOfInterpolationPoints) (0,(3,2), this.numberOfInterpolationPoints) (0,(3,4), this.numberOfInterpolationPoints) (0,7, this.numberOfInterpolationPoints) (0,4, this.initialTrustRegionRadius) (0,4, dimension) (0,(5,9), dimension) (0,(5,6), dimension) (0,7, dimension) (1,(1,3), nPointsInterval) (1,(3,2), nPointsInterval) (1,(3,4), nPointsInterval) (4,9, this.boundDifference) (4,(6,8), requiredMinDiff) (4,(6,7), requiredMinDiff) (4,(6,8), minDiff) (4,(6,7), minDiff) (4,8, minDiff) (4,9, minDiff) (4,(5,9), i) (4,(5,6), i) (4,9, i) (9,(6,8), minDiff) (9,(6,7), minDiff) (9,8, minDiff) (9,9, minDiff) (9,(5,9), i) (9,(5,6), i) (9,9, i) 
+(0,(1,2), this.numberOfInterpolationPoints) -> 
+	(0,(1,2), this) (0,(1,2), this.numberOfInterpolationPoints) (1,(1,2), nPointsInterval) 
+(0,2, this.numberOfInterpolationPoints) -> 
+	(0,(1,2), this) (0,2, this) (0,(3,2), this) (0,(1,2), this.numberOfInterpolationPoints) (0,2, this.numberOfInterpolationPoints) (0,(3,2), this.numberOfInterpolationPoints) (0,2, NUMBER_OF_INTERPOLATION_POINTS) (1,(1,2), nPointsInterval) (1,2, nPointsInterval) (1,(3,2), nPointsInterval) 
+(0,(3,2), this.numberOfInterpolationPoints) -> 
+	(0,(3,2), this) (0,(3,2), this.numberOfInterpolationPoints) (1,(3,2), nPointsInterval) 
+(0,(3,4), this.numberOfInterpolationPoints) -> 
+	(0,(3,4), this) (0,4, this) (0,7, this) (0,8, this) (0,9, this) (0,9, lowerBound) (0,9, upperBound) (0,(3,4), this.numberOfInterpolationPoints) (0,7, this.numberOfInterpolationPoints) (0,4, this.initialTrustRegionRadius) (0,4, dimension) (0,(5,9), dimension) (0,(5,6), dimension) (0,7, dimension) (1,(3,4), nPointsInterval) (4,9, this.boundDifference) (4,(6,8), requiredMinDiff) (4,(6,7), requiredMinDiff) (4,(6,8), minDiff) (4,(6,7), minDiff) (4,8, minDiff) (4,9, minDiff) (4,(5,9), i) (4,(5,6), i) (4,9, i) (9,(6,8), minDiff) (9,(6,7), minDiff) (9,8, minDiff) (9,9, minDiff) (9,(5,9), i) (9,(5,6), i) (9,9, i) 
+(0,7, this.numberOfInterpolationPoints) -> 
+	(0,(3,4), this) (0,4, this) (0,7, this) (0,8, this) (0,9, this) (0,9, lowerBound) (0,9, upperBound) (0,(3,4), this.numberOfInterpolationPoints) (0,7, this.numberOfInterpolationPoints) (0,4, this.initialTrustRegionRadius) (0,4, dimension) (0,(5,9), dimension) (0,(5,6), dimension) (0,7, dimension) (1,(3,4), nPointsInterval) (4,9, this.boundDifference) (4,(6,8), requiredMinDiff) (4,(6,7), requiredMinDiff) (4,(6,8), minDiff) (4,(6,7), minDiff) (4,8, minDiff) (4,9, minDiff) (4,(5,9), i) (4,(5,6), i) (4,9, i) (9,(6,8), minDiff) (9,(6,7), minDiff) (9,8, minDiff) (9,9, minDiff) (9,(5,9), i) (9,(5,6), i) (9,9, i) 
+(0,2, NUMBER_OF_INTERPOLATION_POINTS) -> 
+	(0,(1,2), this) (0,2, this) (0,(3,2), this) (0,(1,2), this.numberOfInterpolationPoints) (0,2, this.numberOfInterpolationPoints) (0,(3,2), this.numberOfInterpolationPoints) (0,2, NUMBER_OF_INTERPOLATION_POINTS) (1,(1,2), nPointsInterval) (1,2, nPointsInterval) (1,(3,2), nPointsInterval) 
+(0,4, this.initialTrustRegionRadius) -> 
+	(0,(3,4), this) (0,4, this) (0,7, this) (0,8, this) (0,9, this) (0,9, lowerBound) (0,9, upperBound) (0,(3,4), this.numberOfInterpolationPoints) (0,7, this.numberOfInterpolationPoints) (0,4, this.initialTrustRegionRadius) (0,4, dimension) (0,(5,9), dimension) (0,(5,6), dimension) (0,7, dimension) (1,(3,4), nPointsInterval) (4,9, this.boundDifference) (4,(6,8), requiredMinDiff) (4,(6,7), requiredMinDiff) (4,(6,8), minDiff) (4,(6,7), minDiff) (4,8, minDiff) (4,9, minDiff) (4,(5,9), i) (4,(5,6), i) (4,9, i) (9,(6,8), minDiff) (9,(6,7), minDiff) (9,8, minDiff) (9,9, minDiff) (9,(5,9), i) (9,(5,6), i) (9,9, i) 
+(0,(0,10), dimension) -> 
+	(0,(0,10), dimension) (0,10, dimension) 
+(0,(0,1), dimension) -> 
+	(0,(1,3), this) (0,(1,2), this) (0,2, this) (0,(3,2), this) (0,(3,4), this) (0,4, this) (0,7, this) (0,8, this) (0,9, this) (0,9, lowerBound) (0,9, upperBound) (0,(1,3), this.numberOfInterpolationPoints) (0,(1,2), this.numberOfInterpolationPoints) (0,2, this.numberOfInterpolationPoints) (0,(3,2), this.numberOfInterpolationPoints) (0,(3,4), this.numberOfInterpolationPoints) (0,7, this.numberOfInterpolationPoints) (0,2, NUMBER_OF_INTERPOLATION_POINTS) (0,4, this.initialTrustRegionRadius) (0,(0,1), dimension) (0,1, dimension) (0,4, dimension) (0,(5,9), dimension) (0,(5,6), dimension) (0,7, dimension) (1,(1,3), nPointsInterval) (1,(1,2), nPointsInterval) (1,2, nPointsInterval) (1,(3,2), nPointsInterval) (1,(3,4), nPointsInterval) (4,9, this.boundDifference) (4,(6,8), requiredMinDiff) (4,(6,7), requiredMinDiff) (4,(6,8), minDiff) (4,(6,7), minDiff) (4,8, minDiff) (4,9, minDiff) (4,(5,9), i) (4,(5,6), i) (4,9, i) (9,(6,8), minDiff) (9,(6,7), minDiff) (9,8, minDiff) (9,9, minDiff) (9,(5,9), i) (9,(5,6), i) (9,9, i) 
+(0,1, dimension) -> 
+	(0,(1,3), this) (0,(1,2), this) (0,2, this) (0,(3,2), this) (0,(3,4), this) (0,4, this) (0,7, this) (0,8, this) (0,9, this) (0,9, lowerBound) (0,9, upperBound) (0,(1,3), this.numberOfInterpolationPoints) (0,(1,2), this.numberOfInterpolationPoints) (0,2, this.numberOfInterpolationPoints) (0,(3,2), this.numberOfInterpolationPoints) (0,(3,4), this.numberOfInterpolationPoints) (0,7, this.numberOfInterpolationPoints) (0,2, NUMBER_OF_INTERPOLATION_POINTS) (0,4, this.initialTrustRegionRadius) (0,(0,1), dimension) (0,1, dimension) (0,4, dimension) (0,(5,9), dimension) (0,(5,6), dimension) (0,7, dimension) (1,(1,3), nPointsInterval) (1,(1,2), nPointsInterval) (1,2, nPointsInterval) (1,(3,2), nPointsInterval) (1,(3,4), nPointsInterval) (4,9, this.boundDifference) (4,(6,8), requiredMinDiff) (4,(6,7), requiredMinDiff) (4,(6,8), minDiff) (4,(6,7), minDiff) (4,8, minDiff) (4,9, minDiff) (4,(5,9), i) (4,(5,6), i) (4,9, i) (9,(6,8), minDiff) (9,(6,7), minDiff) (9,8, minDiff) (9,9, minDiff) (9,(5,9), i) (9,(5,6), i) (9,9, i) 
+(0,4, dimension) -> 
+	(0,(3,4), this) (0,4, this) (0,7, this) (0,8, this) (0,9, this) (0,9, lowerBound) (0,9, upperBound) (0,(3,4), this.numberOfInterpolationPoints) (0,7, this.numberOfInterpolationPoints) (0,4, this.initialTrustRegionRadius) (0,4, dimension) (0,(5,9), dimension) (0,(5,6), dimension) (0,7, dimension) (1,(3,4), nPointsInterval) (4,9, this.boundDifference) (4,(6,8), requiredMinDiff) (4,(6,7), requiredMinDiff) (4,(6,8), minDiff) (4,(6,7), minDiff) (4,8, minDiff) (4,9, minDiff) (4,(5,9), i) (4,(5,6), i) (4,9, i) (9,(6,8), minDiff) (9,(6,7), minDiff) (9,8, minDiff) (9,9, minDiff) (9,(5,9), i) (9,(5,6), i) (9,9, i) 
+(0,(5,9), dimension) -> 
+	(0,9, this) (0,9, lowerBound) (0,9, upperBound) (0,(5,9), dimension) (4,9, this.boundDifference) (4,9, minDiff) (4,(5,9), i) (4,9, i) (9,(6,8), minDiff) (9,(6,7), minDiff) (9,8, minDiff) (9,9, minDiff) (9,(5,9), i) (9,(5,6), i) (9,9, i) 
+(0,(5,6), dimension) -> 
+	(0,(3,4), this) (0,4, this) (0,7, this) (0,8, this) (0,9, this) (0,9, lowerBound) (0,9, upperBound) (0,(3,4), this.numberOfInterpolationPoints) (0,7, this.numberOfInterpolationPoints) (0,4, this.initialTrustRegionRadius) (0,4, dimension) (0,(5,9), dimension) (0,(5,6), dimension) (0,7, dimension) (1,(3,4), nPointsInterval) (4,9, this.boundDifference) (4,(6,8), requiredMinDiff) (4,(6,7), requiredMinDiff) (4,(6,8), minDiff) (4,(6,7), minDiff) (4,8, minDiff) (4,9, minDiff) (4,(5,9), i) (4,(5,6), i) (4,9, i) (9,(6,8), minDiff) (9,(6,7), minDiff) (9,8, minDiff) (9,9, minDiff) (9,(5,9), i) (9,(5,6), i) (9,9, i) 
+(0,7, dimension) -> 
+	(0,(3,4), this) (0,4, this) (0,7, this) (0,8, this) (0,9, this) (0,9, lowerBound) (0,9, upperBound) (0,(3,4), this.numberOfInterpolationPoints) (0,7, this.numberOfInterpolationPoints) (0,4, this.initialTrustRegionRadius) (0,4, dimension) (0,(5,9), dimension) (0,(5,6), dimension) (0,7, dimension) (1,(3,4), nPointsInterval) (4,9, this.boundDifference) (4,(6,8), requiredMinDiff) (4,(6,7), requiredMinDiff) (4,(6,8), minDiff) (4,(6,7), minDiff) (4,8, minDiff) (4,9, minDiff) (4,(5,9), i) (4,(5,6), i) (4,9, i) (9,(6,8), minDiff) (9,(6,7), minDiff) (9,8, minDiff) (9,9, minDiff) (9,(5,9), i) (9,(5,6), i) (9,9, i) 
+(0,10, dimension) -> 
+	(0,(0,10), dimension) (0,10, dimension) 
+(1,(1,3), nPointsInterval) -> 
+	(0,(1,3), this) (0,(3,2), this) (0,(3,4), this) (0,4, this) (0,7, this) (0,8, this) (0,9, this) (0,9, lowerBound) (0,9, upperBound) (0,(1,3), this.numberOfInterpolationPoints) (0,(3,2), this.numberOfInterpolationPoints) (0,(3,4), this.numberOfInterpolationPoints) (0,7, this.numberOfInterpolationPoints) (0,4, this.initialTrustRegionRadius) (0,4, dimension) (0,(5,9), dimension) (0,(5,6), dimension) (0,7, dimension) (1,(1,3), nPointsInterval) (1,(3,2), nPointsInterval) (1,(3,4), nPointsInterval) (4,9, this.boundDifference) (4,(6,8), requiredMinDiff) (4,(6,7), requiredMinDiff) (4,(6,8), minDiff) (4,(6,7), minDiff) (4,8, minDiff) (4,9, minDiff) (4,(5,9), i) (4,(5,6), i) (4,9, i) (9,(6,8), minDiff) (9,(6,7), minDiff) (9,8, minDiff) (9,9, minDiff) (9,(5,9), i) (9,(5,6), i) (9,9, i) 
+(1,(1,2), nPointsInterval) -> 
+	(0,(1,2), this) (0,(1,2), this.numberOfInterpolationPoints) (1,(1,2), nPointsInterval) 
+(1,2, nPointsInterval) -> 
+	(0,(1,2), this) (0,2, this) (0,(3,2), this) (0,(1,2), this.numberOfInterpolationPoints) (0,2, this.numberOfInterpolationPoints) (0,(3,2), this.numberOfInterpolationPoints) (0,2, NUMBER_OF_INTERPOLATION_POINTS) (1,(1,2), nPointsInterval) (1,2, nPointsInterval) (1,(3,2), nPointsInterval) 
+(1,(3,2), nPointsInterval) -> 
+	(0,(3,2), this) (0,(3,2), this.numberOfInterpolationPoints) (1,(3,2), nPointsInterval) 
+(1,(3,4), nPointsInterval) -> 
+	(0,(3,4), this) (0,4, this) (0,7, this) (0,8, this) (0,9, this) (0,9, lowerBound) (0,9, upperBound) (0,(3,4), this.numberOfInterpolationPoints) (0,7, this.numberOfInterpolationPoints) (0,4, this.initialTrustRegionRadius) (0,4, dimension) (0,(5,9), dimension) (0,(5,6), dimension) (0,7, dimension) (1,(3,4), nPointsInterval) (4,9, this.boundDifference) (4,(6,8), requiredMinDiff) (4,(6,7), requiredMinDiff) (4,(6,8), minDiff) (4,(6,7), minDiff) (4,8, minDiff) (4,9, minDiff) (4,(5,9), i) (4,(5,6), i) (4,9, i) (9,(6,8), minDiff) (9,(6,7), minDiff) (9,8, minDiff) (9,9, minDiff) (9,(5,9), i) (9,(5,6), i) (9,9, i) 
+(4,9, this.boundDifference) -> 
+	(0,9, this) (0,9, lowerBound) (0,9, upperBound) (0,(5,9), dimension) (4,9, this.boundDifference) (4,9, minDiff) (4,(5,9), i) (4,9, i) (9,(6,8), minDiff) (9,(6,7), minDiff) (9,8, minDiff) (9,9, minDiff) (9,(5,9), i) (9,(5,6), i) (9,9, i) 
+(4,(6,8), requiredMinDiff) -> 
+	(0,8, this) (4,(6,8), requiredMinDiff) (4,(6,8), minDiff) (4,8, minDiff) (9,(6,8), minDiff) (9,8, minDiff) 
+(4,(6,7), requiredMinDiff) -> 
+	(4,(6,7), requiredMinDiff) (4,(6,7), minDiff) (9,(6,7), minDiff) 
+(4,(6,8), minDiff) -> 
+	(4,(6,8), minDiff) (4,8, minDiff) 
+(4,(6,7), minDiff) -> 
+	(4,(6,7), minDiff) 
+(4,8, minDiff) -> 
+	(4,(6,8), minDiff) (4,8, minDiff) 
+(4,9, minDiff) -> 
+	(0,9, this) (0,9, lowerBound) (0,9, upperBound) (0,(5,9), dimension) (4,9, this.boundDifference) (4,9, minDiff) (4,(5,9), i) (4,9, i) (9,(6,8), minDiff) (9,(6,7), minDiff) (9,8, minDiff) (9,9, minDiff) (9,(5,9), i) (9,(5,6), i) (9,9, i) 
+(4,(5,9), i) -> 
+	(0,9, this) (0,9, lowerBound) (0,9, upperBound) (0,(5,9), dimension) (4,9, this.boundDifference) (4,9, minDiff) (4,(5,9), i) (4,9, i) (9,(6,8), minDiff) (9,(6,7), minDiff) (9,8, minDiff) (9,9, minDiff) (9,(5,9), i) (9,(5,6), i) (9,9, i) 
+(4,(5,6), i) -> 
+	(4,(6,8), minDiff) (4,(6,7), minDiff) (4,8, minDiff) (4,(5,6), i) 
+(4,9, i) -> 
+	(0,9, this) (0,9, lowerBound) (0,9, upperBound) (0,(5,9), dimension) (4,9, this.boundDifference) (4,9, minDiff) (4,(5,9), i) (4,9, i) (9,(6,8), minDiff) (9,(6,7), minDiff) (9,8, minDiff) (9,9, minDiff) (9,(5,9), i) (9,(5,6), i) (9,9, i) 
+(9,(6,8), minDiff) -> 
+	(9,(6,8), minDiff) (9,8, minDiff) 
+(9,(6,7), minDiff) -> 
+	(9,(6,7), minDiff) 
+(9,8, minDiff) -> 
+	(9,(6,8), minDiff) (9,8, minDiff) 
+(9,9, minDiff) -> 
+	(9,9, minDiff) (9,(5,9), i) (9,9, i) 
+(9,(5,9), i) -> 
+	(9,9, minDiff) (9,(5,9), i) (9,9, i) 
+(9,(5,6), i) -> 
+	(0,9, this) (0,9, lowerBound) (0,9, upperBound) (0,(5,9), dimension) (4,9, this.boundDifference) (4,9, minDiff) (4,(5,9), i) (4,9, i) (9,(6,8), minDiff) (9,(6,7), minDiff) (9,8, minDiff) (9,9, minDiff) (9,(5,9), i) (9,(5,6), i) (9,9, i) 
+(9,9, i) -> 
+	(9,9, minDiff) (9,(5,9), i) (9,9, i) 

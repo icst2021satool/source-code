@@ -1,0 +1,29 @@
+Number of Variables;3;
+Variables:;
+0;;this;
+1;;curr;
+2;;len;
+
+Number of Block duas;5;
+Line Duas for method; expandCurrentSegment;
+Number;Def Line; Origin Line; Use Line; Var Id; Var Name;
+1;598;;604;0;this;
+2;598;;604;1;curr;
+3;598;;604;1;curr;
+4;600;602;602;3;len;
+5;600;602;602;3;len;
+6;600;;602;3;len;
+
+Block Duas for method; expandCurrentSegment;
+Number;Def Block; Origin Block; Use Block; Var Id; Var Name;
+1;0;;2;0;this;
+;598;;604;0;this;
+2;0;;2;1;curr;
+;598;;604;1;curr;
+;598;;604;1;curr;
+3;0;0;3;2;len;
+;600;602;602;3;len;
+4;0;0;1;2;len;
+;600;602;602;3;len;
+5;0;;2;2;len;
+;600;;602;3;len;

@@ -1,0 +1,33 @@
+Number of Variables;3;
+Variables:;
+0;;logger;
+1;;WARNING;
+2;;events;
+
+Number of Block duas;7;
+Line Duas for method; initCurrentThreadTrace;
+Number;Def Line; Origin Line; Use Line; Var Id; Var Name;
+1;462;;464;1;logger;
+2;462;;464;2;WARNING;
+3;462;463;464;0;events;
+4;462;463;474;0;events;
+5;462;;474;0;events;
+6;462;;464;0;events;
+7;470;;474;0;events;
+
+Block Duas for method; initCurrentThreadTrace;
+Number;Def Block; Origin Block; Use Block; Var Id; Var Name;
+1;0;;2;0;logger;
+;462;;464;1;logger;
+2;0;;2;1;WARNING;
+;462;;464;2;WARNING;
+3;0;0;2;2;events;
+;462;463;464;0;events;
+4;0;0;1;2;events;
+;462;463;474;0;events;
+5;0;;1;2;events;
+;462;;474;0;events;
+6;0;;2;2;events;
+;462;;464;0;events;
+7;2;;1;2;events;
+;470;;474;0;events;

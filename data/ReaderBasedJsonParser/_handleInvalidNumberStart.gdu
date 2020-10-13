@@ -1,0 +1,76 @@
+digraph _handleInvalidNumberStart {
+8 [label="8\n1146-1146"]
+24 [label="24\n1129-1129"]
+21 [label="21\n1137-1137"]
+3 [label="3\n1132-1133"]
+13 [label="13\n1141-1141"]
+7 [label="7\n1141-1143"]
+25 [label="25"]
+9 [label="9\n1144-1144"]
+1 [label="1\n1149-1150"]
+15 [label="15\n1134-1134"]
+22 [label="22\n1134-1134"]
+0 [label="0\n1126-1126"]
+11 [label="11\n1144-1144"]
+16 [label="16\n1134-1136"]
+12 [label="12\n1144-1144"]
+19 [label="19\n1137-1137"]
+17 [label="17\n1139-1140"]
+4 [label="4\n1140-1140"]
+2 [label="2\n1127-1127"]
+23 [label="23\n1128-1128"]
+5 [label="5\n1141-1141"]
+20 [label="20\n1137-1137"]
+6 [label="6\n1141-1141"]
+14 [label="14\n1134-1134"]
+18 [label="18\n1137-1137"]
+10 [label="10\n1144-1144"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_8 [label="use(8)={this,ALLOW_NON_NUMERIC_NUMBERS}"];
+setsNode_24 [label="use(24)={this}"];
+setsNode_3 [label="def(3)={ch}\nuse(3)={this,this._inputPtr,this._inputBuffer}"];
+setsNode_7 [label="def(7)={}\nuse(7)={this}"];
+setsNode_1 [label="use(1)={this,ch}"];
+setsNode_0 [label="def(0)={this,ch,negative,this._inputEnd,this._inputPtr,this._inputBuffer,ALLOW_NON_NUMERIC_NUMBERS}"];
+setsNode_11 [label="use(11)={this,ALLOW_NON_NUMERIC_NUMBERS}"];
+setsNode_16 [label="def(16)={match}\nuse(16)={this}"];
+setsNode_17 [label="use(17)={this,ALLOW_NON_NUMERIC_NUMBERS}"];
+setsNode_20 [label="use(20)={this,ALLOW_NON_NUMERIC_NUMBERS}"];
+}
+{rank = same; 8 ;  setsNode_8}
+{rank = same; 24 ;  setsNode_24}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 7 ;  setsNode_7}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 11 ;  setsNode_11}
+{rank = same; 16 ;  setsNode_16}
+{rank = same; 17 ;  setsNode_17}
+{rank = same; 20 ;  setsNode_20}
+8 -> 1;
+24 -> 3;
+21 -> 20;
+3 -> 14[label="use(3,14)={ch}",fontsize=14];3 -> 4[label="use(3,4)={ch}",fontsize=14];
+13 -> 7;
+7 -> 9[label="use(7,9)={this,match}",fontsize=14];7 -> 8[label="use(7,8)={this,match}",fontsize=14];
+9 -> 12[label="use(9,12)={negative}",fontsize=14];9 -> 10[label="use(9,10)={negative}",fontsize=14];
+1 -> 25;
+15 -> 16;
+22 -> 16;
+0 -> 2[label="use(0,2)={ch}",fontsize=14];0 -> 1[label="use(0,1)={ch}",fontsize=14];
+11 -> 25;
+16 -> 18[label="use(16,18)={this,match}",fontsize=14];16 -> 17[label="use(16,17)={this,match}",fontsize=14];
+12 -> 11;
+19 -> 20;
+17 -> 1;
+4 -> 5[label="use(4,5)={ch}",fontsize=14];4 -> 1[label="use(4,1)={ch}",fontsize=14];
+2 -> 23[label="use(2,23)={this,this._inputEnd,this._inputPtr}",fontsize=14];2 -> 3[label="use(2,3)={this,this._inputEnd,this._inputPtr}",fontsize=14];
+23 -> 24[label="use(23,24)={this}",fontsize=14];23 -> 3[label="use(23,3)={this}",fontsize=14];
+5 -> 13[label="use(5,13)={negative}",fontsize=14];5 -> 6[label="use(5,6)={negative}",fontsize=14];
+20 -> 25;
+6 -> 7;
+14 -> 22[label="use(14,22)={negative}",fontsize=14];14 -> 15[label="use(14,15)={negative}",fontsize=14];
+18 -> 21[label="use(18,21)={negative}",fontsize=14];18 -> 19[label="use(18,19)={negative}",fontsize=14];
+10 -> 11;
+}

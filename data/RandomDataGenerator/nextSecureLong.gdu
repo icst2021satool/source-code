@@ -1,0 +1,40 @@
+digraph nextSecureLong {
+6 [label="6\n346-346"]
+0 [label="0\n332-332"]
+3 [label="3\n352-352"]
+1 [label="1\n336-338"]
+5 [label="5\n342-343"]
+4 [label="4\n349-349"]
+7 [label="7\n343-343"]
+9 [label="9\n333-333"]
+10 [label="10"]
+8 [label="8\n344-344"]
+2 [label="2\n347-347"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_0 [label="def(0)={this,lower,upper,LOWER_BOUND_NOT_BELOW_UPPER_BOUND}"];
+setsNode_3 [label="use(3)={lower,rng,max}"];
+setsNode_1 [label="def(1)={rng,max}\nuse(1)={this,lower,upper}"];
+setsNode_5 [label="def(5)={r}\nuse(5)={rng}"];
+setsNode_4 [label="use(4)={lower,rng,max}"];
+setsNode_9 [label="use(9)={lower,upper,LOWER_BOUND_NOT_BELOW_UPPER_BOUND}"];
+setsNode_8 [label="use(8)={r}"];
+}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 9 ;  setsNode_9}
+{rank = same; 8 ;  setsNode_8}
+6 -> 5;
+0 -> 9[label="use(0,9)={lower,upper}",fontsize=14];0 -> 1[label="use(0,1)={lower,upper}",fontsize=14];
+3 -> 10;
+1 -> 5[label="use(1,5)={max}",fontsize=14];1 -> 2[label="use(1,2)={max}",fontsize=14];
+5 -> 7[label="use(5,7)={lower,r}",fontsize=14];5 -> 6[label="use(5,6)={lower,r}",fontsize=14];
+4 -> 10;
+7 -> 8[label="use(7,8)={upper,r}",fontsize=14];7 -> 6[label="use(7,6)={upper,r}",fontsize=14];
+9 -> 10;
+8 -> 10;
+2 -> 4[label="use(2,4)={max}",fontsize=14];2 -> 3[label="use(2,3)={max}",fontsize=14];
+}

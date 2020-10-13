@@ -1,0 +1,30 @@
+digraph locatePoint {
+7 [label="7\n368-368"]
+10 [label="10\n367-367"]
+2 [label="2\n376-376"]
+8 [label="8\n371-371"]
+11 [label="11"]
+3 [label="3\n379-379"]
+1 [label="1\n374-374"]
+4 [label="4\n377-377"]
+9 [label="9\n369-369"]
+0 [label="0\n365-365"]
+5 [label="5\n375-375"]
+6 [label="6\n366-366"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_0 [label="def(0)={this,time,interval,this.forward}"];
+}
+{rank = same; 0 ;  setsNode_0}
+7 -> 9[label="use(7,9)={time,interval}",fontsize=14];7 -> 8[label="use(7,8)={time,interval}",fontsize=14];
+10 -> 11;
+2 -> 4[label="use(2,4)={time,interval}",fontsize=14];2 -> 3[label="use(2,3)={time,interval}",fontsize=14];
+8 -> 11;
+3 -> 11;
+1 -> 5[label="use(1,5)={time,interval}",fontsize=14];1 -> 2[label="use(1,2)={time,interval}",fontsize=14];
+4 -> 11;
+9 -> 11;
+0 -> 6[label="use(0,6)={this,this.forward}",fontsize=14];0 -> 1[label="use(0,1)={this,this.forward}",fontsize=14];
+5 -> 11;
+6 -> 10[label="use(6,10)={time,interval}",fontsize=14];6 -> 7[label="use(6,7)={time,interval}",fontsize=14];
+}

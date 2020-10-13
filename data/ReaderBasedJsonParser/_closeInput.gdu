@@ -1,0 +1,24 @@
+digraph _closeInput {
+1 [label="1\n165-165"]
+3 [label="3\n161-161"]
+4 [label="4\n163-163"]
+2 [label="2\n160-160"]
+6 [label="6"]
+0 [label="0\n159-159"]
+5 [label="5\n160-160"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_3 [label="use(3)={this,this._reader}"];
+setsNode_4 [label="use(4)={this}"];
+setsNode_0 [label="def(0)={this,this._reader,this._ioContext,AUTO_CLOSE_SOURCE}"];
+}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 0 ;  setsNode_0}
+1 -> 6;
+3 -> 4;
+4 -> 1;
+2 -> 5[label="use(2,5)={this,this._ioContext}",fontsize=14];2 -> 3[label="use(2,3)={this,this._ioContext}",fontsize=14];
+0 -> 2[label="use(0,2)={this,this._reader}",fontsize=14];0 -> 1[label="use(0,1)={this,this._reader}",fontsize=14];
+5 -> 3[label="use(5,3)={this,AUTO_CLOSE_SOURCE}",fontsize=14];5 -> 4[label="use(5,4)={this,AUTO_CLOSE_SOURCE}",fontsize=14];
+}

@@ -1,0 +1,12 @@
+digraph { 
+41 [shape=box,style=filled,color=".0 .0 .83",label="(0,(1,5), this.numElements)\n(0,5, index)\n(0,(1,5), index)\n(0,5, this)\n(0,(1,5), this)"];
+42 [shape=box,style=filled,color=".0 .0 .83",label="(0,(1,2), this.numElements)\n(0,(1,2), index)\n(0,(1,2), this)"];
+43 [shape=box,style=filled,color=".0 .0 .83",label="(0,4, this.startIndex)\n(0,(2,4), this.startIndex)\n(0,(2,4), this.internalArray)\n(0,4, index)\n(0,(2,4), index)\n(0,4, this)\n(0,(2,4), this)"];
+44 [shape=box,style=filled,color=".0 .0 .83",label="(0,(2,3), this.startIndex)\n(0,(2,3), this.internalArray)\n(0,(2,3), index)\n(0,(2,3), this)"];
+45 [label="(0,3, this.startIndex)\n(0,3, this.internalArray)\n(0,3, value)\n(0,3, index)\n(0,(0,1), index)\n(0,3, this)"];
+46 [shape=box,style=filled,color=".0 .0 .83",label="(0,6, index)\n(0,(0,6), index)"];
+45 -> 41;
+45 -> 42;
+45 -> 43;
+45 -> 44;
+}

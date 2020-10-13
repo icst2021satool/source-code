@@ -1,0 +1,12 @@
+digraph { 
+35 [shape=box,style=filled,color=".0 .0 .83",label="(5,(5,3), val)\n(5,(5,3), bits)\n(0,(5,3), n)"];
+36 [shape=box,style=filled,color=".0 .0 .83",label="(3,(4,5), i$)\n(3,5, bits)"];
+37 [shape=box,style=filled,color=".0 .0 .83",label="(7,7, i$)\n(7,(4,7), i$)\n(7,7, bits)"];
+38 [label="(7,(4,5), i$)\n(7,5, bits)\n(3,7, i$)\n(3,(4,7), i$)\n(3,(4,7), len$)\n(3,7, arr$)\n(3,7, bits)"];
+39 [label="(5,6, val)\n(5,(5,6), val)\n(5,(5,6), bits)\n(3,(4,5), len$)\n(2,3, byteArray)\n(0,(5,6), n)\n(0,5, n)\n(0,(0,2), n)\n(0,3, rng)"];
+40 [shape=box,style=filled,color=".0 .0 .83",label="(0,1, n)\n(0,(0,1), n)"];
+38 -> 37;
+39 -> 35;
+39 -> 36;
+39 -> 38;
+}

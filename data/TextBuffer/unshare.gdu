@@ -1,0 +1,26 @@
+digraph unshare {
+4 [label="4\n648-648"]
+1 [label="1\n645-645"]
+3 [label="3\n650-652"]
+0 [label="0\n635-644"]
+6 [label="6"]
+2 [label="2\n647-647"]
+5 [label="5\n644-644"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_4 [label="use(4)={this,sharedLen,start,null,null}"];
+setsNode_1 [label="def(1)={this._currentSegment}\nuse(1)={this,null}"];
+setsNode_3 [label="use(3)={this,sharedLen}"];
+setsNode_0 [label="def(0)={this,this._currentSegment,sharedLen,inputBuf,start,needed}"];
+}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 0 ;  setsNode_0}
+4 -> 3;
+1 -> 2;
+3 -> 6;
+0 -> 5[label="use(0,5)={this,null}",fontsize=14];0 -> 1[label="use(0,1)={this,null}",fontsize=14];
+2 -> 4[label="use(2,4)={sharedLen}",fontsize=14];2 -> 3[label="use(2,3)={sharedLen}",fontsize=14];
+5 -> 1[label="use(5,1)={this,null,null}",fontsize=14];5 -> 2[label="use(5,2)={this,null,null}",fontsize=14];
+}

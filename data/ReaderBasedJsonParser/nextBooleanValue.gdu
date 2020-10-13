@@ -1,0 +1,50 @@
+digraph nextBooleanValue {
+2 [label="2\n805-805"]
+12 [label="12\n792-792"]
+5 [label="5\n784-788"]
+13 [label="13\n789-789"]
+6 [label="6\n791-791"]
+9 [label="9\n799-799"]
+14 [label="14"]
+8 [label="8\n796-796"]
+7 [label="7\n794-794"]
+0 [label="0\n783-783"]
+1 [label="1\n801-801"]
+11 [label="11\n795-795"]
+10 [label="10\n797-797"]
+4 [label="4\n807-807"]
+3 [label="3\n803-803"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_2 [label="use(2)={this._parsingContext}"];
+setsNode_12 [label="use(12)={this._parsingContext}"];
+setsNode_5 [label="def(5)={t}\nuse(5)={this,TRUE}"];
+setsNode_13 [label="use(13)={FALSE}"];
+setsNode_0 [label="def(0)={this,FIELD_NAME,this._currToken,this._nextToken,VALUE_TRUE,TRUE,VALUE_FALSE,FALSE,START_ARRAY,this._parsingContext,this._tokenInputRow,this._tokenInputCol,START_OBJECT,$SwitchMap$com$fasterxml$jackson$core$JsonToken}"];
+setsNode_11 [label="use(11)={this,this._tokenInputCol,START_OBJECT,$SwitchMap$com$fasterxml$jackson$core$JsonToken}"];
+setsNode_10 [label="use(10)={this,this._tokenInputCol,START_OBJECT,$SwitchMap$com$fasterxml$jackson$core$JsonToken}"];
+setsNode_3 [label="use(3)={FALSE}"];
+}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 12 ;  setsNode_12}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 13 ;  setsNode_13}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 11 ;  setsNode_11}
+{rank = same; 10 ;  setsNode_10}
+{rank = same; 3 ;  setsNode_3}
+2 -> 14;
+12 -> 14;
+5 -> 13[label="use(5,13)={VALUE_TRUE,VALUE_FALSE}",fontsize=14];5 -> 6[label="use(5,6)={VALUE_TRUE,VALUE_FALSE}",fontsize=14];
+13 -> 14;
+6 -> 12[label="use(6,12)={VALUE_TRUE,START_ARRAY}",fontsize=14];6 -> 7[label="use(6,7)={VALUE_TRUE,START_ARRAY}",fontsize=14];
+9 -> 14;
+8 -> 10[label="use(8,10)={VALUE_TRUE,t}",fontsize=14];8 -> 9[label="use(8,9)={VALUE_TRUE,t}",fontsize=14];
+7 -> 11[label="use(7,11)={VALUE_TRUE,this._tokenInputRow}",fontsize=14];7 -> 8[label="use(7,8)={VALUE_TRUE,this._tokenInputRow}",fontsize=14];
+0 -> 5[label="use(0,5)={this,FIELD_NAME,this._currToken}",fontsize=14];0 -> 1[label="use(0,1)={this,FIELD_NAME,this._currToken}",fontsize=14];
+1 -> 4[label="use(1,4)={this,null}",fontsize=14];1 -> 3[label="use(1,3)={this,null}",fontsize=14];1 -> 2[label="use(1,2)={this,null}",fontsize=14];
+11 -> 9;
+10 -> 9;
+4 -> 14;
+3 -> 14;
+}

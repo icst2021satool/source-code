@@ -1,0 +1,48 @@
+digraph handleBOM {
+2 [label="2\n398-401"]
+1 [label="1\n408-408"]
+11 [label="11\n415-418"]
+7 [label="7\n427-427"]
+8 [label="8\n433-433"]
+9 [label="9\n428-431"]
+5 [label="5\n413-414"]
+4 [label="4\n410-410"]
+10 [label="10\n421-424"]
+6 [label="6\n420-420"]
+0 [label="0\n396-396"]
+12 [label="12"]
+3 [label="3\n403-406"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_2 [label="use(2)={this,msw}"];
+setsNode_1 [label="use(1)={this}"];
+setsNode_11 [label="use(11)={this,msw}"];
+setsNode_9 [label="use(9)={this,msw}"];
+setsNode_5 [label="def(5)={msw}\nuse(5)={quad}"];
+setsNode_4 [label="use(4)={this}"];
+setsNode_10 [label="use(10)={this,msw}"];
+setsNode_0 [label="def(0)={this,quad,this._inputPtr}"];
+setsNode_3 [label="use(3)={this,msw}"];
+}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 11 ;  setsNode_11}
+{rank = same; 9 ;  setsNode_9}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 10 ;  setsNode_10}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 3 ;  setsNode_3}
+2 -> 12;
+1 -> 4;
+11 -> 12;
+7 -> 9[label="use(7,9)={quad}",fontsize=14];7 -> 8[label="use(7,8)={quad}",fontsize=14];
+8 -> 12;
+9 -> 12;
+5 -> 11[label="use(5,11)={null}",fontsize=14];5 -> 6[label="use(5,6)={null}",fontsize=14];
+4 -> 5;
+10 -> 12;
+6 -> 10[label="use(6,10)={null}",fontsize=14];6 -> 7[label="use(6,7)={null}",fontsize=14];
+0 -> 5[label="use(0,5)={quad}",fontsize=14];0 -> 4[label="use(0,4)={quad}",fontsize=14];0 -> 3[label="use(0,3)={quad}",fontsize=14];0 -> 2[label="use(0,2)={quad}",fontsize=14];0 -> 1[label="use(0,1)={quad}",fontsize=14];
+3 -> 12;
+}

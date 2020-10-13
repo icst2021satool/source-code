@@ -1,0 +1,54 @@
+digraph stemString {
+5 [label="5\n946-947"]
+6 [label="6\n951-951"]
+9 [label="9\n945-945"]
+10 [label="10\n957-958"]
+12 [label="12\n953-953"]
+13 [label="13\n948-948"]
+8 [label="8\n960-960"]
+14 [label="14\n949-949"]
+1 [label="1\n945-945"]
+4 [label="4\n964-964"]
+0 [label="0\n943-945"]
+2 [label="2\n963-963"]
+3 [label="3\n966-966"]
+11 [label="11\n952-952"]
+15 [label="15"]
+7 [label="7\n956-956"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_5 [label="def(5)={c}\nuse(5)={str,j}"];
+setsNode_9 [label="def(9)={j}\nuse(9)={j}"];
+setsNode_10 [label="def(10)={start}\nuse(10)={this,str,result,start,j}"];
+setsNode_12 [label="use(12)={result,c}"];
+setsNode_8 [label="use(8)={result,c}"];
+setsNode_14 [label="def(14)={start}\nuse(14)={j}"];
+setsNode_4 [label="use(4)={this,str,result,start}"];
+setsNode_0 [label="def(0)={this,str,result,start,j}"];
+setsNode_3 [label="use(3)={result}"];
+}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 9 ;  setsNode_9}
+{rank = same; 10 ;  setsNode_10}
+{rank = same; 12 ;  setsNode_12}
+{rank = same; 8 ;  setsNode_8}
+{rank = same; 14 ;  setsNode_14}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 3 ;  setsNode_3}
+5 -> 13[label="use(5,13)={c}",fontsize=14];5 -> 6[label="use(5,6)={c}",fontsize=14];
+6 -> 11[label="use(6,11)={c}",fontsize=14];6 -> 7[label="use(6,7)={c}",fontsize=14];
+9 -> 1;
+10 -> 8;
+12 -> 9;
+13 -> 14[label="use(13,14)={start}",fontsize=14];13 -> 9[label="use(13,9)={start}",fontsize=14];
+8 -> 9;
+14 -> 9;
+1 -> 5[label="use(1,5)={str,j}",fontsize=14];1 -> 2[label="use(1,2)={str,j}",fontsize=14];
+4 -> 3;
+0 -> 1;
+2 -> 4[label="use(2,4)={start}",fontsize=14];2 -> 3[label="use(2,3)={start}",fontsize=14];
+3 -> 15;
+11 -> 12[label="use(11,12)={start}",fontsize=14];11 -> 9[label="use(11,9)={start}",fontsize=14];
+7 -> 10[label="use(7,10)={start}",fontsize=14];7 -> 8[label="use(7,8)={start}",fontsize=14];
+}

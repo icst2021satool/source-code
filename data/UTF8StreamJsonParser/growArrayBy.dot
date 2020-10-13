@@ -1,0 +1,4 @@
+digraph { 
+1988 [shape=box,style=filled,color=".0 .0 .83",label="(0,2, more)\n(0,(0,2), arr)"];
+1989 [shape=box,style=filled,color=".0 .0 .83",label="(0,1, more)\n(0,1, arr)\n(0,(0,1), arr)"];
+}

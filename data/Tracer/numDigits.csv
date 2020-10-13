@@ -1,0 +1,32 @@
+Number of Variables;2;
+Variables:;
+0;;n;
+1;;i;
+
+Number of Block duas;7;
+Line Duas for method; numDigits;
+Number;Def Line; Origin Line; Use Line; Var Id; Var Name;
+1;323;;326;0;n;
+2;323;;325;1;i;
+3;325;;325;1;i;
+4;325;;328;1;i;
+5;326;327;328;0;n;
+6;326;327;325;0;n;
+7;326;;326;0;n;
+
+Block Duas for method; numDigits;
+Number;Def Block; Origin Block; Use Block; Var Id; Var Name;
+1;0;;1;0;n;
+;323;;326;0;n;
+2;0;;1;1;i;
+;323;;325;1;i;
+3;1;;1;1;i;
+;325;;325;1;i;
+4;1;;2;1;i;
+;325;;328;1;i;
+5;1;1;2;0;n;
+;326;327;328;0;n;
+6;1;1;1;0;n;
+;326;327;325;0;n;
+7;1;;1;0;n;
+;326;;326;0;n;

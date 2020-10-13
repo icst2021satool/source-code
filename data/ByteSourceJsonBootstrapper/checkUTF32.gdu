@@ -1,0 +1,38 @@
+digraph checkUTF32 {
+5 [label="5\n449-449"]
+7 [label="7\n447-447"]
+9 [label="9\n443-443"]
+0 [label="0\n442-442"]
+8 [label="8\n445-445"]
+3 [label="3\n448-448"]
+4 [label="4\n452-452"]
+10 [label="10"]
+6 [label="6\n456-457"]
+1 [label="1\n444-444"]
+2 [label="2\n446-446"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_5 [label="use(5)={this}"];
+setsNode_7 [label="use(7)={this}"];
+setsNode_9 [label="use(9)={this}"];
+setsNode_0 [label="def(0)={this,quad}"];
+setsNode_8 [label="use(8)={this}"];
+setsNode_6 [label="use(6)={this}"];
+}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 7 ;  setsNode_7}
+{rank = same; 9 ;  setsNode_9}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 8 ;  setsNode_8}
+{rank = same; 6 ;  setsNode_6}
+5 -> 6;
+7 -> 6;
+9 -> 6;
+0 -> 9[label="use(0,9)={quad}",fontsize=14];0 -> 1[label="use(0,1)={quad}",fontsize=14];
+8 -> 6;
+3 -> 5[label="use(3,5)={quad}",fontsize=14];3 -> 4[label="use(3,4)={quad}",fontsize=14];
+4 -> 10;
+6 -> 10;
+1 -> 8[label="use(1,8)={quad}",fontsize=14];1 -> 2[label="use(1,2)={quad}",fontsize=14];
+2 -> 7[label="use(2,7)={quad}",fontsize=14];2 -> 3[label="use(2,3)={quad}",fontsize=14];
+}

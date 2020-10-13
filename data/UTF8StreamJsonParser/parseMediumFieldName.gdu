@@ -1,0 +1,66 @@
+digraph parseMediumFieldName {
+1 [label="1\n1482-1484"]
+12 [label="12\n1488-1488"]
+5 [label="5\n1501-1501"]
+13 [label="13\n1486-1486"]
+16 [label="16\n1478-1478"]
+7 [label="7\n1502-1502"]
+2 [label="2\n1490-1492"]
+4 [label="4\n1506-1508"]
+11 [label="11\n1485-1485"]
+0 [label="0\n1475-1476"]
+8 [label="8\n1493-1493"]
+6 [label="6\n1504-1504"]
+3 [label="3\n1498-1500"]
+15 [label="15\n1480-1480"]
+10 [label="10\n1494-1494"]
+9 [label="9\n1496-1496"]
+17 [label="17"]
+14 [label="14\n1477-1477"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_1 [label="def(1)={q2,this._inputPtr,i}\nuse(1)={this,q2,this._inputBuffer,this._quad1,this._quadBuffer}"];
+setsNode_12 [label="use(12)={this,q2,this._quad1,this._inputPtr}"];
+setsNode_13 [label="use(13)={this,q2,this._inputPtr}"];
+setsNode_16 [label="use(16)={this,q2,this._inputPtr}"];
+setsNode_7 [label="use(7)={this,q2,this._inputPtr}"];
+setsNode_2 [label="def(2)={q2,this._inputPtr,i}\nuse(2)={this,q2,this._inputBuffer,this._quad1,this._quadBuffer}"];
+setsNode_4 [label="use(4)={this,q2,this._quad1,this._inputPtr,i}"];
+setsNode_0 [label="def(0)={this,q2,codes,this._inputBuffer,this._quad1,this._quadBuffer,this._inputPtr,i}"];
+setsNode_6 [label="use(6)={this,q2,this._quad1,this._inputPtr}"];
+setsNode_3 [label="def(3)={q2,i}\nuse(3)={this,q2,this._inputBuffer,this._quad1,this._quadBuffer}"];
+setsNode_15 [label="use(15)={this,q2,this._quad1,this._inputPtr}"];
+setsNode_10 [label="use(10)={this,q2,this._inputPtr}"];
+setsNode_9 [label="use(9)={this,q2,this._quad1,this._inputPtr}"];
+}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 12 ;  setsNode_12}
+{rank = same; 13 ;  setsNode_13}
+{rank = same; 16 ;  setsNode_16}
+{rank = same; 7 ;  setsNode_7}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 15 ;  setsNode_15}
+{rank = same; 10 ;  setsNode_10}
+{rank = same; 9 ;  setsNode_9}
+1 -> 11[label="use(1,11)={codes,this._quad1}",fontsize=14];1 -> 2[label="use(1,2)={codes,this._quad1}",fontsize=14];
+12 -> 17;
+5 -> 7[label="use(5,7)={this._quad1}",fontsize=14];5 -> 6[label="use(5,6)={this._quad1}",fontsize=14];
+13 -> 17;
+16 -> 17;
+7 -> 17;
+2 -> 8[label="use(2,8)={codes,this._quad1}",fontsize=14];2 -> 3[label="use(2,3)={codes,this._quad1}",fontsize=14];
+4 -> 17;
+11 -> 13[label="use(11,13)={this._quad1}",fontsize=14];11 -> 12[label="use(11,12)={this._quad1}",fontsize=14];
+0 -> 14[label="use(0,14)={codes,this._quad1}",fontsize=14];0 -> 1[label="use(0,1)={codes,this._quad1}",fontsize=14];
+8 -> 10[label="use(8,10)={this._quad1}",fontsize=14];8 -> 9[label="use(8,9)={this._quad1}",fontsize=14];
+6 -> 17;
+3 -> 5[label="use(3,5)={codes,this._quad1}",fontsize=14];3 -> 4[label="use(3,4)={codes,this._quad1}",fontsize=14];
+15 -> 17;
+10 -> 17;
+9 -> 17;
+14 -> 16[label="use(14,16)={this._quad1}",fontsize=14];14 -> 15[label="use(14,15)={this._quad1}",fontsize=14];
+}

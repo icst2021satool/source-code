@@ -1,0 +1,36 @@
+digraph getTextBuffer {
+2 [label="2\n313-313"]
+6 [label="6\n314-314"]
+5 [label="5\n318-318"]
+4 [label="4\n321-321"]
+3 [label="3\n317-317"]
+0 [label="0\n307-307"]
+7 [label="7\n311-311"]
+8 [label="8\n308-308"]
+1 [label="1\n310-310"]
+9 [label="9"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_6 [label="use(6)={this,this._resultString}"];
+setsNode_5 [label="use(5)={this,this._currentSegment}"];
+setsNode_4 [label="use(4)={this}"];
+setsNode_0 [label="def(0)={this,this._inputStart,this._inputBuffer,this._resultArray,this._resultString,this._hasSegments,this._currentSegment}"];
+setsNode_7 [label="use(7)={this,this._resultArray}"];
+setsNode_8 [label="use(8)={this,this._inputBuffer}"];
+}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 7 ;  setsNode_7}
+{rank = same; 8 ;  setsNode_8}
+2 -> 6[label="use(2,6)={this,this._resultString}",fontsize=14];2 -> 3[label="use(2,3)={this,this._resultString}",fontsize=14];
+6 -> 9;
+5 -> 9;
+4 -> 9;
+3 -> 5[label="use(3,5)={this,this._hasSegments}",fontsize=14];3 -> 4[label="use(3,4)={this,this._hasSegments}",fontsize=14];
+0 -> 8[label="use(0,8)={this,this._inputStart}",fontsize=14];0 -> 1[label="use(0,1)={this,this._inputStart}",fontsize=14];
+7 -> 9;
+8 -> 9;
+1 -> 7[label="use(1,7)={this,this._resultArray}",fontsize=14];1 -> 2[label="use(1,2)={this,this._resultArray}",fontsize=14];
+}

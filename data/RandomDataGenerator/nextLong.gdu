@@ -1,0 +1,36 @@
+digraph nextLong {
+1 [label="1\n256-256"]
+0 [label="0\n241-241"]
+4 [label="4\n248-248"]
+5 [label="5\n251-253"]
+7 [label="7\n248-248"]
+6 [label="6\n254-254"]
+8 [label="8"]
+2 [label="2\n242-242"]
+3 [label="3\n246-248"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_1 [label="use(1)={n}"];
+setsNode_0 [label="def(0)={rng,n}"];
+setsNode_5 [label="def(5)={bits,val}\nuse(5)={n,bits}"];
+setsNode_7 [label="def(7)={bits,i$}\nuse(7)={bits,arr$,i$}"];
+setsNode_6 [label="use(6)={null}"];
+setsNode_2 [label="def(2)={byteArray}"];
+setsNode_3 [label="def(3)={bits,arr$,len$,i$}\nuse(3)={rng,byteArray}"];
+}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 7 ;  setsNode_7}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 3 ;  setsNode_3}
+1 -> 8;
+0 -> 2[label="use(0,2)={n}",fontsize=14];0 -> 1[label="use(0,1)={n}",fontsize=14];
+4 -> 7[label="use(4,7)={len$,i$}",fontsize=14];4 -> 5[label="use(4,5)={len$,i$}",fontsize=14];
+5 -> 6[label="use(5,6)={n,bits,null}",fontsize=14];5 -> 3[label="use(5,3)={n,bits,null}",fontsize=14];
+7 -> 4;
+6 -> 8;
+2 -> 3;
+3 -> 4;
+}

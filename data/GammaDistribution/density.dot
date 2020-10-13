@@ -1,0 +1,15 @@
+digraph { 
+4 [shape=box,style=filled,color=".7 .3 1.0",label="(1,(3,2), y)\n(0,(3,2), this.maxLogY)\n(0,(3,2), this)"];
+5 [shape=box,style=filled,color=".7 .3 1.0",label="(1,4, y)\n(1,(3,4), y)\n(0,4, this.densityPrefactor1)\n(0,4, this.shape)\n(0,(3,4), this.maxLogY)\n(0,4, this)\n(0,(3,4), this)"];
+6 [label="(1,(1,3), y)\n(0,(1,3), this.minY)\n(0,(1,3), this)"];
+7 [shape=box,style=filled,color=".7 .3 1.0",label="(1,(1,2), y)\n(0,(1,2), this.minY)\n(0,(1,2), this)"];
+8 [label="(1,2, y)\n(0,2, this.densityPrefactor2)\n(0,2, this.shape)\n(0,2, this.shiftedShape)\n(0,2, x)\n(0,2, this)"];
+9 [label="(0,1, this.scale)\n(0,1, x)\n(0,(0,1), x)\n(0,1, this)"];
+10 [shape=box,style=filled,color=".7 .3 1.0",label="(0,(0,5), x)"];
+6 -> 4;
+6 -> 5;
+8 -> 4;
+8 -> 7;
+9 -> 6;
+9 -> 8;
+}

@@ -1,0 +1,36 @@
+Number of Variables;3;
+Variables:;
+0;;this;
+1;;character;
+2;;this.m_Delimiters;
+
+Number of Block duas;8;
+Line Duas for method; isDelimiter;
+Number;Def Line; Origin Line; Use Line; Var Id; Var Name;
+1;843;844;844;0;this;
+2;843;844;844;0;this;
+3;843;843;843;1;character;
+4;843;843;844;1;character;
+5;843;844;844;1;character;
+6;843;844;844;1;character;
+7;843;844;844;2;this.m_Delimiters;
+8;843;844;844;2;this.m_Delimiters;
+
+Block Duas for method; isDelimiter;
+Number;Def Block; Origin Block; Use Block; Var Id; Var Name;
+1;0;3;1;0;this;
+;843;844;844;0;this;
+2;0;3;4;0;this;
+;843;844;844;0;this;
+3;0;0;3;1;character;
+;843;843;843;1;character;
+4;0;0;1;1;character;
+;843;843;844;1;character;
+5;0;3;1;1;character;
+;843;844;844;1;character;
+6;0;3;4;1;character;
+;843;844;844;1;character;
+7;0;3;1;2;this.m_Delimiters;
+;843;844;844;2;this.m_Delimiters;
+8;0;3;4;2;this.m_Delimiters;
+;843;844;844;2;this.m_Delimiters;

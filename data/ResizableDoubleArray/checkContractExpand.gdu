@@ -1,0 +1,28 @@
+digraph checkContractExpand {
+4 [label="4\n572-575"]
+2 [label="2\n571-571"]
+0 [label="0\n557-557"]
+1 [label="1\n564-564"]
+5 [label="5\n565-568"]
+3 [label="3\n577-577"]
+7 [label="7"]
+6 [label="6\n558-561"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_4 [label="use(4)={expansion,CONTRACTION_CRITERIA_SMALLER_THAN_EXPANSION_FACTOR,null}"];
+setsNode_0 [label="def(0)={contraction,expansion,CONTRACTION_CRITERIA_SMALLER_THAN_EXPANSION_FACTOR,CONTRACTION_CRITERIA_SMALLER_THAN_ONE,EXPANSION_FACTOR_SMALLER_THAN_ONE}"];
+setsNode_5 [label="use(5)={expansion,null}"];
+setsNode_6 [label="use(6)={expansion,CONTRACTION_CRITERIA_SMALLER_THAN_EXPANSION_FACTOR,EXPANSION_FACTOR_SMALLER_THAN_ONE}"];
+}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 6 ;  setsNode_6}
+4 -> 7;
+2 -> 4[label="use(2,4)={CONTRACTION_CRITERIA_SMALLER_THAN_EXPANSION_FACTOR}",fontsize=14];2 -> 3[label="use(2,3)={CONTRACTION_CRITERIA_SMALLER_THAN_EXPANSION_FACTOR}",fontsize=14];
+0 -> 6[label="use(0,6)={expansion,CONTRACTION_CRITERIA_SMALLER_THAN_EXPANSION_FACTOR}",fontsize=14];0 -> 1[label="use(0,1)={expansion,CONTRACTION_CRITERIA_SMALLER_THAN_EXPANSION_FACTOR}",fontsize=14];
+1 -> 5[label="use(1,5)={expansion}",fontsize=14];1 -> 2[label="use(1,2)={expansion}",fontsize=14];
+5 -> 7;
+3 -> 7;
+6 -> 7;
+}

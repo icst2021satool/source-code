@@ -1,0 +1,26 @@
+Number of Variables;2;
+Variables:;
+0;;object;
+1;;comment;
+
+Number of Block duas;5;
+Line Duas for method; shortName;
+Number;Def Line; Origin Line; Use Line; Var Id; Var Name;
+1;296;296;297;0;object;
+2;296;296;299;0;object;
+3;296;;299;0;object;
+4;296;;299;1;comment;
+5;296;;297;1;comment;
+
+Block Duas for method; shortName;
+Number;Def Block; Origin Block; Use Block; Var Id; Var Name;
+1;0;0;2;0;object;
+;296;296;297;0;object;
+2;0;0;1;0;object;
+;296;296;299;0;object;
+3;0;;1;0;object;
+;296;;299;0;object;
+4;0;;1;1;comment;
+;296;;299;1;comment;
+5;0;;2;1;comment;
+;296;;297;1;comment;

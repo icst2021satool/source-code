@@ -1,0 +1,7 @@
+digraph { 
+31 [shape=box,style=filled,color=".0 .0 .83",label="(3,2, newSize)\n(0,3, this.expansionFactor)\n(0,3, this.internalArray)\n(0,(0,3), this.expansionMode)\n(0,(0,3), MULTIPLICATIVE)\n(0,3, this)\n(0,(0,3), this)"];
+32 [shape=box,style=filled,color=".0 .0 .83",label="(1,2, newSize)\n(0,1, this.expansionFactor)\n(0,1, this.internalArray)\n(0,(0,1), this.expansionMode)\n(0,(0,1), MULTIPLICATIVE)\n(0,1, this)\n(0,(0,1), this)"];
+33 [label="(0,2, this.internalArray)\n(0,2, this)"];
+33 -> 31;
+33 -> 32;
+}

@@ -1,0 +1,32 @@
+digraph checkForTokens {
+3 [label="3\n695-695"]
+5 [label="5\n696-696"]
+7 [label="7\n689-689"]
+4 [label="4\n698-698"]
+6 [label="6\n686-686"]
+8 [label="8\n687-687"]
+9 [label="9"]
+2 [label="2\n685-685"]
+0 [label="0\n682-682"]
+1 [label="1\n701-701"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_5 [label="use(5)={this,content,startOffset,endOffset}"];
+setsNode_4 [label="use(4)={this,content,startOffset,endOffset}"];
+setsNode_8 [label="def(8)={startOffset}\nuse(8)={startOffset}"];
+setsNode_0 [label="def(0)={this,content,startOffset,endOffset}"];
+}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 8 ;  setsNode_8}
+{rank = same; 0 ;  setsNode_0}
+3 -> 5[label="use(3,5)={this,content,startOffset}",fontsize=14];3 -> 4[label="use(3,4)={this,content,startOffset}",fontsize=14];
+5 -> 0;
+7 -> 9;
+4 -> 0;
+6 -> 8[label="use(6,8)={startOffset,endOffset}",fontsize=14];6 -> 7[label="use(6,7)={startOffset,endOffset}",fontsize=14];
+8 -> 2;
+2 -> 6[label="use(2,6)={this,content,startOffset}",fontsize=14];2 -> 3[label="use(2,3)={this,content,startOffset}",fontsize=14];
+0 -> 2[label="use(0,2)={startOffset,endOffset}",fontsize=14];0 -> 1[label="use(0,1)={startOffset,endOffset}",fontsize=14];
+1 -> 9;
+}

@@ -1,0 +1,20 @@
+digraph { 
+189 [shape=box,style=filled,color=".7 .3 1.0",label="(0,(6,10), interval)\n(0,(6,10), time)"];
+190 [shape=box,style=filled,color=".7 .3 1.0",label="(0,(7,9), interval)\n(0,(7,9), time)"];
+191 [shape=box,style=filled,color=".7 .3 1.0",label="(0,(7,8), interval)\n(0,(7,8), time)"];
+192 [label="(0,(6,7), interval)\n(0,(6,7), time)"];
+193 [label="(0,(0,6), this.forward)\n(0,(0,6), this)"];
+194 [shape=box,style=filled,color=".7 .3 1.0",label="(0,(1,5), interval)\n(0,(1,5), time)"];
+195 [shape=box,style=filled,color=".7 .3 1.0",label="(0,(2,4), interval)\n(0,(2,4), time)"];
+196 [shape=box,style=filled,color=".7 .3 1.0",label="(0,(2,3), interval)\n(0,(2,3), time)"];
+197 [label="(0,(1,2), interval)\n(0,(1,2), time)"];
+198 [label="(0,(0,1), this.forward)\n(0,(0,1), this)"];
+192 -> 190;
+192 -> 191;
+193 -> 189;
+193 -> 192;
+197 -> 195;
+197 -> 196;
+198 -> 194;
+198 -> 197;
+}

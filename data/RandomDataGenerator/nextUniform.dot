@@ -1,0 +1,35 @@
+digraph { 
+61 [shape=box,style=filled,color=".0 .0 .83",label="(10,(9,10), u)"];
+62 [shape=box,style=filled,color=".0 .0 .83",label="(10,(9,8), u)"];
+63 [label="(10,8, u)\n(6,(9,10), u)\n(6,10, generator)"];
+64 [shape=box,style=filled,color=".0 .0 .83",label="(6,(9,8), u)"];
+65 [label="(0,(7,9), lowerInclusive)"];
+66 [shape=box,style=filled,color=".0 .0 .83",label="(0,(7,8), lowerInclusive)"];
+67 [label="(6,8, u)"];
+68 [label="(0,8, upper)\n(0,(5,6), upper)\n(0,8, lower)\n(0,6, this)"];
+69 [shape=box,style=filled,color=".0 .0 .83",label="(0,13, LOWER_BOUND_NOT_BELOW_UPPER_BOUND)\n(0,13, upper)\n(0,(0,13), upper)\n(0,13, lower)\n(0,(0,13), lower)"];
+70 [shape=box,style=filled,color=".0 .0 .83",label="(0,12, INFINITE_BOUND)\n(0,12, lower)\n(0,(1,12), lower)"];
+71 [shape=box,style=filled,color=".0 .0 .83",label="(0,(5,4), upper)"];
+72 [label="(0,(3,5), lower)"];
+73 [shape=box,style=filled,color=".0 .0 .83",label="(0,(3,4), lower)"];
+74 [shape=box,style=filled,color=".0 .0 .83",label="(0,11, INFINITE_BOUND)\n(0,11, upper)\n(0,(2,11), upper)"];
+75 [label="(0,(2,3), upper)"];
+76 [label="(0,(1,2), lower)"];
+77 [label="(0,(0,1), upper)\n(0,(0,1), lower)"];
+63 -> 61;
+63 -> 62;
+65 -> 63;
+65 -> 64;
+67 -> 64;
+68 -> 65;
+68 -> 66;
+68 -> 67;
+72 -> 68;
+72 -> 71;
+75 -> 72;
+75 -> 73;
+76 -> 74;
+76 -> 75;
+77 -> 70;
+77 -> 76;
+}

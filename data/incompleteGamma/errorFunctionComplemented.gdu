@@ -1,0 +1,66 @@
+digraph errorFunctionComplemented {
+16 [label="16\n423-423"]
+12 [label="12\n442-442"]
+15 [label="15\n425-425"]
+7 [label="7\n445-445"]
+8 [label="8\n452-452"]
+4 [label="4\n429-431"]
+3 [label="3\n419-421"]
+2 [label="2\n415-415"]
+18 [label="18\n410-410"]
+1 [label="1\n412-412"]
+9 [label="9\n446-446"]
+6 [label="6\n439-441"]
+10 [label="10\n449-449"]
+0 [label="0\n388-409"]
+19 [label="19"]
+17 [label="17\n416-416"]
+14 [label="14\n422-422"]
+5 [label="5\n435-436"]
+11 [label="11\n447-447"]
+13 [label="13\n432-433"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_12 [label="def(12)={y}\nuse(12)={y}"];
+setsNode_8 [label="use(8)={y}"];
+setsNode_4 [label="def(4)={z}\nuse(4)={z}"];
+setsNode_3 [label="def(3)={z}\nuse(3)={a}"];
+setsNode_18 [label="def(18)={x}\nuse(18)={a}"];
+setsNode_1 [label="def(1)={x}\nuse(1)={a}"];
+setsNode_6 [label="def(6)={y}\nuse(6)={z,p,q}"];
+setsNode_0 [label="def(0)={a,P,Q,R,S}"];
+setsNode_17 [label="use(17)={a}"];
+setsNode_5 [label="def(5)={p,q}\nuse(5)={R,S,x}"];
+setsNode_13 [label="def(13)={p,q}\nuse(13)={P,Q,x}"];
+}
+{rank = same; 12 ;  setsNode_12}
+{rank = same; 8 ;  setsNode_8}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 18 ;  setsNode_18}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 17 ;  setsNode_17}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 13 ;  setsNode_13}
+16 -> 19;
+12 -> 7;
+15 -> 19;
+7 -> 9[label="use(7,9)={y}",fontsize=14];7 -> 8[label="use(7,8)={y}",fontsize=14];
+8 -> 19;
+4 -> 13[label="use(4,13)={x}",fontsize=14];4 -> 5[label="use(4,5)={x}",fontsize=14];
+3 -> 14[label="use(3,14)={z}",fontsize=14];3 -> 4[label="use(3,4)={z}",fontsize=14];
+2 -> 17[label="use(2,17)={x}",fontsize=14];2 -> 3[label="use(2,3)={x}",fontsize=14];
+18 -> 2;
+1 -> 2;
+9 -> 11[label="use(9,11)={a}",fontsize=14];9 -> 10[label="use(9,10)={a}",fontsize=14];
+6 -> 12[label="use(6,12)={a}",fontsize=14];6 -> 7[label="use(6,7)={a}",fontsize=14];
+10 -> 19;
+0 -> 18[label="use(0,18)={a}",fontsize=14];0 -> 1[label="use(0,1)={a}",fontsize=14];
+17 -> 19;
+14 -> 16[label="use(14,16)={a}",fontsize=14];14 -> 15[label="use(14,15)={a}",fontsize=14];
+5 -> 6;
+11 -> 19;
+13 -> 6;
+}

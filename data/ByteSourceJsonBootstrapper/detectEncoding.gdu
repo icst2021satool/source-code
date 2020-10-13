@@ -1,0 +1,80 @@
+digraph detectEncoding {
+0 [label="0\n120-129"]
+17 [label="17\n154-154"]
+24 [label="24\n136-136"]
+12 [label="12\n169-169"]
+6 [label="6\n172-173"]
+1 [label="1\n150-150"]
+10 [label="10\n169-169"]
+23 [label="23\n145-145"]
+5 [label="5\n172-172"]
+8 [label="8\n172-172"]
+13 [label="13\n166-167"]
+22 [label="22\n147-147"]
+16 [label="16\n151-153"]
+2 [label="2\n161-161"]
+14 [label="14\n175-175"]
+9 [label="9\n169-169"]
+20 [label="20\n146-146"]
+4 [label="4\n172-172"]
+18 [label="18\n130-135"]
+3 [label="3\n164-164"]
+7 [label="7\n178-179"]
+19 [label="19\n144-144"]
+25 [label="25"]
+11 [label="11\n169-170"]
+15 [label="15\n162-162"]
+21 [label="21\n150-150"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_0 [label="def(0)={this,this._inputBuffer,this._inputPtr,UTF8,this._bytesPerChar,this._bigEndian,UTF16_LE,UTF16_BE,UTF32_LE,UTF32_BE,this._context,foundEncoding}"];
+setsNode_17 [label="def(17)={foundEncoding}"];
+setsNode_24 [label="def(24)={foundEncoding}"];
+setsNode_6 [label="def(6)={}\nuse(6)={this._context,foundEncoding}"];
+setsNode_23 [label="def(23)={foundEncoding}"];
+setsNode_13 [label="def(13)={}\nuse(13)={this._bigEndian}"];
+setsNode_22 [label="def(22)={foundEncoding}"];
+setsNode_16 [label="def(16)={}\nuse(16)={this,UTF8,this._bytesPerChar}"];
+setsNode_18 [label="def(18)={quad}\nuse(18)={this,UTF8,this._bytesPerChar}"];
+setsNode_7 [label="use(7)={this,this._inputPtr,quad}"];
+setsNode_11 [label="def(11)={}\nuse(11)={UTF32_LE,UTF32_BE}"];
+setsNode_15 [label="def(15)={}\nuse(15)={this._bigEndian}"];
+}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 17 ;  setsNode_17}
+{rank = same; 24 ;  setsNode_24}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 23 ;  setsNode_23}
+{rank = same; 13 ;  setsNode_13}
+{rank = same; 22 ;  setsNode_22}
+{rank = same; 16 ;  setsNode_16}
+{rank = same; 18 ;  setsNode_18}
+{rank = same; 7 ;  setsNode_7}
+{rank = same; 11 ;  setsNode_11}
+{rank = same; 15 ;  setsNode_15}
+0 -> 18[label="use(0,18)={this}",fontsize=14];0 -> 1[label="use(0,1)={this}",fontsize=14];
+17 -> 2;
+24 -> 21;
+12 -> 11;
+6 -> 7;
+1 -> 16[label="use(1,16)={this}",fontsize=14];1 -> 2[label="use(1,2)={this}",fontsize=14];
+10 -> 11;
+23 -> 21;
+5 -> 6;
+8 -> 6;
+13 -> 7;
+22 -> 21;
+16 -> 17[label="use(16,17)={this,this._inputPtr}",fontsize=14];16 -> 2[label="use(16,2)={this,this._inputPtr}",fontsize=14];
+2 -> 15[label="use(2,15)={this._inputBuffer}",fontsize=14];2 -> 3[label="use(2,3)={this._inputBuffer}",fontsize=14];
+14 -> 25;
+9 -> 12[label="use(9,12)={this,UTF16_BE}",fontsize=14];9 -> 10[label="use(9,10)={this,UTF16_BE}",fontsize=14];
+20 -> 22[label="use(20,22)={this,this._inputPtr}",fontsize=14];20 -> 21[label="use(20,21)={this,this._inputPtr}",fontsize=14];
+4 -> 8[label="use(4,8)={this,UTF16_BE}",fontsize=14];4 -> 5[label="use(4,5)={this,UTF16_BE}",fontsize=14];
+18 -> 24[label="use(18,24)={this,this._inputPtr}",fontsize=14];18 -> 19[label="use(18,19)={this,this._inputPtr}",fontsize=14];
+3 -> 14[label="use(3,14)={this,UTF16_LE}",fontsize=14];3 -> 13[label="use(3,13)={this,UTF16_LE}",fontsize=14];3 -> 9[label="use(3,9)={this,UTF16_LE}",fontsize=14];3 -> 4[label="use(3,4)={this,UTF16_LE}",fontsize=14];
+7 -> 25;
+19 -> 23[label="use(19,23)={this,this._inputPtr}",fontsize=14];19 -> 20[label="use(19,20)={this,this._inputPtr}",fontsize=14];
+11 -> 7;
+15 -> 7;
+21 -> 2;
+}

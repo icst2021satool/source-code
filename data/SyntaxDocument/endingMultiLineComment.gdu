@@ -1,0 +1,24 @@
+digraph endingMultiLineComment {
+6 [label="6"]
+3 [label="3\n647-647"]
+4 [label="4\n650-651"]
+0 [label="0\n641-641"]
+2 [label="2\n648-648"]
+1 [label="1\n645-647"]
+5 [label="5\n642-642"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_4 [label="use(4)={this}"];
+setsNode_0 [label="def(0)={this,content,startOffset,endOffset}"];
+setsNode_1 [label="def(1)={index}\nuse(1)={this,content,startOffset}"];
+}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 1 ;  setsNode_1}
+3 -> 2[label="use(3,2)={endOffset,index}",fontsize=14];3 -> 4[label="use(3,4)={endOffset,index}",fontsize=14];
+4 -> 6;
+0 -> 5[label="use(0,5)={this}",fontsize=14];0 -> 1[label="use(0,1)={this}",fontsize=14];
+2 -> 6;
+1 -> 3[label="use(1,3)={index}",fontsize=14];1 -> 2[label="use(1,2)={index}",fontsize=14];
+5 -> 6;
+}

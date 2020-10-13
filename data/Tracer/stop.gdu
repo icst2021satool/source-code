@@ -1,0 +1,42 @@
+digraph stop {
+12 [label="12"]
+2 [label="2\n408-412"]
+6 [label="6\n429-429"]
+9 [label="9\n422-421"]
+10 [label="10\n413-413"]
+7 [label="7\n421-421"]
+11 [label="11\n408-408"]
+3 [label="3\n416-417"]
+8 [label="8\n421-421"]
+0 [label="0\n408-408"]
+1 [label="1\n408-408"]
+5 [label="5\n432-433"]
+4 [label="4\n428-428"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_2 [label="def(2)={trace}"];
+setsNode_9 [label="def(9)={i}\nuse(9)={this,this.startThread,this.startTimeMs,trace,i}"];
+setsNode_7 [label="def(7)={i}"];
+setsNode_3 [label="def(3)={this.stopTimeMs}\nuse(3)={this,extraTracingStatistics}"];
+setsNode_0 [label="def(0)={this,silence_threshold,this.startThread,clock,this.extraTracingValues,extraTracingStatistics,this.startTimeMs}"];
+setsNode_5 [label="use(5)={this,silence_threshold,clock,this.extraTracingValues,null}"];
+}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 9 ;  setsNode_9}
+{rank = same; 7 ;  setsNode_7}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 5 ;  setsNode_5}
+2 -> 10[label="use(2,10)={clock}",fontsize=14];2 -> 3[label="use(2,3)={clock}",fontsize=14];
+6 -> 12;
+9 -> 8;
+10 -> 12;
+7 -> 8;
+11 -> 2;
+3 -> 7[label="use(3,7)={this,this.startTimeMs}",fontsize=14];3 -> 4[label="use(3,4)={this,this.startTimeMs}",fontsize=14];
+8 -> 9[label="use(8,9)={this,this.startTimeMs,trace}",fontsize=14];8 -> 4[label="use(8,4)={this,this.startTimeMs,trace}",fontsize=14];
+0 -> 11[label="use(0,11)={this,this.startThread}",fontsize=14];0 -> 1[label="use(0,1)={this,this.startThread}",fontsize=14];
+1 -> 2;
+5 -> 12;
+4 -> 6[label="use(4,6)={clock}",fontsize=14];4 -> 5[label="use(4,5)={clock}",fontsize=14];
+}

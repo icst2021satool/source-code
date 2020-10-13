@@ -1,0 +1,29 @@
+Subsumption Graph: 
+(0,(0,6), this) -> 
+	(0,(0,6), this) (0,2, this) (0,(0,6), MINIMIZE) (0,2, lowerBound) (0,2, upperBound) 
+(0,(0,1), this) -> 
+	(0,(0,1), this) (0,2, this) (0,(0,1), MINIMIZE) (0,2, lowerBound) (0,2, upperBound) 
+(0,2, this) -> 
+	(0,(0,6), this) (0,(0,1), this) (0,2, this) (0,(2,5), this) (0,(2,3), this) (0,4, this) (0,(0,6), MINIMIZE) (0,(0,1), MINIMIZE) (0,2, lowerBound) (0,2, upperBound) (2,(2,5), this.isMinimize) (2,(2,3), this.isMinimize) (2,4, this.currentBest) (2,4, value) 
+(0,(2,5), this) -> 
+	(0,2, this) (0,(2,5), this) (0,2, lowerBound) (0,2, upperBound) (2,(2,5), this.isMinimize) 
+(0,(2,3), this) -> 
+	(0,2, this) (0,(2,3), this) (0,2, lowerBound) (0,2, upperBound) (2,(2,3), this.isMinimize) 
+(0,4, this) -> 
+	(0,(0,6), this) (0,(0,1), this) (0,2, this) (0,(2,5), this) (0,(2,3), this) (0,4, this) (0,(0,6), MINIMIZE) (0,(0,1), MINIMIZE) (0,2, lowerBound) (0,2, upperBound) (2,(2,5), this.isMinimize) (2,(2,3), this.isMinimize) (2,4, this.currentBest) (2,4, value) 
+(0,(0,6), MINIMIZE) -> 
+	(0,(0,6), this) (0,2, this) (0,(0,6), MINIMIZE) (0,2, lowerBound) (0,2, upperBound) 
+(0,(0,1), MINIMIZE) -> 
+	(0,(0,1), this) (0,2, this) (0,(0,1), MINIMIZE) (0,2, lowerBound) (0,2, upperBound) 
+(0,2, lowerBound) -> 
+	(0,(0,6), this) (0,(0,1), this) (0,2, this) (0,(2,5), this) (0,(2,3), this) (0,4, this) (0,(0,6), MINIMIZE) (0,(0,1), MINIMIZE) (0,2, lowerBound) (0,2, upperBound) (2,(2,5), this.isMinimize) (2,(2,3), this.isMinimize) (2,4, this.currentBest) (2,4, value) 
+(0,2, upperBound) -> 
+	(0,(0,6), this) (0,(0,1), this) (0,2, this) (0,(2,5), this) (0,(2,3), this) (0,4, this) (0,(0,6), MINIMIZE) (0,(0,1), MINIMIZE) (0,2, lowerBound) (0,2, upperBound) (2,(2,5), this.isMinimize) (2,(2,3), this.isMinimize) (2,4, this.currentBest) (2,4, value) 
+(2,(2,5), this.isMinimize) -> 
+	(0,2, this) (0,(2,5), this) (0,2, lowerBound) (0,2, upperBound) (2,(2,5), this.isMinimize) 
+(2,(2,3), this.isMinimize) -> 
+	(0,2, this) (0,(2,3), this) (0,2, lowerBound) (0,2, upperBound) (2,(2,3), this.isMinimize) 
+(2,4, this.currentBest) -> 
+	(0,(0,6), this) (0,(0,1), this) (0,2, this) (0,(2,5), this) (0,(2,3), this) (0,4, this) (0,(0,6), MINIMIZE) (0,(0,1), MINIMIZE) (0,2, lowerBound) (0,2, upperBound) (2,(2,5), this.isMinimize) (2,(2,3), this.isMinimize) (2,4, this.currentBest) (2,4, value) 
+(2,4, value) -> 
+	(0,(0,6), this) (0,(0,1), this) (0,2, this) (0,(2,5), this) (0,(2,3), this) (0,4, this) (0,(0,6), MINIMIZE) (0,(0,1), MINIMIZE) (0,2, lowerBound) (0,2, upperBound) (2,(2,5), this.isMinimize) (2,(2,3), this.isMinimize) (2,4, this.currentBest) (2,4, value) 

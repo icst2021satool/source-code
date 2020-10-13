@@ -1,0 +1,100 @@
+digraph update {
+0 [label="0\n2297-2307"]
+1 [label="1\n2307-2307"]
+2 [label="2\n2313-2317"]
+3 [label="3\n2317-2317"]
+4 [label="4\n2339-2339"]
+5 [label="5\n2339-2339"]
+6 [label="6\n2342-2351"]
+7 [label="7\n2351-2351"]
+8 [label="8\n2358-2358"]
+9 [label="9\n2358-2358"]
+10 [label="10\n2371-2371"]
+11 [label="11\n2359-2363"]
+12 [label="12\n2363-2363"]
+13 [label="13\n2358-2358"]
+14 [label="14\n2364-2366"]
+15 [label="15\n2363-2363"]
+16 [label="16\n2367-2367"]
+17 [label="17\n2352-2351"]
+18 [label="18\n2340-2339"]
+19 [label="19\n2318-2319"]
+20 [label="20\n2333-2317"]
+21 [label="21\n2321-2327"]
+22 [label="22\n2327-2327"]
+23 [label="23\n2328-2327"]
+24 [label="24\n2308-2308"]
+25 [label="25\n2308-2308"]
+26 [label="26\n2307-2307"]
+27 [label="27\n2310-2308"]
+28 [label="28"]
+{
+node [shape=plaintext, fontsize=12];
+setsNode_0 [label="def(0)={this,beta,denom,knew,n,npt,nptm,work,ztest,k,this.zMatrix,this.lagrangeValuesAtNewPoint,this.bMatrix}"];
+setsNode_2 [label="def(2)={ztest,k}\ncuse(2)={ztest}"];
+setsNode_4 [label="def(4)={k}"];
+setsNode_6 [label="def(6)={k,tau,d1,d2,i}\ncuse(6)={this,denom,knew,work,this.zMatrix,this.lagrangeValuesAtNewPoint}"];
+setsNode_8 [label="def(8)={i}"];
+setsNode_11 [label="def(11)={d6,d4,d3,i}\ncuse(11)={this,beta,denom,knew,npt,work,k,tau,this.lagrangeValuesAtNewPoint,i,this.bMatrix}"];
+setsNode_13 [label="def(13)={i}\ncuse(13)={i}"];
+setsNode_14 [label="cuse(14)={this,work,d4,this.lagrangeValuesAtNewPoint,i,this.bMatrix,d3,i}"];
+setsNode_15 [label="def(15)={i}\ncuse(15)={i}"];
+setsNode_16 [label="cuse(16)={this,npt,d6,i,this.bMatrix,i}"];
+setsNode_17 [label="def(17)={i}\ncuse(17)={this,this.zMatrix,this.lagrangeValuesAtNewPoint,d1,d2,i}"];
+setsNode_18 [label="def(18)={k}\ncuse(18)={this,knew,work,k,this.zMatrix}"];
+setsNode_19 [label="def(19)={j}\ncuse(19)={this,knew,k,this.zMatrix}"];
+setsNode_20 [label="def(20)={k}\ncuse(20)={this,knew,k,this.zMatrix}"];
+setsNode_21 [label="def(21)={d5,d6,i}\ncuse(21)={this,knew,k,this.zMatrix}"];
+setsNode_23 [label="def(23)={i}\ncuse(23)={this,k,this.zMatrix,d5,d6,i}"];
+setsNode_24 [label="def(24)={j}"];
+setsNode_26 [label="def(26)={k}\ncuse(26)={k}"];
+setsNode_27 [label="def(27)={ztest,j}\ncuse(27)={this,ztest,k,j,this.zMatrix}"];
+}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 8 ;  setsNode_8}
+{rank = same; 11 ;  setsNode_11}
+{rank = same; 13 ;  setsNode_13}
+{rank = same; 14 ;  setsNode_14}
+{rank = same; 15 ;  setsNode_15}
+{rank = same; 16 ;  setsNode_16}
+{rank = same; 17 ;  setsNode_17}
+{rank = same; 18 ;  setsNode_18}
+{rank = same; 19 ;  setsNode_19}
+{rank = same; 20 ;  setsNode_20}
+{rank = same; 21 ;  setsNode_21}
+{rank = same; 23 ;  setsNode_23}
+{rank = same; 24 ;  setsNode_24}
+{rank = same; 26 ;  setsNode_26}
+{rank = same; 27 ;  setsNode_27}
+0 -> 1;
+1 -> 24[label="puse(1,24)={npt,k}",fontsize=12];1 -> 2[label="puse(1,2)={npt,k}",fontsize=12];
+2 -> 3;
+3 -> 19[label="puse(3,19)={nptm,k}",fontsize=12];3 -> 4[label="puse(3,4)={nptm,k}",fontsize=12];
+4 -> 5;
+5 -> 18[label="puse(5,18)={npt,k}",fontsize=12];5 -> 6[label="puse(5,6)={npt,k}",fontsize=12];
+6 -> 7;
+7 -> 17[label="puse(7,17)={npt,i}",fontsize=12];7 -> 8[label="puse(7,8)={npt,i}",fontsize=12];
+8 -> 9;
+9 -> 11[label="puse(9,11)={n,i}",fontsize=12];9 -> 10[label="puse(9,10)={n,i}",fontsize=12];
+10 -> 28;
+11 -> 12;
+12 -> 14[label="puse(12,14)={d6,i}",fontsize=12];12 -> 13[label="puse(12,13)={d6,i}",fontsize=12];
+13 -> 9;
+14 -> 16[label="puse(14,16)={npt,i}",fontsize=12];14 -> 15[label="puse(14,15)={npt,i}",fontsize=12];
+15 -> 12;
+16 -> 15;
+17 -> 7;
+18 -> 5;
+19 -> 21[label="puse(19,21)={ztest,j}",fontsize=12];19 -> 20[label="puse(19,20)={ztest,j}",fontsize=12];
+20 -> 3;
+21 -> 22;
+22 -> 23[label="puse(22,23)={npt,i}",fontsize=12];22 -> 20[label="puse(22,20)={npt,i}",fontsize=12];
+23 -> 22;
+24 -> 25;
+25 -> 27[label="puse(25,27)={nptm,j}",fontsize=12];25 -> 26[label="puse(25,26)={nptm,j}",fontsize=12];
+26 -> 1;
+27 -> 25;
+}

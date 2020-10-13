@@ -1,0 +1,50 @@
+digraph _matchToken {
+11 [label="11\n2436-2436"]
+7 [label="7\n2430-2430"]
+6 [label="6\n2431-2431"]
+8 [label="8\n2430-2430"]
+10 [label="10\n2438-2438"]
+12 [label="12\n2426-2426"]
+0 [label="0\n2415-2415"]
+5 [label="5\n2429-2430"]
+9 [label="9\n2434-2435"]
+13 [label="13\n2427-2427"]
+14 [label="14\n2420-2420"]
+15 [label="15\n2418-2418"]
+3 [label="3\n2422-2423"]
+2 [label="2\n2418-2418"]
+4 [label="4\n2426-2426"]
+16 [label="16"]
+1 [label="1\n2418-2418"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_11 [label="use(11)={this,matchStr,i}"];
+setsNode_0 [label="def(0)={this,matchStr,i,this._inputEnd,this._inputPtr,this._inputBuffer,len}"];
+setsNode_5 [label="def(5)={ch}\nuse(5)={this,this._inputBuffer,len}"];
+setsNode_9 [label="def(9)={c}\nuse(9)={this,ch}"];
+setsNode_14 [label="use(14)={this,matchStr,i}"];
+setsNode_3 [label="def(3)={i,this._inputPtr}\nuse(3)={this,i,this._inputBuffer}"];
+}
+{rank = same; 11 ;  setsNode_11}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 9 ;  setsNode_9}
+{rank = same; 14 ;  setsNode_14}
+{rank = same; 3 ;  setsNode_3}
+11 -> 10;
+7 -> 8[label="use(7,8)={ch}",fontsize=14];7 -> 6[label="use(7,6)={ch}",fontsize=14];
+6 -> 16;
+8 -> 6[label="use(8,6)={ch}",fontsize=14];8 -> 9[label="use(8,9)={ch}",fontsize=14];
+10 -> 16;
+12 -> 13[label="use(12,13)={this}",fontsize=14];12 -> 5[label="use(12,5)={this}",fontsize=14];
+0 -> 1;
+5 -> 7[label="use(5,7)={ch}",fontsize=14];5 -> 6[label="use(5,6)={ch}",fontsize=14];
+9 -> 11[label="use(9,11)={c}",fontsize=14];9 -> 10[label="use(9,10)={c}",fontsize=14];
+13 -> 16;
+14 -> 3;
+15 -> 2[label="use(15,2)={this}",fontsize=14];15 -> 14[label="use(15,14)={this}",fontsize=14];
+3 -> 4[label="use(3,4)={i,this._inputEnd}",fontsize=14];3 -> 1[label="use(3,1)={i,this._inputEnd}",fontsize=14];
+2 -> 14[label="use(2,14)={this,matchStr,i,this._inputBuffer,len}",fontsize=14];2 -> 3[label="use(2,3)={this,matchStr,i,this._inputBuffer,len}",fontsize=14];
+4 -> 12[label="use(4,12)={this,this._inputPtr,this._inputBuffer}",fontsize=14];4 -> 5[label="use(4,5)={this,this._inputPtr,this._inputBuffer}",fontsize=14];
+1 -> 15[label="use(1,15)={this,this._inputPtr,this._inputBuffer}",fontsize=14];1 -> 2[label="use(1,2)={this,this._inputPtr,this._inputBuffer}",fontsize=14];
+}

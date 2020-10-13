@@ -1,0 +1,157 @@
+{
+"Class" : "org.jfree.chart.plot.PiePlot", 
+"Methods" : [{ "Name" : "<init>" ,
+"Duas" : "55" ,
+"Subsumers" : 0 
+},{ "Name" : "setDataset" ,
+"Duas" : "16" ,
+"Subsumers" : 0 
+},{ "Name" : "setDirection" ,
+"Duas" : "5" ,
+"Subsumers" : 0 
+},{ "Name" : "setInteriorGap" ,
+"Duas" : "14" ,
+"Subsumers" : 0 
+},{ "Name" : "setCircular" ,
+"Duas" : "3" ,
+"Subsumers" : 0 
+},{ "Name" : "lookupSectionPaint" ,
+"Duas" : "15" ,
+"Subsumers" : 0 
+},{ "Name" : "lookupSectionPaint" ,
+"Duas" : "20" ,
+"Subsumers" : 0 
+},{ "Name" : "getSectionKey" ,
+"Duas" : "23" ,
+"Subsumers" : 0 
+},{ "Name" : "getSectionPaint" ,
+"Duas" : "6" ,
+"Subsumers" : 0 
+},{ "Name" : "clearSectionPaints" ,
+"Duas" : "3" ,
+"Subsumers" : 0 
+},{ "Name" : "setBaseSectionPaint" ,
+"Duas" : "5" ,
+"Subsumers" : 0 
+},{ "Name" : "lookupSectionOutlinePaint" ,
+"Duas" : "15" ,
+"Subsumers" : 0 
+},{ "Name" : "lookupSectionOutlinePaint" ,
+"Duas" : "25" ,
+"Subsumers" : 0 
+},{ "Name" : "clearSectionOutlinePaints" ,
+"Duas" : "3" ,
+"Subsumers" : 0 
+},{ "Name" : "setBaseSectionOutlinePaint" ,
+"Duas" : "5" ,
+"Subsumers" : 0 
+},{ "Name" : "lookupSectionOutlineStroke" ,
+"Duas" : "15" ,
+"Subsumers" : 0 
+},{ "Name" : "lookupSectionOutlineStroke" ,
+"Duas" : "19" ,
+"Subsumers" : 0 
+},{ "Name" : "clearSectionOutlineStrokes" ,
+"Duas" : "3" ,
+"Subsumers" : 0 
+},{ "Name" : "setBaseSectionOutlineStroke" ,
+"Duas" : "5" ,
+"Subsumers" : 0 
+},{ "Name" : "getExplodePercent" ,
+"Duas" : "12" ,
+"Subsumers" : 0 
+},{ "Name" : "setExplodePercent" ,
+"Duas" : "13" ,
+"Subsumers" : 0 
+},{ "Name" : "getMaximumExplodePercent" ,
+"Duas" : "18" ,
+"Subsumers" : 0 
+},{ "Name" : "setLabelLinkStyle" ,
+"Duas" : "5" ,
+"Subsumers" : 0 
+},{ "Name" : "setLabelLinkPaint" ,
+"Duas" : "5" ,
+"Subsumers" : 0 
+},{ "Name" : "setLabelLinkStroke" ,
+"Duas" : "5" ,
+"Subsumers" : 0 
+},{ "Name" : "setLabelFont" ,
+"Duas" : "5" ,
+"Subsumers" : 0 
+},{ "Name" : "setLabelPaint" ,
+"Duas" : "5" ,
+"Subsumers" : 0 
+},{ "Name" : "setLabelPadding" ,
+"Duas" : "5" ,
+"Subsumers" : 0 
+},{ "Name" : "setSimpleLabelOffset" ,
+"Duas" : "5" ,
+"Subsumers" : 0 
+},{ "Name" : "setLabelDistributor" ,
+"Duas" : "5" ,
+"Subsumers" : 0 
+},{ "Name" : "setLegendItemShape" ,
+"Duas" : "5" ,
+"Subsumers" : 0 
+},{ "Name" : "setLegendLabelGenerator" ,
+"Duas" : "5" ,
+"Subsumers" : 0 
+},{ "Name" : "initialise" ,
+"Duas" : "9" ,
+"Subsumers" : 0 
+},{ "Name" : "draw" ,
+"Duas" : "70" ,
+"Subsumers" : 0 
+},{ "Name" : "calculateLinkAndExplodeAreas" ,
+"Duas" : "64" ,
+"Subsumers" : 0 
+},{ "Name" : "drawPie" ,
+"Duas" : "82" ,
+"Subsumers" : 0 
+},{ "Name" : "drawItem" ,
+"Duas" : "123" ,
+"Subsumers" : 0 
+},{ "Name" : "drawSimpleLabels" ,
+"Duas" : "103" ,
+"Subsumers" : 0 
+},{ "Name" : "drawLabels" ,
+"Duas" : "73" ,
+"Subsumers" : 0 
+},{ "Name" : "drawLeftLabels" ,
+"Duas" : "75" ,
+"Subsumers" : 0 
+},{ "Name" : "drawRightLabels" ,
+"Duas" : "75" ,
+"Subsumers" : 0 
+},{ "Name" : "getLegendItems" ,
+"Duas" : "85" ,
+"Subsumers" : 0 
+},{ "Name" : "getArcBounds" ,
+"Duas" : "12" ,
+"Subsumers" : 0 
+},{ "Name" : "drawLeftLabel" ,
+"Duas" : "71" ,
+"Subsumers" : 0 
+},{ "Name" : "drawRightLabel" ,
+"Duas" : "71" ,
+"Subsumers" : 0 
+},{ "Name" : "findSelectionStateForDataset" ,
+"Duas" : "3" ,
+"Subsumers" : 0 
+},{ "Name" : "select" ,
+"Duas" : "92" ,
+"Subsumers" : 0 
+},{ "Name" : "calculateAngleForValue" ,
+"Duas" : "20" ,
+"Subsumers" : 0 
+},{ "Name" : "createHotSpotShape" ,
+"Duas" : "73" ,
+"Subsumers" : 0 
+},{ "Name" : "equals" ,
+"Duas" : "379" ,
+"Subsumers" : 0 
+},{ "Name" : "clone" ,
+"Duas" : "38" ,
+"Subsumers" : 0 
+}]
+}

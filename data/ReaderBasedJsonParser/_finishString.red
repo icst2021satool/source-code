@@ -1,0 +1,37 @@
+digraph { 
+979 [shape=box,style=filled,color=".0 .0 .83",label="(0,(0,1), inputLen)\n(0,(0,1), ptr)"];
+980 [label="(0,1, ptr)"];
+981 [shape=box,style=filled,color=".0 .0 .83",label="(4,(4,1), ptr)\n(0,(4,1), inputLen)"];
+982 [shape=box,style=filled,color=".0 .0 .83",label="(3,(6,1), ch)"];
+983 [label="(4,1, ptr)"];
+984 [label="(0,1, this._textBuffer)\n(0,1, this._inputBuffer)\n(0,1, this._inputPtr)\n(0,1, this)"];
+985 [shape=box,style=filled,color=".0 .0 .83",label="(0,7, ptr)"];
+986 [shape=box,style=filled,color=".0 .0 .83",label="(4,7, ptr)"];
+987 [label="(3,(6,7), ch)\n(0,7, this._textBuffer)\n(0,7, this._inputBuffer)\n(0,7, this._inputPtr)\n(0,7, this)"];
+988 [shape=box,style=filled,color=".0 .0 .83",label="(4,4, ptr)"];
+989 [label="(4,3, ptr)\n(4,(4,3), ptr)\n(0,(4,3), inputLen)"];
+990 [shape=box,style=filled,color=".0 .0 .83",label="(3,(5,4), ch)\n(2,(5,4), codes)"];
+991 [shape=box,style=filled,color=".0 .0 .83",label="(3,(3,4), ch)\n(2,(3,4), maxCode)"];
+992 [label="(0,4, ptr)"];
+993 [label="(3,(5,6), ch)\n(2,(5,6), codes)"];
+994 [label="(3,(3,5), ch)\n(2,(3,5), maxCode)"];
+995 [label="(0,(0,2), inputLen)\n(0,3, ptr)\n(0,(0,2), ptr)\n(0,3, this._inputBuffer)\n(0,3, this)"];
+980 -> 979;
+983 -> 981;
+984 -> 980;
+984 -> 982;
+984 -> 983;
+987 -> 985;
+987 -> 986;
+989 -> 986;
+989 -> 988;
+992 -> 983;
+992 -> 989;
+992 -> 990;
+992 -> 991;
+993 -> 982;
+993 -> 987;
+994 -> 990;
+994 -> 993;
+995 -> 994;
+}

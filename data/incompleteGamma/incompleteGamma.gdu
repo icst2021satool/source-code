@@ -1,0 +1,40 @@
+digraph incompleteGamma {
+6 [label="6\n557-560"]
+10 [label="10\n540-540"]
+0 [label="0\n535-535"]
+1 [label="1\n536-536"]
+2 [label="2\n535-535"]
+5 [label="5\n549-554"]
+9 [label="9\n539-539"]
+3 [label="3\n539-539"]
+11 [label="11"]
+7 [label="7\n562-562"]
+4 [label="4\n544-545"]
+8 [label="8\n546-546"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_6 [label="def(6)={r,c,ans}\nuse(6)={x,r,c,ans}"];
+setsNode_10 [label="use(10)={a,x}"];
+setsNode_0 [label="def(0)={a,x}"];
+setsNode_5 [label="def(5)={ax,r,c,ans}\nuse(5)={a,ax}"];
+setsNode_7 [label="use(7)={a,ax,ans}"];
+setsNode_4 [label="def(4)={ax}\nuse(4)={a,x}"];
+}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 10 ;  setsNode_10}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 7 ;  setsNode_7}
+{rank = same; 4 ;  setsNode_4}
+6 -> 7[label="use(6,7)={c,ans}",fontsize=14];
+10 -> 11;
+0 -> 2[label="use(0,2)={x}",fontsize=14];0 -> 1[label="use(0,1)={x}",fontsize=14];
+1 -> 11;
+2 -> 1[label="use(2,1)={a}",fontsize=14];2 -> 3[label="use(2,3)={a}",fontsize=14];
+5 -> 6;
+9 -> 10[label="use(9,10)={a,x}",fontsize=14];9 -> 4[label="use(9,4)={a,x}",fontsize=14];
+3 -> 9[label="use(3,9)={x}",fontsize=14];3 -> 4[label="use(3,4)={x}",fontsize=14];
+7 -> 11;
+4 -> 8[label="use(4,8)={ax}",fontsize=14];4 -> 5[label="use(4,5)={ax}",fontsize=14];
+8 -> 11;
+}

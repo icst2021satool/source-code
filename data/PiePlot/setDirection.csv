@@ -1,0 +1,25 @@
+Number of Variables;2;
+Variables:;
+0;;this;
+1;;direction;
+
+Number of Block duas;4;
+Line Duas for method; setDirection;
+Number;Def Line; Origin Line; Use Line; Var Id; Var Name;
+1;743;;746;0;this;
+2;743;;747;0;this;
+3;743;743;744;1;direction;
+4;743;743;746;1;direction;
+5;743;;746;1;direction;
+
+Block Duas for method; setDirection;
+Number;Def Block; Origin Block; Use Block; Var Id; Var Name;
+1;0;;1;0;this;
+;743;;746;0;this;
+;743;;747;0;this;
+2;0;0;2;1;direction;
+;743;743;744;1;direction;
+3;0;0;1;1;direction;
+;743;743;746;1;direction;
+4;0;;1;1;direction;
+;743;;746;1;direction;

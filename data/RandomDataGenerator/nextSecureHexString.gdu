@@ -1,0 +1,46 @@
+digraph nextSecureHexString {
+5 [label="5\n305-305"]
+9 [label="9\n317-317"]
+11 [label="11"]
+4 [label="4\n297-305"]
+3 [label="3\n322-322"]
+7 [label="7\n306-316"]
+2 [label="2\n296-296"]
+6 [label="6\n296-296"]
+1 [label="1\n282-296"]
+10 [label="10\n278-278"]
+0 [label="0\n277-277"]
+8 [label="8\n319-305"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_9 [label="def(9)={hex}\nuse(9)={null}"];
+setsNode_4 [label="def(4)={hash,i}\nuse(4)={secRan,alg}"];
+setsNode_3 [label="use(3)={len,outBuffer}"];
+setsNode_7 [label="def(7)={hex}\nuse(7)={i,hex}"];
+setsNode_6 [label="def(6)={iter}\nuse(6)={iter}"];
+setsNode_1 [label="def(1)={secRan,alg,numIter,outBuffer,iter}\nuse(1)={this,len}"];
+setsNode_10 [label="use(10)={len,LENGTH}"];
+setsNode_0 [label="def(0)={this,len,LENGTH}"];
+setsNode_8 [label="def(8)={i}\nuse(8)={outBuffer,hex,null}"];
+}
+{rank = same; 9 ;  setsNode_9}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 7 ;  setsNode_7}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 10 ;  setsNode_10}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 8 ;  setsNode_8}
+5 -> 7[label="use(5,7)={i,hex}",fontsize=14];5 -> 6[label="use(5,6)={i,hex}",fontsize=14];
+9 -> 8;
+4 -> 5;
+3 -> 11;
+7 -> 9[label="use(7,9)={null}",fontsize=14];7 -> 8[label="use(7,8)={null}",fontsize=14];
+2 -> 4[label="use(2,4)={numIter,iter}",fontsize=14];2 -> 3[label="use(2,3)={numIter,iter}",fontsize=14];
+6 -> 2;
+1 -> 2;
+10 -> 11;
+0 -> 10[label="use(0,10)={len}",fontsize=14];0 -> 1[label="use(0,1)={len}",fontsize=14];
+8 -> 5;
+}

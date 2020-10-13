@@ -1,0 +1,16 @@
+digraph releaseBuffered {
+2 [label="2\n102-102"]
+0 [label="0\n100-101"]
+3 [label="3"]
+1 [label="1\n105-107"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_0 [label="def(0)={this,w,this._inputPtr,this._inputBuffer,count}"];
+setsNode_1 [label="use(1)={this,w,this._inputPtr,count,null}"];
+}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 1 ;  setsNode_1}
+2 -> 3;
+0 -> 2[label="use(0,2)={this._inputPtr}",fontsize=14];0 -> 1[label="use(0,1)={this._inputPtr}",fontsize=14];
+1 -> 3;
+}

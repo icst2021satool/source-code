@@ -1,0 +1,30 @@
+digraph getCodes {
+2 [label="2\n469-473"]
+3 [label="3\n473-473"]
+0 [label="0\n462-465"]
+4 [label="4\n478-478"]
+1 [label="1\n465-465"]
+5 [label="5\n474-473"]
+6 [label="6\n465-465"]
+7 [label="7"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_2 [label="def(2)={blCount,code,nextCode,i}\nuse(2)={blCount,code}"];
+setsNode_0 [label="def(0)={max,blCount}"];
+setsNode_4 [label="use(4)={i}"];
+setsNode_5 [label="def(5)={code,i}\nuse(5)={code,nextCode,i,null}"];
+setsNode_6 [label="def(6)={max}\nuse(6)={blCount,code}"];
+}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 6 ;  setsNode_6}
+2 -> 3;
+3 -> 5[label="use(3,5)={blCount,null}",fontsize=14];3 -> 4[label="use(3,4)={blCount,null}",fontsize=14];
+0 -> 1;
+4 -> 7;
+1 -> 6;1 -> 2;
+5 -> 3;
+6 -> 1;
+}

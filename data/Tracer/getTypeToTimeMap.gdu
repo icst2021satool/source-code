@@ -1,0 +1,18 @@
+digraph getTypeToTimeMap {
+3 [label="3\n624-624"]
+1 [label="1\n624-624"]
+2 [label="2\n624-624"]
+0 [label="0\n624-624"]
+4 [label="4"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_2 [label="use(2)={typeToTimeMap}"];
+setsNode_0 [label="def(0)={typeToTimeMap}"];
+}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 0 ;  setsNode_0}
+3 -> 2;
+1 -> 2;
+2 -> 4;
+0 -> 3[label="use(0,3)={typeToTimeMap}",fontsize=14];0 -> 1[label="use(0,1)={typeToTimeMap}",fontsize=14];
+}

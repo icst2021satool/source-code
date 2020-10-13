@@ -1,0 +1,7 @@
+digraph { 
+7 [shape=box,style=filled,color=".0 .0 .83",label="(0,(0,2), this.internalArray)\n(0,(0,2), this.numElements)\n(0,(0,2), this.startIndex)\n(0,2, this)\n(0,(0,2), this)"];
+8 [shape=box,style=filled,color=".0 .0 .83",label="(0,(0,1), this.internalArray)\n(0,(0,1), this.numElements)\n(0,(0,1), this.startIndex)\n(0,(0,1), this)"];
+9 [label="(0,1, this.internalArray)\n(0,1, this.numElements)\n(0,1, this.startIndex)\n(0,1, value)\n(0,1, this)"];
+9 -> 7;
+9 -> 8;
+}

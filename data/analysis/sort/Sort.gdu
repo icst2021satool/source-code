@@ -1,0 +1,32 @@
+digraph SortPaper {
+6 [label="6"]
+1 [label="1"]
+5 [label="5"]
+0 [label="0"]
+2 [label="2"]
+7 [label="7"]
+3 [label="3"]
+4 [label="4"]
+8 [label="8"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_6 [label="def(6)={index}\nuse(6)={index}"];
+setsNode_5 [label="def(5)={maxpos,mymax}\nuse(5)={a,index}"];
+setsNode_0 [label="def(0)={a,n,sortupto,maxpos}"];
+setsNode_2 [label="def(2)={mymax,index}\nuse(2)={a,sortupto}"];
+setsNode_7 [label="def(7)={a,sortupto}\nuse(7)={a,sortupto,maxpos,mymax,index}"];
+}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 7 ;  setsNode_7}
+6 -> 3;
+1 -> 2[label="use(1,2)={n,sortupto}",fontsize=14];1 -> 8[label="use(1,8)={n,sortupto}",fontsize=14];
+5 -> 6;
+0 -> 1;
+2 -> 3;
+7 -> 1;
+3 -> 4[label="use(3,4)={n,index}",fontsize=14];3 -> 7[label="use(3,7)={n,index}",fontsize=14];
+4 -> 5[label="use(4,5)={a,mymax,index}",fontsize=14];4 -> 6[label="use(4,6)={a,mymax,index}",fontsize=14];
+}

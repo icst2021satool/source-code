@@ -1,0 +1,26 @@
+digraph findName {
+5 [label="5"]
+2 [label="2\n1936-1936"]
+0 [label="0\n1928-1928"]
+4 [label="4\n1929-1929"]
+3 [label="3\n1934-1934"]
+1 [label="1\n1931-1933"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_2 [label="use(2)={name}"];
+setsNode_0 [label="def(0)={this,quads,qlen,lastQuad,lastQuadBytes,this._symbols}"];
+setsNode_4 [label="def(4)={quads}\nuse(4)={this,quads}"];
+setsNode_3 [label="use(3)={this,quads,qlen,lastQuadBytes}"];
+setsNode_1 [label="def(1)={qlen,name}\nuse(1)={this,quads,qlen,lastQuad,null}"];
+}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 1 ;  setsNode_1}
+2 -> 5;
+0 -> 4[label="use(0,4)={quads,qlen}",fontsize=14];0 -> 1[label="use(0,1)={quads,qlen}",fontsize=14];
+4 -> 1;
+3 -> 5;
+1 -> 3[label="use(1,3)={name}",fontsize=14];1 -> 2[label="use(1,2)={name}",fontsize=14];
+}

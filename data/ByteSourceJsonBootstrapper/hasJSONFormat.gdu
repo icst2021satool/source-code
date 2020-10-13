@@ -1,0 +1,164 @@
+digraph hasJSONFormat {
+39 [label="39\n268-268"]
+50 [label="50"]
+9 [label="9\n334-334"]
+35 [label="35\n298-298"]
+19 [label="19\n328-328"]
+4 [label="4\n302-302"]
+46 [label="46\n272-272"]
+31 [label="31\n290-291"]
+14 [label="14\n332-332"]
+22 [label="22\n320-320"]
+41 [label="41\n274-274"]
+13 [label="13\n335-335"]
+27 [label="27\n309-309"]
+18 [label="18\n328-328"]
+30 [label="30\n305-305"]
+48 [label="48\n266-266"]
+42 [label="42\n277-277"]
+25 [label="25\n303-304"]
+26 [label="26\n308-308"]
+32 [label="32\n294-294"]
+16 [label="16\n328-328"]
+3 [label="3\n288-288"]
+1 [label="1\n262-264"]
+6 [label="6\n320-320"]
+5 [label="5\n314-317"]
+47 [label="47\n269-269"]
+33 [label="33\n295-295"]
+29 [label="29\n311-311"]
+21 [label="21\n326-326"]
+2 [label="2\n283-284"]
+28 [label="28\n308-308"]
+15 [label="15\n324-325"]
+37 [label="37\n285-285"]
+23 [label="23\n321-321"]
+45 [label="45\n275-275"]
+49 [label="49\n260-260"]
+44 [label="44\n278-278"]
+34 [label="34\n294-294"]
+0 [label="0\n259-259"]
+24 [label="24\n318-318"]
+36 [label="36\n292-292"]
+12 [label="12\n338-338"]
+20 [label="20\n328-328"]
+17 [label="17\n328-328"]
+8 [label="8\n331-331"]
+7 [label="7\n323-323"]
+40 [label="40\n271-271"]
+11 [label="11\n340-340"]
+10 [label="10\n337-337"]
+38 [label="38\n265-265"]
+43 [label="43\n280-280"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_35 [label="use(35)={SOLID_MATCH}"];
+setsNode_46 [label="use(46)={INCONCLUSIVE}"];
+setsNode_31 [label="def(31)={ch}\nuse(31)={acc}"];
+setsNode_14 [label="use(14)={acc,ch}"];
+setsNode_13 [label="use(13)={acc,ch}"];
+setsNode_27 [label="use(27)={b}"];
+setsNode_18 [label="use(18)={SOLID_MATCH,ch}"];
+setsNode_30 [label="use(30)={INCONCLUSIVE}"];
+setsNode_48 [label="use(48)={INCONCLUSIVE}"];
+setsNode_25 [label="def(25)={ch}\nuse(25)={acc}"];
+setsNode_1 [label="def(1)={b}\nuse(1)={acc}"];
+setsNode_5 [label="def(5)={strength}\nuse(5)={strength}"];
+setsNode_47 [label="use(47)={SOLID_MATCH}"];
+setsNode_33 [label="use(33)={b}"];
+setsNode_29 [label="use(29)={b}"];
+setsNode_21 [label="use(21)={INCONCLUSIVE}"];
+setsNode_2 [label="def(2)={ch}\nuse(2)={acc,NO_MATCH}"];
+setsNode_15 [label="def(15)={ch}\nuse(15)={acc}"];
+setsNode_37 [label="use(37)={INCONCLUSIVE}"];
+setsNode_23 [label="use(23)={ch}"];
+setsNode_45 [label="use(45)={SOLID_MATCH}"];
+setsNode_49 [label="use(49)={INCONCLUSIVE}"];
+setsNode_44 [label="use(44)={INCONCLUSIVE}"];
+setsNode_0 [label="def(0)={acc,INCONCLUSIVE,NO_MATCH,SOLID_MATCH,WEAK_MATCH}"];
+setsNode_24 [label="use(24)={ch}"];
+setsNode_36 [label="use(36)={INCONCLUSIVE}"];
+setsNode_12 [label="use(12)={acc,ch}"];
+setsNode_11 [label="use(11)={SOLID_MATCH}"];
+setsNode_43 [label="def(43)={b}\nuse(43)={acc}"];
+}
+{rank = same; 35 ;  setsNode_35}
+{rank = same; 46 ;  setsNode_46}
+{rank = same; 31 ;  setsNode_31}
+{rank = same; 14 ;  setsNode_14}
+{rank = same; 13 ;  setsNode_13}
+{rank = same; 27 ;  setsNode_27}
+{rank = same; 18 ;  setsNode_18}
+{rank = same; 30 ;  setsNode_30}
+{rank = same; 48 ;  setsNode_48}
+{rank = same; 25 ;  setsNode_25}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 47 ;  setsNode_47}
+{rank = same; 33 ;  setsNode_33}
+{rank = same; 29 ;  setsNode_29}
+{rank = same; 21 ;  setsNode_21}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 15 ;  setsNode_15}
+{rank = same; 37 ;  setsNode_37}
+{rank = same; 23 ;  setsNode_23}
+{rank = same; 45 ;  setsNode_45}
+{rank = same; 49 ;  setsNode_49}
+{rank = same; 44 ;  setsNode_44}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 24 ;  setsNode_24}
+{rank = same; 36 ;  setsNode_36}
+{rank = same; 12 ;  setsNode_12}
+{rank = same; 11 ;  setsNode_11}
+{rank = same; 43 ;  setsNode_43}
+39 -> 47[label="use(39,47)={acc}",fontsize=14];39 -> 40[label="use(39,40)={acc}",fontsize=14];
+9 -> 13[label="use(9,13)={WEAK_MATCH}",fontsize=14];9 -> 10[label="use(9,10)={WEAK_MATCH}",fontsize=14];
+35 -> 50;
+19 -> 20[label="use(19,20)={WEAK_MATCH}",fontsize=14];19 -> 17[label="use(19,17)={WEAK_MATCH}",fontsize=14];
+4 -> 25[label="use(4,25)={WEAK_MATCH}",fontsize=14];4 -> 5[label="use(4,5)={WEAK_MATCH}",fontsize=14];
+46 -> 50;
+31 -> 36[label="use(31,36)={WEAK_MATCH}",fontsize=14];31 -> 32[label="use(31,32)={WEAK_MATCH}",fontsize=14];
+14 -> 50;
+22 -> 23[label="use(22,23)={WEAK_MATCH}",fontsize=14];22 -> 7[label="use(22,7)={WEAK_MATCH}",fontsize=14];
+41 -> 45[label="use(41,45)={acc}",fontsize=14];41 -> 42[label="use(41,42)={acc}",fontsize=14];
+13 -> 50;
+27 -> 50;
+18 -> 50;
+30 -> 50;
+48 -> 50;
+42 -> 44[label="use(42,44)={acc}",fontsize=14];42 -> 43[label="use(42,43)={acc}",fontsize=14];
+25 -> 30[label="use(25,30)={WEAK_MATCH}",fontsize=14];25 -> 26[label="use(25,26)={WEAK_MATCH}",fontsize=14];
+26 -> 28[label="use(26,28)={WEAK_MATCH}",fontsize=14];26 -> 27[label="use(26,27)={WEAK_MATCH}",fontsize=14];
+32 -> 34[label="use(32,34)={WEAK_MATCH}",fontsize=14];32 -> 33[label="use(32,33)={WEAK_MATCH}",fontsize=14];
+16 -> 19[label="use(16,19)={WEAK_MATCH}",fontsize=14];16 -> 17[label="use(16,17)={WEAK_MATCH}",fontsize=14];
+3 -> 31[label="use(3,31)={WEAK_MATCH}",fontsize=14];3 -> 4[label="use(3,4)={WEAK_MATCH}",fontsize=14];
+1 -> 38[label="use(1,38)={NO_MATCH}",fontsize=14];1 -> 2[label="use(1,2)={NO_MATCH}",fontsize=14];
+6 -> 22[label="use(6,22)={WEAK_MATCH}",fontsize=14];6 -> 7[label="use(6,7)={WEAK_MATCH}",fontsize=14];
+5 -> 24[label="use(5,24)={WEAK_MATCH}",fontsize=14];5 -> 6[label="use(5,6)={WEAK_MATCH}",fontsize=14];
+47 -> 50;
+33 -> 50;
+29 -> 50;
+21 -> 50;
+2 -> 37[label="use(2,37)={WEAK_MATCH}",fontsize=14];2 -> 3[label="use(2,3)={WEAK_MATCH}",fontsize=14];
+28 -> 27[label="use(28,27)={WEAK_MATCH}",fontsize=14];28 -> 29[label="use(28,29)={WEAK_MATCH}",fontsize=14];
+15 -> 21[label="use(15,21)={WEAK_MATCH}",fontsize=14];15 -> 16[label="use(15,16)={WEAK_MATCH}",fontsize=14];
+37 -> 50;
+23 -> 50;
+45 -> 50;
+49 -> 50;
+44 -> 50;
+34 -> 33[label="use(34,33)={WEAK_MATCH}",fontsize=14];34 -> 35[label="use(34,35)={WEAK_MATCH}",fontsize=14];
+0 -> 49[label="use(0,49)={acc}",fontsize=14];0 -> 1[label="use(0,1)={acc}",fontsize=14];
+24 -> 50;
+36 -> 50;
+12 -> 50;
+20 -> 18;
+17 -> 18;
+8 -> 14[label="use(8,14)={WEAK_MATCH}",fontsize=14];8 -> 9[label="use(8,9)={WEAK_MATCH}",fontsize=14];
+7 -> 15[label="use(7,15)={WEAK_MATCH}",fontsize=14];7 -> 8[label="use(7,8)={WEAK_MATCH}",fontsize=14];
+40 -> 46[label="use(40,46)={acc}",fontsize=14];40 -> 41[label="use(40,41)={acc}",fontsize=14];
+11 -> 50;
+10 -> 12[label="use(10,12)={WEAK_MATCH}",fontsize=14];10 -> 11[label="use(10,11)={WEAK_MATCH}",fontsize=14];
+38 -> 48[label="use(38,48)={acc}",fontsize=14];38 -> 39[label="use(38,39)={acc}",fontsize=14];
+43 -> 2;
+}

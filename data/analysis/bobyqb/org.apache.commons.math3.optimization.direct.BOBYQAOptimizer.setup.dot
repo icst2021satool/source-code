@@ -1,0 +1,37 @@
+digraph { 
+2603 [shape=box,style=filled,color=".7 .3 1.0",label="[2391,(2392,2394),nPointsInterval]\n[2381,(2392,2394),this.numberOfInterpolationPoints]\n[2381,(2392,2394),this]"];
+2604 [shape=box,style=filled,color=".7 .3 1.0",label="[2404,2410,minDiff]\n[2404,(2409,2410),minDiff]"];
+2605 [shape=box,style=filled,color=".7 .3 1.0",label="[2407,2410,minDiff]\n[2407,(2409,2410),minDiff]"];
+2606 [label="[2403,(2409,2410),requiredMinDiff]\n[2381,2410,this]"];
+2607 [shape=box,style=filled,color=".7 .3 1.0",label="[2407,(2409,2414),minDiff]"];
+2608 [shape=box,style=filled,color=".7 .3 1.0",label="[2405,2406,i][2405,2407,i][2405,2405,i]\n[2405,(2405,2406),i]\n[2407,2407,minDiff]"];
+2609 [label="[2405,(2405,2409),i]\n[2405,2406,i][2405,2407,i][2405,2405,i]\n[2405,(2405,2406),i]\n[2404,2407,minDiff]\n[2401,2406,this.boundDifference][2401,2407,this.boundDifference]\n[2384,(2405,2406),dimension]\n[2381,2406,upperBound]\n[2381,2406,lowerBound]\n[2381,2406,this][2381,2407,this]"];
+2610 [shape=box,style=filled,color=".7 .3 1.0",label="[2404,(2409,2414),minDiff]"];
+2611 [label="[2403,(2409,2414),requiredMinDiff]"];
+2612 [label="[2405,(2405,2409),i]"];
+2613 [label="[2391,(2392,2401),nPointsInterval]\n[2384,2414,dimension][2384,2416,dimension][2384,2418,dimension][2384,2420,dimension][2384,2422,dimension][2384,2423,dimension][2384,2424,dimension][2384,2425,dimension][2384,2427,dimension][2384,2428,dimension][2384,2429,dimension][2384,2430,dimension][2384,2431,dimension]\n[2384,(2405,2409),dimension]\n[2384,2401,dimension]\n[2381,2403,this.initialTrustRegionRadius]\n[2381,2414,this.numberOfInterpolationPoints][2381,2416,this.numberOfInterpolationPoints][2381,2418,this.numberOfInterpolationPoints][2381,2421,this.numberOfInterpolationPoints][2381,2426,this.numberOfInterpolationPoints][2381,2430,this.numberOfInterpolationPoints]\n[2381,(2392,2401),this.numberOfInterpolationPoints]\n[2381,2414,this][2381,2414,this][2381,2416,this][2381,2416,this][2381,2418,this][2381,2418,this][2381,2420,this][2381,2421,this][2381,2421,this][2381,2422,this][2381,2423,this][2381,2424,this][2381,2425,this][2381,2426,this][2381,2426,this][2381,2427,this][2381,2428,this][2381,2429,this][2381,2430,this][2381,2430,this][2381,2431,this]\n[2381,2401,this][2381,2403,this]\n[2381,(2392,2401),this]"];
+2614 [label="[2391,(2392,2392),nPointsInterval]\n[2381,(2392,2392),this.numberOfInterpolationPoints]\n[2381,(2392,2392),this]"];
+2615 [shape=box,style=filled,color=".7 .3 1.0",label="[2391,(2392,2394),nPointsInterval]\n[2381,(2392,2394),this.numberOfInterpolationPoints]\n[2381,(2392,2394),this]"];
+2616 [label="[2391,2394,nPointsInterval]\n[2381,2394,NUMBER_OF_INTERPOLATION_POINTS]\n[2381,2394,this.numberOfInterpolationPoints]\n[2381,2394,this]"];
+2617 [shape=box,style=filled,color=".7 .3 1.0",label="[2384,2388,dimension]\n[2384,(2387,2388),dimension]"];
+2618 [label="[2384,2391,dimension][2384,2391,dimension]\n[2384,(2387,2391),dimension]"];
+2606 -> 2604;
+2606 -> 2605;
+2609 -> 2605;
+2609 -> 2607;
+2609 -> 2608;
+2611 -> 2607;
+2611 -> 2610;
+2612 -> 2604;
+2612 -> 2610;
+2613 -> 2606;
+2613 -> 2609;
+2613 -> 2611;
+2613 -> 2612;
+2614 -> 2603;
+2614 -> 2613;
+2616 -> 2603;
+2616 -> 2615;
+2618 -> 2614;
+2618 -> 2616;
+}

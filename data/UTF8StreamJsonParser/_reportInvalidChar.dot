@@ -1,0 +1,7 @@
+digraph { 
+1985 [shape=box,style=filled,color=".0 .0 .83",label="(0,2, c)\n(0,(0,2), c)\n(0,2, this)"];
+1986 [shape=box,style=filled,color=".0 .0 .83",label="(0,(0,1), c)"];
+1987 [label="(0,1, c)\n(0,1, this)"];
+1987 -> 1985;
+1987 -> 1986;
+}

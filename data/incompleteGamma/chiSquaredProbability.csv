@@ -1,0 +1,29 @@
+Number of Variables;2;
+Variables:;
+0;;x;
+1;;v;
+
+Number of Block duas;6;
+Line Duas for method; chiSquaredProbability;
+Number;Def Line; Origin Line; Use Line; Var Id; Var Name;
+1;108;108;108;0;x;
+2;108;108;109;0;x;
+3;108;;111;0;x;
+4;108;108;109;1;v;
+5;108;108;111;1;v;
+6;108;;111;1;v;
+
+Block Duas for method; chiSquaredProbability;
+Number;Def Block; Origin Block; Use Block; Var Id; Var Name;
+1;0;0;2;0;x;
+;108;108;108;0;x;
+2;0;0;1;0;x;
+;108;108;109;0;x;
+3;0;;3;0;x;
+;108;;111;0;x;
+4;0;2;1;1;v;
+;108;108;109;1;v;
+5;0;2;3;1;v;
+;108;108;111;1;v;
+6;0;;3;1;v;
+;108;;111;1;v;

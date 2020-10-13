@@ -1,0 +1,40 @@
+digraph appendSpaces {
+3 [label="3\n360-360"]
+1 [label="1\n343-343"]
+2 [label="2\n349-349"]
+7 [label="7\n363-363"]
+0 [label="0\n338-338"]
+5 [label="5\n354-355"]
+6 [label="6\n351-352"]
+8 [label="8\n344-345"]
+9 [label="9\n339-341"]
+10 [label="10"]
+4 [label="4\n357-358"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_3 [label="use(3)={sb}"];
+setsNode_0 [label="def(0)={sb,numSpaces,logger}"];
+setsNode_5 [label="use(5)={sb}"];
+setsNode_6 [label="use(6)={sb}"];
+setsNode_8 [label="def(8)={numSpaces}\nuse(8)={sb,numSpaces}"];
+setsNode_9 [label="def(9)={numSpaces}\nuse(9)={logger}"];
+setsNode_4 [label="use(4)={sb}"];
+}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 8 ;  setsNode_8}
+{rank = same; 9 ;  setsNode_9}
+{rank = same; 4 ;  setsNode_4}
+3 -> 7;
+1 -> 8[label="use(1,8)={numSpaces}",fontsize=14];1 -> 2[label="use(1,2)={numSpaces}",fontsize=14];
+2 -> 7[label="use(2,7)={numSpaces}",fontsize=14];2 -> 6[label="use(2,6)={numSpaces}",fontsize=14];2 -> 5[label="use(2,5)={numSpaces}",fontsize=14];2 -> 4[label="use(2,4)={numSpaces}",fontsize=14];2 -> 3[label="use(2,3)={numSpaces}",fontsize=14];
+7 -> 10;
+0 -> 9[label="use(0,9)={numSpaces}",fontsize=14];0 -> 1[label="use(0,1)={numSpaces}",fontsize=14];
+5 -> 7;
+6 -> 7;
+8 -> 1;
+9 -> 1;
+4 -> 7;
+}

@@ -1,0 +1,22 @@
+digraph getExplodePercent {
+0 [label="0\n1611-1612"]
+2 [label="2\n1613-1614"]
+4 [label="4"]
+3 [label="3\n1615-1615"]
+1 [label="1\n1618-1618"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_0 [label="def(0)={this,key,this.explodePercentages,result}"];
+setsNode_2 [label="def(2)={percent}\nuse(2)={this,key,result}"];
+setsNode_3 [label="def(3)={result}\nuse(3)={percent}"];
+setsNode_1 [label="use(1)={this.explodePercentages}"];
+}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 1 ;  setsNode_1}
+0 -> 2[label="use(0,2)={this,result}",fontsize=14];0 -> 1[label="use(0,1)={this,result}",fontsize=14];
+2 -> 3[label="use(2,3)={percent}",fontsize=14];2 -> 1[label="use(2,1)={percent}",fontsize=14];
+3 -> 1;
+1 -> 4;
+}

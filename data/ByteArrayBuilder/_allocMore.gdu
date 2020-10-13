@@ -1,0 +1,18 @@
+digraph _allocMore {
+0 [label="0\n259-269"]
+3 [label="3"]
+2 [label="2\n270-270"]
+1 [label="1\n272-275"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_0 [label="def(0)={this,this._currBlock,this._pastBlocks,newSize}"];
+setsNode_2 [label="def(2)={newSize}"];
+setsNode_1 [label="use(1)={this,this._pastBlocks,newSize,null}"];
+}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 1 ;  setsNode_1}
+0 -> 2[label="use(0,2)={newSize}",fontsize=14];0 -> 1[label="use(0,1)={newSize}",fontsize=14];
+2 -> 1;
+1 -> 3;
+}

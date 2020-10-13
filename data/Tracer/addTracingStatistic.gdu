@@ -1,0 +1,16 @@
+digraph addTracingStatistic {
+2 [label="2\n377-380"]
+3 [label="3"]
+1 [label="1\n382-382"]
+0 [label="0\n375-375"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_2 [label="use(2)={tracingStatistic,extraTracingStatistics}"];
+setsNode_0 [label="def(0)={tracingStatistic,extraTracingStatistics}"];
+}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 0 ;  setsNode_0}
+2 -> 3;
+1 -> 3;
+0 -> 2[label="use(0,2)={tracingStatistic}",fontsize=14];0 -> 1[label="use(0,1)={tracingStatistic}",fontsize=14];
+}

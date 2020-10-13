@@ -1,0 +1,26 @@
+Number of Variables;2;
+Variables:;
+0;;found;
+1;;byId;
+
+Number of Block duas;5;
+Line Duas for method; byId;
+Number;Def Line; Origin Line; Use Line; Var Id; Var Name;
+1;177;179;180;3;found;
+2;177;179;181;3;found;
+3;177;;180;3;found;
+4;178;;181;5;byId;
+5;178;;180;5;byId;
+
+Block Duas for method; byId;
+Number;Def Block; Origin Block; Use Block; Var Id; Var Name;
+1;0;0;2;0;found;
+;177;179;180;3;found;
+2;0;0;1;0;found;
+;177;179;181;3;found;
+3;0;;2;0;found;
+;177;;180;3;found;
+4;0;;1;1;byId;
+;178;;181;5;byId;
+5;0;;2;1;byId;
+;178;;180;5;byId;

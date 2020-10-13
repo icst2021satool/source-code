@@ -1,0 +1,38 @@
+digraph lookupSectionPaint {
+9 [label="9"]
+5 [label="5\n953-953"]
+0 [label="0\n934-941"]
+4 [label="4\n947-948"]
+6 [label="6\n955-955"]
+7 [label="7\n949-950"]
+8 [label="8\n942-942"]
+2 [label="2\n957-957"]
+3 [label="3\n959-959"]
+1 [label="1\n946-946"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_5 [label="def(5)={result}\nuse(5)={this,ds}"];
+setsNode_0 [label="def(0)={this,key,selected,autoPopulate,this.sectionPaintMap,this.baseSectionPaint,result}"];
+setsNode_4 [label="def(4)={ds}\nuse(4)={this}"];
+setsNode_7 [label="def(7)={result}\nuse(7)={this,key,this.baseSectionPaint,result}"];
+setsNode_8 [label="use(8)={this.sectionPaintMap}"];
+setsNode_2 [label="def(2)={result}\nuse(2)={this,ds}"];
+setsNode_3 [label="use(3)={this.sectionPaintMap}"];
+}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 7 ;  setsNode_7}
+{rank = same; 8 ;  setsNode_8}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 3 ;  setsNode_3}
+5 -> 6;
+0 -> 8[label="use(0,8)={selected,this.sectionPaintMap}",fontsize=14];0 -> 1[label="use(0,1)={selected,this.sectionPaintMap}",fontsize=14];
+4 -> 7[label="use(4,7)={result}",fontsize=14];4 -> 5[label="use(4,5)={result}",fontsize=14];
+6 -> 3;
+7 -> 6;
+8 -> 9;
+2 -> 3;
+3 -> 9;
+1 -> 4[label="use(1,4)={autoPopulate}",fontsize=14];1 -> 2[label="use(1,2)={autoPopulate}",fontsize=14];
+}

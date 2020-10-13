@@ -1,0 +1,32 @@
+digraph getCurrentSegment {
+0 [label="0\n530-530"]
+4 [label="4\n538-538"]
+6 [label="6\n531-531"]
+7 [label="7"]
+1 [label="1\n533-534"]
+2 [label="2\n536-536"]
+5 [label="5\n535-535"]
+3 [label="3\n541-541"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_0 [label="def(0)={this,this._inputStart,this._currentSegment,this._currentSize}"];
+setsNode_4 [label="use(4)={this}"];
+setsNode_6 [label="use(6)={this}"];
+setsNode_1 [label="def(1)={curr}\nuse(1)={this,this._currentSize}"];
+setsNode_5 [label="def(5)={this._currentSegment}\nuse(5)={this}"];
+setsNode_3 [label="use(3)={this,this._currentSize}"];
+}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 3 ;  setsNode_3}
+0 -> 6[label="use(0,6)={this,this._inputStart}",fontsize=14];0 -> 1[label="use(0,1)={this,this._inputStart}",fontsize=14];
+4 -> 3;
+6 -> 3;
+1 -> 5[label="use(1,5)={this._currentSegment}",fontsize=14];1 -> 2[label="use(1,2)={this._currentSegment}",fontsize=14];
+2 -> 4[label="use(2,4)={this,this._currentSegment,curr}",fontsize=14];2 -> 3[label="use(2,3)={this,this._currentSegment,curr}",fontsize=14];
+5 -> 3;
+3 -> 7;
+}

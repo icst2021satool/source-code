@@ -1,0 +1,46 @@
+digraph buildTree {
+4 [label="4\n445-445"]
+12 [label="12"]
+0 [label="0\n441-445"]
+2 [label="2\n458-458"]
+10 [label="10\n452-450"]
+3 [label="3\n446-447"]
+5 [label="5\n448-450"]
+7 [label="7\n454-455"]
+6 [label="6\n450-450"]
+11 [label="11\n452-452"]
+1 [label="1\n445-445"]
+9 [label="9\n452-452"]
+8 [label="8\n451-452"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_4 [label="def(4)={i}\nuse(4)={i}"];
+setsNode_0 [label="def(0)={litTable,literalCodes,root,i}"];
+setsNode_2 [label="use(2)={root}"];
+setsNode_10 [label="def(10)={node,p}\nuse(10)={node,p}"];
+setsNode_3 [label="def(3)={len}\nuse(3)={litTable,i}"];
+setsNode_5 [label="def(5)={node,lit,p}\nuse(5)={literalCodes,root,len}"];
+setsNode_7 [label="use(7)={literalCodes,i,len,node}"];
+setsNode_8 [label="def(8)={bit}\nuse(8)={lit,p}"];
+}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 10 ;  setsNode_10}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 7 ;  setsNode_7}
+{rank = same; 8 ;  setsNode_8}
+4 -> 1;
+0 -> 1;
+2 -> 12;
+10 -> 6;
+3 -> 5[label="use(3,5)={len}",fontsize=14];3 -> 4[label="use(3,4)={len}",fontsize=14];
+5 -> 6;
+7 -> 4;
+6 -> 8[label="use(6,8)={p}",fontsize=14];6 -> 7[label="use(6,7)={p}",fontsize=14];
+11 -> 10;
+1 -> 3[label="use(1,3)={litTable,i}",fontsize=14];1 -> 2[label="use(1,2)={litTable,i}",fontsize=14];
+9 -> 10;
+8 -> 11[label="use(8,11)={bit}",fontsize=14];8 -> 9[label="use(8,9)={bit}",fontsize=14];
+}

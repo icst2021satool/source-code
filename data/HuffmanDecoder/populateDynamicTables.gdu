@@ -1,0 +1,60 @@
+digraph populateDynamicTables {
+9 [label="9\n398-398"]
+5 [label="5\n385-385"]
+12 [label="12\n396-397"]
+2 [label="2\n377-383"]
+11 [label="11\n399-400"]
+1 [label="1\n373-373"]
+3 [label="3\n384-384"]
+6 [label="6\n389-390"]
+8 [label="8\n395-395"]
+13 [label="13\n394-394"]
+4 [label="4\n405-407"]
+7 [label="7\n393-393"]
+10 [label="10\n402-402"]
+17 [label="17"]
+14 [label="14\n391-392"]
+16 [label="16\n374-373"]
+0 [label="0\n370-373"]
+15 [label="15\n386-387"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_12 [label="def(12)={value,length}\nuse(12)={reader}"];
+setsNode_2 [label="def(2)={codeLengthTree,auxBuffer,value,length,off}\nuse(2)={literals,distances,codeLengths}"];
+setsNode_11 [label="def(11)={value,length}\nuse(11)={reader}"];
+setsNode_6 [label="def(6)={}\nuse(6)={reader,codeLengthValues}"];
+setsNode_13 [label="def(13)={length}\nuse(13)={reader}"];
+setsNode_4 [label="use(4)={literals,distances,codeLengthTree}"];
+setsNode_14 [label="def(14)={value,off}\nuse(14)={codeLengthTree,length,off}"];
+setsNode_16 [label="def(16)={cLen}\nuse(16)={reader,codeLengths,codeLengthValues,cLen}"];
+setsNode_0 [label="def(0)={reader,literals,distances,CODE_LENGTHS_ORDER,codeLengths,codeLengthValues,cLen}"];
+setsNode_15 [label="def(15)={length,off}\nuse(15)={codeLengthTree,auxBuffer,value,length}"];
+}
+{rank = same; 12 ;  setsNode_12}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 11 ;  setsNode_11}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 13 ;  setsNode_13}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 14 ;  setsNode_14}
+{rank = same; 16 ;  setsNode_16}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 15 ;  setsNode_15}
+9 -> 11[label="use(9,11)={off}",fontsize=14];9 -> 10[label="use(9,10)={off}",fontsize=14];
+5 -> 15[label="use(5,15)={value}",fontsize=14];5 -> 6[label="use(5,6)={value}",fontsize=14];
+12 -> 10;
+2 -> 3;
+11 -> 10;
+1 -> 16[label="use(1,16)={CODE_LENGTHS_ORDER,codeLengthValues}",fontsize=14];1 -> 2[label="use(1,2)={CODE_LENGTHS_ORDER,codeLengthValues}",fontsize=14];
+3 -> 5[label="use(3,5)={codeLengthTree,length}",fontsize=14];3 -> 4[label="use(3,4)={codeLengthTree,length}",fontsize=14];
+6 -> 14[label="use(6,14)={off}",fontsize=14];6 -> 7[label="use(6,7)={off}",fontsize=14];
+8 -> 12[label="use(8,12)={off}",fontsize=14];8 -> 9[label="use(8,9)={off}",fontsize=14];
+13 -> 10;
+4 -> 17;
+7 -> 13[label="use(7,13)={off}",fontsize=14];7 -> 8[label="use(7,8)={off}",fontsize=14];
+10 -> 3;
+14 -> 10;
+16 -> 1;
+0 -> 1;
+15 -> 3;
+}

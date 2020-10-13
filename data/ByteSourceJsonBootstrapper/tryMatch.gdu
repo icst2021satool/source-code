@@ -1,0 +1,32 @@
+digraph tryMatch {
+0 [label="0\n346-346"]
+1 [label="1\n346-346"]
+6 [label="6\n351-351"]
+3 [label="3\n347-347"]
+8 [label="8"]
+2 [label="2\n354-354"]
+7 [label="7\n348-348"]
+4 [label="4\n350-350"]
+5 [label="5\n346-346"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_0 [label="def(0)={acc,matchStr,fullMatchStrength,INCONCLUSIVE,NO_MATCH,i,len}"];
+setsNode_6 [label="use(6)={len}"];
+setsNode_2 [label="use(2)={fullMatchStrength}"];
+setsNode_7 [label="use(7)={i}"];
+setsNode_5 [label="def(5)={i}\nuse(5)={INCONCLUSIVE}"];
+}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 7 ;  setsNode_7}
+{rank = same; 5 ;  setsNode_5}
+0 -> 1;
+1 -> 3[label="use(1,3)={INCONCLUSIVE,NO_MATCH}",fontsize=14];1 -> 2[label="use(1,2)={INCONCLUSIVE,NO_MATCH}",fontsize=14];
+6 -> 8;
+3 -> 7[label="use(3,7)={acc}",fontsize=14];3 -> 4[label="use(3,4)={acc}",fontsize=14];
+2 -> 8;
+7 -> 8;
+4 -> 6[label="use(4,6)={acc,matchStr,INCONCLUSIVE}",fontsize=14];4 -> 5[label="use(4,5)={acc,matchStr,INCONCLUSIVE}",fontsize=14];
+5 -> 1;
+}

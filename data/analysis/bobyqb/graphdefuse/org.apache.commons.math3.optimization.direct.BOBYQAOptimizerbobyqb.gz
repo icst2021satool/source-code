@@ -1,0 +1,1084 @@
+digraph bobyqb {
+0 [label="0\n378-411"]
+1 [label="1\n411-411"]
+2 [label="2\n417-444"]
+3 [label="3\n445-445"]
+4 [label="4\n1197-1198"]
+5 [label="5\n1216-1216"]
+6 [label="6\n1199-1199"]
+7 [label="7\n1199-1199"]
+8 [label="8\n1214-1214"]
+9 [label="9\n1202-1207"]
+10 [label="10\n1210-1210"]
+11 [label="11\n1199-1199"]
+12 [label="12\n1211-1211"]
+13 [label="13\n1208-1208"]
+14 [label="14\n1172-1173"]
+15 [label="15\n1192-1192"]
+16 [label="16\n1193-1193"]
+17 [label="17\n1174-1176"]
+18 [label="18\n1178-1178"]
+19 [label="19\n1181-1181"]
+20 [label="20\n1183-1186"]
+21 [label="21\n1179-1179"]
+22 [label="22\n1177-1177"]
+23 [label="23\n1120-1122"]
+24 [label="24\n1122-1122"]
+25 [label="25\n1141-1141"]
+26 [label="26\n1158-1158"]
+27 [label="27\n1161-1161"]
+28 [label="28\n1164-1164"]
+29 [label="29\n1165-1165"]
+30 [label="30\n1162-1162"]
+31 [label="31\n1159-1159"]
+32 [label="32\n1142-1143"]
+33 [label="33\n1150-1156"]
+34 [label="34\n1145-1146"]
+35 [label="35\n1147-1147"]
+36 [label="36\n1123-1124"]
+37 [label="37\n1124-1124"]
+38 [label="38\n1129-1129"]
+39 [label="39\n1122-1122"]
+40 [label="40\n1130-1131"]
+41 [label="41\n1126-1124"]
+42 [label="42\n811-812"]
+43 [label="43\n812-812"]
+44 [label="44\n828-830"]
+45 [label="45\n832-832"]
+46 [label="46\n840-843"]
+47 [label="47\n843-843"]
+48 [label="48\n854-854"]
+49 [label="49\n854-854"]
+50 [label="50\n860-864"]
+51 [label="51\n870-870"]
+52 [label="52\n940-945"]
+53 [label="53\n945-945"]
+54 [label="54\n952-952"]
+55 [label="55\n952-952"]
+56 [label="56\n962-963"]
+57 [label="57\n963-963"]
+58 [label="58\n967-967"]
+59 [label="59\n967-967"]
+60 [label="60\n981-981"]
+61 [label="61\n981-981"]
+62 [label="62\n987-987"]
+63 [label="63\n1020-1020"]
+64 [label="64\n1102-1102"]
+65 [label="65\n1105-1105"]
+66 [label="66\n1114-1117"]
+67 [label="67\n1106-1106"]
+68 [label="68\n1103-1103"]
+69 [label="69\n1021-1021"]
+70 [label="70\n1021-1021"]
+71 [label="71\n1025-1025"]
+72 [label="72\n1025-1025"]
+73 [label="73\n1034-1034"]
+74 [label="74\n1034-1034"]
+75 [label="75\n1042-1044"]
+76 [label="76\n1044-1044"]
+77 [label="77\n1078-1079"]
+78 [label="78\n1082-1082"]
+79 [label="79\n1083-1083"]
+80 [label="80\n1083-1083"]
+81 [label="81\n1084-1084"]
+82 [label="82\n1087-1087"]
+83 [label="83\n1090-1090"]
+84 [label="84\n1093-1083"]
+85 [label="85\n1091-1091"]
+86 [label="86\n1088-1088"]
+87 [label="87\n1085-1085"]
+88 [label="88\n1080-1080"]
+89 [label="89\n1045-1046"]
+90 [label="90\n1046-1046"]
+91 [label="91\n1050-1050"]
+92 [label="92\n1058-1058"]
+93 [label="93\n1068-1070"]
+94 [label="94\n1072-1044"]
+95 [label="95\n1061-1066"]
+96 [label="96\n1053-1058"]
+97 [label="97\n1047-1046"]
+98 [label="98\n1035-1036"]
+99 [label="99\n1036-1036"]
+100 [label="100\n1039-1034"]
+101 [label="101\n1037-1036"]
+102 [label="102\n1026-1027"]
+103 [label="103\n1027-1027"]
+104 [label="104\n1030-1030"]
+105 [label="105\n1030-1030"]
+106 [label="106\n1025-1025"]
+107 [label="107\n1031-1030"]
+108 [label="108\n1028-1027"]
+109 [label="109\n1022-1021"]
+110 [label="110\n988-991"]
+111 [label="111\n991-991"]
+112 [label="112\n1004-1004"]
+113 [label="113\n1004-1004"]
+114 [label="114\n1005-1006"]
+115 [label="115\n1006-1006"]
+116 [label="116\n1009-1010"]
+117 [label="117\n1010-1010"]
+118 [label="118\n1004-1004"]
+119 [label="119\n1011-1010"]
+120 [label="120\n1007-1006"]
+121 [label="121\n992-996"]
+122 [label="122\n996-996"]
+123 [label="123\n991-991"]
+124 [label="124\n997-997"]
+125 [label="125\n1000-996"]
+126 [label="126\n998-998"]
+127 [label="127\n982-981"]
+128 [label="128\n968-969"]
+129 [label="129\n969-969"]
+130 [label="130\n972-973"]
+131 [label="131\n973-973"]
+132 [label="132\n976-977"]
+133 [label="133\n977-977"]
+134 [label="134\n967-967"]
+135 [label="135\n978-977"]
+136 [label="136\n974-973"]
+137 [label="137\n970-969"]
+138 [label="138\n964-963"]
+139 [label="139\n953-954"]
+140 [label="140\n954-954"]
+141 [label="141\n952-952"]
+142 [label="142\n955-954"]
+143 [label="143\n946-947"]
+144 [label="144\n947-947"]
+145 [label="145\n945-945"]
+146 [label="146\n948-947"]
+147 [label="147\n871-871"]
+148 [label="148\n874-876"]
+149 [label="149\n879-879"]
+150 [label="150\n884-884"]
+151 [label="151\n886-886"]
+152 [label="152\n892-892"]
+153 [label="153\n893-899"]
+154 [label="154\n899-899"]
+155 [label="155\n930-930"]
+156 [label="156\n931-932"]
+157 [label="157\n900-901"]
+158 [label="158\n901-901"]
+159 [label="159\n907-910"]
+160 [label="160\n910-910"]
+161 [label="161\n917-919"]
+162 [label="162\n926-899"]
+163 [label="163\n920-922"]
+164 [label="164\n912-910"]
+165 [label="165\n903-901"]
+166 [label="166\n887-887"]
+167 [label="167\n881-881"]
+168 [label="168\n878-878"]
+169 [label="169\n872-872"]
+170 [label="170\n865-865"]
+171 [label="171\n856-854"]
+172 [label="172\n844-845"]
+173 [label="173\n845-845"]
+174 [label="174\n843-843"]
+175 [label="175\n846-847"]
+176 [label="176\n850-845"]
+177 [label="177\n848-848"]
+178 [label="178\n833-834"]
+179 [label="179\n831-831"]
+180 [label="180\n815-820"]
+181 [label="181\n823-823"]
+182 [label="182\n812-812"]
+183 [label="183\n824-824"]
+184 [label="184\n821-821"]
+185 [label="185\n688-689"]
+186 [label="186\n689-689"]
+187 [label="187\n702-703"]
+188 [label="188\n703-703"]
+189 [label="189\n713-716"]
+190 [label="190\n716-716"]
+191 [label="191\n734-745"]
+192 [label="192\n764-768"]
+193 [label="193\n768-768"]
+194 [label="194\n769-769"]
+195 [label="195\n772-773"]
+196 [label="196\n773-773"]
+197 [label="197\n779-782"]
+198 [label="198\n782-782"]
+199 [label="199\n789-791"]
+200 [label="200\n798-799"]
+201 [label="201\n768-768"]
+202 [label="202\n792-794"]
+203 [label="203\n784-782"]
+204 [label="204\n775-773"]
+205 [label="205\n770-770"]
+206 [label="206\n747-749"]
+207 [label="207\n763-763"]
+208 [label="208\n749-749"]
+209 [label="209\n750-750"]
+210 [label="210\n750-750"]
+211 [label="211\n754-755"]
+212 [label="212\n751-750"]
+213 [label="213\n718-721"]
+214 [label="214\n721-721"]
+215 [label="215\n724-726"]
+216 [label="216\n726-726"]
+217 [label="217\n729-716"]
+218 [label="218\n727-726"]
+219 [label="219\n722-721"]
+220 [label="220\n704-705"]
+221 [label="221\n705-705"]
+222 [label="222\n708-709"]
+223 [label="223\n709-709"]
+224 [label="224\n703-703"]
+225 [label="225\n710-709"]
+226 [label="226\n706-705"]
+227 [label="227\n690-693"]
+228 [label="228\n693-693"]
+229 [label="229\n698-689"]
+230 [label="230\n694-693"]
+231 [label="231\n662-678"]
+232 [label="232\n678-678"]
+233 [label="233\n679-678"]
+234 [label="234\n557-558"]
+235 [label="235\n646-646"]
+236 [label="236\n649-649"]
+237 [label="237\n647-647"]
+238 [label="238\n559-563"]
+239 [label="239\n563-563"]
+240 [label="240\n587-587"]
+241 [label="241\n587-587"]
+242 [label="242\n621-622"]
+243 [label="243\n622-622"]
+244 [label="244\n637-637"]
+245 [label="245\n637-637"]
+246 [label="246\n644-644"]
+247 [label="247\n638-637"]
+248 [label="248\n623-624"]
+249 [label="249\n624-624"]
+250 [label="250\n628-628"]
+251 [label="251\n628-628"]
+252 [label="252\n622-622"]
+253 [label="253\n629-628"]
+254 [label="254\n625-624"]
+255 [label="255\n588-590"]
+256 [label="256\n590-590"]
+257 [label="257\n595-595"]
+258 [label="258\n595-595"]
+259 [label="259\n607-607"]
+260 [label="260\n607-607"]
+261 [label="261\n587-587"]
+262 [label="262\n608-610"]
+263 [label="263\n610-610"]
+264 [label="264\n607-607"]
+265 [label="265\n611-610"]
+266 [label="266\n596-597"]
+267 [label="267\n597-597"]
+268 [label="268\n600-601"]
+269 [label="269\n601-601"]
+270 [label="270\n595-595"]
+271 [label="271\n602-601"]
+272 [label="272\n598-597"]
+273 [label="273\n591-590"]
+274 [label="274\n564-566"]
+275 [label="275\n566-566"]
+276 [label="276\n570-572"]
+277 [label="277\n572-572"]
+278 [label="278\n563-563"]
+279 [label="279\n573-576"]
+280 [label="280\n576-576"]
+281 [label="281\n572-572"]
+282 [label="282\n577-576"]
+283 [label="283\n567-566"]
+284 [label="284\n483-499"]
+285 [label="285\n547-547"]
+286 [label="286\n500-504"]
+287 [label="287\n515-518"]
+288 [label="288\n522-523"]
+289 [label="289\n523-523"]
+290 [label="290\n545-545"]
+291 [label="291\n524-525"]
+292 [label="292\n528-528"]
+293 [label="293\n531-531"]
+294 [label="294\n523-523"]
+295 [label="295\n532-533"]
+296 [label="296\n533-533"]
+297 [label="297\n538-539"]
+298 [label="298\n540-540"]
+299 [label="299\n535-533"]
+300 [label="300\n529-529"]
+301 [label="301\n526-526"]
+302 [label="302\n518-518"]
+303 [label="303\n520-520"]
+304 [label="304\n505-505"]
+305 [label="305\n447-448"]
+306 [label="306\n449-450"]
+307 [label="307\n450-450"]
+308 [label="308\n459-459"]
+309 [label="309\n460-460"]
+310 [label="310\n460-460"]
+311 [label="311\n461-462"]
+312 [label="312\n462-462"]
+313 [label="313\n465-466"]
+314 [label="314\n466-466"]
+315 [label="315\n460-460"]
+316 [label="316\n467-466"]
+317 [label="317\n463-462"]
+318 [label="318\n451-451"]
+319 [label="319\n451-451"]
+320 [label="320\n450-450"]
+321 [label="321\n452-452"]
+322 [label="322\n455-451"]
+323 [label="323\n453-453"]
+324 [label="324\n1219-1219"]
+325 [label="325\n412-411"]
+326 [label="326"]
+{
+node [shape=plaintext, fontsize=12];
+setsNode_0 [label="def(0)={this,lowerBound,upperBound,n,this.currentBest,npt,nptm,nh,work1,work2,work3,cauchy,alpha,dsq,this.trustRegionCenterInterpolationPointIndex,xoptsq,i,this.trustRegionCenterOffset,this.interpolationPoints,this.fAtInterpolationPoints,this.initialTrustRegionRadius,this.gradientAtTrustRegionCenter,this.modelSecondDerivativesValues,this.modelSecondDerivativesParameters,this.newPoint,this.lowerDifference,this.upperDifference,this.bMatrix,this.lagrangeValuesAtNewPoint,this.zMatrix,this.originShift,this.trialStepPoint,this.alternativeNewPoint,this.isMinimize,TRUST_REGION_STEP_FAILED,this.stoppingTrustRegionRadius,SIMPLE_MESSAGE}"];
+setsNode_2 [label="def(2)={i,ntrits,itest,knew,nfsav,rho,delta,diffa,diffb,diffc,f,beta,adelt,denom,ratio,dnorm,distsq,state}\ncuse(2)={this,this.fAtInterpolationPoints,this.initialTrustRegionRadius}"];
+setsNode_5 [label="cuse(5)={f}"];
+setsNode_6 [label="def(6)={ih}"];
+setsNode_8 [label="def(8)={f}\ncuse(8)={this,this.trustRegionCenterInterpolationPointIndex,this.fAtInterpolationPoints}"];
+setsNode_9 [label="cuse(9)={this,lowerBound,upperBound,this.currentBest,this.trustRegionCenterOffset,ih,this.originShift}"];
+setsNode_11 [label="def(11)={ih}\ncuse(11)={ih}"];
+setsNode_12 [label="cuse(12)={this,upperBound,this.currentBest,ih}"];
+setsNode_13 [label="cuse(13)={this,lowerBound,this.currentBest,ih}"];
+setsNode_16 [label="def(16)={state}"];
+setsNode_17 [label="def(17)={delta,ratio}\ncuse(17)={this,rho,this.stoppingTrustRegionRadius}"];
+setsNode_19 [label="def(19)={rho}\ncuse(19)={rho}"];
+setsNode_20 [label="def(20)={ntrits,nfsav,delta,state}\ncuse(20)={this,rho,delta}"];
+setsNode_21 [label="def(21)={rho}\ncuse(21)={this,ratio,this.stoppingTrustRegionRadius}"];
+setsNode_22 [label="def(22)={rho}\ncuse(22)={this,this.stoppingTrustRegionRadius}"];
+setsNode_23 [label="def(23)={knew,ih}"];
+setsNode_29 [label="def(29)={state}"];
+setsNode_30 [label="def(30)={state}"];
+setsNode_31 [label="def(31)={state}"];
+setsNode_32 [label="def(32)={ih}\ncuse(32)={distsq}"];
+setsNode_33 [label="def(33)={dsq,ntrits,adelt,state}\ncuse(33)={rho,delta,ih}"];
+setsNode_34 [label="def(34)={delta}\ncuse(34)={delta,ih}"];
+setsNode_35 [label="def(35)={delta}\ncuse(35)={rho}"];
+setsNode_36 [label="def(36)={j,sumb}"];
+setsNode_39 [label="def(39)={ih}\ncuse(39)={ih}"];
+setsNode_40 [label="def(40)={knew,distsq}\ncuse(40)={ih,j}"];
+setsNode_41 [label="def(41)={j,sumb}\ncuse(41)={this,this.trustRegionCenterOffset,this.interpolationPoints,ih,j,sumb}"];
+setsNode_42 [label="def(42)={ih}"];
+setsNode_44 [label="def(44)={f}\ncuse(44)={this,this.currentBest}"];
+setsNode_46 [label="def(46)={ih,i,j,sum}\ncuse(46)={this,this.trustRegionCenterInterpolationPointIndex,this.fAtInterpolationPoints}"];
+setsNode_48 [label="def(48)={sum}"];
+setsNode_50 [label="def(50)={diffa,diffb,diffc,sum}\ncuse(50)={diffa,diffb,f,ih,i}"];
+setsNode_52 [label="def(52)={j,i,i}\ncuse(52)={this,knew,beta,denom,this.modelSecondDerivativesParameters}"];
+setsNode_54 [label="def(54)={i}"];
+setsNode_56 [label="def(56)={i}\ncuse(56)={this,this.fAtInterpolationPoints,knew,f}"];
+setsNode_58 [label="def(58)={i}"];
+setsNode_60 [label="def(60)={i}"];
+setsNode_66 [label="def(66)={distsq}\ncuse(66)={rho,delta}"];
+setsNode_67 [label="def(67)={state}"];
+setsNode_68 [label="def(68)={state}"];
+setsNode_69 [label="def(69)={i}"];
+setsNode_71 [label="def(71)={i}"];
+setsNode_73 [label="def(73)={i}"];
+setsNode_75 [label="def(75)={i,j,j}"];
+setsNode_77 [label="def(77)={itest}\ncuse(77)={itest}"];
+setsNode_79 [label="def(79)={bdtol,j}\ncuse(79)={npt,nh}"];
+setsNode_84 [label="def(84)={itest,j}\ncuse(84)={j}"];
+setsNode_85 [label="cuse(85)={this,this.modelSecondDerivativesValues,j}"];
+setsNode_86 [label="cuse(86)={this,work2,this.modelSecondDerivativesParameters,j}"];
+setsNode_87 [label="cuse(87)={this,npt,this.gradientAtTrustRegionCenter,this.lagrangeValuesAtNewPoint,j}"];
+setsNode_88 [label="def(88)={itest}"];
+setsNode_89 [label="def(89)={bdtol,j}"];
+setsNode_93 [label="def(93)={i,j}\ncuse(93)={this,this.gradientAtTrustRegionCenter,bdtol,i,j,j}"];
+setsNode_94 [label="def(94)={j}\ncuse(94)={this,npt,bdtol,this.lagrangeValuesAtNewPoint,j}"];
+setsNode_95 [label="def(95)={i,j}\ncuse(95)={this,this.gradientAtTrustRegionCenter,bdtol,i,j,j}"];
+setsNode_96 [label="def(96)={i,j}\ncuse(96)={this,this.gradientAtTrustRegionCenter,bdtol,i,j,j}"];
+setsNode_97 [label="def(97)={bdtol,j}\ncuse(97)={this,work3,this.interpolationPoints,bdtol,j,this.bMatrix,this.lagrangeValuesAtNewPoint,j}"];
+setsNode_98 [label="def(98)={errbig,frhosq}"];
+setsNode_100 [label="def(100)={i}\ncuse(100)={work2,work3,errbig,i}"];
+setsNode_101 [label="def(101)={errbig,frhosq}\ncuse(101)={this,this.trustRegionCenterOffset,this.interpolationPoints,errbig,frhosq,i}"];
+setsNode_102 [label="def(102)={errbig,frhosq}"];
+setsNode_104 [label="def(104)={frhosq}"];
+setsNode_106 [label="def(106)={i}\ncuse(106)={i}"];
+setsNode_107 [label="def(107)={frhosq}\ncuse(107)={this,work3,errbig,frhosq,i,this.zMatrix}"];
+setsNode_108 [label="def(108)={errbig,frhosq}\ncuse(108)={this,errbig,frhosq,i,this.lagrangeValuesAtNewPoint,this.zMatrix}"];
+setsNode_109 [label="def(109)={i}\ncuse(109)={this,work3,this.trustRegionCenterInterpolationPointIndex,this.fAtInterpolationPoints,i,this.lagrangeValuesAtNewPoint}"];
+setsNode_110 [label="def(110)={this.trustRegionCenterInterpolationPointIndex,xoptsq,j,i}\ncuse(110)={this,knew}"];
+setsNode_112 [label="def(112)={i}"];
+setsNode_114 [label="def(114)={errbig,frhosq}"];
+setsNode_116 [label="def(116)={errbig,frhosq}\ncuse(116)={this,this.modelSecondDerivativesParameters,errbig,i}"];
+setsNode_118 [label="def(118)={i}\ncuse(118)={i}"];
+setsNode_119 [label="def(119)={frhosq}\ncuse(119)={this,this.interpolationPoints,this.gradientAtTrustRegionCenter,errbig,frhosq,i}"];
+setsNode_120 [label="def(120)={errbig,frhosq}\ncuse(120)={this,this.interpolationPoints,errbig,frhosq,i,this.trialStepPoint}"];
+setsNode_121 [label="def(121)={xoptsq,frhosq}\ncuse(121)={this,xoptsq,this.trustRegionCenterOffset,this.newPoint,i}"];
+setsNode_123 [label="def(123)={i}\ncuse(123)={i}"];
+setsNode_125 [label="def(125)={j,frhosq}\ncuse(125)={this,this.gradientAtTrustRegionCenter,this.modelSecondDerivativesValues,j,frhosq,i,this.trialStepPoint}"];
+setsNode_126 [label="cuse(126)={this,this.gradientAtTrustRegionCenter,this.modelSecondDerivativesValues,j,frhosq,i,this.trialStepPoint}"];
+setsNode_127 [label="def(127)={i}\ncuse(127)={this,work1,this.gradientAtTrustRegionCenter,sum,i}"];
+setsNode_128 [label="def(128)={errbig,frhosq}"];
+setsNode_130 [label="def(130)={frhosq,bdtol}"];
+setsNode_132 [label="def(132)={bdtol,j}\ncuse(132)={errbig,frhosq}"];
+setsNode_134 [label="def(134)={i}\ncuse(134)={i}"];
+setsNode_135 [label="def(135)={j}\ncuse(135)={this,work1,this.interpolationPoints,bdtol,j,i}"];
+setsNode_136 [label="def(136)={frhosq,bdtol}\ncuse(136)={this,this.trustRegionCenterOffset,this.interpolationPoints,frhosq,bdtol,i}"];
+setsNode_137 [label="def(137)={errbig,frhosq}\ncuse(137)={this,knew,errbig,frhosq,i,this.zMatrix}"];
+setsNode_138 [label="def(138)={i}\ncuse(138)={this,work1,this.interpolationPoints,knew,this.newPoint,i,this.bMatrix}"];
+setsNode_139 [label="def(139)={errbig,frhosq}\ncuse(139)={this,knew,sum,i,this.zMatrix}"];
+setsNode_141 [label="def(141)={i}\ncuse(141)={i}"];
+setsNode_142 [label="def(142)={frhosq}\ncuse(142)={this,this.modelSecondDerivativesParameters,errbig,frhosq,i,this.zMatrix}"];
+setsNode_143 [label="def(143)={errbig,frhosq}\ncuse(143)={this,this.interpolationPoints,knew,i,i}"];
+setsNode_145 [label="def(145)={i}\ncuse(145)={i}"];
+setsNode_146 [label="def(146)={j,frhosq}\ncuse(146)={this,this.interpolationPoints,knew,this.modelSecondDerivativesValues,j,errbig,frhosq}"];
+setsNode_148 [label="def(148)={ratio,i}\ncuse(148)={delta,f,ih,i}"];
+setsNode_150 [label="def(150)={delta}\ncuse(150)={dnorm,i}"];
+setsNode_153 [label="def(153)={knew,scaden,biglsq,errbig,frhosq,bdtol,i}\ncuse(153)={knew,delta,denom}"];
+setsNode_156 [label="def(156)={knew,denom}\ncuse(156)={errbig,i}"];
+setsNode_157 [label="def(157)={bdtest,temp}"];
+setsNode_159 [label="def(159)={distsq,curv,k}\ncuse(159)={this,beta,bdtol,this.lagrangeValuesAtNewPoint,temp}"];
+setsNode_161 [label="def(161)={temp}\ncuse(161)={distsq,frhosq}"];
+setsNode_162 [label="def(162)={biglsq,bdtol}\ncuse(162)={this,biglsq,bdtol,this.lagrangeValuesAtNewPoint,temp}"];
+setsNode_163 [label="def(163)={knew,denom,scaden}\ncuse(163)={bdtol,curv,temp}"];
+setsNode_164 [label="def(164)={distsq,k}\ncuse(164)={this,this.interpolationPoints,distsq,bdtol,this.newPoint,k}"];
+setsNode_165 [label="def(165)={bdtest,temp}\ncuse(165)={this,bdtol,bdtest,this.zMatrix,temp}"];
+setsNode_166 [label="def(166)={delta}\ncuse(166)={rho}"];
+setsNode_167 [label="def(167)={delta}\ncuse(167)={dnorm,i}"];
+setsNode_168 [label="def(168)={delta}\ncuse(168)={dnorm,i}"];
+setsNode_169 [label="cuse(169)={i,TRUST_REGION_STEP_FAILED}"];
+setsNode_170 [label="def(170)={nfsav}\ncuse(170)={this}"];
+setsNode_171 [label="def(171)={i,sum}\ncuse(171)={this,work2,i,this.modelSecondDerivativesParameters,sum}"];
+setsNode_172 [label="def(172)={i,k}\ncuse(172)={this,i,this.gradientAtTrustRegionCenter,sum,this.trialStepPoint}"];
+setsNode_174 [label="def(174)={sum}\ncuse(174)={sum}"];
+setsNode_175 [label="def(175)={i}\ncuse(175)={this,sum,k,this.trialStepPoint}"];
+setsNode_176 [label="def(176)={i,j,k}\ncuse(176)={this,i,this.modelSecondDerivativesValues,j,k,i}"];
+setsNode_177 [label="def(177)={i}\ncuse(177)={i}"];
+setsNode_178 [label="def(178)={i,state}\ncuse(178)={f}"];
+setsNode_179 [label="def(179)={f}\ncuse(179)={f}"];
+setsNode_180 [label="cuse(180)={this,lowerBound,upperBound,this.currentBest,ih,this.newPoint,this.originShift}"];
+setsNode_182 [label="def(182)={ih}\ncuse(182)={ih}"];
+setsNode_183 [label="cuse(183)={this,upperBound,this.currentBest,ih}"];
+setsNode_184 [label="cuse(184)={this,lowerBound,this.currentBest,ih}"];
+setsNode_185 [label="def(185)={ih}"];
+setsNode_187 [label="def(187)={beta,ih}"];
+setsNode_189 [label="def(189)={dsq,ih,i,j}"];
+setsNode_191 [label="def(191)={beta}\ncuse(191)={this,dsq,this.trustRegionCenterInterpolationPointIndex,xoptsq,beta,ih,i,this.lagrangeValuesAtNewPoint}"];
+setsNode_192 [label="def(192)={knew,scaden,biglsq,j,k}\ncuse(192)={delta}"];
+setsNode_195 [label="def(195)={i,i}"];
+setsNode_197 [label="def(197)={distsq,j,j}\ncuse(197)={this,beta,k,i,this.lagrangeValuesAtNewPoint}"];
+setsNode_199 [label="def(199)={temp}\ncuse(199)={distsq,j}"];
+setsNode_200 [label="def(200)={biglsq}\ncuse(200)={this,biglsq,k,this.lagrangeValuesAtNewPoint,temp}"];
+setsNode_201 [label="def(201)={k}\ncuse(201)={k}"];
+setsNode_202 [label="def(202)={knew,denom,scaden}\ncuse(202)={k,j,temp}"];
+setsNode_203 [label="def(203)={distsq,j}\ncuse(203)={this,this.trustRegionCenterOffset,this.interpolationPoints,distsq,k,j}"];
+setsNode_204 [label="def(204)={i,i}\ncuse(204)={this,k,i,i,this.zMatrix}"];
+setsNode_206 [label="def(206)={denom}\ncuse(206)={this,alpha,knew,beta,this.lagrangeValuesAtNewPoint}"];
+setsNode_209 [label="def(209)={k}"];
+setsNode_211 [label="def(211)={cauchy,state}"];
+setsNode_212 [label="def(212)={k}\ncuse(212)={this,this.trustRegionCenterOffset,k,this.newPoint,this.trialStepPoint,this.alternativeNewPoint}"];
+setsNode_213 [label="def(213)={dsq,i,i}\ncuse(213)={this,dsq,j,this.trialStepPoint}"];
+setsNode_215 [label="def(215)={ih,errbig,i}\ncuse(215)={this,npt,ih,j,i,this.trialStepPoint}"];
+setsNode_217 [label="def(217)={ih,i,j}\ncuse(217)={this,this.trustRegionCenterOffset,ih,i,j,i,i,this.lagrangeValuesAtNewPoint,this.trialStepPoint}"];
+setsNode_218 [label="def(218)={errbig,i}\ncuse(218)={this,errbig,i,i,this.bMatrix,this.trialStepPoint}"];
+setsNode_219 [label="def(219)={i,i}\ncuse(219)={this,work3,j,i,i,this.bMatrix}"];
+setsNode_220 [label="def(220)={j,sumb}"];
+setsNode_222 [label="def(222)={beta,sumb}\ncuse(222)={beta,j}"];
+setsNode_224 [label="def(224)={ih}\ncuse(224)={ih}"];
+setsNode_225 [label="def(225)={sumb}\ncuse(225)={this,ih,j,sumb,this.lagrangeValuesAtNewPoint,this.zMatrix}"];
+setsNode_226 [label="def(226)={j,sumb}\ncuse(226)={this,work3,ih,j,sumb,this.zMatrix}"];
+setsNode_227 [label="def(227)={j,sumb,sum,i}"];
+setsNode_229 [label="def(229)={ih}\ncuse(229)={this,work2,work3,ih,j,sumb,sum,this.lagrangeValuesAtNewPoint}"];
+setsNode_230 [label="def(230)={j,sumb,sum,i}\ncuse(230)={this,this.trustRegionCenterOffset,this.interpolationPoints,ih,j,sumb,sum,i,this.bMatrix,this.trialStepPoint}"];
+setsNode_231 [label="def(231)={cauchy,alpha,j}\ncuse(231)={this,knew,adelt}"];
+setsNode_233 [label="def(233)={j}\ncuse(233)={this,this.trustRegionCenterOffset,j,this.newPoint,this.trialStepPoint}"];
+setsNode_236 [label="def(236)={state}"];
+setsNode_237 [label="def(237)={state}"];
+setsNode_238 [label="def(238)={ih,i,j}\ncuse(238)={xoptsq}"];
+setsNode_240 [label="def(240)={j}"];
+setsNode_242 [label="def(242)={j,sum}"];
+setsNode_244 [label="def(244)={sum}"];
+setsNode_246 [label="def(246)={xoptsq}"];
+setsNode_247 [label="def(247)={sum}\ncuse(247)={this,this.trustRegionCenterOffset,sum,this.newPoint,this.lowerDifference,this.upperDifference,this.originShift}"];
+setsNode_248 [label="def(248)={k}\ncuse(248)={this,work1,this.trustRegionCenterOffset,i,sum}"];
+setsNode_250 [label="def(250)={k}"];
+setsNode_252 [label="def(252)={sum}\ncuse(252)={sum}"];
+setsNode_253 [label="def(253)={j,k}\ncuse(253)={this,npt,work1,this.trustRegionCenterOffset,this.modelSecondDerivativesValues,j,sum,k,this.bMatrix}"];
+setsNode_254 [label="def(254)={k}\ncuse(254)={this,work1,this.trustRegionCenterOffset,this.interpolationPoints,this.modelSecondDerivativesParameters,sum,k}"];
+setsNode_255 [label="def(255)={sum,i,i}"];
+setsNode_257 [label="def(257)={i}"];
+setsNode_259 [label="def(259)={i}"];
+setsNode_261 [label="def(261)={j}\ncuse(261)={j}"];
+setsNode_262 [label="def(262)={errbig,j,j}\ncuse(262)={npt,work1,i}"];
+setsNode_264 [label="def(264)={i}\ncuse(264)={i}"];
+setsNode_265 [label="def(265)={j}\ncuse(265)={this,work1,errbig,this.bMatrix,j,j}"];
+setsNode_266 [label="def(266)={errbig,frhosq}\ncuse(266)={this,this.trustRegionCenterOffset,ih,sum,i,i}"];
+setsNode_268 [label="def(268)={frhosq}\ncuse(268)={work1,errbig,i}"];
+setsNode_270 [label="def(270)={i}\ncuse(270)={i}"];
+setsNode_271 [label="def(271)={frhosq}\ncuse(271)={this,j,errbig,frhosq,i,this.bMatrix,this.zMatrix}"];
+setsNode_272 [label="def(272)={errbig,frhosq}\ncuse(272)={this,this.interpolationPoints,errbig,frhosq,i,this.lagrangeValuesAtNewPoint}"];
+setsNode_273 [label="def(273)={sum,i,i}\ncuse(273)={this,work2,j,sum,i,i,this.lagrangeValuesAtNewPoint,this.zMatrix}"];
+setsNode_274 [label="def(274)={i,sum,i}\ncuse(274)={this,xoptsq,i,j,this.modelSecondDerivativesParameters}"];
+setsNode_276 [label="def(276)={i,i}\ncuse(276)={work2,ih,j,sum}"];
+setsNode_278 [label="def(278)={j}\ncuse(278)={j}"];
+setsNode_279 [label="def(279)={errbig,j}\ncuse(279)={this,npt,work1,this.trustRegionCenterOffset,this.interpolationPoints,j,sum,i,i,this.bMatrix,this.lagrangeValuesAtNewPoint}"];
+setsNode_281 [label="def(281)={i}\ncuse(281)={i}"];
+setsNode_282 [label="def(282)={j}\ncuse(282)={this,work1,errbig,i,this.bMatrix,this.lagrangeValuesAtNewPoint,j}"];
+setsNode_283 [label="def(283)={sum,i}\ncuse(283)={this,this.trustRegionCenterOffset,this.interpolationPoints,j,sum,i}"];
+setsNode_284 [label="def(284)={dsq,crvmin,dnorm}\ncuse(284)={this,n,delta}"];
+setsNode_285 [label="def(285)={ntrits}\ncuse(285)={ntrits}"];
+setsNode_286 [label="def(286)={ntrits,distsq}\ncuse(286)={rho}"];
+setsNode_287 [label="def(287)={errbig,frhosq}\ncuse(287)={rho,diffa,diffb,diffc}"];
+setsNode_288 [label="def(288)={bdtol,j}\ncuse(288)={rho,errbig}"];
+setsNode_290 [label="def(290)={state}"];
+setsNode_291 [label="def(291)={bdtest}\ncuse(291)={bdtol}"];
+setsNode_294 [label="def(294)={j}\ncuse(294)={j}"];
+setsNode_295 [label="def(295)={curv,k}\ncuse(295)={this,this.modelSecondDerivativesValues,j}"];
+setsNode_297 [label="def(297)={bdtest}\ncuse(297)={rho,bdtest,curv}"];
+setsNode_299 [label="def(299)={curv,k}\ncuse(299)={this,this.interpolationPoints,this.modelSecondDerivativesParameters,j,curv,k}"];
+setsNode_300 [label="def(300)={bdtest}\ncuse(300)={work1,j}"];
+setsNode_301 [label="def(301)={bdtest}\ncuse(301)={work1,j}"];
+setsNode_303 [label="def(303)={state}"];
+setsNode_304 [label="def(304)={state}"];
+setsNode_306 [label="def(306)={ih,j}"];
+setsNode_309 [label="def(309)={j}"];
+setsNode_311 [label="def(311)={i,j}"];
+setsNode_313 [label="def(313)={i,j}\ncuse(313)={this,j,i,this.modelSecondDerivativesParameters}"];
+setsNode_315 [label="def(315)={j}\ncuse(315)={j}"];
+setsNode_316 [label="def(316)={j}\ncuse(316)={this,this.interpolationPoints,j,i,this.gradientAtTrustRegionCenter,j}"];
+setsNode_317 [label="def(317)={i,j}\ncuse(317)={this,this.trustRegionCenterOffset,this.interpolationPoints,j,i,j}"];
+setsNode_318 [label="def(318)={i}"];
+setsNode_320 [label="def(320)={j}\ncuse(320)={j}"];
+setsNode_322 [label="def(322)={ih,i}\ncuse(322)={this,this.trustRegionCenterOffset,ih,j,i,this.gradientAtTrustRegionCenter,this.modelSecondDerivativesValues}"];
+setsNode_323 [label="cuse(323)={this,this.trustRegionCenterOffset,ih,j,i,this.gradientAtTrustRegionCenter,this.modelSecondDerivativesValues}"];
+setsNode_324 [label="cuse(324)={SIMPLE_MESSAGE}"];
+setsNode_325 [label="def(325)={xoptsq,i}\ncuse(325)={this,this.trustRegionCenterInterpolationPointIndex,xoptsq,i,this.trustRegionCenterOffset,this.interpolationPoints}"];
+}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 8 ;  setsNode_8}
+{rank = same; 9 ;  setsNode_9}
+{rank = same; 11 ;  setsNode_11}
+{rank = same; 12 ;  setsNode_12}
+{rank = same; 13 ;  setsNode_13}
+{rank = same; 16 ;  setsNode_16}
+{rank = same; 17 ;  setsNode_17}
+{rank = same; 19 ;  setsNode_19}
+{rank = same; 20 ;  setsNode_20}
+{rank = same; 21 ;  setsNode_21}
+{rank = same; 22 ;  setsNode_22}
+{rank = same; 23 ;  setsNode_23}
+{rank = same; 29 ;  setsNode_29}
+{rank = same; 30 ;  setsNode_30}
+{rank = same; 31 ;  setsNode_31}
+{rank = same; 32 ;  setsNode_32}
+{rank = same; 33 ;  setsNode_33}
+{rank = same; 34 ;  setsNode_34}
+{rank = same; 35 ;  setsNode_35}
+{rank = same; 36 ;  setsNode_36}
+{rank = same; 39 ;  setsNode_39}
+{rank = same; 40 ;  setsNode_40}
+{rank = same; 41 ;  setsNode_41}
+{rank = same; 42 ;  setsNode_42}
+{rank = same; 44 ;  setsNode_44}
+{rank = same; 46 ;  setsNode_46}
+{rank = same; 48 ;  setsNode_48}
+{rank = same; 50 ;  setsNode_50}
+{rank = same; 52 ;  setsNode_52}
+{rank = same; 54 ;  setsNode_54}
+{rank = same; 56 ;  setsNode_56}
+{rank = same; 58 ;  setsNode_58}
+{rank = same; 60 ;  setsNode_60}
+{rank = same; 66 ;  setsNode_66}
+{rank = same; 67 ;  setsNode_67}
+{rank = same; 68 ;  setsNode_68}
+{rank = same; 69 ;  setsNode_69}
+{rank = same; 71 ;  setsNode_71}
+{rank = same; 73 ;  setsNode_73}
+{rank = same; 75 ;  setsNode_75}
+{rank = same; 77 ;  setsNode_77}
+{rank = same; 79 ;  setsNode_79}
+{rank = same; 84 ;  setsNode_84}
+{rank = same; 85 ;  setsNode_85}
+{rank = same; 86 ;  setsNode_86}
+{rank = same; 87 ;  setsNode_87}
+{rank = same; 88 ;  setsNode_88}
+{rank = same; 89 ;  setsNode_89}
+{rank = same; 93 ;  setsNode_93}
+{rank = same; 94 ;  setsNode_94}
+{rank = same; 95 ;  setsNode_95}
+{rank = same; 96 ;  setsNode_96}
+{rank = same; 97 ;  setsNode_97}
+{rank = same; 98 ;  setsNode_98}
+{rank = same; 100 ;  setsNode_100}
+{rank = same; 101 ;  setsNode_101}
+{rank = same; 102 ;  setsNode_102}
+{rank = same; 104 ;  setsNode_104}
+{rank = same; 106 ;  setsNode_106}
+{rank = same; 107 ;  setsNode_107}
+{rank = same; 108 ;  setsNode_108}
+{rank = same; 109 ;  setsNode_109}
+{rank = same; 110 ;  setsNode_110}
+{rank = same; 112 ;  setsNode_112}
+{rank = same; 114 ;  setsNode_114}
+{rank = same; 116 ;  setsNode_116}
+{rank = same; 118 ;  setsNode_118}
+{rank = same; 119 ;  setsNode_119}
+{rank = same; 120 ;  setsNode_120}
+{rank = same; 121 ;  setsNode_121}
+{rank = same; 123 ;  setsNode_123}
+{rank = same; 125 ;  setsNode_125}
+{rank = same; 126 ;  setsNode_126}
+{rank = same; 127 ;  setsNode_127}
+{rank = same; 128 ;  setsNode_128}
+{rank = same; 130 ;  setsNode_130}
+{rank = same; 132 ;  setsNode_132}
+{rank = same; 134 ;  setsNode_134}
+{rank = same; 135 ;  setsNode_135}
+{rank = same; 136 ;  setsNode_136}
+{rank = same; 137 ;  setsNode_137}
+{rank = same; 138 ;  setsNode_138}
+{rank = same; 139 ;  setsNode_139}
+{rank = same; 141 ;  setsNode_141}
+{rank = same; 142 ;  setsNode_142}
+{rank = same; 143 ;  setsNode_143}
+{rank = same; 145 ;  setsNode_145}
+{rank = same; 146 ;  setsNode_146}
+{rank = same; 148 ;  setsNode_148}
+{rank = same; 150 ;  setsNode_150}
+{rank = same; 153 ;  setsNode_153}
+{rank = same; 156 ;  setsNode_156}
+{rank = same; 157 ;  setsNode_157}
+{rank = same; 159 ;  setsNode_159}
+{rank = same; 161 ;  setsNode_161}
+{rank = same; 162 ;  setsNode_162}
+{rank = same; 163 ;  setsNode_163}
+{rank = same; 164 ;  setsNode_164}
+{rank = same; 165 ;  setsNode_165}
+{rank = same; 166 ;  setsNode_166}
+{rank = same; 167 ;  setsNode_167}
+{rank = same; 168 ;  setsNode_168}
+{rank = same; 169 ;  setsNode_169}
+{rank = same; 170 ;  setsNode_170}
+{rank = same; 171 ;  setsNode_171}
+{rank = same; 172 ;  setsNode_172}
+{rank = same; 174 ;  setsNode_174}
+{rank = same; 175 ;  setsNode_175}
+{rank = same; 176 ;  setsNode_176}
+{rank = same; 177 ;  setsNode_177}
+{rank = same; 178 ;  setsNode_178}
+{rank = same; 179 ;  setsNode_179}
+{rank = same; 180 ;  setsNode_180}
+{rank = same; 182 ;  setsNode_182}
+{rank = same; 183 ;  setsNode_183}
+{rank = same; 184 ;  setsNode_184}
+{rank = same; 185 ;  setsNode_185}
+{rank = same; 187 ;  setsNode_187}
+{rank = same; 189 ;  setsNode_189}
+{rank = same; 191 ;  setsNode_191}
+{rank = same; 192 ;  setsNode_192}
+{rank = same; 195 ;  setsNode_195}
+{rank = same; 197 ;  setsNode_197}
+{rank = same; 199 ;  setsNode_199}
+{rank = same; 200 ;  setsNode_200}
+{rank = same; 201 ;  setsNode_201}
+{rank = same; 202 ;  setsNode_202}
+{rank = same; 203 ;  setsNode_203}
+{rank = same; 204 ;  setsNode_204}
+{rank = same; 206 ;  setsNode_206}
+{rank = same; 209 ;  setsNode_209}
+{rank = same; 211 ;  setsNode_211}
+{rank = same; 212 ;  setsNode_212}
+{rank = same; 213 ;  setsNode_213}
+{rank = same; 215 ;  setsNode_215}
+{rank = same; 217 ;  setsNode_217}
+{rank = same; 218 ;  setsNode_218}
+{rank = same; 219 ;  setsNode_219}
+{rank = same; 220 ;  setsNode_220}
+{rank = same; 222 ;  setsNode_222}
+{rank = same; 224 ;  setsNode_224}
+{rank = same; 225 ;  setsNode_225}
+{rank = same; 226 ;  setsNode_226}
+{rank = same; 227 ;  setsNode_227}
+{rank = same; 229 ;  setsNode_229}
+{rank = same; 230 ;  setsNode_230}
+{rank = same; 231 ;  setsNode_231}
+{rank = same; 233 ;  setsNode_233}
+{rank = same; 236 ;  setsNode_236}
+{rank = same; 237 ;  setsNode_237}
+{rank = same; 238 ;  setsNode_238}
+{rank = same; 240 ;  setsNode_240}
+{rank = same; 242 ;  setsNode_242}
+{rank = same; 244 ;  setsNode_244}
+{rank = same; 246 ;  setsNode_246}
+{rank = same; 247 ;  setsNode_247}
+{rank = same; 248 ;  setsNode_248}
+{rank = same; 250 ;  setsNode_250}
+{rank = same; 252 ;  setsNode_252}
+{rank = same; 253 ;  setsNode_253}
+{rank = same; 254 ;  setsNode_254}
+{rank = same; 255 ;  setsNode_255}
+{rank = same; 257 ;  setsNode_257}
+{rank = same; 259 ;  setsNode_259}
+{rank = same; 261 ;  setsNode_261}
+{rank = same; 262 ;  setsNode_262}
+{rank = same; 264 ;  setsNode_264}
+{rank = same; 265 ;  setsNode_265}
+{rank = same; 266 ;  setsNode_266}
+{rank = same; 268 ;  setsNode_268}
+{rank = same; 270 ;  setsNode_270}
+{rank = same; 271 ;  setsNode_271}
+{rank = same; 272 ;  setsNode_272}
+{rank = same; 273 ;  setsNode_273}
+{rank = same; 274 ;  setsNode_274}
+{rank = same; 276 ;  setsNode_276}
+{rank = same; 278 ;  setsNode_278}
+{rank = same; 279 ;  setsNode_279}
+{rank = same; 281 ;  setsNode_281}
+{rank = same; 282 ;  setsNode_282}
+{rank = same; 283 ;  setsNode_283}
+{rank = same; 284 ;  setsNode_284}
+{rank = same; 285 ;  setsNode_285}
+{rank = same; 286 ;  setsNode_286}
+{rank = same; 287 ;  setsNode_287}
+{rank = same; 288 ;  setsNode_288}
+{rank = same; 290 ;  setsNode_290}
+{rank = same; 291 ;  setsNode_291}
+{rank = same; 294 ;  setsNode_294}
+{rank = same; 295 ;  setsNode_295}
+{rank = same; 297 ;  setsNode_297}
+{rank = same; 299 ;  setsNode_299}
+{rank = same; 300 ;  setsNode_300}
+{rank = same; 301 ;  setsNode_301}
+{rank = same; 303 ;  setsNode_303}
+{rank = same; 304 ;  setsNode_304}
+{rank = same; 306 ;  setsNode_306}
+{rank = same; 309 ;  setsNode_309}
+{rank = same; 311 ;  setsNode_311}
+{rank = same; 313 ;  setsNode_313}
+{rank = same; 315 ;  setsNode_315}
+{rank = same; 316 ;  setsNode_316}
+{rank = same; 317 ;  setsNode_317}
+{rank = same; 318 ;  setsNode_318}
+{rank = same; 320 ;  setsNode_320}
+{rank = same; 322 ;  setsNode_322}
+{rank = same; 323 ;  setsNode_323}
+{rank = same; 324 ;  setsNode_324}
+{rank = same; 325 ;  setsNode_325}
+0 -> 1;
+1 -> 325[label="puse(1,325)={n,i}",fontsize=12];1 -> 2[label="puse(1,2)={n,i}",fontsize=12];
+2 -> 3;
+3 -> 324[label="puse(3,324)={state}",fontsize=12];3 -> 305[label="puse(3,305)={state}",fontsize=12];3 -> 284[label="puse(3,284)={state}",fontsize=12];3 -> 234[label="puse(3,234)={state}",fontsize=12];3 -> 231[label="puse(3,231)={state}",fontsize=12];3 -> 185[label="puse(3,185)={state}",fontsize=12];3 -> 42[label="puse(3,42)={state}",fontsize=12];3 -> 23[label="puse(3,23)={state}",fontsize=12];3 -> 14[label="puse(3,14)={state}",fontsize=12];3 -> 4[label="puse(3,4)={state}",fontsize=12];
+4 -> 6[label="puse(4,6)={this,this.trustRegionCenterInterpolationPointIndex,i,this.fAtInterpolationPoints}",fontsize=12];4 -> 5[label="puse(4,5)={this,this.trustRegionCenterInterpolationPointIndex,i,this.fAtInterpolationPoints}",fontsize=12];
+5 -> 326;
+6 -> 7;
+7 -> 9[label="puse(7,9)={n,ih}",fontsize=12];7 -> 8[label="puse(7,8)={n,ih}",fontsize=12];
+8 -> 5;
+9 -> 13[label="puse(9,13)={this,this.trustRegionCenterOffset,ih,this.lowerDifference}",fontsize=12];9 -> 10[label="puse(9,10)={this,this.trustRegionCenterOffset,ih,this.lowerDifference}",fontsize=12];
+10 -> 12[label="puse(10,12)={this,this.trustRegionCenterOffset,ih,this.upperDifference}",fontsize=12];10 -> 11[label="puse(10,11)={this,this.trustRegionCenterOffset,ih,this.upperDifference}",fontsize=12];
+11 -> 7;
+12 -> 11;
+13 -> 10;
+14 -> 17[label="puse(14,17)={this,rho,this.stoppingTrustRegionRadius}",fontsize=12];14 -> 15[label="puse(14,15)={this,rho,this.stoppingTrustRegionRadius}",fontsize=12];
+15 -> 16[label="puse(15,16)={ntrits}",fontsize=12];15 -> 4[label="puse(15,4)={ntrits}",fontsize=12];
+16 -> 3;
+17 -> 22[label="puse(17,22)={ratio}",fontsize=12];17 -> 18[label="puse(17,18)={ratio}",fontsize=12];
+18 -> 21[label="puse(18,21)={ratio}",fontsize=12];18 -> 19[label="puse(18,19)={ratio}",fontsize=12];
+19 -> 20;
+20 -> 3;
+21 -> 20;
+22 -> 20;
+23 -> 24;
+24 -> 36[label="puse(24,36)={npt,ih}",fontsize=12];24 -> 25[label="puse(24,25)={npt,ih}",fontsize=12];
+25 -> 32[label="puse(25,32)={knew}",fontsize=12];25 -> 26[label="puse(25,26)={knew}",fontsize=12];
+26 -> 31[label="puse(26,31)={ntrits}",fontsize=12];26 -> 27[label="puse(26,27)={ntrits}",fontsize=12];
+27 -> 30[label="puse(27,30)={ratio}",fontsize=12];27 -> 28[label="puse(27,28)={ratio}",fontsize=12];
+28 -> 29[label="puse(28,29)={rho,delta,dnorm}",fontsize=12];28 -> 14[label="puse(28,14)={rho,delta,dnorm}",fontsize=12];
+29 -> 3;
+30 -> 3;
+31 -> 3;
+32 -> 34[label="puse(32,34)={ntrits}",fontsize=12];32 -> 33[label="puse(32,33)={ntrits}",fontsize=12];
+33 -> 3;
+34 -> 35[label="puse(34,35)={rho,delta}",fontsize=12];34 -> 33[label="puse(34,33)={rho,delta}",fontsize=12];
+35 -> 33;
+36 -> 37;
+37 -> 41[label="puse(37,41)={n,sumb}",fontsize=12];37 -> 38[label="puse(37,38)={n,sumb}",fontsize=12];
+38 -> 40[label="puse(38,40)={distsq,j}",fontsize=12];38 -> 39[label="puse(38,39)={distsq,j}",fontsize=12];
+39 -> 24;
+40 -> 39;
+41 -> 37;
+42 -> 43;
+43 -> 180[label="puse(43,180)={n,ih}",fontsize=12];43 -> 44[label="puse(43,44)={n,ih}",fontsize=12];
+44 -> 179[label="puse(44,179)={this,this.isMinimize}",fontsize=12];44 -> 45[label="puse(44,45)={this,this.isMinimize}",fontsize=12];
+45 -> 178[label="puse(45,178)={ntrits}",fontsize=12];45 -> 46[label="puse(45,46)={ntrits}",fontsize=12];
+46 -> 47;
+47 -> 172[label="puse(47,172)={n,sum}",fontsize=12];47 -> 48[label="puse(47,48)={n,sum}",fontsize=12];
+48 -> 49;
+49 -> 171[label="puse(49,171)={npt,sum}",fontsize=12];49 -> 50[label="puse(49,50)={npt,sum}",fontsize=12];
+50 -> 170[label="puse(50,170)={rho,dnorm}",fontsize=12];50 -> 51[label="puse(50,51)={rho,dnorm}",fontsize=12];
+51 -> 147[label="puse(51,147)={ntrits}",fontsize=12];51 -> 52[label="puse(51,52)={ntrits}",fontsize=12];
+52 -> 53;
+53 -> 143[label="puse(53,143)={n,i}",fontsize=12];53 -> 54[label="puse(53,54)={n,i}",fontsize=12];
+54 -> 55;
+55 -> 139[label="puse(55,139)={nptm,i}",fontsize=12];55 -> 56[label="puse(55,56)={nptm,i}",fontsize=12];
+56 -> 57;
+57 -> 138[label="puse(57,138)={n,i}",fontsize=12];57 -> 58[label="puse(57,58)={n,i}",fontsize=12];
+58 -> 59;
+59 -> 128[label="puse(59,128)={npt,i}",fontsize=12];59 -> 60[label="puse(59,60)={npt,i}",fontsize=12];
+60 -> 61;
+61 -> 127[label="puse(61,127)={n,i}",fontsize=12];61 -> 62[label="puse(61,62)={n,i}",fontsize=12];
+62 -> 110[label="puse(62,110)={f,ih}",fontsize=12];62 -> 63[label="puse(62,63)={f,ih}",fontsize=12];
+63 -> 69[label="puse(63,69)={ntrits}",fontsize=12];63 -> 64[label="puse(63,64)={ntrits}",fontsize=12];
+64 -> 68[label="puse(64,68)={ntrits}",fontsize=12];64 -> 65[label="puse(64,65)={ntrits}",fontsize=12];
+65 -> 67[label="puse(65,67)={f,ih,i}",fontsize=12];65 -> 66[label="puse(65,66)={f,ih,i}",fontsize=12];
+66 -> 23;
+67 -> 3;
+68 -> 3;
+69 -> 70;
+70 -> 109[label="puse(70,109)={npt,i}",fontsize=12];70 -> 71[label="puse(70,71)={npt,i}",fontsize=12];
+71 -> 72;
+72 -> 102[label="puse(72,102)={nptm,i}",fontsize=12];72 -> 73[label="puse(72,73)={nptm,i}",fontsize=12];
+73 -> 74;
+74 -> 98[label="puse(74,98)={npt,i}",fontsize=12];74 -> 75[label="puse(74,75)={npt,i}",fontsize=12];
+75 -> 76;
+76 -> 89[label="puse(76,89)={n,j}",fontsize=12];76 -> 77[label="puse(76,77)={n,j}",fontsize=12];
+77 -> 88[label="puse(77,88)={i,j}",fontsize=12];77 -> 78[label="puse(77,78)={i,j}",fontsize=12];
+78 -> 79[label="puse(78,79)={itest}",fontsize=12];78 -> 64[label="puse(78,64)={itest}",fontsize=12];
+79 -> 80;
+80 -> 81[label="puse(80,81)={bdtol,j}",fontsize=12];80 -> 64[label="puse(80,64)={bdtol,j}",fontsize=12];
+81 -> 87[label="puse(81,87)={n,j}",fontsize=12];81 -> 82[label="puse(81,82)={n,j}",fontsize=12];
+82 -> 86[label="puse(82,86)={npt,j}",fontsize=12];82 -> 83[label="puse(82,83)={npt,j}",fontsize=12];
+83 -> 85[label="puse(83,85)={nh,j}",fontsize=12];83 -> 84[label="puse(83,84)={nh,j}",fontsize=12];
+84 -> 80;
+85 -> 84;
+86 -> 83;
+87 -> 82;
+88 -> 78;
+89 -> 90;
+90 -> 97[label="puse(90,97)={npt,j}",fontsize=12];90 -> 91[label="puse(90,91)={npt,j}",fontsize=12];
+91 -> 96[label="puse(91,96)={this,this.trustRegionCenterOffset,this.lowerDifference,j}",fontsize=12];91 -> 92[label="puse(91,92)={this,this.trustRegionCenterOffset,this.lowerDifference,j}",fontsize=12];
+92 -> 95[label="puse(92,95)={this,this.trustRegionCenterOffset,this.upperDifference,j}",fontsize=12];92 -> 93[label="puse(92,93)={this,this.trustRegionCenterOffset,this.upperDifference,j}",fontsize=12];
+93 -> 94;
+94 -> 76;
+95 -> 94;
+96 -> 94;
+97 -> 90;
+98 -> 99;
+99 -> 101[label="puse(99,101)={n,frhosq}",fontsize=12];99 -> 100[label="puse(99,100)={n,frhosq}",fontsize=12];
+100 -> 74;
+101 -> 99;
+102 -> 103;
+103 -> 108[label="puse(103,108)={npt,frhosq}",fontsize=12];103 -> 104[label="puse(103,104)={npt,frhosq}",fontsize=12];
+104 -> 105;
+105 -> 107[label="puse(105,107)={npt,frhosq}",fontsize=12];105 -> 106[label="puse(105,106)={npt,frhosq}",fontsize=12];
+106 -> 72;
+107 -> 105;
+108 -> 103;
+109 -> 70;
+110 -> 111;
+111 -> 121[label="puse(111,121)={n,i}",fontsize=12];111 -> 112[label="puse(111,112)={n,i}",fontsize=12];
+112 -> 113;
+113 -> 114[label="puse(113,114)={npt,i}",fontsize=12];113 -> 63[label="puse(113,63)={npt,i}",fontsize=12];
+114 -> 115;
+115 -> 120[label="puse(115,120)={n,frhosq}",fontsize=12];115 -> 116[label="puse(115,116)={n,frhosq}",fontsize=12];
+116 -> 117;
+117 -> 119[label="puse(117,119)={n,frhosq}",fontsize=12];117 -> 118[label="puse(117,118)={n,frhosq}",fontsize=12];
+118 -> 113;
+119 -> 117;
+120 -> 115;
+121 -> 122;
+122 -> 124[label="puse(122,124)={frhosq,i}",fontsize=12];122 -> 123[label="puse(122,123)={frhosq,i}",fontsize=12];
+123 -> 111;
+124 -> 126[label="puse(124,126)={frhosq,i}",fontsize=12];124 -> 125[label="puse(124,125)={frhosq,i}",fontsize=12];
+125 -> 122;
+126 -> 125;
+127 -> 61;
+128 -> 129;
+129 -> 137[label="puse(129,137)={nptm,frhosq}",fontsize=12];129 -> 130[label="puse(129,130)={nptm,frhosq}",fontsize=12];
+130 -> 131;
+131 -> 136[label="puse(131,136)={n,bdtol}",fontsize=12];131 -> 132[label="puse(131,132)={n,bdtol}",fontsize=12];
+132 -> 133;
+133 -> 135[label="puse(133,135)={n,j}",fontsize=12];133 -> 134[label="puse(133,134)={n,j}",fontsize=12];
+134 -> 59;
+135 -> 133;
+136 -> 131;
+137 -> 129;
+138 -> 57;
+139 -> 140;
+140 -> 142[label="puse(140,142)={npt,frhosq}",fontsize=12];140 -> 141[label="puse(140,141)={npt,frhosq}",fontsize=12];
+141 -> 55;
+142 -> 140;
+143 -> 144;
+144 -> 146[label="puse(144,146)={frhosq,i}",fontsize=12];144 -> 145[label="puse(144,145)={frhosq,i}",fontsize=12];
+145 -> 53;
+146 -> 144;
+147 -> 169[label="puse(147,169)={i}",fontsize=12];147 -> 148[label="puse(147,148)={i}",fontsize=12];
+148 -> 168[label="puse(148,168)={ratio}",fontsize=12];148 -> 149[label="puse(148,149)={ratio}",fontsize=12];
+149 -> 167[label="puse(149,167)={ratio}",fontsize=12];149 -> 150[label="puse(149,150)={ratio}",fontsize=12];
+150 -> 151;
+151 -> 166[label="puse(151,166)={rho,delta}",fontsize=12];151 -> 152[label="puse(151,152)={rho,delta}",fontsize=12];
+152 -> 153[label="puse(152,153)={f,ih}",fontsize=12];152 -> 52[label="puse(152,52)={f,ih}",fontsize=12];
+153 -> 154;
+154 -> 157[label="puse(154,157)={npt,bdtol}",fontsize=12];154 -> 155[label="puse(154,155)={npt,bdtol}",fontsize=12];
+155 -> 156[label="puse(155,156)={scaden,biglsq}",fontsize=12];155 -> 52[label="puse(155,52)={scaden,biglsq}",fontsize=12];
+156 -> 52;
+157 -> 158;
+158 -> 165[label="puse(158,165)={nptm,bdtest}",fontsize=12];158 -> 159[label="puse(158,159)={nptm,bdtest}",fontsize=12];
+159 -> 160;
+160 -> 164[label="puse(160,164)={n,k}",fontsize=12];160 -> 161[label="puse(160,161)={n,k}",fontsize=12];
+161 -> 163[label="puse(161,163)={scaden,curv,temp}",fontsize=12];161 -> 162[label="puse(161,162)={scaden,curv,temp}",fontsize=12];
+162 -> 154;
+163 -> 162;
+164 -> 160;
+165 -> 158;
+166 -> 152;
+167 -> 151;
+168 -> 151;
+169 -> 326;
+170 -> 51;
+171 -> 49;
+172 -> 173;
+173 -> 175[label="puse(173,175)={sum,k}",fontsize=12];173 -> 174[label="puse(173,174)={sum,k}",fontsize=12];
+174 -> 47;
+175 -> 177[label="puse(175,177)={sum,k}",fontsize=12];175 -> 176[label="puse(175,176)={sum,k}",fontsize=12];
+176 -> 173;
+177 -> 176;
+178 -> 3;
+179 -> 45;
+180 -> 184[label="puse(180,184)={this,ih,this.newPoint,this.lowerDifference}",fontsize=12];180 -> 181[label="puse(180,181)={this,ih,this.newPoint,this.lowerDifference}",fontsize=12];
+181 -> 183[label="puse(181,183)={this,ih,this.newPoint,this.upperDifference}",fontsize=12];181 -> 182[label="puse(181,182)={this,ih,this.newPoint,this.upperDifference}",fontsize=12];
+182 -> 43;
+183 -> 182;
+184 -> 181;
+185 -> 186;
+186 -> 227[label="puse(186,227)={npt,ih}",fontsize=12];186 -> 187[label="puse(186,187)={npt,ih}",fontsize=12];
+187 -> 188;
+188 -> 220[label="puse(188,220)={nptm,ih}",fontsize=12];188 -> 189[label="puse(188,189)={nptm,ih}",fontsize=12];
+189 -> 190;
+190 -> 213[label="puse(190,213)={n,j}",fontsize=12];190 -> 191[label="puse(190,191)={n,j}",fontsize=12];
+191 -> 206[label="puse(191,206)={ntrits}",fontsize=12];191 -> 192[label="puse(191,192)={ntrits}",fontsize=12];
+192 -> 193;
+193 -> 194[label="puse(193,194)={npt,k}",fontsize=12];193 -> 42[label="puse(193,42)={npt,k}",fontsize=12];
+194 -> 205[label="puse(194,205)={this,this.trustRegionCenterInterpolationPointIndex,k}",fontsize=12];194 -> 195[label="puse(194,195)={this,this.trustRegionCenterInterpolationPointIndex,k}",fontsize=12];
+195 -> 196;
+196 -> 204[label="puse(196,204)={nptm,i}",fontsize=12];196 -> 197[label="puse(196,197)={nptm,i}",fontsize=12];
+197 -> 198;
+198 -> 203[label="puse(198,203)={n,j}",fontsize=12];198 -> 199[label="puse(198,199)={n,j}",fontsize=12];
+199 -> 202[label="puse(199,202)={scaden,j,temp}",fontsize=12];199 -> 200[label="puse(199,200)={scaden,j,temp}",fontsize=12];
+200 -> 201;
+201 -> 193;
+202 -> 200;
+203 -> 198;
+204 -> 196;
+205 -> 201;
+206 -> 208[label="puse(206,208)={cauchy,denom}",fontsize=12];206 -> 207[label="puse(206,207)={cauchy,denom}",fontsize=12];
+207 -> 42;
+208 -> 209[label="puse(208,209)={cauchy}",fontsize=12];208 -> 207[label="puse(208,207)={cauchy}",fontsize=12];
+209 -> 210;
+210 -> 212[label="puse(210,212)={n,k}",fontsize=12];210 -> 211[label="puse(210,211)={n,k}",fontsize=12];
+211 -> 3;
+212 -> 210;
+213 -> 214;
+214 -> 219[label="puse(214,219)={npt,i}",fontsize=12];214 -> 215[label="puse(214,215)={npt,i}",fontsize=12];
+215 -> 216;
+216 -> 218[label="puse(216,218)={n,errbig}",fontsize=12];216 -> 217[label="puse(216,217)={n,errbig}",fontsize=12];
+217 -> 190;
+218 -> 216;
+219 -> 214;
+220 -> 221;
+221 -> 226[label="puse(221,226)={npt,sumb}",fontsize=12];221 -> 222[label="puse(221,222)={npt,sumb}",fontsize=12];
+222 -> 223;
+223 -> 225[label="puse(223,225)={npt,sumb}",fontsize=12];223 -> 224[label="puse(223,224)={npt,sumb}",fontsize=12];
+224 -> 188;
+225 -> 223;
+226 -> 221;
+227 -> 228;
+228 -> 230[label="puse(228,230)={n,i}",fontsize=12];228 -> 229[label="puse(228,229)={n,i}",fontsize=12];
+229 -> 186;
+230 -> 228;
+231 -> 232;
+232 -> 233[label="puse(232,233)={n,j}",fontsize=12];232 -> 185[label="puse(232,185)={n,j}",fontsize=12];
+233 -> 232;
+234 -> 238[label="puse(234,238)={dsq,xoptsq}",fontsize=12];234 -> 235[label="puse(234,235)={dsq,xoptsq}",fontsize=12];
+235 -> 237[label="puse(235,237)={ntrits}",fontsize=12];235 -> 236[label="puse(235,236)={ntrits}",fontsize=12];
+236 -> 3;
+237 -> 3;
+238 -> 239;
+239 -> 274[label="puse(239,274)={npt,j}",fontsize=12];239 -> 240[label="puse(239,240)={npt,j}",fontsize=12];
+240 -> 241;
+241 -> 255[label="puse(241,255)={nptm,j}",fontsize=12];241 -> 242[label="puse(241,242)={nptm,j}",fontsize=12];
+242 -> 243;
+243 -> 248[label="puse(243,248)={n,sum}",fontsize=12];243 -> 244[label="puse(243,244)={n,sum}",fontsize=12];
+244 -> 245;
+245 -> 247[label="puse(245,247)={n,sum}",fontsize=12];245 -> 246[label="puse(245,246)={n,sum}",fontsize=12];
+246 -> 235;
+247 -> 245;
+248 -> 249;
+249 -> 254[label="puse(249,254)={npt,k}",fontsize=12];249 -> 250[label="puse(249,250)={npt,k}",fontsize=12];
+250 -> 251;
+251 -> 253[label="puse(251,253)={sum,k}",fontsize=12];251 -> 252[label="puse(251,252)={sum,k}",fontsize=12];
+252 -> 243;
+253 -> 251;
+254 -> 249;
+255 -> 256;
+256 -> 273[label="puse(256,273)={npt,i}",fontsize=12];256 -> 257[label="puse(256,257)={npt,i}",fontsize=12];
+257 -> 258;
+258 -> 266[label="puse(258,266)={n,i}",fontsize=12];258 -> 259[label="puse(258,259)={n,i}",fontsize=12];
+259 -> 260;
+260 -> 262[label="puse(260,262)={n,i}",fontsize=12];260 -> 261[label="puse(260,261)={n,i}",fontsize=12];
+261 -> 241;
+262 -> 263;
+263 -> 265[label="puse(263,265)={i,j}",fontsize=12];263 -> 264[label="puse(263,264)={i,j}",fontsize=12];
+264 -> 260;
+265 -> 263;
+266 -> 267;
+267 -> 272[label="puse(267,272)={npt,frhosq}",fontsize=12];267 -> 268[label="puse(267,268)={npt,frhosq}",fontsize=12];
+268 -> 269;
+269 -> 271[label="puse(269,271)={npt,frhosq}",fontsize=12];269 -> 270[label="puse(269,270)={npt,frhosq}",fontsize=12];
+270 -> 258;
+271 -> 269;
+272 -> 267;
+273 -> 256;
+274 -> 275;
+275 -> 283[label="puse(275,283)={n,i}",fontsize=12];275 -> 276[label="puse(275,276)={n,i}",fontsize=12];
+276 -> 277;
+277 -> 279[label="puse(277,279)={n,i}",fontsize=12];277 -> 278[label="puse(277,278)={n,i}",fontsize=12];
+278 -> 239;
+279 -> 280;
+280 -> 282[label="puse(280,282)={i,j}",fontsize=12];280 -> 281[label="puse(280,281)={i,j}",fontsize=12];
+281 -> 277;
+282 -> 280;
+283 -> 275;
+284 -> 286[label="puse(284,286)={rho,dnorm}",fontsize=12];284 -> 285[label="puse(284,285)={rho,dnorm}",fontsize=12];
+285 -> 234;
+286 -> 304[label="puse(286,304)={this,nfsav}",fontsize=12];286 -> 287[label="puse(286,287)={this,nfsav}",fontsize=12];
+287 -> 302[label="puse(287,302)={crvmin}",fontsize=12];287 -> 288[label="puse(287,288)={crvmin}",fontsize=12];
+288 -> 289;
+289 -> 291[label="puse(289,291)={n,j}",fontsize=12];289 -> 290[label="puse(289,290)={n,j}",fontsize=12];
+290 -> 3;
+291 -> 301[label="puse(291,301)={this,j,this.newPoint,this.lowerDifference}",fontsize=12];291 -> 292[label="puse(291,292)={this,j,this.newPoint,this.lowerDifference}",fontsize=12];
+292 -> 300[label="puse(292,300)={this,j,this.newPoint,this.upperDifference}",fontsize=12];292 -> 293[label="puse(292,293)={this,j,this.newPoint,this.upperDifference}",fontsize=12];
+293 -> 295[label="puse(293,295)={bdtol,bdtest}",fontsize=12];293 -> 294[label="puse(293,294)={bdtol,bdtest}",fontsize=12];
+294 -> 289;
+295 -> 296;
+296 -> 299[label="puse(296,299)={npt,k}",fontsize=12];296 -> 297[label="puse(296,297)={npt,k}",fontsize=12];
+297 -> 298[label="puse(297,298)={bdtol,bdtest}",fontsize=12];297 -> 294[label="puse(297,294)={bdtol,bdtest}",fontsize=12];
+298 -> 290;
+299 -> 296;
+300 -> 293;
+301 -> 292;
+302 -> 303[label="puse(302,303)={crvmin,errbig,frhosq}",fontsize=12];302 -> 288[label="puse(302,288)={crvmin,errbig,frhosq}",fontsize=12];
+303 -> 3;
+304 -> 3;
+305 -> 306[label="puse(305,306)={this,this.trustRegionCenterInterpolationPointIndex}",fontsize=12];305 -> 284[label="puse(305,284)={this,this.trustRegionCenterInterpolationPointIndex}",fontsize=12];
+306 -> 307;
+307 -> 318[label="puse(307,318)={n,j}",fontsize=12];307 -> 308[label="puse(307,308)={n,j}",fontsize=12];
+308 -> 309[label="puse(308,309)={this,npt}",fontsize=12];308 -> 284[label="puse(308,284)={this,npt}",fontsize=12];
+309 -> 310;
+310 -> 311[label="puse(310,311)={npt,j}",fontsize=12];310 -> 284[label="puse(310,284)={npt,j}",fontsize=12];
+311 -> 312;
+312 -> 317[label="puse(312,317)={n,j}",fontsize=12];312 -> 313[label="puse(312,313)={n,j}",fontsize=12];
+313 -> 314;
+314 -> 316[label="puse(314,316)={n,j}",fontsize=12];314 -> 315[label="puse(314,315)={n,j}",fontsize=12];
+315 -> 310;
+316 -> 314;
+317 -> 312;
+318 -> 319;
+319 -> 321[label="puse(319,321)={j,i}",fontsize=12];319 -> 320[label="puse(319,320)={j,i}",fontsize=12];
+320 -> 307;
+321 -> 323[label="puse(321,323)={j,i}",fontsize=12];321 -> 322[label="puse(321,322)={j,i}",fontsize=12];
+322 -> 319;
+323 -> 322;
+324 -> 326;
+325 -> 1;
+}

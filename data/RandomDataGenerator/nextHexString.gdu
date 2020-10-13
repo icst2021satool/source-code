@@ -1,0 +1,36 @@
+digraph nextHexString {
+0 [label="0\n163-163"]
+6 [label="6\n190-190"]
+5 [label="5\n192-178"]
+1 [label="1\n168-178"]
+2 [label="2\n178-178"]
+7 [label="7\n164-164"]
+3 [label="3\n194-194"]
+4 [label="4\n179-189"]
+8 [label="8"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_0 [label="def(0)={this,len,LENGTH}"];
+setsNode_6 [label="def(6)={hex}\nuse(6)={null}"];
+setsNode_5 [label="def(5)={i}\nuse(5)={randomBytes,hex,null}"];
+setsNode_1 [label="def(1)={outBuffer,randomBytes,i}\nuse(1)={this,len}"];
+setsNode_7 [label="use(7)={len,LENGTH}"];
+setsNode_3 [label="use(3)={len,randomBytes}"];
+setsNode_4 [label="def(4)={hex}\nuse(4)={i,hex}"];
+}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 7 ;  setsNode_7}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 4 ;  setsNode_4}
+0 -> 7[label="use(0,7)={len}",fontsize=14];0 -> 1[label="use(0,1)={len}",fontsize=14];
+6 -> 5;
+5 -> 2;
+1 -> 2;
+2 -> 4[label="use(2,4)={i,hex}",fontsize=14];2 -> 3[label="use(2,3)={i,hex}",fontsize=14];
+7 -> 8;
+3 -> 8;
+4 -> 6[label="use(4,6)={null}",fontsize=14];4 -> 5[label="use(4,5)={null}",fontsize=14];
+}

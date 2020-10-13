@@ -1,0 +1,4 @@
+digraph { 
+3449 [shape=box,style=filled,color=".0 .0 .83",label="(0,1, shape)\n(0,(0,1), shape)\n(0,1, this)"];
+3450 [shape=box,style=filled,color=".0 .0 .83",label="(0,(0,2), shape)"];
+}

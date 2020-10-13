@@ -1,0 +1,34 @@
+Number of Variables;4;
+Variables:;
+0;;equator;
+1;;retainSet;
+2;;list;
+3;;element;
+
+Number of Block duas;6;
+Line Duas for method; retainAll;
+Number;Def Line; Origin Line; Use Line; Var Id; Var Name;
+1;1873;;1884;2;equator;
+2;1880;1884;1885;4;retainSet;
+3;1880;1884;1887;4;retainSet;
+4;1882;;1888;5;list;
+5;1882;;1885;5;list;
+6;1883;1883;1883;6;null;
+7;1883;1883;1888;6;null;
+8;1883;;1883;6;null;
+9;1883;;1885;7;element;
+
+Block Duas for method; retainAll;
+Number;Def Block; Origin Block; Use Block; Var Id; Var Name;
+1;0;;3;0;equator;
+;1873;;1884;2;equator;
+2;0;3;5;1;retainSet;
+;1880;1884;1885;4;retainSet;
+3;0;3;4;1;retainSet;
+;1880;1884;1887;4;retainSet;
+4;0;;2;2;list;
+;1882;;1888;5;list;
+5;0;;5;2;list;
+;1882;;1885;5;list;
+6;3;;5;3;element;
+;1883;;1885;7;element;

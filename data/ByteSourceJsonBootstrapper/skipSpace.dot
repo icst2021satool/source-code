@@ -1,0 +1,21 @@
+digraph { 
+113 [shape=box,style=filled,color=".0 .0 .83",label="(0,(1,3), acc)"];
+114 [shape=box,style=filled,color=".0 .0 .83",label="(0,2, acc)\n(0,(1,2), acc)"];
+115 [shape=box,style=filled,color=".0 .0 .83",label="(0,(4,1), ch)"];
+116 [shape=box,style=filled,color=".0 .0 .83",label="(0,(5,1), ch)"];
+117 [shape=box,style=filled,color=".0 .0 .83",label="(0,7, ch)\n(0,(6,7), ch)"];
+118 [shape=box,style=filled,color=".0 .0 .83",label="(0,(6,1), ch)"];
+119 [label="(0,(0,4), ch)"];
+120 [shape=box,style=filled,color=".0 .0 .83",label="(0,(0,1), ch)"];
+121 [label="(0,(4,5), ch)"];
+122 [label="(0,(5,6), ch)"];
+119 -> 115;
+119 -> 116;
+119 -> 117;
+119 -> 118;
+121 -> 116;
+121 -> 117;
+121 -> 118;
+122 -> 117;
+122 -> 118;
+}

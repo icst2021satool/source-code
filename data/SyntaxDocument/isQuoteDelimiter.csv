@@ -1,0 +1,30 @@
+Number of Variables;3;
+Variables:;
+0;;this;
+1;;character;
+2;;this.m_QuoteDelimiters;
+
+Number of Block duas;6;
+Line Duas for method; isQuoteDelimiter;
+Number;Def Line; Origin Line; Use Line; Var Id; Var Name;
+1;854;854;854;0;this;
+2;854;854;854;0;this;
+3;854;854;854;1;character;
+4;854;854;854;1;character;
+5;854;854;854;2;this.m_QuoteDelimiters;
+6;854;854;854;2;this.m_QuoteDelimiters;
+
+Block Duas for method; isQuoteDelimiter;
+Number;Def Block; Origin Block; Use Block; Var Id; Var Name;
+1;0;0;3;0;this;
+;854;854;854;0;this;
+2;0;0;1;0;this;
+;854;854;854;0;this;
+3;0;0;3;1;character;
+;854;854;854;1;character;
+4;0;0;1;1;character;
+;854;854;854;1;character;
+5;0;0;3;2;this.m_QuoteDelimiters;
+;854;854;854;2;this.m_QuoteDelimiters;
+6;0;0;1;2;this.m_QuoteDelimiters;
+;854;854;854;2;this.m_QuoteDelimiters;

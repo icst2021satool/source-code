@@ -1,0 +1,25 @@
+Number of Variables;1;
+Variables:;
+0;;collection;
+
+Number of Block duas;5;
+Line Duas for method; extractSingleton;
+Number;Def Line; Origin Line; Use Line; Var Id; Var Name;
+1;2057;2057;2057;0;collection;
+2;2057;2057;2058;0;collection;
+3;2057;2057;2058;0;collection;
+4;2057;2057;2060;0;collection;
+5;2057;;2060;0;collection;
+
+Block Duas for method; extractSingleton;
+Number;Def Block; Origin Block; Use Block; Var Id; Var Name;
+1;0;0;2;0;collection;
+;2057;2057;2057;0;collection;
+2;0;0;1;0;collection;
+;2057;2057;2058;0;collection;
+3;0;2;1;0;collection;
+;2057;2057;2058;0;collection;
+4;0;2;3;0;collection;
+;2057;2057;2060;0;collection;
+5;0;;3;0;collection;
+;2057;;2060;0;collection;

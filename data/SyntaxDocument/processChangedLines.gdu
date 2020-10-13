@@ -1,0 +1,36 @@
+digraph processChangedLines {
+4 [label="4\n430-430"]
+3 [label="3\n427-427"]
+0 [label="0\n405-415"]
+8 [label="8\n416-416"]
+7 [label="7\n422-421"]
+9 [label="9"]
+2 [label="2\n421-421"]
+1 [label="1\n421-421"]
+6 [label="6\n428-428"]
+5 [label="5\n432-432"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_4 [label="use(4)={this,endLine,null}"];
+setsNode_0 [label="def(0)={this,content,startLine,endLine}"];
+setsNode_8 [label="use(8)={this,endLine,null}"];
+setsNode_7 [label="def(7)={i}\nuse(7)={this,endLine,null}"];
+setsNode_1 [label="def(1)={i}\nuse(1)={null}"];
+setsNode_6 [label="use(6)={this,endLine,null}"];
+}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 8 ;  setsNode_8}
+{rank = same; 7 ;  setsNode_7}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 6 ;  setsNode_6}
+4 -> 5;
+3 -> 6[label="use(3,6)={this}",fontsize=14];3 -> 4[label="use(3,4)={this}",fontsize=14];
+0 -> 8[label="use(0,8)={this}",fontsize=14];0 -> 1[label="use(0,1)={this}",fontsize=14];
+8 -> 1;
+7 -> 2;
+2 -> 7[label="use(2,7)={null,null}",fontsize=14];2 -> 3[label="use(2,3)={null,null}",fontsize=14];
+1 -> 2;
+6 -> 5;
+5 -> 9;
+}

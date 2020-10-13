@@ -1,0 +1,20 @@
+digraph getNextChar {
+3 [label="3\n143-143"]
+2 [label="2\n142-142"]
+1 [label="1\n146-146"]
+0 [label="0\n141-141"]
+4 [label="4"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_3 [label="use(3)={this,eofMsg}"];
+setsNode_1 [label="use(1)={this,this._inputPtr,this._inputBuffer}"];
+setsNode_0 [label="def(0)={this,eofMsg,this._inputEnd,this._inputPtr,this._inputBuffer}"];
+}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 0 ;  setsNode_0}
+3 -> 1;
+2 -> 3[label="use(2,3)={this}",fontsize=14];2 -> 1[label="use(2,1)={this}",fontsize=14];
+1 -> 4;
+0 -> 2[label="use(0,2)={this,this._inputEnd,this._inputPtr}",fontsize=14];0 -> 1[label="use(0,1)={this,this._inputEnd,this._inputPtr}",fontsize=14];
+}

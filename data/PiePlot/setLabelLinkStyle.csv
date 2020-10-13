@@ -1,0 +1,25 @@
+Number of Variables;2;
+Variables:;
+0;;this;
+1;;style;
+
+Number of Block duas;4;
+Line Duas for method; setLabelLinkStyle;
+Number;Def Line; Origin Line; Use Line; Var Id; Var Name;
+1;1790;;1793;0;this;
+2;1790;;1794;0;this;
+3;1790;1790;1791;1;style;
+4;1790;1790;1793;1;style;
+5;1790;;1793;1;style;
+
+Block Duas for method; setLabelLinkStyle;
+Number;Def Block; Origin Block; Use Block; Var Id; Var Name;
+1;0;;1;0;this;
+;1790;;1793;0;this;
+;1790;;1794;0;this;
+2;0;0;2;1;style;
+;1790;1790;1791;1;style;
+3;0;0;1;1;style;
+;1790;1790;1793;1;style;
+4;0;;1;1;style;
+;1790;;1793;1;style;

@@ -1,0 +1,12 @@
+digraph { 
+60 [shape=box,style=filled,color=".0 .0 .83",label="(0,(5,8), this.contractionCriterion)\n(0,(5,8), this.numElements)\n(0,(5,8), this.internalArray)\n(0,(5,8), this)"];
+61 [shape=box,style=filled,color=".0 .0 .83",label="(0,(5,6), this.contractionCriterion)\n(0,(5,6), this.numElements)\n(0,(5,6), this.internalArray)\n(0,(5,6), this)"];
+62 [label="(0,(0,5), this.expansionMode)\n(0,(0,5), MULTIPLICATIVE)\n(0,(0,5), this)"];
+63 [shape=box,style=filled,color=".0 .0 .83",label="(0,(1,4), this.contractionCriterion)\n(0,(1,4), this.numElements)\n(0,(1,4), this.internalArray)\n(0,(1,4), this)"];
+64 [shape=box,style=filled,color=".0 .0 .83",label="(0,(1,2), this.contractionCriterion)\n(0,(1,2), this.numElements)\n(0,(1,2), this.internalArray)\n(0,(1,2), this)"];
+65 [label="(0,(0,1), this.expansionMode)\n(0,(0,1), MULTIPLICATIVE)\n(0,(0,1), this)"];
+62 -> 60;
+62 -> 61;
+65 -> 63;
+65 -> 64;
+}

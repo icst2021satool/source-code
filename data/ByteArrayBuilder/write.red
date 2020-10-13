@@ -1,0 +1,36 @@
+digraph { 
+24 [shape=box,style=filled,color=".0 .0 .83",label="(0,(1,2), len)"];
+25 [shape=box,style=filled,color=".0 .0 .83",label="(4,(1,2), len)"];
+26 [label="(0,2, this)"];
+27 [shape=box,style=filled,color=".0 .0 .83",label="(4,(1,3), len)"];
+28 [label="(0,4, this)"];
+29 [label="(0,4, b)"];
+30 [label="(0,4, off)"];
+31 [shape=box,style=filled,color=".0 .0 .83",label="(0,(1,3), len)"];
+32 [label="(0,4, len)"];
+33 [label="(0,4, this._currBlock)"];
+34 [label="(0,4, this._currBlockPtr)"];
+35 [label="(0,(0,4), toCopy)"];
+36 [label="(0,(0,1), toCopy)"];
+37 [label="(0,4, toCopy)"];
+26 -> 24;
+26 -> 25;
+28 -> 25;
+28 -> 27;
+29 -> 25;
+29 -> 27;
+30 -> 25;
+30 -> 27;
+32 -> 25;
+32 -> 27;
+33 -> 25;
+33 -> 27;
+34 -> 25;
+34 -> 27;
+35 -> 25;
+35 -> 27;
+36 -> 24;
+36 -> 31;
+37 -> 25;
+37 -> 27;
+}

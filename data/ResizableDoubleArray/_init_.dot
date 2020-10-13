@@ -1,0 +1,8 @@
+digraph { 
+3 [shape=box,style=filled,color=".0 .0 .83",label="(0,3, data)\n(0,(1,3), data)\n(0,3, this)"];
+4 [shape=box,style=filled,color=".0 .0 .83",label="(0,(1,2), data)"];
+5 [label="(0,1, expansionMode)\n(0,1, contractionCriterion)\n(0,1, expansionFactor)\n(0,1, initialCapacity)\n(0,(0,1), initialCapacity)\n(0,1, this)"];
+6 [shape=box,style=filled,color=".0 .0 .83",label="(0,4, INITIAL_CAPACITY_NOT_POSITIVE)\n(0,4, initialCapacity)\n(0,(0,4), initialCapacity)"];
+5 -> 3;
+5 -> 4;
+}

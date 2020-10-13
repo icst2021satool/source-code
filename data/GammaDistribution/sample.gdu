@@ -1,0 +1,60 @@
+digraph sample {
+9 [label="9\n379-383"]
+1 [label="1\n413-414"]
+14 [label="14\n393-393"]
+4 [label="4\n432-432"]
+12 [label="12\n403-403"]
+10 [label="10\n398-401"]
+7 [label="7\n429-429"]
+0 [label="0\n374-374"]
+3 [label="3\n424-428"]
+2 [label="2\n417-420"]
+8 [label="8\n421-421"]
+15 [label="15\n391-391"]
+16 [label="16"]
+6 [label="6\n433-433"]
+13 [label="13\n386-389"]
+5 [label="5\n435-435"]
+11 [label="11\n405-405"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_9 [label="def(9)={bGS,p}\nuse(9)={this,this.shape,this.scale}"];
+setsNode_1 [label="def(1)={}\nuse(1)={this,this.shape}"];
+setsNode_14 [label="use(14)={this,x,x}"];
+setsNode_10 [label="def(10)={x,u2}\nuse(10)={this,this.shape,this.scale,bGS,p}"];
+setsNode_7 [label="use(7)={this,this.random,x,x}"];
+setsNode_0 [label="def(0)={this,this.shape,this.random,this.scale}"];
+setsNode_3 [label="def(3)={}\nuse(3)={this,this.scale,p}"];
+setsNode_2 [label="def(2)={}\nuse(2)={this,this.scale,bGS}"];
+setsNode_6 [label="use(6)={this,this.random,x,x}"];
+setsNode_13 [label="def(13)={x,u2}\nuse(13)={this,this.shape,this.scale,p}"];
+setsNode_11 [label="use(11)={this,x,x}"];
+}
+{rank = same; 9 ;  setsNode_9}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 14 ;  setsNode_14}
+{rank = same; 10 ;  setsNode_10}
+{rank = same; 7 ;  setsNode_7}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 13 ;  setsNode_13}
+{rank = same; 11 ;  setsNode_11}
+9 -> 13[label="use(9,13)={p}",fontsize=14];9 -> 10[label="use(9,10)={p}",fontsize=14];
+1 -> 2;
+14 -> 16;
+4 -> 6[label="use(4,6)={this.random,x,u2,u2}",fontsize=14];4 -> 5[label="use(4,5)={this.random,x,u2,u2}",fontsize=14];
+12 -> 9;
+10 -> 12[label="use(10,12)={this,this.shape,x,u2}",fontsize=14];10 -> 11[label="use(10,11)={this,this.shape,x,u2}",fontsize=14];
+7 -> 16;
+0 -> 9[label="use(0,9)={this,this.shape}",fontsize=14];0 -> 1[label="use(0,1)={this,this.shape}",fontsize=14];
+3 -> 7[label="use(3,7)={u2,u2}",fontsize=14];3 -> 4[label="use(3,4)={u2,u2}",fontsize=14];
+2 -> 8[label="use(2,8)={x}",fontsize=14];2 -> 3[label="use(2,3)={x}",fontsize=14];
+8 -> 2;
+15 -> 9;
+6 -> 16;
+13 -> 15[label="use(13,15)={x,u2}",fontsize=14];13 -> 14[label="use(13,14)={x,u2}",fontsize=14];
+5 -> 2;
+11 -> 16;
+}

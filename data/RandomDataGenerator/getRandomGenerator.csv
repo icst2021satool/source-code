@@ -1,0 +1,32 @@
+Number of Variables;2;
+Variables:;
+0;;this;
+1;;this.rand;
+
+Number of Block duas;7;
+Line Duas for method; getRandomGenerator;
+Number;Def Line; Origin Line; Use Line; Var Id; Var Name;
+1;752;752;753;0;this;
+2;752;752;755;0;this;
+3;752;;755;0;this;
+4;752;;753;0;this;
+5;752;752;753;1;this.rand;
+6;752;752;755;1;this.rand;
+7;752;;755;1;this.rand;
+
+Block Duas for method; getRandomGenerator;
+Number;Def Block; Origin Block; Use Block; Var Id; Var Name;
+1;0;0;2;0;this;
+;752;752;753;0;this;
+2;0;0;1;0;this;
+;752;752;755;0;this;
+3;0;;1;0;this;
+;752;;755;0;this;
+4;0;;2;0;this;
+;752;;753;0;this;
+5;0;0;2;1;this.rand;
+;752;752;753;1;this.rand;
+6;0;0;1;1;this.rand;
+;752;752;755;1;this.rand;
+7;0;;1;1;this.rand;
+;752;;755;1;this.rand;

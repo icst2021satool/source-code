@@ -1,0 +1,13 @@
+{
+"Class" : "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics", 
+"Methods" : [{ "Name" : "<init>" ,
+"Duas" : "5" ,
+"Subsumers" : 0 
+},{ "Name" : "<init>" ,
+"Duas" : "8" ,
+"Subsumers" : 0 
+},{ "Name" : "aggregate" ,
+"Duas" : "70" ,
+"Subsumers" : 0 
+}]
+}

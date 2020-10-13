@@ -1,0 +1,21 @@
+digraph { 
+136 [shape=box,style=filled,color=".0 .0 .83",label="(0,(3,5), quad)\n(0,5, this)"];
+137 [shape=box,style=filled,color=".0 .0 .83",label="(0,(2,7), quad)\n(0,7, this)"];
+138 [shape=box,style=filled,color=".0 .0 .83",label="(0,(1,8), quad)\n(0,8, this)"];
+139 [shape=box,style=filled,color=".0 .0 .83",label="(0,(0,9), quad)\n(0,9, this)"];
+140 [label="(0,6, this)"];
+141 [shape=box,style=filled,color=".0 .0 .83",label="(0,(3,4), quad)"];
+142 [label="(0,(2,3), quad)"];
+143 [label="(0,(1,2), quad)"];
+144 [label="(0,(0,1), quad)"];
+140 -> 136;
+140 -> 137;
+140 -> 138;
+140 -> 139;
+142 -> 136;
+142 -> 141;
+143 -> 137;
+143 -> 142;
+144 -> 138;
+144 -> 143;
+}

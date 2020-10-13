@@ -1,0 +1,25 @@
+Number of Variables;2;
+Variables:;
+0;;this;
+1;;generator;
+
+Number of Block duas;4;
+Line Duas for method; setLegendLabelGenerator;
+Number;Def Line; Origin Line; Use Line; Var Id; Var Name;
+1;2291;;2294;0;this;
+2;2291;;2295;0;this;
+3;2291;2291;2292;1;generator;
+4;2291;2291;2294;1;generator;
+5;2291;;2294;1;generator;
+
+Block Duas for method; setLegendLabelGenerator;
+Number;Def Block; Origin Block; Use Block; Var Id; Var Name;
+1;0;;1;0;this;
+;2291;;2294;0;this;
+;2291;;2295;0;this;
+2;0;0;2;1;generator;
+;2291;2291;2292;1;generator;
+3;0;0;1;1;generator;
+;2291;2291;2294;1;generator;
+4;0;;1;1;generator;
+;2291;;2294;1;generator;

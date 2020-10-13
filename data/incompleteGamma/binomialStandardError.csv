@@ -1,0 +1,23 @@
+Number of Variables;2;
+Variables:;
+0;;p;
+1;;n;
+
+Number of Block duas;4;
+Line Duas for method; binomialStandardError;
+Number;Def Line; Origin Line; Use Line; Var Id; Var Name;
+1;91;;94;0;p;
+2;91;91;92;1;n;
+3;91;91;94;1;n;
+4;91;;94;1;n;
+
+Block Duas for method; binomialStandardError;
+Number;Def Block; Origin Block; Use Block; Var Id; Var Name;
+1;0;;1;0;p;
+;91;;94;0;p;
+2;0;0;2;1;n;
+;91;91;92;1;n;
+3;0;0;1;1;n;
+;91;91;94;1;n;
+4;0;;1;1;n;
+;91;;94;1;n;

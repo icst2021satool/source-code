@@ -1,0 +1,26 @@
+digraph { 
+99 [shape=box,style=filled,color=".0 .0 .83",label="(0,7, INCONCLUSIVE)\n(0,(3,7), acc)"];
+100 [shape=box,style=filled,color=".0 .0 .83",label="(0,(4,6), i)"];
+101 [shape=box,style=filled,color=".0 .0 .83",label="(5,(4,6), i)"];
+102 [label="(0,6, NO_MATCH)\n(0,(4,6), matchStr)\n(0,(4,6), acc)"];
+103 [shape=box,style=filled,color=".0 .0 .83",label="(5,5, i)\n(5,(4,5), i)"];
+104 [label="(5,(1,3), i)"];
+105 [shape=box,style=filled,color=".0 .0 .83",label="(5,(1,2), i)"];
+106 [label="(0,5, i)\n(0,(4,5), i)\n(0,(4,5), matchStr)\n(0,(4,5), acc)"];
+107 [label="(0,(3,4), acc)"];
+108 [shape=box,style=filled,color=".0 .0 .83",label="(0,(1,2), i)"];
+109 [label="(0,(1,2), len)\n(0,2, fullMatchStrength)"];
+110 [label="(0,(1,3), len)\n(0,(1,3), i)"];
+102 -> 100;
+102 -> 101;
+104 -> 101;
+104 -> 103;
+106 -> 104;
+106 -> 105;
+107 -> 102;
+107 -> 106;
+109 -> 105;
+109 -> 108;
+110 -> 99;
+110 -> 107;
+}

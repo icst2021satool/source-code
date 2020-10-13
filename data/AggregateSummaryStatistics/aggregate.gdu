@@ -1,0 +1,66 @@
+digraph aggregate {
+10 [label="10\n322-323"]
+13 [label="13\n327-327"]
+2 [label="2\n314-320"]
+1 [label="1\n310-311"]
+5 [label="5\n340-340"]
+11 [label="11\n324-324"]
+7 [label="7\n345-345"]
+16 [label="16\n323-323"]
+19 [label="19"]
+8 [label="8\n341-341"]
+3 [label="3\n321-321"]
+6 [label="6\n343-343"]
+14 [label="14\n329-336"]
+15 [label="15\n326-326"]
+12 [label="12\n326-326"]
+18 [label="18\n308-308"]
+4 [label="4\n338-338"]
+9 [label="9\n339-339"]
+17 [label="17\n312-312"]
+0 [label="0\n307-307"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_10 [label="def(10)={current}\nuse(10)={iterator}"];
+setsNode_13 [label="def(13)={max}\nuse(13)={current}"];
+setsNode_2 [label="def(2)={n,min,sum,max,m2,mean}\nuse(2)={iterator}"];
+setsNode_1 [label="def(1)={iterator}\nuse(1)={statistics}"];
+setsNode_11 [label="def(11)={min}\nuse(11)={current}"];
+setsNode_7 [label="use(7)={n,min,sum,max,mean,variance}"];
+setsNode_8 [label="def(8)={variance}"];
+setsNode_6 [label="def(6)={variance}\nuse(6)={n,m2}"];
+setsNode_14 [label="def(14)={n,sum,m2,mean}\nuse(14)={current,n,sum,m2,mean}"];
+setsNode_9 [label="def(9)={variance}"];
+setsNode_0 [label="def(0)={statistics}"];
+}
+{rank = same; 10 ;  setsNode_10}
+{rank = same; 13 ;  setsNode_13}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 11 ;  setsNode_11}
+{rank = same; 7 ;  setsNode_7}
+{rank = same; 8 ;  setsNode_8}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 14 ;  setsNode_14}
+{rank = same; 9 ;  setsNode_9}
+{rank = same; 0 ;  setsNode_0}
+10 -> 16[label="use(10,16)={current,min}",fontsize=14];10 -> 11[label="use(10,11)={current,min}",fontsize=14];
+13 -> 14;
+2 -> 3;
+1 -> 17[label="use(1,17)={iterator}",fontsize=14];1 -> 2[label="use(1,2)={iterator}",fontsize=14];
+5 -> 8[label="use(5,8)={n}",fontsize=14];5 -> 6[label="use(5,6)={n}",fontsize=14];
+11 -> 12;
+7 -> 19;
+16 -> 11[label="use(16,11)={min}",fontsize=14];16 -> 12[label="use(16,12)={min}",fontsize=14];
+8 -> 7;
+3 -> 10[label="use(3,10)={iterator}",fontsize=14];3 -> 4[label="use(3,4)={iterator}",fontsize=14];
+6 -> 7;
+14 -> 3;
+15 -> 13[label="use(15,13)={max}",fontsize=14];15 -> 14[label="use(15,14)={max}",fontsize=14];
+12 -> 15[label="use(12,15)={current,max}",fontsize=14];12 -> 13[label="use(12,13)={current,max}",fontsize=14];
+18 -> 19;
+4 -> 9[label="use(4,9)={n}",fontsize=14];4 -> 5[label="use(4,5)={n}",fontsize=14];
+9 -> 7;
+17 -> 19;
+0 -> 18[label="use(0,18)={statistics}",fontsize=14];0 -> 1[label="use(0,1)={statistics}",fontsize=14];
+}
