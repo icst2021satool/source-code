@@ -1,6 +1,6 @@
 # source-code
 
-This directory contains the source code for SAtool. SAtool calculates the data flow subsumptions, namely, DUA-Node subsumption, DUA-Edge subsumption and DUA-DUA subsumption.
+This repository contains the source code for SAtool. SAtool calculates the data flow subsumptions, namely, DUA-Node subsumption, DUA-Edge subsumption and DUA-DUA subsumption.
 
 The directory src and tst contain the code developed. We tried to remove any reference to the authors, but if you dig into the code you eventually will discover at least the institution in which the work was carried out.
 
