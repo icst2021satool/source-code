@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="7" failures="0" name="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" time="0.852" errors="0" skipped="0">
+<testsuite tests="10" failures="0" name="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" time="2.438" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="12+33"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home/lib"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/satool/projects/satool"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/marcoschaim/projetos/asmexplore"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -13,19 +13,20 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/satool/projects/satool"/>
+    <property name="user.dir" value="/Users/marcoschaim/projetos/asmexplore"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="12+33"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
     <property name="os.arch" value="x86_64"/>
-    <property name="java.io.tmpdir" value="/var/folders/jr/8qp2_1w922574njqsl86sll00000gq/T/"/>
+    <property name="java.io.tmpdir" value="/var/folders/qb/c1x095pj6l71q2ks8lclbbrr0000gn/T/"/>
     <property name="line.separator" value="
 "/>
+    <property name="socksProxyPort" value="8080"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
     <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.6.2/libexec/bin/m2.conf"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/Users/satool/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.library.path" value="/Users/marcoschaim/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="maven.conf" value="/usr/local/Cellar/maven/3.6.2/libexec/conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="56.0"/>
@@ -33,12 +34,13 @@
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.15"/>
     <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.6.2/libexec/lib/jansi-native"/>
-    <property name="user.home" value="/Users/satool"/>
+    <property name="user.home" value="/Users/marcoschaim"/>
     <property name="user.timezone" value="America/Sao_Paulo"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.specification.version" value="12"/>
-    <property name="user.name" value="satool"/>
+    <property name="user.name" value="marcoschaim"/>
     <property name="java.class.path" value="/usr/local/Cellar/maven/3.6.2/libexec/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="socksProxyHost" value="localhost"/>
     <property name="java.vm.specification.version" value="12"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
@@ -56,11 +58,14 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.endian" value="little"/>
   </properties>
-  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test1" time="0.434"/>
-  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test2" time="0.061"/>
-  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test3" time="0.022"/>
-  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test4" time="0.162"/>
-  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test5" time="0.066"/>
-  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test6" time="0.014"/>
-  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test7" time="0.093"/>
+  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test31" time="0.128"/>
+  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test32" time="0.062"/>
+  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test1" time="0.185"/>
+  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test2" time="0.004"/>
+  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test3" time="0.003"/>
+  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test4" time="0.134"/>
+  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test5" time="1.473"/>
+  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test6" time="0.016"/>
+  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test7" time="0.005"/>
+  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test8" time="0.428"/>
 </testsuite>
