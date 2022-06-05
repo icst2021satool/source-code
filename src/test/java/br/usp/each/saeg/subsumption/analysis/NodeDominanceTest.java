@@ -16,7 +16,7 @@ public class NodeDominanceTest extends TestCase {
 
     public void test1() {
         System.out.println("BOBYQAOptimizer");
-        String dir = "/Users/satool/data/bobyqb/";
+        String dir = "/Users/marcoschaim/projetos/data/bobyqb/";
         String clazzname = "BOBYQAOptimizer.class";
         int backarcs, retreatarcs;
         try {
@@ -66,7 +66,7 @@ public class NodeDominanceTest extends TestCase {
 
     public void test2() {
         System.out.println("SingularValueDecomposition");
-        String dir = "/Users/satool/data/SingularValueDecomposition/";
+        String dir = "/Users/marcoschaim/projetos/data/SingularValueDecomposition/";
         String clazzname = "SingularValueDecomposition.class";
         int backarcs, retreatarcs;
         try {
@@ -117,7 +117,7 @@ public class NodeDominanceTest extends TestCase {
 
     public void test3() {
         System.out.println("Metaphone");
-        String dir = "/Users/satool/data/Metaphone/";
+        String dir = "/Users/marcoschaim/projetos/data/Metaphone/";
         String clazzname = "Metaphone.class";
         int backarcs, retreatarcs;
         try {
