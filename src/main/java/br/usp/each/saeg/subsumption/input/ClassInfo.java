@@ -138,6 +138,152 @@ public class ClassInfo {
         return sb.toString();
     }
 
+    public String toJsonDuas2Nodes() {
+        StringBuffer sb = new StringBuffer();
+
+        String methodname = getName().replace(File.separator, ".");
+
+        sb.append("{\n\"Class\" : " + "\"" + methodname + "\", \n\"Methods\" : [");
+
+        boolean first = true;
+        for (MethodInfo mi : getMethodsInfo()) {
+            if (mi.getDuas().isEmpty()) continue;
+            if (first) {
+                first = false;
+            } else
+                sb.append(",");
+            mi.toJsonDuas2Nodes(sb);
+        }
+        sb.append("]\n}");
+        return sb.toString();
+    }
+
+    public String toJsonDuas2Edges() {
+        StringBuffer sb = new StringBuffer();
+
+        String methodname = getName().replace(File.separator, ".");
+
+        sb.append("{\n\"Class\" : " + "\"" + methodname + "\", \n\"Methods\" : [");
+
+        boolean first = true;
+        for (MethodInfo mi : getMethodsInfo()) {
+            if (mi.getDuas().isEmpty()) continue;
+            if (first) {
+                first = false;
+            } else
+                sb.append(",");
+            mi.toJsonDuas2Edges(sb);
+        }
+        sb.append("]\n}");
+        return sb.toString();
+    }
+
+    public String toJsonNodeSubsumption() {
+        StringBuffer sb = new StringBuffer();
+
+        String methodname = getName().replace(File.separator, ".");
+
+        sb.append("{\n\"Class\" : " + "\"" + methodname + "\", \n\"Methods\" : [");
+
+        boolean first = true;
+        System.out.println(methodname + ":");
+
+        Iterator<MethodInfo> it = getMethodsInfo().iterator();
+        while (it.hasNext()) {
+            MethodInfo mi = it.next();
+            if (mi.getDuas().isEmpty())
+                continue;
+
+            if (first)
+                first = false;
+            else
+                sb.append(",");
+
+            mi.toJsonNodeSubsumption(sb);
+
+        }
+
+        sb.append("]\n}");
+
+        return sb.toString();
+    }
+
+    public String toJsonNodes() {
+        StringBuffer sb = new StringBuffer();
+
+        String methodname = getName().replace(File.separator, ".");
+
+        sb.append("{\n\"Class\" : " + "\"" + methodname + "\", \n\"Methods\" : [");
+
+        boolean first = true;
+        for (MethodInfo mi : getMethodsInfo()) {
+            if (mi.getDuas().isEmpty()) continue;
+            if (first) {
+                first = false;
+            } else
+                sb.append(",");
+            mi.toJsonNodes(sb);
+        }
+        sb.append("]\n}");
+        return sb.toString();
+    }
+
+    public String toJsonEdgeSubsumption() {
+        StringBuffer sb = new StringBuffer();
+
+        String classname = getName().replace(File.separator, ".");
+
+        sb.append("{\n\"Class\" : " + "\"" + classname + "\", \n\"Methods\" : [");
+
+        boolean first = true;
+//        System.out.println(classname + ":");
+//        int noMethod = 0;
+        Iterator<MethodInfo> it = getMethodsInfo().iterator();
+        while (it.hasNext()) {
+            MethodInfo mi = it.next();
+
+            if (mi.getDuas().isEmpty()) {
+//                System.out.println("Method("+noMethod+") WITHOUT duas: "+mi.getName());
+                continue;
+            }
+//            else
+//                System.out.println("Method("+noMethod+") with duas: "+mi.getName());
+//            ++noMethod;
+
+            if (first)
+                first = false;
+            else
+                sb.append(",");
+
+            mi.toJsonEdgeSubsumption(sb);
+
+        }
+
+        sb.append("]\n}");
+
+        return sb.toString();
+    }
+
+    public String toJsonEdges() {
+        StringBuffer sb = new StringBuffer();
+
+        String methodname = getName().replace(File.separator, ".");
+
+        sb.append("{\n\"Class\" : " + "\"" + methodname + "\", \n\"Methods\" : [");
+
+        boolean first = true;
+        for (MethodInfo mi : getMethodsInfo()) {
+            if (mi.getDuas().isEmpty()) continue;
+            if (first) {
+                first = false;
+            } else
+                sb.append(",");
+            mi.toJsonEdges(sb);
+        }
+        sb.append("]\n}");
+        return sb.toString();
+    }
+
     public List<MethodInfo> getMethodsInfo() {
         return methods;
     }
