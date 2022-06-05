@@ -4,6 +4,7 @@ import br.usp.each.saeg.opal.Block;
 import br.usp.each.saeg.opal.Program;
 import br.usp.each.saeg.subsumption.graphdua.CoverageAnalyzer;
 import br.usp.each.saeg.subsumption.graphdua.Dua;
+import br.usp.each.saeg.subsumption.graphdua.Graphdua;
 import br.usp.each.saeg.subsumption.graphdua.Node;
 import br.usp.each.saeg.subsumption.input.ClassInfo;
 import br.usp.each.saeg.subsumption.input.MethodInfo;
@@ -216,7 +217,7 @@ public class ReductionGraphTest extends TestCase {
         MethodInfo mi = new MethodInfo("SortPaper", program, duas);
         mi.getProgram().computeDataFlowSets(duas);
 
-        sg = new SubsumptionGraph(mi.getProgram(), mi.getDuas());
+        sg = new SubsumptionGraph(mi.getProgram(), mi.getDuas(), false);
         //System.out.println(sg);
 
         rg = new ReductionGraph(sg);
@@ -226,7 +227,7 @@ public class ReductionGraphTest extends TestCase {
         System.out.println(rg);
 
         System.out.println("#" + "Unconstrained duas:" + rg.unconstrainedNodes().size());
-        writeBufferToFile("/Users/satool/data/analysis/sort/", "Sort.gdu", mi.graphDefUseToDot());
+        writeBufferToFile("/Users/marcoschaim/projetos/data/analysis/sort/", "Sort.gdu", mi.graphDefUseToDot());
 
         Iterator<ReductionNode> it = rg.unconstrainedNodes().iterator();
         while (it.hasNext()){
@@ -238,8 +239,11 @@ public class ReductionGraphTest extends TestCase {
 
         rg.findTransitiveClosure();
         System.out.println(rg.toDot());
-        writeBufferToFile("/Users/satool/data/analysis/sort/", "Sort.red", rg.toDot());
+        writeBufferToFile("/Users/marcoschaim/projetos/data/analysis/sort/", "Sort.red", rg.toDot());
 
+        duaSubAnalyzer = new SubsumptionAnalyzer(mi.getProgram(), mi.getDuas());
+        Graphdua graphdua = duaSubAnalyzer.findNode2DuasSubsumption();
+        System.out.println(graphdua.toDotNodeSubsumption(duaSubAnalyzer));
     }
 
     @Ignore
@@ -433,7 +437,7 @@ public class ReductionGraphTest extends TestCase {
         MethodInfo mi = new MethodInfo("SortPaper", program, duas);
         mi.getProgram().computeDataFlowSets(duas);
 
-        sg = new SubsumptionGraph(mi.getProgram(), mi.getDuas());
+        sg = new SubsumptionGraph(mi.getProgram(), mi.getDuas(), false);
         //System.out.println(sg);
 
         rg = new ReductionGraph(sg);
@@ -455,8 +459,8 @@ public class ReductionGraphTest extends TestCase {
         rg.findTransitiveClosure();
         System.out.println(rg.toDot());
         System.out.println(mi.graphDefUseToDot());
-//        writeBufferToFile("/Users/satool/data/analysis/sort-mod/","Sort2-grf-anot.dot",mi.graphDefUseToDot());
-//        writeBufferToFile("/Users/satool/data/analysis/sort-mod/","Sort2-red.dot",rg.toDot());
+//        writeBufferToFile("/Users/marcoschaim/projetos/data/analysis/sort-mod/","Sort2-grf-anot.dot",mi.graphDefUseToDot());
+//        writeBufferToFile("/Users/marcoschaim/projetos/data/analysis/sort-mod/","Sort2-red.dot",rg.toDot());
 
     }
 
@@ -464,7 +468,7 @@ public class ReductionGraphTest extends TestCase {
     public void test1() {
         System.out.println("Sort");
         try {
-            cl = new ClassInfo("/Users/satool/data/sort/", "Sort.class");
+            cl = new ClassInfo("/Users/marcoschaim/projetos/data/sort/", "Sort.class");
             cl.genAllMethodInfo();
 
             for (MethodInfo mi : cl.getMethodsInfo()) {
@@ -476,9 +480,9 @@ public class ReductionGraphTest extends TestCase {
                 mi.printMethodCFG();
                 System.out.println(mi.graphDefUseToDot());
                 mi.toDuasCSV();
-//                writeBufferToFile("/Users/satool/data/sort/src/",mi.getName()+".gz",mi.graphDefUseToDot());
+                writeBufferToFile("/Users/marcoschaim/projetos/data/sort/", mi.getName() + ".csv", mi.toDuasCSV());
 
-                sg = new SubsumptionGraph(mi.getProgram(), mi.getDuas());
+                sg = new SubsumptionGraph(mi.getProgram(), mi.getDuas(), false);
                 //System.out.println(sg);
 
                 rg = new ReductionGraph(sg);
@@ -489,7 +493,7 @@ public class ReductionGraphTest extends TestCase {
                 System.out.println("#" + mi.getName() + "Unconstrained duas: " + rg.unconstrainedNodes().size());
 
                 Iterator<ReductionNode> it = rg.unconstrainedNodes().iterator();
-                while (it.hasNext()){
+                while (it.hasNext()) {
                     ReductionNode u = it.next();
                     System.out.println(u);
                 }
@@ -498,7 +502,8 @@ public class ReductionGraphTest extends TestCase {
 
                 rg.findTransitiveClosure();
                 System.out.println(rg.toDot());
-//                writeBufferToFile("/Users/satool/data/sort/",mi.getName()+".dot",rg.toDot());
+                writeBufferToFile("/Users/marcoschaim/projetos/data/sort/", mi.getName() + ".gdu", mi.graphDefUseToDot());
+                writeBufferToFile("/Users/marcoschaim/projetos/data/sort/", mi.getName() + ".dot", rg.toDot());
             }
 
 
@@ -551,7 +556,7 @@ public class ReductionGraphTest extends TestCase {
     public void test3(){
         System.out.println("Max");
         try {
-            cl = new ClassInfo("/Users/satool/data/max/", "Max.class");
+            cl = new ClassInfo("/Users/marcoschaim/projetos/data/max/", "Max.class");
             cl.genAllMethodInfo();
 
             for (MethodInfo mi : cl.getMethodsInfo()) {
@@ -563,9 +568,9 @@ public class ReductionGraphTest extends TestCase {
 
                 mi.printMethodCFG();
                 mi.toDuasCSV();
-                writeBufferToFile("/Users/satool/data/max/", mi.getName() + ".gz", mi.graphDefUseToDot());
+                writeBufferToFile("/Users/marcoschaim/projetos/data/max/", mi.getName() + ".gz", mi.graphDefUseToDot());
 
-                sg = new SubsumptionGraph(mi.getProgram(),mi.getDuas());
+                sg = new SubsumptionGraph(mi.getProgram(), mi.getDuas(), false);
                 //System.out.println(sg);
 
                 rg = new ReductionGraph(sg);
@@ -587,7 +592,7 @@ public class ReductionGraphTest extends TestCase {
 
                 System.out.println(rg.toDot());
 
-                //writeBufferToFile("/Users/satool/data/max/", mi.getName() + ".dot", rg.toDot());
+                //writeBufferToFile("/Users/marcoschaim/projetos/data/max/", mi.getName() + ".dot", rg.toDot());
 
             }
 
@@ -600,7 +605,7 @@ public class ReductionGraphTest extends TestCase {
     @Test
     public void test4() {
         System.out.println("MaxRogue");
-        String dir = "/Users/satool/data/max/";
+        String dir = "/Users/marcoschaim/projetos/data/max/";
         String clazzname = "MaxRogue.class";
         try {
             cl = new ClassInfo(dir, clazzname);
@@ -615,7 +620,7 @@ public class ReductionGraphTest extends TestCase {
                 mi.printMethodCFG();
                 mi.toDuasCSV();
                 writeBufferToFile(dir, mi.getName() + ".gdu", mi.graphDefUseToDot());
-                sg = new SubsumptionGraph(mi.getProgram(), mi.getDuas());
+                sg = new SubsumptionGraph(mi.getProgram(), mi.getDuas(), false);
                 //System.out.println(sg);
 
                 rg = new ReductionGraph(sg);
@@ -648,7 +653,7 @@ public class ReductionGraphTest extends TestCase {
     @Test
     public void test5() {
         System.out.println("BOBYQAOptimizer");
-        String dir = "/Users/satool/data/bobyqb/";
+        String dir = "/Users/marcoschaim/projetos/data/bobyqb/";
         String clazz = "BOBYQAOptimizer.class";
         try {
             cl = new ClassInfo(dir, clazz);
@@ -660,7 +665,7 @@ public class ReductionGraphTest extends TestCase {
                 if (mi.getDuas().isEmpty())
                     continue;
 
-                sg = new SubsumptionGraph(mi.getProgram(), mi.getDuas());
+                sg = new SubsumptionGraph(mi.getProgram(), mi.getDuas(), false);
 
                 rg = new ReductionGraph(sg);
                 rg.setDua2DefUseChains(mi.getDefChainsMap());
@@ -687,7 +692,7 @@ public class ReductionGraphTest extends TestCase {
         System.out.println("LovinsStemmer");
         String methodname = null;
         try {
-            String dir = "/Users/satool/data/LovinsStemmer/";
+            String dir = "/Users/marcoschaim/projetos/data/LovinsStemmer/";
             String clazz = "LovinsStemmer.class";
             cl = new ClassInfo(dir, clazz);
             cl.genAllMethodInfo();
@@ -713,7 +718,7 @@ public class ReductionGraphTest extends TestCase {
                 writeBufferToFile(dir, mi.getName() + ".gdu", mi.graphDefUseToDot());
                 writeBufferToFile(dir, mi.getName() + ".csv", mi.toDuasCSV());
 
-                sg = new SubsumptionGraph(mi.getProgram(), mi.getDuas());
+                sg = new SubsumptionGraph(mi.getProgram(), mi.getDuas(), false);
 
                 rg = new ReductionGraph(sg);
                 rg.setDua2DefUseChains(mi.getDefChainsMap());
@@ -744,7 +749,7 @@ public class ReductionGraphTest extends TestCase {
         System.out.println("ReaderToTextPane");
         HashSet<String> methodNames = new HashSet<>();
         int methodId = 0;
-        String dir = "/Users/satool/data/ReaderToTextPane/";
+        String dir = "/Users/marcoschaim/projetos/data/ReaderToTextPane/";
         String clazz = "ReaderToTextPane$1.class";
         String methodname = null;
         try {
@@ -772,7 +777,7 @@ public class ReductionGraphTest extends TestCase {
 
                 writeBufferToFile(dir, mi.getName() + ".gdu", mi.graphDefUseToDot());
                 writeBufferToFile(dir, mi.getName() + ".csv", mi.toDuasCSV());
-                sg = new SubsumptionGraph(mi.getProgram(), mi.getDuas());
+                sg = new SubsumptionGraph(mi.getProgram(), mi.getDuas(), false);
 
                 rg = new ReductionGraph(sg);
                 rg.setDua2DefUseChains(mi.getDefChainsMap());
@@ -803,7 +808,7 @@ public class ReductionGraphTest extends TestCase {
     public void test5_3() {
         System.out.println("PiePlot");
         try {
-            String dir = "/Users/satool/data/PiePlot/";
+            String dir = "/Users/marcoschaim/projetos/data/PiePlot/";
             String clazz = "PiePlot.class";
             cl = new ClassInfo(dir, clazz);
             cl.genAllMethodInfo();
@@ -817,7 +822,7 @@ public class ReductionGraphTest extends TestCase {
 
                 writeBufferToFile(dir, mi.getName() + ".gdu", mi.graphDefUseToDot());
                 writeBufferToFile(dir, mi.getName() + ".csv", mi.toDuasCSV());
-                sg = new SubsumptionGraph(mi.getProgram(), mi.getDuas());
+                sg = new SubsumptionGraph(mi.getProgram(), mi.getDuas(), false);
 
                 rg = new ReductionGraph(sg);
                 rg.setDua2DefUseChains(mi.getDefChainsMap());
@@ -839,9 +844,9 @@ public class ReductionGraphTest extends TestCase {
     }
 
     public void test6() {
-        System.out.println("XYDatasetTableModel");
-        String dir = "/Users/satool/data/XYDatasetTableModel/";
-        String clazzname = "XYDatasetTableModel.class";
+        System.out.println("searchForPath");
+        String dir = "/Users/marcoschaim/projetos/data/searchForPath/";
+        String clazzname = "Path.class";
         try {
             cl = new ClassInfo(dir, clazzname);
             cl.genAllMethodInfo();
@@ -852,17 +857,20 @@ public class ReductionGraphTest extends TestCase {
 
                 writeBufferToFile(dir, mi.getName() + ".csv", mi.toDuasCSV());
                 writeBufferToFile(dir, mi.getName() + ".gdu", mi.graphDefUseToDot());
-                sg = new SubsumptionGraph(mi.getProgram(), mi.getDuas());
+                sg = new SubsumptionGraph(mi.getProgram(), mi.getDuas(), false);
                 //System.out.println(sg);
 
                 rg = new ReductionGraph(sg);
                 rg.setDua2DefUseChains(mi.getDefChainsMap());
                 rg.setLines(mi.getLines());
                 rg.findTransitiveClosure();
+                mi.setSubsumptionGraph(sg);
+                mi.setReductionGraph(rg);
                 writeBufferToFile(dir, mi.getName() + ".dot", rg.toDot());
-
             }
-            writeBufferToFile(dir, "XYDatasetTableModel.sub.json", cl.toJsonSubsumption());
+
+            System.out.println(cl.toJsonSubsumption());
+            writeBufferToFile(dir, "JDOMNodePointer.sub.json", cl.toJsonSubsumption());
         } catch (Exception e) {
             e.printStackTrace();
         }
