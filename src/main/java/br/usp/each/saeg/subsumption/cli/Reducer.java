@@ -20,7 +20,7 @@ public class Reducer {
     public static int reduceAll(File src, InputStream input, String path) {
         int n = 0; // # of methods analyzed
         StringBuffer sb = new StringBuffer();
-        boolean printReductionInfoFile = false;
+        boolean printReductionInfoFile = true;
 
         try {
             ClassInfo ci = new ClassInfo(input);
@@ -47,9 +47,13 @@ public class Reducer {
                     continue;
                 }
 
+                if (mi.getHasDanglingNodes()) {
+                    System.out.println("Warning: Method:" + methodname + " has dangling nodes.");
+                    continue;
+                }
 
                 final TimeWatch tw = TimeWatch.start();
-                sg = new SubsumptionGraph(mi.getProgram(), mi.getDuas());
+                sg = new SubsumptionGraph(mi.getProgram(), mi.getDuas(), false);
 
                 rg = new ReductionGraph(sg);
                 rg.setDua2DefUseChains(mi.getDefChainsMap());
