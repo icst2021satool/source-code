@@ -8,6 +8,9 @@ import br.usp.each.saeg.subsumption.analysis.ReductionNode;
 import br.usp.each.saeg.subsumption.analysis.SubsumptionAnalyzer;
 import br.usp.each.saeg.subsumption.analysis.SubsumptionGraph;
 import br.usp.each.saeg.subsumption.graphdua.Dua;
+import br.usp.each.saeg.subsumption.graphdua.Edge;
+import br.usp.each.saeg.subsumption.graphdua.Graphdua;
+import br.usp.each.saeg.subsumption.graphdua.Node;
 import org.objectweb.asm.tree.AbstractInsnNode;
 import org.objectweb.asm.tree.LineNumberNode;
 import org.objectweb.asm.tree.LocalVariableNode;
@@ -37,12 +40,19 @@ public class MethodInfo {
     HashMap<Integer, List<DefUseChain>> dua2DefUseChains = new HashMap<>();
     HashMap<DefUseChain, Integer> idDefUseChain = new HashMap<>();
     HashMap<Integer, List<Integer>> dua2idDefUseChains = new HashMap<>();
+    Map<DefUseChain, Dua> defUseChain2Dua = new HashMap<>();
+
+    Map<Integer, Edge> idEdgesMap = new HashMap<>();
+    Map<Edge, Integer> edgesIdMap = new HashMap<>();
+
     ReductionGraph rg = null;
     SubsumptionGraph sg = null;
-
+    Graphdua sne = null;
     boolean hasIncomingEdges = false;
     boolean hasAutoEdge = false;
+    boolean hasDanglingNodes = false;
     String owner;
+    private SubsumptionAnalyzer sa;
 
 
     public MethodInfo(String owner, MethodNode mn) {
@@ -110,6 +120,29 @@ public class MethodInfo {
         if (!p.getGraph().revNeighbors(0).isEmpty()) {
             hasIncomingEdges = true;
         }
+
+        if (!checkNodeReachability(p))
+            hasDanglingNodes = true;
+
+        // Create map of edges
+
+        Iterator<Block> itblk = p.getGraph().iterator();
+        idEdgesMap.clear();
+        edgesIdMap.clear();
+
+        int idedge = 0;
+
+        while (itblk.hasNext()) {
+            Block pred = itblk.next();
+            for (Block suc : p.getGraph().neighbors(pred.id)) {
+                Edge e = new Edge(pred, suc);
+                if (!idEdgesMap.containsValue(e)) {
+                    idEdgesMap.put(idedge, e);
+                    edgesIdMap.put(e, idedge);
+                    idedge++;
+                }
+            }
+        }
     }
 
     void visitInstruction(Program p, int ins, boolean[] vis) {
@@ -127,6 +160,26 @@ public class MethodInfo {
         }
     }
 
+    boolean checkNodeReachability(Program p) {
+        boolean vis = true;
+        Iterator<Block> it = p.getGraph().iterator();
+        while (it.hasNext()) {
+            Block b = it.next();
+            if (p.getGraph().entry().id() != b.id()) {
+                if (p.getGraph().revNeighbors(b.id()).isEmpty()) {
+                    vis = false;
+                    break;
+                }
+            }
+            if (p.getGraph().exit().id() != b.id()) {
+                if (p.getGraph().neighbors(b.id()).isEmpty()) {
+                    vis = false;
+                    break;
+                }
+            }
+        }
+        return vis;
+    }
 
     void connectNewExitNode(Block node, boolean[] vis) {
         vis[node.id()] = true;
@@ -205,6 +258,7 @@ public class MethodInfo {
 
         Dua d;
         int idDfc = 0;
+        dua2DefUseChains.clear();
 
         for (final DefUseChain c : globalChains) {
 
@@ -234,11 +288,18 @@ public class MethodInfo {
             } else {
                 cuseblk.puse(c.var);
                 targetblk = p.getGraph().get(leaders[c.target]);
-
-                if (cuseblk.id() == targetblk.id())
-                    hasAutoEdge = true;
-
                 d = new Dua(defblk, cuseblk, targetblk, varId, getVar(c, vars));
+//                System.out.println(d.toString());
+                if (cuseblk.id() == targetblk.id()) {
+                    hasAutoEdge = true;
+//                    System.out.println("Def: "+defblk.id()+";");
+//                    System.out.println("Cuse: "+cuseblk.id()+";");
+//                    System.out.println("Target: "+targetblk.id());
+//                    System.out.println(c.toString());
+//                    System.out.println(d.toString());
+                }
+
+
             }
             if (!dua2DefUseChains.containsKey(d.hashCode())) {
                 List<DefUseChain> l = new LinkedList<>();
@@ -252,6 +313,7 @@ public class MethodInfo {
                 dua2DefUseChains.get(d.hashCode()).add(c);
                 dua2idDefUseChains.get(d.hashCode()).add(idDfc);
             }
+            defUseChain2Dua.put(c, d);
             idDfc++;
         }
 
@@ -420,6 +482,10 @@ public class MethodInfo {
         return this.hasAutoEdge;
     }
 
+    public boolean getHasDanglingNodes() {
+        return this.hasDanglingNodes;
+    }
+
     public void setReductionGraph(ReductionGraph rg) {
         this.rg = rg;
     }
@@ -428,8 +494,24 @@ public class MethodInfo {
         return this.rg;
     }
 
+    public Map<Edge, Integer> getEdgesId() {
+        return edgesIdMap;
+    }
+
     public void setSubsumptionGraph(SubsumptionGraph sg) {
         this.sg = sg;
+    }
+
+    public void setGraphDua(Graphdua gd) {
+        this.sne = gd;
+    }
+
+    public void setSubsumptionAnalyzer(SubsumptionAnalyzer duaSubAnalyzer) {
+        this.sa = duaSubAnalyzer;
+    }
+
+    public Graphdua getGraphdua() {
+        return this.sne;
     }
 
     public String toJsonSubsumption(StringBuffer sb) {
@@ -470,7 +552,7 @@ public class MethodInfo {
                 sb.append(" \"S" + noSubsumers + "\" : [");
 
                 //SubsumptionGraph sg = rg.getSubsumptionGraph();
-                SubsumptionAnalyzer sa = sg.getSubsumptionAnalyzer();
+                sa = sg.getSubsumptionAnalyzer();
 
                 int idDua = sg.getDuaId(subsumer);
 
@@ -531,6 +613,292 @@ public class MethodInfo {
                 sb.append(" \"(" + lines[dfc.def] + ",(" + lines[dfc.use] + "," + lines[dfc.target] + "), " + getVar(dfc, vars) + ")\"");
 
             idDfc++;
+        }
+
+        sb.append("}");
+        return sb.toString();
+    }
+
+    public String toJsonDuas2Nodes(StringBuffer sb) {
+        sb.append("{ \"Name\" : \"" + getName() + "\" ,\n");
+        sb.append("\"Nodes\" : " + p.getGraph().size() + ",\n");
+        sb.append("\"Duas\" : " + idDefUseChain.size() + ",\n");
+
+        int idDfc = 0;
+        for (DefUseChain dfc : globalChains) {
+
+            if (getVar(dfc, vars) == null)
+                continue;
+
+            if (idDfc != 0)
+                sb.append(",\n");
+
+            sb.append("\"" + idDfc + "\" : ");
+
+            Dua d = defUseChain2Dua.get(dfc);
+
+            if (dfc.isComputationalChain()) {
+                if (d.def().id() != d.use().id())
+                    sb.append(" [ " + d.def().id() + "," + d.use().id() + " ]");
+                else
+                    sb.append(" [ " + d.def().id() + " ]");
+            } else {
+                if (d.def().id() == d.from().id() && d.def().id() == d.use().id())
+                    sb.append(" [ " + d.def().id() + " ]");
+                else if (d.def().id() == d.from().id())
+                    sb.append(" [ " + d.def().id() + "," + d.use().id() + " ]");
+                else if (d.def().id() == d.use().id())
+                    sb.append(" [ " + d.def().id() + "," + d.from().id() + " ]");
+                else
+                    sb.append(" [ " + d.def().id() + "," + d.from().id() + "," + d.use().id() + " ]");
+            }
+
+            idDfc++;
+        }
+
+        sb.append("}");
+        return sb.toString();
+    }
+
+    public String toJsonDuas2Edges(StringBuffer sb) {
+
+        Map<Integer, Integer> mapDuas2Edges = new TreeMap<Integer, Integer>();
+
+        sb.append("{ \"Name\" : \"" + getName() + "\" ,\n");
+        sb.append("\"Edges\" : " + this.edgesIdMap.size() + ",\n");
+        sb.append("\"Duas\" : " + idDefUseChain.size() + ",\n");
+
+        int idDfc = 0;
+
+        for (DefUseChain dfc : globalChains) {
+            Dua d = defUseChain2Dua.get(dfc);
+            if (getVar(dfc, vars) == null)
+                continue;
+
+            if (!dfc.isComputationalChain()) {
+                Edge e = new Edge(new Block(d.from().id()), new Block(d.use().id()));
+                mapDuas2Edges.put(idDfc, edgesIdMap.get(e));
+            }
+
+            idDfc++;
+        }
+
+        boolean first = true;
+
+        for (Map.Entry<Integer, Integer> e : mapDuas2Edges.entrySet()) {
+            if (first) {
+                first = false;
+                sb.append("\"" + e.getKey() + "\" : " + e.getValue());
+            } else
+                sb.append(", \n \"" + e.getKey() + "\" : " + e.getValue());
+        }
+
+        sb.append("}");
+        return sb.toString();
+    }
+
+
+    public String toJsonNodeSubsumption(StringBuffer sb) {
+        if (sne == null) {
+            sb.append("{ \"Name\" : \"" + this.getName() + "\" ,\n");
+            sb.append("\"Nodes\" : " + this.getProgram().getGraph().size() + ",\n");
+            sb.append("\"CoveredDUAsByNodes\" : -1,\n");
+            sb.append("\"Duas\" : " + idDefUseChain.size());
+            sb.append("\n}");
+
+            return sb.toString();
+        }
+
+        BitSet allSubsumed = new BitSet(sne.entry().getCovered().size());
+        allSubsumed.clear();
+        Set<Integer> subDuas = new HashSet<>();
+        Set<Integer> allsubDuas = new HashSet<>();
+
+        Iterator<Node> i = sne.iterator();
+
+        sb.append("{ \"Name\" : \"" + this.getName() + "\" ,\n");
+        sb.append("\"Nodes\" : " + this.getProgram().getGraph().size() + ",\n");
+
+
+        while (i.hasNext()) {
+            Node k = i.next();
+            BitSet coveredInNode = k.getCovered();
+            sb.append("\"" + k.block().id() + "\" : [ ");
+
+            if (!coveredInNode.isEmpty()) {
+                subDuas.clear();
+                int idDua = -1;
+                while ((idDua = coveredInNode.nextSetBit(idDua + 1)) != -1) {
+                    Dua subDua = sa.getDuaFromId(idDua);
+                    Iterator<Integer> itDfc = dua2idDefUseChains.get(subDua.hashCode()).iterator();
+                    while (itDfc.hasNext()) {
+                        subDuas.add(itDfc.next());
+                    }
+                }
+                allSubsumed.or(coveredInNode);
+            }
+
+            if (!coveredInNode.isEmpty()) {
+                Iterator<Integer> itsub = subDuas.iterator();
+
+                while (itsub.hasNext()) {
+                    int dfc = itsub.next();
+                    if (itsub.hasNext())
+                        sb.append(dfc + ", ");
+                    else
+                        sb.append(dfc);
+                }
+            }
+            allsubDuas.addAll(subDuas);
+            sb.append("],\n");
+        }
+
+        sb.append("\"CoveredDUAsByNodes\" : ");
+        sb.append(allsubDuas.size() + ",\n");
+        sb.append("\"Duas\" : " + idDefUseChain.size());
+        sb.append("\n}");
+
+        return sb.toString();
+    }
+
+    public String toJsonNodes(StringBuffer sb) {
+        Set<Integer> nodeLines = new HashSet<>();
+        Set<Integer> idNodes = new TreeSet<>();
+
+        sb.append("{ \"Name\" : \"" + getName() + "\" ,\n");
+        sb.append("\"Nodes\" : " + p.getGraph().size() + ",\n");
+
+        Iterator<Block> itblk = p.getGraph().iterator();
+
+        while (itblk.hasNext())
+            idNodes.add(itblk.next().id());
+
+        Iterator<Integer> itid = idNodes.iterator();
+
+        while (itid.hasNext()) {
+            Block suc = p.getGraph().get(itid.next());
+
+            sb.append("\"" + suc.id() + "\" : [ ");
+            nodeLines.clear();
+
+            for (int l : suc.lines()) {
+                if (!nodeLines.contains((lines[l]))) {
+                    nodeLines.add(lines[l]);
+                }
+            }
+
+            Iterator<Integer> it = nodeLines.iterator();
+
+            while (it.hasNext()) {
+                int line = it.next();
+                if (it.hasNext())
+                    sb.append(line + ",");
+                else
+                    sb.append(line);
+            }
+            if (itid.hasNext())
+                sb.append(" ],\n");
+            else
+                sb.append(" ]\n");
+        }
+
+        sb.append("}");
+        return sb.toString();
+    }
+
+    public String toJsonEdgeSubsumption(StringBuffer sb) {
+
+        if (sne == null) {
+            sb.append("{ \"Name\" : \"" + this.getName() + "\" ,\n");
+            sb.append("\"Edges\" : " + this.edgesIdMap.size() + ",\n");
+            sb.append("\"CoveredDUAsByEdges\" : -1,\n");
+            sb.append("\"Duas\" : " + idDefUseChain.size());
+            sb.append("\n}");
+
+            return sb.toString();
+        }
+
+        BitSet allSubsumed = new BitSet(sne.entry().getCovered().size());
+        allSubsumed.clear();
+        Set<Integer> subDuas = new HashSet<>();
+        Set<Integer> allsubDuas = new HashSet<>();
+
+        sb.append("{ \"Name\" : \"" + this.getName() + "\" ,\n");
+        sb.append("\"Edges\" : " + this.edgesIdMap.size() + ",\n");
+
+        Iterator<Node> i = sne.iterator();
+
+        while (i.hasNext()) {
+            Node k = i.next();
+
+            Set<Node> neighbors = sne.neighbors(k.id());
+            for (Node kn : neighbors) {
+                BitSet coveredInEdge = sne.getDuasSubsumedEdge(k, kn);
+
+                Edge e = new Edge(k.block(), kn.block());
+
+                int ide = 0;
+
+                if (this.edgesIdMap.containsKey(e))
+                    ide = this.edgesIdMap.get(e);
+                else {
+                    System.out.println("Warning: edge does not belong to map of edges.");
+                    continue;
+                }
+
+                sb.append("\"" + ide + "\" : [ ");
+                if (!coveredInEdge.isEmpty()) {
+                    subDuas.clear();
+                    int idDua = -1;
+                    while ((idDua = coveredInEdge.nextSetBit(idDua + 1)) != -1) {
+                        Dua subDua = sa.getDuaFromId(idDua);
+                        Iterator<Integer> itDfc = dua2idDefUseChains.get(subDua.hashCode()).iterator();
+                        while (itDfc.hasNext()) {
+                            subDuas.add(itDfc.next());
+                        }
+                    }
+                    allSubsumed.or(coveredInEdge);
+                }
+
+                if (!coveredInEdge.isEmpty()) {
+                    Iterator<Integer> itsub = subDuas.iterator();
+
+                    while (itsub.hasNext()) {
+                        int dfc = itsub.next();
+                        if (itsub.hasNext())
+                            sb.append(dfc + ", ");
+                        else
+                            sb.append(dfc);
+                    }
+                }
+                allsubDuas.addAll(subDuas);
+                sb.append("],\n");
+            }
+        }
+
+        sb.append("\"CoveredDUAsByEdges\" : ");
+        sb.append(allsubDuas.size() + ",\n");
+        sb.append("\"Duas\" : " + idDefUseChain.size());
+        sb.append("\n}");
+
+        return sb.toString();
+    }
+
+    public String toJsonEdges(StringBuffer sb) {
+        sb.append("{ \"Name\" : \"" + getName() + "\" ,\n");
+        sb.append("\"Edges\" : " + p.getGraph().sizeEdges() + ",\n");
+
+        for (int i = 0; i < p.getGraph().sizeEdges(); ++i) {
+            if (idEdgesMap.containsKey(i)) {
+                Edge e = idEdgesMap.get(i);
+
+                sb.append("\"" + i + "\" : [ " + e.getOrg().id() + "," + e.getTrg().id());
+                if (i + 1 < p.getGraph().sizeEdges())
+                    sb.append(" ],\n");
+                else
+                    sb.append(" ]\n");
+
+            }
         }
 
         sb.append("}");
