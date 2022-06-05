@@ -247,6 +247,10 @@ public class Graphdua extends Graph<Node> {
         return exitNode;
     }
 
+    public Node exitSG3() {
+        return sgn3.exit();
+    }
+
     @Override
     public int size() {
         return size;
@@ -325,7 +329,6 @@ public class Graphdua extends Graph<Node> {
         return sb.toString();
     }
 
-
     public String toDotNodeSubsumption(SubsumptionAnalyzer analyzer) {
         final StringBuilder sb = new StringBuilder();
         BitSet allSubsumed = new BitSet(entryNode.getCovered().size());
@@ -374,6 +377,62 @@ public class Graphdua extends Graph<Node> {
 
         sb.append("\n/*\n");
         sb.append("#Covered Duas by nodes: ");
+        sb.append(allSubsumed.cardinality());
+        sb.append("\n*/");
+
+        return sb.toString();
+    }
+
+    public String toDotEdgeSubsumption(SubsumptionAnalyzer analyzer) {
+        final StringBuilder sb = new StringBuilder();
+        BitSet allSubsumed = new BitSet(entryNode.getCovered().size());
+        allSubsumed.clear();
+
+        Iterator<Node> i = this.iterator();
+
+        sb.append("digraph { /* ");
+        sb.append("Duas covered at edges");
+        sb.append(" */\n");
+
+        while (i.hasNext()) {
+            Node k = i.next();
+
+            sb.append(k.id());
+            sb.append(" [label=\"");
+            sb.append(k.block().id());
+            sb.append("\"];");
+            sb.append("\n");
+        }
+
+        i = this.iterator();
+        while (i.hasNext()) {
+            Node k = i.next();
+
+            Set<Node> neighbors = this.neighbors(k.id());
+            for (Node kn : neighbors) {
+                BitSet coveredInEdge = getDuasSubsumedEdge(k, kn);
+                sb.append(" ");
+                sb.append(k.id());
+                sb.append(" -> ");
+                sb.append(kn.id());
+                if (!coveredInEdge.isEmpty()) {
+                    sb.append(" [label=\"");
+                    int idDua = -1;
+                    while ((idDua = coveredInEdge.nextSetBit(idDua + 1)) != -1) {
+                        Dua subDua = analyzer.getDuaFromId(idDua);
+                        sb.append(subDua.toString());
+                        sb.append("\\n");
+                    }
+                    sb.append("\"];\n");
+                    allSubsumed.or(coveredInEdge);
+                } else
+                    sb.append(";\n");
+            }
+        }
+        sb.append('}');
+
+        sb.append("\n/*\n");
+        sb.append("#Covered Duas by edges: ");
         sb.append(allSubsumed.cardinality());
         sb.append("\n*/");
 
@@ -435,61 +494,6 @@ public class Graphdua extends Graph<Node> {
         return allSubsumed;
     }
 
-    public String toDotEdgeSubsumption(SubsumptionAnalyzer analyzer) {
-        final StringBuilder sb = new StringBuilder();
-        BitSet allSubsumed = new BitSet(entryNode.getCovered().size());
-        allSubsumed.clear();
-
-        Iterator<Node> i = this.iterator();
-
-        sb.append("digraph { /* ");
-        sb.append("Duas covered at edges");
-        sb.append(" */\n");
-
-        while (i.hasNext()) {
-            Node k = i.next();
-
-            sb.append(k.id());
-            sb.append(" [label=\"");
-            sb.append(k.block().id());
-            sb.append("\"];");
-            sb.append("\n");
-        }
-
-        i = this.iterator();
-        while (i.hasNext()) {
-            Node k = i.next();
-
-            Set<Node> neighbors = this.neighbors(k.id());
-            for (Node kn : neighbors) {
-                BitSet coveredInEdge = getDuasSubsumedEdge(k, kn);
-                sb.append(" ");
-                sb.append(k.id());
-                sb.append(" -> ");
-                sb.append(kn.id());
-                if (!coveredInEdge.isEmpty()) {
-                    sb.append(" [label=\"");
-                    int idDua = -1;
-                    while ((idDua = coveredInEdge.nextSetBit(idDua + 1)) != -1) {
-                        Dua subDua = analyzer.getDuaFromId(idDua);
-                        sb.append(subDua.toString());
-                        sb.append("\\n");
-                    }
-                    sb.append("\"];\n");
-                    allSubsumed.or(coveredInEdge);
-                } else
-                    sb.append(";\n");
-            }
-        }
-        sb.append('}');
-
-        sb.append("\n/*\n");
-        sb.append("#Covered Duas by edges: ");
-        sb.append(allSubsumed.cardinality());
-        sb.append("\n*/");
-
-        return sb.toString();
-    }
 
     // Find rPostOrder
     public void findReversePostOrder() {
