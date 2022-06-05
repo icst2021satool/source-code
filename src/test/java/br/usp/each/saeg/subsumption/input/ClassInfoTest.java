@@ -17,7 +17,7 @@ public class ClassInfoTest extends TestCase {
     public void test1() {
         System.out.println("Teste");
         try {
-            cl = new ClassInfo("/Users/satool/data/sort/", "Sort.class");
+            cl = new ClassInfo("/Users/marcoschaim/projetos/data/sort/", "Sort.class");
             cl.genAllMethodInfo();
 
             for (MethodInfo mi : cl.getMethodsInfo()) {
@@ -35,7 +35,7 @@ public class ClassInfoTest extends TestCase {
 
     public void test1_2() {
         System.out.println("Max");
-        String dir = "/Users/satool/data/max/";
+        String dir = "/Users/marcoschaim/projetos/data/max/";
         String clazz = "Max.class";
         try {
             cl = new ClassInfo(dir, clazz);
@@ -51,10 +51,35 @@ public class ClassInfoTest extends TestCase {
         System.out.println(cl.toJsonDuas());
     }
 
+    //@Test
+    public void test2() {
+        System.out.println("IR");
+        String dir = "/Users/marcoschaim/projetos/data/IR/";
+        String clazzname = "IR.class";
+        try {
+            cl = new ClassInfo(dir, clazzname);
+            cl.genAllMethodInfo();
+
+            for (MethodInfo mi : cl.getMethodsInfo()) {
+                mi.createMethodCFG();
+                mi.createMethodDuas();
+                if (mi.getDuas().isEmpty())
+                    continue;
+                System.out.println(mi.graphDefUseToDot());
+                writeBufferToFile(dir, mi.getName() + ".csv", mi.toDuasCSV());
+            }
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        System.out.println(cl.toJsonSubsumption());
+        System.out.println(cl.toJsonDuas());
+    }
 
     public void test2_1() {
         System.out.println("GammaDistribution");
-        String dir = "/Users/satool/data/GammaDistribution/";
+        String dir = "/Users/marcoschaim/projetos/data/GammaDistribution/";
         String clazzname = "GammaDistribution.class";
         try {
             cl = new ClassInfo(dir, clazzname);
@@ -79,7 +104,7 @@ public class ClassInfoTest extends TestCase {
 
     public void test2_2() {
         System.out.println("CollectionUtils");
-        String dir = "/Users/satool/data/CollectionUtils/";
+        String dir = "/Users/marcoschaim/projetos/data/CollectionUtils/";
         String clazzname = "CollectionUtils.class";
         try {
             cl = new ClassInfo(dir, clazzname);
@@ -104,9 +129,9 @@ public class ClassInfoTest extends TestCase {
 
     //@Test
     public void test3() {
-        System.out.println("AggregateSummaryStatistics");
-        String dir = "/Users/satool/data/AggregateSummaryStatistics/";
-        String clazzname = "AggregateSummaryStatistics.class";
+        System.out.println("Compiler");
+        String dir = "/Users/marcoschaim/projetos/data/Compiler/";
+        String clazzname = "Compiler.class";
         try {
             cl = new ClassInfo(dir, clazzname);
             cl.genAllMethodInfo();
@@ -114,7 +139,7 @@ public class ClassInfoTest extends TestCase {
             for (MethodInfo mi : cl.getMethodsInfo()) {
                 mi.createMethodCFG();
                 mi.createMethodDuas();
-//              mi.printMethodCFG();
+                System.out.println(mi.graphDefUseToDot());
 //              writeBufferToFile(dir, mi.getName() + ".csv", mi.printMethodDuas());
             }
 //            System.out.println(cl.toJsonSubsumption());
