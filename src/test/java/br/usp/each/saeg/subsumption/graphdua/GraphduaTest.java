@@ -29,7 +29,7 @@ public class GraphduaTest extends TestCase {
         System.out.println("Sort");
 
         try {
-            cl = new ClassInfo("/Users/satool/data/sort/", "Sort.class");
+            cl = new ClassInfo("/Users/marcoschaim/projetos/data/sort/", "Sort.class");
             cl.genAllMethodInfo();
 
             for (MethodInfo mi : cl.getMethodsInfo()) {
@@ -79,7 +79,7 @@ public class GraphduaTest extends TestCase {
         System.out.println("MaxComplicated");
 
         try {
-            cl = new ClassInfo("/Users/satool/data/max/", "MaxComplicated.class");
+            cl = new ClassInfo("/Users/marcoschaim/projetos/data/max/", "MaxComplicated.class");
             cl.genAllMethodInfo();
 
             for (MethodInfo mi : cl.getMethodsInfo()) {
@@ -96,8 +96,8 @@ public class GraphduaTest extends TestCase {
                 while (itdua.hasNext()) {
                     d = itdua.next();
                     analyzer = new CoverageAnalyzer(mi.getProgram().getGraph(), d);
-                    System.out.println(counter+":" + d.toString());
-                    System.out.println(analyzer.findGraphdua());
+                    System.out.println(counter + ":" + d.toString());
+                    System.out.println(analyzer.findGraphdua().toDot());
                     ++counter;
                 }
             }
@@ -113,7 +113,7 @@ public class GraphduaTest extends TestCase {
         System.out.println("Max");
 
         try {
-            cl = new ClassInfo("/Users/satool/data/max/", "Max.class");
+            cl = new ClassInfo("/Users/marcoschaim/projetos/data/max/", "Max.class");
             cl.genAllMethodInfo();
 
             for (MethodInfo mi : cl.getMethodsInfo()) {
@@ -146,7 +146,7 @@ public class GraphduaTest extends TestCase {
     @Test
     public void test3() {
         System.out.println("filterForAdjacentSiblings");
-        String dir = "/Users/satool/data/filterForAdjacentSiblings/";
+        String dir = "/Users/marcoschaim/projetos/data/filterForAdjacentSiblings/";
 
         try {
             cl = new ClassInfo(dir, "Selector.class");
@@ -183,7 +183,7 @@ public class GraphduaTest extends TestCase {
 
     public void test3_1() {
         System.out.println("AggregateSummaryStatistics");
-        String dir = "/Users/satool/data/AggregateSummaryStatistics/";
+        String dir = "/Users/marcoschaim/projetos/data/AggregateSummaryStatistics/";
         String clazz = "AggregateSummaryStatistics.class";
 
         try {
@@ -385,15 +385,15 @@ public class GraphduaTest extends TestCase {
         System.out.println("forward graphdua:\n" + grf);
         System.out.println("graph defuse:\n" + mi.graphDefUseToDot());
         System.out.println("Graphdua:\n" + grf.toDot());
-        //writeBufferToFile("/Users/satool/data/sort/", "SortPaper"+ ".grd"+d.toString()+".gz",grf.toDot());
+        //writeBufferToFile("/Users/marcoschaim/projetos/data/sort/", "SortPaper"+ ".grd"+d.toString()+".gz",grf.toDot());
     }
 
     @Test
     public void test5() {
-        System.out.println("Max");
+        System.out.println("MaxRogue");
 
         try {
-            cl = new ClassInfo("/Users/satool/data/max/", "Max.class");
+            cl = new ClassInfo("/Users/marcoschaim/projetos/data/max/", "MaxRogue.class");
             cl.genAllMethodInfo();
 
             for (MethodInfo mi : cl.getMethodsInfo()) {
@@ -417,7 +417,7 @@ public class GraphduaTest extends TestCase {
                     Graphdua grf = analyzer.findGraphdua();
                     //System.out.println("forward graphdua:\n"+grf);
                     //System.out.println("backward graphdua:\n"+printInverse(grf.inverse()));
-                    //writeBufferToFile("/Users/satool/data/max/", mi.getName()+ ".grd"+d.toString()+".gz",grf.toDot());
+                    //writeBufferToFile("/Users/marcoschaim/projetos/data/max/", mi.getName()+ ".grd"+d.toString()+".gz",grf.toDot());
                     System.out.println("GraphDua(" + d.toString() + "):");
                     System.out.println(grf.toDot());
                     ++counter;
