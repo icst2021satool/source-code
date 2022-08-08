@@ -1,0 +1,46 @@
+digraph searchForPath {
+6 [label="6\n197-198"]
+3 [label="3\n212-212"]
+1 [label="1\n191-191"]
+4 [label="4\n192-192"]
+9 [label="9\n204-204"]
+8 [label="8\n210-210"]
+0 [label="0\n184-187"]
+11 [label="11\n193-193"]
+5 [label="5\n195-196"]
+7 [label="7\n203-203"]
+10 [label="10\n201-201"]
+2 [label="2\n191-191"]
+13 [label="13"]
+12 [label="12\n188-188"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_6 [label="def(6)={partial}\nuse(6)={this.steps}"];
+setsNode_1 [label="def(1)={i}\nuse(1)={this,pointer}"];
+setsNode_9 [label="use(9)={this,context,pointer,ctx,partial}"];
+setsNode_0 [label="def(0)={this,context,this.steps,pointer}"];
+setsNode_5 [label="def(5)={ctx}\nuse(5)={this,context,ctx}"];
+setsNode_2 [label="def(2)={i}\nuse(2)={ctx}"];
+setsNode_12 [label="use(12)={i}"];
+}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 9 ;  setsNode_9}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 12 ;  setsNode_12}
+6 -> 10[label="use(6,10)={this.steps}",fontsize=14];6 -> 7[label="use(6,7)={this.steps}",fontsize=14];
+3 -> 13;
+1 -> 2;
+4 -> 11[label="use(4,11)={this,pointer,ctx}",fontsize=14];4 -> 5[label="use(4,5)={this,pointer,ctx}",fontsize=14];
+9 -> 13;
+8 -> 2;
+0 -> 12[label="use(0,12)={i}",fontsize=14];0 -> 1[label="use(0,1)={i}",fontsize=14];
+11 -> 13;
+5 -> 6[label="use(5,6)={this.steps}",fontsize=14];5 -> 2[label="use(5,2)={this.steps}",fontsize=14];
+7 -> 9[label="use(7,9)={partial}",fontsize=14];7 -> 8[label="use(7,8)={partial}",fontsize=14];
+10 -> 13;
+2 -> 4[label="use(2,4)={ctx}",fontsize=14];2 -> 3[label="use(2,3)={ctx}",fontsize=14];
+12 -> 13;
+}

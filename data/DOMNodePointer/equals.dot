@@ -1,0 +1,12 @@
+digraph { 
+302 [shape=box,style=filled,color=".0 .0 .83",label="[584,(584,585),object]\n[584,(584,585),this]"];
+303 [shape=box,style=filled,color=".0 .0 .83",label="[592,(593,593),other.node]\n[592,(593,593),other]\n[584,(593,593),this.node]\n[584,(593,593),this]"];
+304 [shape=box,style=filled,color=".0 .0 .83",label="[592,(593,593),other.node]\n[592,(593,593),other]\n[584,(593,593),this.node]\n[584,(593,593),this]"];
+305 [shape=box,style=filled,color=".0 .0 .83",label="[584,(588,589),object]"];
+306 [label="[584,592,object]\n[584,(588,592),object]"];
+307 [label="[584,(584,588),object]\n[584,(584,588),this]"];
+306 -> 303;
+306 -> 304;
+307 -> 305;
+307 -> 306;
+}

@@ -1,0 +1,30 @@
+digraph getPointerByID {
+4 [label="4\n709-709"]
+5 [label="5\n702-702"]
+6 [label="6"]
+3 [label="3\n712-712"]
+2 [label="2\n707-708"]
+0 [label="0\n701-701"]
+1 [label="1\n705-705"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_4 [label="use(4)={this,this.node}"];
+setsNode_5 [label="def(5)={document}\nuse(5)={this,document}"];
+setsNode_3 [label="use(3)={this,this.node}"];
+setsNode_2 [label="def(2)={element}\nuse(2)={this.node,element}"];
+setsNode_0 [label="def(0)={this,id,this.node}"];
+setsNode_1 [label="def(1)={document}\nuse(1)={this,document}"];
+}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 1 ;  setsNode_1}
+4 -> 6;
+5 -> 2;
+3 -> 6;
+2 -> 4[label="use(2,4)={}",fontsize=14];2 -> 3[label="use(2,3)={}",fontsize=14];
+0 -> 5[label="use(0,5)={this,document}",fontsize=14];0 -> 1[label="use(0,1)={this,document}",fontsize=14];
+1 -> 2;
+}

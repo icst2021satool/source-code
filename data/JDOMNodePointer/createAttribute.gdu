@@ -1,0 +1,48 @@
+digraph createAttribute {
+1 [label="1\n532-534"]
+2 [label="2\n546-547"]
+11 [label="11"]
+3 [label="3\n551-553"]
+4 [label="4\n548-548"]
+10 [label="10\n529-529"]
+8 [label="8\n542-542"]
+7 [label="7\n544-544"]
+0 [label="0\n528-528"]
+6 [label="6\n540-541"]
+5 [label="5\n535-536"]
+9 [label="9\n537-537"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_1 [label="def(1)={element,prefix}\nuse(1)={this,name,this.node}"];
+setsNode_2 [label="def(2)={attr}\nuse(2)={name,element}"];
+setsNode_3 [label="use(3)={this,name}"];
+setsNode_4 [label="use(4)={name,element}"];
+setsNode_10 [label="use(10)={this,context,name}"];
+setsNode_8 [label="use(8)={name,element,ns}"];
+setsNode_0 [label="def(0)={this,context,name,this.node}"];
+setsNode_6 [label="def(6)={attr}\nuse(6)={name,element,ns}"];
+setsNode_5 [label="def(5)={ns}\nuse(5)={element,prefix}"];
+setsNode_9 [label="use(9)={prefix}"];
+}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 10 ;  setsNode_10}
+{rank = same; 8 ;  setsNode_8}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 9 ;  setsNode_9}
+1 -> 5[label="use(1,5)={prefix}",fontsize=14];1 -> 2[label="use(1,2)={prefix}",fontsize=14];
+2 -> 4[label="use(2,4)={ns}",fontsize=14];2 -> 3[label="use(2,3)={ns}",fontsize=14];
+3 -> 11;
+4 -> 3;
+10 -> 11;
+8 -> 7;
+7 -> 3;
+0 -> 10[label="use(0,10)={this,this.node}",fontsize=14];0 -> 1[label="use(0,1)={this,this.node}",fontsize=14];
+6 -> 8[label="use(6,8)={attr}",fontsize=14];6 -> 7[label="use(6,7)={attr}",fontsize=14];
+5 -> 9[label="use(5,9)={ns}",fontsize=14];5 -> 6[label="use(5,6)={ns}",fontsize=14];
+9 -> 11;
+}

@@ -1,0 +1,56 @@
+digraph getValue {
+15 [label="15"]
+14 [label="14\n240-240"]
+9 [label="9\n253-253"]
+5 [label="5\n262-262"]
+8 [label="8\n258-258"]
+2 [label="2\n249-249"]
+3 [label="3\n252-252"]
+4 [label="4\n255-255"]
+0 [label="0\n239-239"]
+10 [label="10\n250-250"]
+13 [label="13\n245-245"]
+12 [label="12\n247-247"]
+1 [label="1\n242-242"]
+6 [label="6\n256-257"]
+11 [label="11\n243-244"]
+7 [label="7\n260-260"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_14 [label="use(14)={this,this.node}"];
+setsNode_9 [label="use(9)={this,this.node}"];
+setsNode_8 [label="def(8)={text}\nuse(8)={text}"];
+setsNode_0 [label="def(0)={this,this.node}"];
+setsNode_10 [label="use(10)={this,this.node}"];
+setsNode_13 [label="def(13)={text}\nuse(13)={text}"];
+setsNode_12 [label="use(12)={text}"];
+setsNode_6 [label="def(6)={text}\nuse(6)={this,this.node}"];
+setsNode_11 [label="def(11)={text}\nuse(11)={this,this.node}"];
+setsNode_7 [label="use(7)={text}"];
+}
+{rank = same; 14 ;  setsNode_14}
+{rank = same; 9 ;  setsNode_9}
+{rank = same; 8 ;  setsNode_8}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 10 ;  setsNode_10}
+{rank = same; 13 ;  setsNode_13}
+{rank = same; 12 ;  setsNode_12}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 11 ;  setsNode_11}
+{rank = same; 7 ;  setsNode_7}
+14 -> 15;
+9 -> 15;
+5 -> 15;
+8 -> 7;
+2 -> 10[label="use(2,10)={this,this.node}",fontsize=14];2 -> 3[label="use(2,3)={this,this.node}",fontsize=14];
+3 -> 9[label="use(3,9)={this,this.node}",fontsize=14];3 -> 4[label="use(3,4)={this,this.node}",fontsize=14];
+4 -> 6[label="use(4,6)={this,this.node}",fontsize=14];4 -> 5[label="use(4,5)={this,this.node}",fontsize=14];
+0 -> 14[label="use(0,14)={this,this.node}",fontsize=14];0 -> 1[label="use(0,1)={this,this.node}",fontsize=14];
+10 -> 15;
+13 -> 12;
+12 -> 15;
+1 -> 11[label="use(1,11)={this,this.node}",fontsize=14];1 -> 2[label="use(1,2)={this,this.node}",fontsize=14];
+6 -> 8[label="use(6,8)={text}",fontsize=14];6 -> 7[label="use(6,7)={text}",fontsize=14];
+11 -> 13[label="use(11,13)={text}",fontsize=14];11 -> 12[label="use(11,12)={text}",fontsize=14];
+7 -> 15;
+}

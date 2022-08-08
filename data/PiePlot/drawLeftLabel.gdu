@@ -3,32 +3,32 @@ digraph drawLeftLabel {
 8 [label="8"]
 1 [label="1\n3187-3190"]
 3 [label="3\n3174-3174"]
-7 [label="7\n3170-3172"]
-0 [label="0\n3151-3155"]
 5 [label="5\n3181-3184"]
 2 [label="2\n3156-3169"]
+7 [label="7\n3170-3172"]
 6 [label="6\n3175-3179"]
+0 [label="0\n3151-3155"]
 {
 node [shape=plaintext, fontsize=14];
 setsNode_1 [label="use(1)={g2,record,this.labelLinkPaint,this.labelLinkStroke}"];
-setsNode_7 [label="use(7)={g2,this.labelLinksVisible,this.labelLinkPaint,this.labelLinkStroke,CUBIC_CURVE,RIGHT,anchorX,targetX,targetY}"];
-setsNode_0 [label="def(0)={this,g2,state,record,this.labelLinksVisible,this.labelLinkPaint,this.labelLinkStroke,STANDARD,QUAD_CURVE,CUBIC_CURVE,RIGHT,anchorX,targetX,targetY}"];
 setsNode_5 [label="use(5)={g2,this.labelLinksVisible,this.labelLinkPaint,this.labelLinkStroke,CUBIC_CURVE,RIGHT,anchorX,targetX,targetY}"];
 setsNode_2 [label="def(2)={linkX,linkY,elbowX,elbowY,anchorY,style}\nuse(2)={this,g2,state,record,linkX,linkY}"];
+setsNode_7 [label="use(7)={g2,this.labelLinksVisible,this.labelLinkPaint,this.labelLinkStroke,CUBIC_CURVE,RIGHT,anchorX,targetX,targetY}"];
 setsNode_6 [label="use(6)={g2,this.labelLinksVisible,this.labelLinkPaint,this.labelLinkStroke,CUBIC_CURVE,RIGHT,anchorX,targetX,targetY}"];
+setsNode_0 [label="def(0)={this,g2,state,record,this.labelLinksVisible,this.labelLinkPaint,this.labelLinkStroke,STANDARD,QUAD_CURVE,CUBIC_CURVE,RIGHT,anchorX,targetX,targetY}"];
 }
 {rank = same; 1 ;  setsNode_1}
-{rank = same; 7 ;  setsNode_7}
-{rank = same; 0 ;  setsNode_0}
 {rank = same; 5 ;  setsNode_5}
 {rank = same; 2 ;  setsNode_2}
+{rank = same; 7 ;  setsNode_7}
 {rank = same; 6 ;  setsNode_6}
+{rank = same; 0 ;  setsNode_0}
 4 -> 5[label="use(4,5)={elbowX}",fontsize=14];4 -> 1[label="use(4,1)={elbowX}",fontsize=14];
 1 -> 8;
 3 -> 6[label="use(3,6)={elbowX,anchorY}",fontsize=14];3 -> 4[label="use(3,4)={elbowX,anchorY}",fontsize=14];
-7 -> 1;
-0 -> 2[label="use(0,2)={this,STANDARD}",fontsize=14];0 -> 1[label="use(0,1)={this,STANDARD}",fontsize=14];
 5 -> 1;
 2 -> 7[label="use(2,7)={elbowX,elbowY}",fontsize=14];2 -> 3[label="use(2,3)={elbowX,elbowY}",fontsize=14];
+7 -> 1;
 6 -> 1;
+0 -> 2[label="use(0,2)={this,STANDARD}",fontsize=14];0 -> 1[label="use(0,1)={this,STANDARD}",fontsize=14];
 }

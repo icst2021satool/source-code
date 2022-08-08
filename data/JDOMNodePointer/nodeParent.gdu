@@ -1,0 +1,46 @@
+digraph nodeParent {
+7 [label="7\n477-477"]
+9 [label="9\n471-471"]
+0 [label="0\n464-464"]
+13 [label="13"]
+6 [label="6\n480-480"]
+2 [label="2\n473-473"]
+5 [label="5\n482-482"]
+11 [label="11\n469-469"]
+4 [label="4\n479-479"]
+8 [label="8\n474-474"]
+1 [label="1\n470-470"]
+3 [label="3\n476-476"]
+12 [label="12\n467-467"]
+10 [label="10\n465-466"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_7 [label="use(7)={parent}"];
+setsNode_9 [label="use(9)={parent}"];
+setsNode_0 [label="def(0)={node}"];
+setsNode_6 [label="use(6)={parent}"];
+setsNode_8 [label="use(8)={parent}"];
+setsNode_12 [label="use(12)={}"];
+setsNode_10 [label="def(10)={parent}\nuse(10)={parent}"];
+}
+{rank = same; 7 ;  setsNode_7}
+{rank = same; 9 ;  setsNode_9}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 8 ;  setsNode_8}
+{rank = same; 12 ;  setsNode_12}
+{rank = same; 10 ;  setsNode_10}
+7 -> 13;
+9 -> 13;
+0 -> 10[label="use(0,10)={parent}",fontsize=14];0 -> 1[label="use(0,1)={parent}",fontsize=14];
+6 -> 13;
+2 -> 8[label="use(2,8)={parent}",fontsize=14];2 -> 3[label="use(2,3)={parent}",fontsize=14];
+5 -> 13;
+11 -> 5;
+4 -> 6[label="use(4,6)={parent}",fontsize=14];4 -> 5[label="use(4,5)={parent}",fontsize=14];
+8 -> 13;
+1 -> 9[label="use(1,9)={parent}",fontsize=14];1 -> 2[label="use(1,2)={parent}",fontsize=14];
+3 -> 7[label="use(3,7)={parent}",fontsize=14];3 -> 4[label="use(3,4)={parent}",fontsize=14];
+12 -> 13;
+10 -> 12[label="use(10,12)={}",fontsize=14];10 -> 11[label="use(10,11)={}",fontsize=14];
+}

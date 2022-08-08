@@ -1,0 +1,50 @@
+digraph { /* Duas covered at duas */
+3 [label="0\n"];
+1034 [label="1\n(0,1, this)\n(0,1, this.dataset)\n(0,(0,1), n)\n(0,1, n)\n"];
+2065 [label="2\n(0,1, this)\n(0,(1,2), this)\n(0,1, this.dataset)\n(0,(1,2), CLOCKWISE)\n(0,(1,2), this.direction)\n(0,(0,1), n)\n(0,1, n)\n"];
+3096 [label="3\n(0,1, this)\n(0,(1,2), this)\n(0,(2,3), this)\n(0,1, this.dataset)\n(0,(1,2), CLOCKWISE)\n(0,(1,2), this.direction)\n(0,(2,3), this.direction)\n(0,(2,3), ANTICLOCKWISE)\n(0,(0,1), n)\n(0,1, n)\n"];
+4127 [label="4\n(0,1, this)\n(0,(1,2), this)\n(0,(2,4), this)\n(0,4, this)\n(0,1, this.dataset)\n(0,(1,2), CLOCKWISE)\n(0,(1,2), this.direction)\n(0,(2,4), this.direction)\n(0,(2,4), ANTICLOCKWISE)\n(0,(0,1), n)\n(0,1, n)\n(1,4, value)\n(1,4, total)\n(1,4, lead)\n"];
+10313 [label="10\n(0,1, this)\n(0,(1,10), this)\n(0,1, this.dataset)\n(0,(1,10), CLOCKWISE)\n(0,(1,10), this.direction)\n(0,(0,1), n)\n(0,1, n)\n"];
+11344 [label="11\n(0,1, this)\n(0,(1,10), this)\n(0,1, this.dataset)\n(0,(1,10), CLOCKWISE)\n(0,(1,10), this.direction)\n(0,(0,1), n)\n(0,1, n)\n"];
+12375 [label="12\n(0,1, this)\n(0,(1,10), this)\n(0,12, this)\n(0,(11,12), section)\n(0,1, this.dataset)\n(0,(1,10), CLOCKWISE)\n(0,(1,10), this.direction)\n(0,(0,1), n)\n(0,1, n)\n(1,12, total)\n"];
+5158 [label="5\n(0,1, this)\n(0,1, this.dataset)\n(0,(0,1), n)\n(0,1, n)\n"];
+6189 [label="6\n(0,1, this)\n(0,(5,6), this)\n(0,1, this.dataset)\n(0,(0,1), n)\n(0,1, n)\n(5,(5,6), angle)\n"];
+7220 [label="7\n(0,1, this)\n(0,(5,7), this)\n(0,7, this)\n(0,1, this.dataset)\n(0,(0,1), n)\n(0,1, n)\n(5,(5,7), angle)\n"];
+9282 [label="9\n(0,1, this)\n(0,(5,7), this)\n(0,7, this)\n(0,9, this)\n(0,9, section)\n(0,1, this.dataset)\n(0,(0,1), n)\n(0,1, n)\n(5,(5,7), angle)\n(7,(7,9), mep)\n(7,9, mep)\n"];
+8251 [label="8\n(0,1, this)\n(0,(5,7), this)\n(0,7, this)\n(0,8, this)\n(0,8, dataArea)\n(0,1, this.dataset)\n(0,(0,1), n)\n(0,1, n)\n(5,(5,7), angle)\n(5,8, angle)\n"];
+13406 [label="13\n(0,1, this)\n(0,(1,10), this)\n(0,13, this)\n(0,(11,13), section)\n(0,1, this.dataset)\n(0,13, this.dataset)\n(0,(1,10), CLOCKWISE)\n(0,(1,10), this.direction)\n(0,(0,1), n)\n(0,1, n)\n(10,(11,13), i)\n(10,13, i)\n"];
+15468 [label="15\n(0,1, this)\n(0,(1,10), this)\n(0,13, this)\n(0,(11,13), section)\n(0,1, this.dataset)\n(0,13, this.dataset)\n(0,(1,10), CLOCKWISE)\n(0,(1,10), this.direction)\n(0,(0,1), n)\n(0,1, n)\n(10,(11,13), i)\n(10,13, i)\n(13,(13,15), n)\n(13,15, n)\n"];
+16499 [label="16\n(0,1, this)\n(0,(1,10), this)\n(0,13, this)\n(0,(11,13), section)\n(0,1, this.dataset)\n(0,13, this.dataset)\n(0,(1,10), CLOCKWISE)\n(0,(1,10), this.direction)\n(0,(0,1), n)\n(0,1, n)\n(1,16, lead)\n(10,(11,13), i)\n(10,13, i)\n(13,(13,15), n)\n(13,15, n)\n(15,(15,16), value)\n(15,16, value)\n"];
+14437 [label="14\n(0,1, this)\n(0,(1,10), this)\n(0,13, this)\n(0,(11,13), section)\n(0,1, this.dataset)\n(0,13, this.dataset)\n(0,(1,10), CLOCKWISE)\n(0,(1,10), this.direction)\n(0,(0,1), n)\n(0,1, n)\n(10,(11,13), i)\n(10,13, i)\n(10,14, i)\n"];
+17530 [label="17\n(0,(0,17), n)\n"];
+18561 [label="18\n"];
+ 3 -> 17530;
+ 3 -> 1034;
+ 1034 -> 10313;
+ 1034 -> 2065;
+ 2065 -> 4127;
+ 2065 -> 3096;
+ 3096 -> 18561;
+ 4127 -> 5158;
+ 10313 -> 11344;
+ 11344 -> 13406;
+ 11344 -> 12375;
+ 12375 -> 5158;
+ 5158 -> 7220;
+ 5158 -> 6189;
+ 6189 -> 18561;
+ 7220 -> 9282;
+ 7220 -> 8251;
+ 9282 -> 8251;
+ 8251 -> 18561;
+ 13406 -> 15468;
+ 13406 -> 14437;
+ 15468 -> 16499;
+ 15468 -> 14437;
+ 16499 -> 14437;
+ 14437 -> 11344;
+ 17530 -> 18561;
+}
+/*
+#Covered Duas by nodes: 47
+*/

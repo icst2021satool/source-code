@@ -1,0 +1,52 @@
+digraph { /* Duas covered at duas */
+3 [label="0\n"];
+3096 [label="3\n(0,(0,3), this)\n(0,(0,3), this.dataset)\n"];
+1034 [label="1\n(0,1, this)\n(0,1, g2)\n(0,1, plotArea)\n"];
+4127 [label="4\n(0,(0,3), this)\n(0,(3,4), this)\n(0,4, this)\n(0,(0,3), this.dataset)\n(0,(3,4), this.dataset)\n(0,4, this.dataset)\n(0,4, state)\n"];
+5158 [label="5\n(0,(0,3), this)\n(0,(3,4), this)\n(0,4, this)\n(0,(0,3), this.dataset)\n(0,(3,4), this.dataset)\n(0,4, this.dataset)\n(0,4, state)\n"];
+6189 [label="6\n(0,(0,3), this)\n(0,(3,4), this)\n(0,4, this)\n(0,(0,3), this.dataset)\n(0,(3,4), this.dataset)\n(0,4, this.dataset)\n(0,4, state)\n(4,(5,6), passesRequired)\n"];
+7220 [label="7\n(0,(0,3), this)\n(0,(3,4), this)\n(0,4, this)\n(0,(6,7), this)\n(0,7, this)\n(0,7, g2)\n(0,7, plotArea)\n(0,(0,3), this.dataset)\n(0,(3,4), this.dataset)\n(0,4, this.dataset)\n(0,(6,7), this.simpleLabels)\n(0,4, state)\n(0,7, state)\n(0,7, linkArea)\n(4,7, keys)\n(4,7, totalValue)\n(4,(5,6), passesRequired)\n"];
+9282 [label="9\n(0,(0,3), this)\n(0,(3,4), this)\n(0,4, this)\n(0,(6,9), this)\n(0,9, this)\n(0,9, g2)\n(0,9, plotArea)\n(0,(0,3), this.dataset)\n(0,(3,4), this.dataset)\n(0,4, this.dataset)\n(0,(6,9), this.simpleLabels)\n(0,4, state)\n(0,9, state)\n(0,9, linkArea)\n(4,9, keys)\n(4,9, totalValue)\n(4,(5,6), passesRequired)\n"];
+8251 [label="8\n(0,(0,3), this)\n(0,(3,4), this)\n(0,4, this)\n(0,(0,3), this.dataset)\n(0,(3,4), this.dataset)\n(0,4, this.dataset)\n(0,4, state)\n(4,(5,6), passesRequired)\n"];
+2065 [label="2\n"];
+19592 [label="19\n"];
+10313 [label="10\n(0,(0,3), this)\n(0,(3,4), this)\n(0,4, this)\n(0,(0,3), this.dataset)\n(0,(3,4), this.dataset)\n(0,4, this.dataset)\n(0,4, state)\n(4,(5,10), passesRequired)\n(4,(5,10), pass)\n"];
+11344 [label="11\n(0,(0,3), this)\n(0,(3,4), this)\n(0,4, this)\n(0,(0,3), this.dataset)\n(0,(3,4), this.dataset)\n(0,4, this.dataset)\n(0,4, state)\n(4,(5,10), passesRequired)\n(4,(5,10), pass)\n"];
+12375 [label="12\n(0,(0,3), this)\n(0,(3,4), this)\n(0,4, this)\n(0,(0,3), this.dataset)\n(0,(3,4), this.dataset)\n(0,4, this.dataset)\n(0,4, state)\n(4,(11,12), keys)\n(4,(5,10), passesRequired)\n(4,(5,10), pass)\n(4,12, pass)\n"];
+13406 [label="13\n(0,(0,3), this)\n(0,(3,4), this)\n(0,4, this)\n(0,13, this)\n(0,(0,3), this.dataset)\n(0,(3,4), this.dataset)\n(0,4, this.dataset)\n(0,13, this.dataset)\n(0,4, state)\n(4,(11,13), keys)\n(4,(5,10), passesRequired)\n(4,(5,10), pass)\n(10,(11,13), section)\n(10,13, section)\n"];
+15468 [label="15\n(0,(0,3), this)\n(0,(3,4), this)\n(0,4, this)\n(0,13, this)\n(0,(0,3), this.dataset)\n(0,(3,4), this.dataset)\n(0,4, this.dataset)\n(0,13, this.dataset)\n(0,4, state)\n(4,(11,13), keys)\n(4,(5,10), passesRequired)\n(4,(5,10), pass)\n(10,(11,13), section)\n(10,13, section)\n(13,(13,15), n)\n(13,15, n)\n"];
+16499 [label="16\n(0,(0,3), this)\n(0,(3,4), this)\n(0,4, this)\n(0,13, this)\n(0,(0,3), this.dataset)\n(0,(3,4), this.dataset)\n(0,4, this.dataset)\n(0,13, this.dataset)\n(0,4, state)\n(4,(11,13), keys)\n(4,(5,10), passesRequired)\n(4,(5,10), pass)\n(10,16, runningTotal)\n(10,(11,13), section)\n(10,13, section)\n(13,(13,15), n)\n(13,15, n)\n(15,(15,16), value)\n(15,16, value)\n"];
+18561 [label="18\n(0,(0,3), this)\n(0,(3,4), this)\n(0,4, this)\n(0,13, this)\n(0,18, this)\n(0,(0,3), this.dataset)\n(0,(3,4), this.dataset)\n(0,4, this.dataset)\n(0,13, this.dataset)\n(0,18, this.dataset)\n(0,4, state)\n(4,(16,18), ss)\n(4,18, ss)\n(4,(11,13), keys)\n(4,(5,10), passesRequired)\n(4,(5,10), pass)\n(10,16, runningTotal)\n(10,(11,13), section)\n(10,13, section)\n(13,(13,15), n)\n(13,15, n)\n(15,(15,16), value)\n(15,16, value)\n"];
+17530 [label="17\n(0,(0,3), this)\n(0,(3,4), this)\n(0,4, this)\n(0,13, this)\n(0,17, this)\n(0,17, g2)\n(0,(0,3), this.dataset)\n(0,(3,4), this.dataset)\n(0,4, this.dataset)\n(0,13, this.dataset)\n(0,4, state)\n(0,17, state)\n(0,17, explodeArea)\n(4,(11,13), keys)\n(4,(5,10), passesRequired)\n(4,(5,10), pass)\n(10,16, runningTotal)\n(10,(11,13), section)\n(10,13, section)\n(13,(13,15), n)\n(13,15, n)\n(15,(15,16), value)\n(15,16, value)\n"];
+14437 [label="14\n(0,(0,3), this)\n(0,(3,4), this)\n(0,4, this)\n(0,13, this)\n(0,(0,3), this.dataset)\n(0,(3,4), this.dataset)\n(0,4, this.dataset)\n(0,13, this.dataset)\n(0,4, state)\n(4,(11,13), keys)\n(4,(5,10), passesRequired)\n(4,(5,10), pass)\n(10,(11,13), section)\n(10,13, section)\n(10,14, section)\n"];
+ 3 -> 3096;
+ 3 -> 1034;
+ 3096 -> 4127;
+ 3096 -> 1034;
+ 1034 -> 2065;
+ 4127 -> 5158;
+ 5158 -> 10313;
+ 5158 -> 6189;
+ 6189 -> 9282;
+ 6189 -> 7220;
+ 7220 -> 8251;
+ 9282 -> 8251;
+ 8251 -> 2065;
+ 2065 -> 19592;
+ 10313 -> 11344;
+ 11344 -> 13406;
+ 11344 -> 12375;
+ 12375 -> 5158;
+ 13406 -> 15468;
+ 13406 -> 14437;
+ 15468 -> 16499;
+ 15468 -> 14437;
+ 16499 -> 18561;
+ 16499 -> 17530;
+ 18561 -> 17530;
+ 17530 -> 14437;
+ 14437 -> 11344;
+}
+/*
+#Covered Duas by nodes: 52
+*/

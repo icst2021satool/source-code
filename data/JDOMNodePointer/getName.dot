@@ -1,0 +1,19 @@
+digraph { 
+59 [shape=box,style=filled,color=".0 .0 .83",label="[221,228,ns]\n[219,(220,221),ns]"];
+60 [shape=box,style=filled,color=".0 .0 .83",label="[219,(220,223),ns]"];
+61 [label="[219,(220,220),ns]"];
+62 [shape=box,style=filled,color=".0 .0 .83",label="[219,(220,223),ns]"];
+63 [label="[219,228,ns]"];
+64 [label="[223,228,ln]\n[216,223,this.node]\n[216,219,this.node]\n[216,(218,219),this.node]\n[216,223,this]\n[216,219,this]\n[216,(218,219),this]"];
+65 [shape=box,style=filled,color=".0 .0 .83",label="[226,228,ln]\n[216,226,this.node]\n[216,(225,226),this.node]\n[216,226,this]\n[216,(225,226),this]"];
+66 [shape=box,style=filled,color=".0 .0 .83",label="[217,228,ln]\n[216,(225,228),this.node]\n[216,(225,228),this]"];
+67 [label="[216,228,ns]\n[216,(218,225),this.node]\n[216,(218,225),this]"];
+61 -> 59;
+61 -> 60;
+63 -> 60;
+63 -> 62;
+64 -> 61;
+64 -> 63;
+67 -> 65;
+67 -> 66;
+}

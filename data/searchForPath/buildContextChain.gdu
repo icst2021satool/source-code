@@ -1,0 +1,54 @@
+digraph buildContextChain {
+0 [label="0\n228-228"]
+6 [label="6\n234-234"]
+10 [label="10\n246-242"]
+2 [label="2\n234-234"]
+14 [label="14"]
+8 [label="8\n242-242"]
+4 [label="4\n250-250"]
+1 [label="1\n231-231"]
+3 [label="3\n234-234"]
+12 [label="12\n232-232"]
+7 [label="7\n242-242"]
+13 [label="13\n229-229"]
+9 [label="9\n243-243"]
+11 [label="11\n244-244"]
+5 [label="5\n235-241"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_0 [label="def(0)={this,context,stepCount,createInitialContext,this.steps}"];
+setsNode_6 [label="def(6)={i}\nuse(6)={i}"];
+setsNode_10 [label="def(10)={context,j}\nuse(10)={context,predicates,j}"];
+setsNode_2 [label="def(2)={i}"];
+setsNode_4 [label="use(4)={context}"];
+setsNode_12 [label="use(12)={context}"];
+setsNode_7 [label="def(7)={j}"];
+setsNode_13 [label="def(13)={context}\nuse(13)={context}"];
+setsNode_11 [label="def(11)={context}\nuse(11)={context}"];
+setsNode_5 [label="def(5)={context,predicates}\nuse(5)={this,context,this.steps,i}"];
+}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 10 ;  setsNode_10}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 12 ;  setsNode_12}
+{rank = same; 7 ;  setsNode_7}
+{rank = same; 13 ;  setsNode_13}
+{rank = same; 11 ;  setsNode_11}
+{rank = same; 5 ;  setsNode_5}
+0 -> 13[label="use(0,13)={createInitialContext}",fontsize=14];0 -> 1[label="use(0,1)={createInitialContext}",fontsize=14];
+6 -> 3;
+10 -> 8;
+2 -> 3;
+8 -> 9[label="use(8,9)={predicates,j}",fontsize=14];8 -> 6[label="use(8,6)={predicates,j}",fontsize=14];
+4 -> 14;
+1 -> 12[label="use(1,12)={this,this.steps}",fontsize=14];1 -> 2[label="use(1,2)={this,this.steps}",fontsize=14];
+3 -> 5[label="use(3,5)={stepCount,i}",fontsize=14];3 -> 4[label="use(3,4)={stepCount,i}",fontsize=14];
+12 -> 14;
+7 -> 8;
+13 -> 1;
+9 -> 11[label="use(9,11)={j}",fontsize=14];9 -> 10[label="use(9,10)={j}",fontsize=14];
+11 -> 10;
+5 -> 7[label="use(5,7)={predicates}",fontsize=14];5 -> 6[label="use(5,6)={predicates}",fontsize=14];
+}

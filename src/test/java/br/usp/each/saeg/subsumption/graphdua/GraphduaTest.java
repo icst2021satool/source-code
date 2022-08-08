@@ -430,6 +430,51 @@ public class GraphduaTest extends TestCase {
         }
     }
 
+    @Test
+    public void test6() {
+        System.out.println("Clusterer$State");
+
+        try {
+            cl = new ClassInfo("/Users/marcoschaim/experimentos/subsumption-experiment/programs/stanford-corenlp-4.4.0/target/classes/edu/stanford/nlp/coref/statistical/", "Clusterer$State.class");
+            cl.genAllMethodInfo();
+            long noDuasClass = 0;
+            for (MethodInfo mi : cl.getMethodsInfo()) {
+                Dua d;
+                int counter = 1;
+                mi.createMethodCFG();
+                mi.createMethodDuas();
+                if (mi.getDuas().size() == 0) continue;
+                noDuasClass+=mi.getDuas().size();
+
+                System.out.println("Method:"+mi.getName()+":#Nodes:"+mi.getProgram().getGraph().size()+
+                        ":#McCabe:"+(mi.getProgram().getGraph().sizeEdges()-mi.getProgram().getGraph().size()+2)+":#DUAs:"+mi.getDuas().size());
+                if(mi.getProgram().getGraph().size()>500)
+                    System.out.println(mi.graphDefUseToDot());
+                //mi.printMethodCFG();
+
+//                System.out.println(mi.graphDefUseToDot());
+//                Iterator<Dua> itdua = mi.getDuas().iterator();
+//                if (mi.getDuas().isEmpty())
+//                    continue;
+//                while (itdua.hasNext()) {
+//                    d = itdua.next();
+//                    analyzer = new CoverageAnalyzer(mi.getProgram(), d);
+//                    System.out.println(counter + ":" + d.toString());
+//                    Graphdua grf = analyzer.findGraphdua();
+                    //System.out.println("forward graphdua:\n"+grf);
+                    //System.out.println("backward graphdua:\n"+printInverse(grf.inverse()));
+                    //writeBufferToFile("/Users/marcoschaim/projetos/data/max/", mi.getName()+ ".grd"+d.toString()+".gz",grf.toDot());
+//                    System.out.println("GraphDua(" + d.toString() + "):");
+//                    System.out.println(grf.toDot());
+//                    ++counter;
+//                }
+            }
+
+            System.out.println("Total #Duas: "+noDuasClass);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
     private void printGraphDefUse(Flowgraph<Block> gfc) {
 

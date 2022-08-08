@@ -1,0 +1,42 @@
+digraph areBasicPredicates {
+6 [label="6\n130-130"]
+13 [label="13\n127-127"]
+5 [label="5\n123-123"]
+11 [label="11\n131-131"]
+14 [label="14"]
+4 [label="4\n122-122"]
+10 [label="10\n135-135"]
+3 [label="3\n121-122"]
+9 [label="9\n122-122"]
+12 [label="12\n124-124"]
+2 [label="2\n120-120"]
+0 [label="0\n120-120"]
+8 [label="8\n137-137"]
+7 [label="7\n134-134"]
+1 [label="1\n141-141"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_3 [label="def(3)={firstIndex,i}"];
+setsNode_9 [label="def(9)={i}\nuse(9)={}"];
+setsNode_0 [label="def(0)={predicates}"];
+setsNode_8 [label="def(8)={firstIndex}"];
+}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 9 ;  setsNode_9}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 8 ;  setsNode_8}
+6 -> 11[label="use(6,11)={firstIndex}",fontsize=14];6 -> 7[label="use(6,7)={firstIndex}",fontsize=14];
+13 -> 14;
+5 -> 12[label="use(5,12)={firstIndex}",fontsize=14];5 -> 6[label="use(5,6)={firstIndex}",fontsize=14];
+11 -> 14;
+4 -> 5[label="use(4,5)={firstIndex}",fontsize=14];4 -> 1[label="use(4,1)={firstIndex}",fontsize=14];
+10 -> 14;
+3 -> 4;
+9 -> 4;
+12 -> 13[label="use(12,13)={firstIndex}",fontsize=14];12 -> 9[label="use(12,9)={firstIndex}",fontsize=14];
+2 -> 3[label="use(2,3)={firstIndex}",fontsize=14];2 -> 1[label="use(2,1)={firstIndex}",fontsize=14];
+0 -> 2[label="use(0,2)={firstIndex}",fontsize=14];0 -> 1[label="use(0,1)={firstIndex}",fontsize=14];
+8 -> 9;
+7 -> 10[label="use(7,10)={i}",fontsize=14];7 -> 8[label="use(7,8)={i}",fontsize=14];
+1 -> 14;
+}

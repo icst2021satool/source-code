@@ -15,9 +15,10 @@ public class NodeDominanceTest extends TestCase {
     private NodeDominance<Node> dominanceGraphdua;
 
     public void test1() {
-        System.out.println("BOBYQAOptimizer");
-        String dir = "/Users/marcoschaim/projetos/data/bobyqb/";
-        String clazzname = "BOBYQAOptimizer.class";
+
+        String dir = "/Users/marcoschaim/experimentos/subsumption-experiment/programs/stanford-corenlp-4.4.0/target/classes/edu/stanford/nlp/parser/lexparser/";
+        String clazzname = "EnglishTreebankParserParams.class";
+        System.out.println(clazzname);
         int backarcs, retreatarcs;
         try {
             cl = new ClassInfo(dir, clazzname);
@@ -29,13 +30,14 @@ public class NodeDominanceTest extends TestCase {
                 if (mi.getDuas().isEmpty())
                     continue;
                 System.out.println(mi.getName() + ":");
+                //System.out.println(mi.graphDefUseToDot());
                 SubsumptionAnalyzer duaSubAnalyzer = new SubsumptionAnalyzer(mi.getProgram(), mi.getDuas());
                 Graphdua grf = duaSubAnalyzer.findNode2DuasSubsumption();
 
-                System.out.println("forward graphdua:\n" + grf.toDot());
+                //System.out.println("forward graphdua:\n" + grf.toDot());
                 dominanceGraphdua = new NodeDominance<Node>(grf, null);
                 dominanceGraphdua.findDominanceGraphdua();
-                System.out.println(dominanceGraphdua.toStringGraphduaDominance());
+                //System.out.println(dominanceGraphdua.toStringGraphduaDominance());
 
                 Iterator<Node> itNode = grf.iterator();
 
@@ -65,9 +67,9 @@ public class NodeDominanceTest extends TestCase {
     }
 
     public void test2() {
-        System.out.println("SingularValueDecomposition");
-        String dir = "/Users/marcoschaim/projetos/data/SingularValueDecomposition/";
-        String clazzname = "SingularValueDecomposition.class";
+        String dir = "/Users/marcoschaim/experimentos/subsumption-experiment/programs/stanford-corenlp-4.4.0/target/classes/edu/stanford/nlp/sequences/";
+        String clazzname = "SeqClassifierFlags.class";
+        System.out.println(clazzname);
         int backarcs, retreatarcs;
         try {
             cl = new ClassInfo(dir, clazzname);
@@ -82,10 +84,10 @@ public class NodeDominanceTest extends TestCase {
                 SubsumptionAnalyzer duaSubAnalyzer = new SubsumptionAnalyzer(mi.getProgram(), mi.getDuas());
                 Graphdua grf = duaSubAnalyzer.findNode2DuasSubsumption();
 
-                System.out.println("forward graphdua:\n" + grf.toDot());
+                //System.out.println("forward graphdua:\n" + grf.toDot());
                 dominanceGraphdua = new NodeDominance<Node>(grf, null);
                 dominanceGraphdua.findDominanceGraphdua();
-                System.out.println(dominanceGraphdua.toStringGraphduaDominance());
+                //System.out.println(dominanceGraphdua.toStringGraphduaDominance());
 
                 Iterator<Node> itNode = grf.iterator();
 
@@ -116,9 +118,10 @@ public class NodeDominanceTest extends TestCase {
     }
 
     public void test3() {
-        System.out.println("Metaphone");
-        String dir = "/Users/marcoschaim/projetos/data/Metaphone/";
-        String clazzname = "Metaphone.class";
+
+        String dir = "/Users/marcoschaim/experimentos/subsumption-experiment/programs/stanford-corenlp-4.4.0/target/classes/edu/stanford/nlp/ling/tokensregex/parser/";
+        String clazzname = "TokenSequenceParserTokenManager.class";
+        System.out.println(clazzname);
         int backarcs, retreatarcs;
         try {
             cl = new ClassInfo(dir, clazzname);
@@ -133,10 +136,10 @@ public class NodeDominanceTest extends TestCase {
                 SubsumptionAnalyzer duaSubAnalyzer = new SubsumptionAnalyzer(mi.getProgram(), mi.getDuas());
                 Graphdua grf = duaSubAnalyzer.findNode2DuasSubsumption();
 
-                System.out.println("forward graphdua:\n" + grf.toDot());
+                //System.out.println("forward graphdua:\n" + grf.toDot());
                 dominanceGraphdua = new NodeDominance<Node>(grf, null);
                 dominanceGraphdua.findDominanceGraphdua();
-                System.out.println(dominanceGraphdua.toStringGraphduaDominance());
+                //System.out.println(dominanceGraphdua.toStringGraphduaDominance());
 
                 Iterator<Node> itNode = grf.iterator();
 

@@ -1,0 +1,74 @@
+digraph asPath {
+15 [label="15\n609-609"]
+8 [label="8\n617-620"]
+17 [label="17\n587-589"]
+6 [label="6\n611-611"]
+9 [label="9\n577-577"]
+0 [label="0\n565-565"]
+20 [label="20\n566-566"]
+10 [label="10\n578-578"]
+14 [label="14\n602-605"]
+19 [label="19\n571-571"]
+16 [label="16\n594-599"]
+1 [label="1\n569-570"]
+2 [label="2\n573-573"]
+4 [label="4\n612-613"]
+12 [label="12\n582-585"]
+18 [label="18\n578-578"]
+21 [label="21"]
+5 [label="5\n623-623"]
+13 [label="13\n592-593"]
+11 [label="11\n580-580"]
+3 [label="3\n611-611"]
+7 [label="7\n616-616"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_8 [label="use(8)={this,this.parent,buffer}"];
+setsNode_17 [label="use(17)={this,this.parent,ln}"];
+setsNode_0 [label="def(0)={this,this.id,this.parent,this.node}"];
+setsNode_20 [label="use(20)={this,this.id}"];
+setsNode_14 [label="use(14)={this,this.parent}"];
+setsNode_19 [label="use(19)={this,this.parent,this.node}"];
+setsNode_16 [label="use(16)={this,this.parent,ln,prefix}"];
+setsNode_1 [label="def(1)={buffer}"];
+setsNode_4 [label="use(4)={this,this.parent}"];
+setsNode_12 [label="def(12)={nsURI,ln}\nuse(12)={this,buffer}"];
+setsNode_5 [label="use(5)={this.parent}"];
+setsNode_13 [label="def(13)={prefix}\nuse(13)={this,nsURI}"];
+setsNode_11 [label="use(11)={this.parent}"];
+}
+{rank = same; 8 ;  setsNode_8}
+{rank = same; 17 ;  setsNode_17}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 20 ;  setsNode_20}
+{rank = same; 14 ;  setsNode_14}
+{rank = same; 19 ;  setsNode_19}
+{rank = same; 16 ;  setsNode_16}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 12 ;  setsNode_12}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 13 ;  setsNode_13}
+{rank = same; 11 ;  setsNode_11}
+15 -> 5;
+8 -> 5;
+17 -> 15;
+6 -> 4[label="use(6,4)={this,buffer}",fontsize=14];6 -> 7[label="use(6,7)={this,buffer}",fontsize=14];
+9 -> 10[label="use(9,10)={this,this.node}",fontsize=14];9 -> 5[label="use(9,5)={this,this.node}",fontsize=14];
+0 -> 20[label="use(0,20)={this,this.id}",fontsize=14];0 -> 1[label="use(0,1)={this,this.id}",fontsize=14];
+20 -> 21;
+10 -> 18[label="use(10,18)={this.parent}",fontsize=14];10 -> 11[label="use(10,11)={this.parent}",fontsize=14];
+14 -> 15;
+19 -> 2;
+16 -> 15;
+1 -> 19[label="use(1,19)={this,this.node}",fontsize=14];1 -> 2[label="use(1,2)={this,this.node}",fontsize=14];
+2 -> 9[label="use(2,9)={this,buffer}",fontsize=14];2 -> 3[label="use(2,3)={this,buffer}",fontsize=14];
+4 -> 5;
+12 -> 17[label="use(12,17)={this,nsURI}",fontsize=14];12 -> 13[label="use(12,13)={this,nsURI}",fontsize=14];
+18 -> 11[label="use(18,11)={this.parent}",fontsize=14];18 -> 12[label="use(18,12)={this.parent}",fontsize=14];
+5 -> 21;
+13 -> 16[label="use(13,16)={prefix}",fontsize=14];13 -> 14[label="use(13,14)={prefix}",fontsize=14];
+11 -> 12;
+3 -> 6[label="use(3,6)={this,buffer}",fontsize=14];3 -> 4[label="use(3,4)={this,buffer}",fontsize=14];
+7 -> 8[label="use(7,8)={this,buffer}",fontsize=14];7 -> 5[label="use(7,5)={this,buffer}",fontsize=14];
+}

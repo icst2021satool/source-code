@@ -1,0 +1,23 @@
+Number of Variables;2;
+Variables:;
+0;;this;
+1;;factory;
+
+Number of Block duas;4;
+Line Duas for method; getAbstractFactory;
+Number;Def Line; Origin Line; Use Line; Var Id; Var Name;
+1;717;;719;0;this;
+2;717;718;719;2;factory;
+3;717;718;724;2;factory;
+4;717;;724;2;factory;
+
+Block Duas for method; getAbstractFactory;
+Number;Def Block; Origin Block; Use Block; Var Id; Var Name;
+1;0;;2;0;this;
+;717;;719;0;this;
+2;0;0;2;1;factory;
+;717;718;719;2;factory;
+3;0;0;1;1;factory;
+;717;718;724;2;factory;
+4;0;;1;1;factory;
+;717;;724;2;factory;

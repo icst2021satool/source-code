@@ -1,0 +1,28 @@
+digraph calculaJuros {
+3 [label="3\n16-17"]
+0 [label="0\n7-8"]
+2 [label="2\n12-12"]
+4 [label="4\n13-12"]
+1 [label="1\n12-12"]
+6 [label="6"]
+5 [label="5\n9-10"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_3 [label="use(3)={juros,i}"];
+setsNode_0 [label="def(0)={meses,n,out,juros}"];
+setsNode_4 [label="def(4)={juros,i}\nuse(4)={out,juros}"];
+setsNode_1 [label="def(1)={i}"];
+setsNode_5 [label="use(5)={i}"];
+}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 5 ;  setsNode_5}
+3 -> 6;
+0 -> 5[label="use(0,5)={n}",fontsize=14];0 -> 1[label="use(0,1)={n}",fontsize=14];
+2 -> 4[label="use(2,4)={n}",fontsize=14];2 -> 3[label="use(2,3)={n}",fontsize=14];
+4 -> 2;
+1 -> 2;
+5 -> 6;
+}

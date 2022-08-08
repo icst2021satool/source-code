@@ -1,0 +1,8 @@
+digraph { 
+52 [shape=box,style=filled,color=".0 .0 .83",label="[162,164,ln]\n[156,(161,162),type]\n[154,162,this.node]\n[154,162,this]"];
+53 [shape=box,style=filled,color=".0 .0 .83",label="[159,164,ln]\n[158,164,ns]\n[156,(157,158),type]\n[154,158,this.node][154,159,this.node]\n[154,158,this][154,159,this]"];
+54 [shape=box,style=filled,color=".0 .0 .83",label="[156,(161,164),type]\n[154,164,ln]"];
+55 [label="[156,(157,161),type]\n[155,164,ns]"];
+55 -> 52;
+55 -> 54;
+}

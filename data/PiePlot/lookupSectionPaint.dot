@@ -1,13 +1,15 @@
 digraph { 
-3357 [shape=box,style=filled,color=".0 .0 .83",label="(2,3, result)\n(0,2, this.baseSectionPaint)\n(0,(1,2), autoPopulate)\n(0,2, this)"];
-3358 [shape=box,style=filled,color=".0 .0 .83",label="(5,3, result)\n(4,(4,5), ds)\n(0,5, this.baseSectionPaint)\n(0,5, this)"];
-3359 [shape=box,style=filled,color=".0 .0 .83",label="(7,3, result)\n(4,7, ds)\n(4,(4,7), ds)\n(0,7, this.sectionPaintMap)\n(0,7, key)\n(0,7, this)"];
-3360 [label="(0,(1,4), autoPopulate)\n(0,4, this)"];
-3361 [shape=box,style=filled,color=".0 .0 .83",label="(0,(0,0), selected)"];
-3362 [shape=box,style=filled,color=".0 .0 .83",label="(0,8, result)\n(0,(0,8), result)"];
-3363 [label="(0,(0,1), result)"];
-3360 -> 3358;
-3360 -> 3359;
-3363 -> 3357;
-3363 -> 3360;
+3837 [shape=box,style=filled,color=".0 .0 .83",label="[957,959,result]\n[934,957,this.baseSectionPaint]\n[934,(946,957),autoPopulate]\n[934,957,this]"];
+3838 [shape=box,style=filled,color=".0 .0 .83",label="[953,959,result]\n[947,(948,953),ds]\n[934,953,this.baseSectionPaint]\n[934,953,this]"];
+3839 [shape=box,style=filled,color=".0 .0 .83",label="[949,959,result]\n[947,949,ds]\n[947,(948,949),ds]\n[934,950,this.sectionPaintMap]\n[934,950,key]\n[934,950,this]"];
+3840 [label="[934,(946,947),autoPopulate]\n[934,947,this]"];
+3841 [shape=box,style=filled,color=".0 .0 .83",label="[934,(934,937),selected]"];
+3842 [shape=box,style=filled,color=".0 .0 .83",label="[940,942,result]\n[940,(941,942),result]"];
+3843 [label="[940,(941,946),result]"];
+3840 -> 3838;
+3840 -> 3839;
+3843 -> 3837;
+3843 -> 3838;
+3843 -> 3839;
+3843 -> 3840;
 }

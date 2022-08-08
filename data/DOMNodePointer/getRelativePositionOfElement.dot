@@ -1,0 +1,21 @@
+digraph { 
+263 [shape=box,style=filled,color=".0 .0 .83",label="[543,(544,550),n]"];
+264 [label="[542,550,count]"];
+265 [shape=box,style=filled,color=".0 .0 .83",label="[543,(545,546),n]"];
+266 [shape=box,style=filled,color=".0 .0 .83",label="[546,546,count]"];
+267 [label="[548,(545,546),n]"];
+268 [label="[546,550,count]\n[542,546,count]"];
+269 [shape=box,style=filled,color=".0 .0 .83",label="[543,(545,548),n]"];
+270 [shape=box,style=filled,color=".0 .0 .83",label="[548,(545,548),n]"];
+271 [label="[548,548,n]\n[548,(544,545),n]"];
+272 [label="[548,(544,550),n]\n[543,548,n]\n[543,(544,545),n]"];
+264 -> 263;
+267 -> 266;
+268 -> 265;
+268 -> 267;
+271 -> 267;
+271 -> 270;
+272 -> 268;
+272 -> 269;
+272 -> 271;
+}

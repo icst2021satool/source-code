@@ -1,0 +1,30 @@
+digraph { 
+125 [shape=box,style=filled,color=".0 .0 .83",label="(8,7, dataImage)"];
+126 [shape=box,style=filled,color=".0 .0 .83",label="(8,3, area)\n(8,3, g2)"];
+127 [label="(8,5, area)\n(8,5, g2)\n(4,8, savedG2)\n(0,(4,8), this.shadowGenerator)\n(0,8, area)\n(0,(4,8), this)"];
+128 [shape=box,style=filled,color=".0 .0 .83",label="(4,7, dataImage)"];
+129 [label="(0,(4,5), this.shadowGenerator)\n(0,5, area)\n(0,5, g2)\n(0,(4,5), this)"];
+130 [label="(7,3, area)\n(7,3, g2)\n(4,7, savedDataArea)\n(4,7, savedG2)\n(0,7, this.shadowGenerator)\n(0,(5,7), this.shadowGenerator)\n(0,7, this)\n(0,(5,7), this)"];
+131 [label="(0,(5,6), this.shadowGenerator)\n(0,(5,6), this)"];
+132 [label="(0,(1,4), this.dataset)\n(0,5, info)\n(0,4, area)\n(0,4, g2)\n(0,5, this)\n(0,(1,4), this)"];
+133 [shape=box,style=filled,color=".0 .0 .83",label="(0,(1,2), this.dataset)\n(0,2, area)\n(0,2, g2)\n(0,2, this)\n(0,(1,2), this)"];
+134 [label="(0,3, area)\n(0,3, g2)"];
+135 [shape=box,style=filled,color=".0 .0 .83",label="(0,9, info)\n(0,(0,9), info)\n(0,9, area)"];
+136 [shape=box,style=filled,color=".0 .0 .83",label="(0,(0,1), info)"];
+137 [label="(1,3, originalComposite)\n(1,3, savedClip)\n(0,1, area)\n(0,1, g2)\n(0,3, this)\n(0,1, this)"];
+127 -> 125;
+127 -> 126;
+129 -> 128;
+130 -> 125;
+130 -> 128;
+131 -> 126;
+132 -> 127;
+132 -> 129;
+132 -> 130;
+132 -> 131;
+134 -> 133;
+137 -> 132;
+137 -> 134;
+137 -> 135;
+137 -> 136;
+}

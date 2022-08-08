@@ -1,44 +1,44 @@
 digraph draw {
+0 [label="0\n2434-2437"]
 1 [label="1\n2442-2452"]
+10 [label="10"]
+4 [label="4\n2453-2456"]
 2 [label="2\n2477-2477"]
 6 [label="6\n2475-2475"]
 7 [label="7\n2465-2472"]
 9 [label="9\n2438-2439"]
-10 [label="10"]
-0 [label="0\n2434-2437"]
-3 [label="3\n2480-2485"]
-4 [label="4\n2453-2456"]
-5 [label="5\n2463-2464"]
 8 [label="8\n2457-2461"]
+3 [label="3\n2480-2485"]
+5 [label="5\n2463-2464"]
 {
 node [shape=plaintext, fontsize=14];
+setsNode_0 [label="def(0)={this,g2,area,info,this.dataset,this.shadowGenerator}"];
 setsNode_1 [label="def(1)={savedClip,originalComposite}\nuse(1)={this,g2,area}"];
+setsNode_4 [label="def(4)={savedG2,savedDataArea,dataImage}\nuse(4)={g2,area}"];
 setsNode_2 [label="use(2)={this,g2,area}"];
 setsNode_7 [label="def(7)={g2,area}\nuse(7)={this,dataImage}"];
 setsNode_9 [label="use(9)={area,this.shadowGenerator}"];
-setsNode_0 [label="def(0)={this,g2,area,info,this.dataset,this.shadowGenerator}"];
-setsNode_3 [label="use(3)={this,g2,area,originalComposite,savedG2}"];
-setsNode_4 [label="def(4)={savedG2,savedDataArea,dataImage}\nuse(4)={g2,area}"];
-setsNode_5 [label="use(5)={this,g2,area,this.shadowGenerator}"];
 setsNode_8 [label="def(8)={g2,area,dataImage}\nuse(8)={area,dataImage}"];
+setsNode_3 [label="use(3)={this,g2,area,originalComposite,savedG2}"];
+setsNode_5 [label="use(5)={this,g2,area,this.shadowGenerator}"];
 }
+{rank = same; 0 ;  setsNode_0}
 {rank = same; 1 ;  setsNode_1}
+{rank = same; 4 ;  setsNode_4}
 {rank = same; 2 ;  setsNode_2}
 {rank = same; 7 ;  setsNode_7}
 {rank = same; 9 ;  setsNode_9}
-{rank = same; 0 ;  setsNode_0}
-{rank = same; 3 ;  setsNode_3}
-{rank = same; 4 ;  setsNode_4}
-{rank = same; 5 ;  setsNode_5}
 {rank = same; 8 ;  setsNode_8}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 5 ;  setsNode_5}
+0 -> 9[label="use(0,9)={this.shadowGenerator}",fontsize=14];0 -> 1[label="use(0,1)={this.shadowGenerator}",fontsize=14];
 1 -> 4[label="use(1,4)={this,savedDataArea}",fontsize=14];1 -> 2[label="use(1,2)={this,savedDataArea}",fontsize=14];
+4 -> 8[label="use(4,8)={this}",fontsize=14];4 -> 5[label="use(4,5)={this}",fontsize=14];
 2 -> 3;
 6 -> 3;
 7 -> 6;
 9 -> 1;
-0 -> 9[label="use(0,9)={this.shadowGenerator}",fontsize=14];0 -> 1[label="use(0,1)={this.shadowGenerator}",fontsize=14];
-3 -> 10;
-4 -> 8[label="use(4,8)={this}",fontsize=14];4 -> 5[label="use(4,5)={this}",fontsize=14];
-5 -> 7[label="use(5,7)={this}",fontsize=14];5 -> 6[label="use(5,6)={this}",fontsize=14];
 8 -> 5;
+3 -> 10;
+5 -> 7[label="use(5,7)={this}",fontsize=14];5 -> 6[label="use(5,6)={this}",fontsize=14];
 }

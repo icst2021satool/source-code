@@ -1,0 +1,26 @@
+digraph { /* Duas covered at duas */
+3 [label="0\n"];
+2065 [label="2\n(0,(0,2), this)\n(0,2, this)\n(0,2, g2)\n(0,2, state)\n(0,2, record)\n(0,(0,2), this.labelLinksVisible)\n(0,2, this.labelLinkPaint)\n(0,2, this.labelLinkStroke)\n"];
+3096 [label="3\n(0,(0,2), this)\n(0,2, this)\n(0,2, g2)\n(0,2, state)\n(0,2, record)\n(0,(0,2), this.labelLinksVisible)\n(0,2, this.labelLinkPaint)\n(0,2, this.labelLinkStroke)\n(0,(2,3), STANDARD)\n(2,(2,3), style)\n"];
+4127 [label="4\n(0,(0,2), this)\n(0,2, this)\n(0,2, g2)\n(0,2, state)\n(0,2, record)\n(0,(0,2), this.labelLinksVisible)\n(0,2, this.labelLinkPaint)\n(0,2, this.labelLinkStroke)\n(0,(2,3), STANDARD)\n(0,(3,4), QUAD_CURVE)\n(2,(2,3), style)\n(2,(3,4), style)\n"];
+5158 [label="5\n(0,(0,2), this)\n(0,2, this)\n(0,2, g2)\n(0,5, g2)\n(0,2, state)\n(0,2, record)\n(0,(0,2), this.labelLinksVisible)\n(0,2, this.labelLinkPaint)\n(0,2, this.labelLinkStroke)\n(0,(2,3), STANDARD)\n(0,(3,4), QUAD_CURVE)\n(0,(4,5), CUBIC_CURVE)\n(0,5, anchorX)\n(0,5, targetX)\n(0,5, targetY)\n(2,5, linkX)\n(2,5, linkY)\n(2,5, elbowX)\n(2,5, elbowY)\n(2,5, anchorY)\n(2,(2,3), style)\n(2,(3,4), style)\n(2,(4,5), style)\n"];
+6189 [label="6\n(0,(0,2), this)\n(0,2, this)\n(0,2, g2)\n(0,6, g2)\n(0,2, state)\n(0,2, record)\n(0,(0,2), this.labelLinksVisible)\n(0,2, this.labelLinkPaint)\n(0,2, this.labelLinkStroke)\n(0,(2,3), STANDARD)\n(0,(3,6), QUAD_CURVE)\n(0,6, anchorX)\n(0,6, targetX)\n(0,6, targetY)\n(2,6, linkX)\n(2,6, linkY)\n(2,6, elbowX)\n(2,6, elbowY)\n(2,6, anchorY)\n(2,(2,3), style)\n(2,(3,6), style)\n"];
+7220 [label="7\n(0,(0,2), this)\n(0,2, this)\n(0,2, g2)\n(0,7, g2)\n(0,2, state)\n(0,2, record)\n(0,(0,2), this.labelLinksVisible)\n(0,2, this.labelLinkPaint)\n(0,2, this.labelLinkStroke)\n(0,(2,7), STANDARD)\n(0,7, anchorX)\n(0,7, targetX)\n(0,7, targetY)\n(2,7, linkX)\n(2,7, linkY)\n(2,7, elbowX)\n(2,7, elbowY)\n(2,7, anchorY)\n(2,(2,7), style)\n"];
+1034 [label="1\n(0,1, g2)\n(0,1, record)\n(0,1, RIGHT)\n(0,1, targetX)\n(0,1, targetY)\n"];
+8251 [label="8\n(0,1, g2)\n(0,1, record)\n(0,1, RIGHT)\n(0,1, targetX)\n(0,1, targetY)\n"];
+ 3 -> 2065;
+ 3 -> 1034;
+ 2065 -> 7220;
+ 2065 -> 3096;
+ 3096 -> 6189;
+ 3096 -> 4127;
+ 4127 -> 5158;
+ 4127 -> 1034;
+ 5158 -> 1034;
+ 6189 -> 1034;
+ 7220 -> 1034;
+ 1034 -> 8251;
+}
+/*
+#Covered Duas by nodes: 50
+*/

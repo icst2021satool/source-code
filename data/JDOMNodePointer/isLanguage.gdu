@@ -1,0 +1,18 @@
+digraph isLanguage {
+2 [label="2\n442-442"]
+0 [label="0\n440-441"]
+3 [label="3"]
+1 [label="1\n444-444"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_2 [label="use(2)={this,lang}"];
+setsNode_0 [label="def(0)={this,lang,current}"];
+setsNode_1 [label="use(1)={lang,current}"];
+}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 1 ;  setsNode_1}
+2 -> 3;
+0 -> 2[label="use(0,2)={current}",fontsize=14];0 -> 1[label="use(0,1)={current}",fontsize=14];
+1 -> 3;
+}

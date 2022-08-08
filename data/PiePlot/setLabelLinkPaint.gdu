@@ -1,7 +1,7 @@
 digraph setLabelLinkPaint {
-2 [label="2\n1845-1845"]
 0 [label="0\n1844-1844"]
 3 [label="3"]
+2 [label="2\n1845-1845"]
 1 [label="1\n1847-1849"]
 {
 node [shape=plaintext, fontsize=14];
@@ -10,7 +10,7 @@ setsNode_1 [label="use(1)={this,paint}"];
 }
 {rank = same; 0 ;  setsNode_0}
 {rank = same; 1 ;  setsNode_1}
-2 -> 3;
 0 -> 2[label="use(0,2)={paint}",fontsize=14];0 -> 1[label="use(0,1)={paint}",fontsize=14];
+2 -> 3;
 1 -> 3;
 }

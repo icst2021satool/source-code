@@ -1,0 +1,48 @@
+digraph getRelativePositionOfElement {
+3 [label="3\n683-684"]
+7 [label="7\n689-689"]
+0 [label="0\n672-673"]
+10 [label="10\n687-687"]
+6 [label="6\n685-686"]
+8 [label="8\n684-684"]
+12 [label="12\n674-674"]
+1 [label="1\n677-677"]
+5 [label="5\n693-693"]
+4 [label="4\n684-684"]
+11 [label="11\n678-678"]
+2 [label="2\n681-681"]
+9 [label="9\n690-690"]
+13 [label="13"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_3 [label="def(3)={count,i}"];
+setsNode_0 [label="def(0)={this,this.node,parent}"];
+setsNode_10 [label="def(10)={count}\nuse(10)={count}"];
+setsNode_6 [label="def(6)={child}\nuse(6)={children,i}"];
+setsNode_8 [label="def(8)={i}\nuse(8)={i}"];
+setsNode_5 [label="use(5)={count}"];
+setsNode_11 [label="def(11)={children}\nuse(11)={this.node}"];
+setsNode_2 [label="def(2)={children}\nuse(2)={this.node}"];
+}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 10 ;  setsNode_10}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 8 ;  setsNode_8}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 11 ;  setsNode_11}
+{rank = same; 2 ;  setsNode_2}
+3 -> 4;
+7 -> 9[label="use(7,9)={this,parent,child}",fontsize=14];7 -> 8[label="use(7,8)={this,parent,child}",fontsize=14];
+0 -> 12[label="use(0,12)={this.node}",fontsize=14];0 -> 1[label="use(0,1)={this.node}",fontsize=14];
+10 -> 7;
+6 -> 10[label="use(6,10)={child}",fontsize=14];6 -> 7[label="use(6,7)={child}",fontsize=14];
+8 -> 4;
+12 -> 13;
+1 -> 11[label="use(1,11)={this.node}",fontsize=14];1 -> 2[label="use(1,2)={this.node}",fontsize=14];
+5 -> 13;
+4 -> 6[label="use(4,6)={children,i}",fontsize=14];4 -> 5[label="use(4,5)={children,i}",fontsize=14];
+11 -> 3;
+2 -> 3;
+9 -> 5;
+}

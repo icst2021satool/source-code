@@ -1,11 +1,11 @@
 digraph { 
-3417 [shape=box,style=filled,color=".0 .0 .83",label="(3,1, result)\n(2,3, percent)\n(2,(2,3), percent)"];
-3418 [shape=box,style=filled,color=".0 .0 .83",label="(2,(2,1), percent)"];
-3419 [label="(0,2, this.explodePercentages)\n(0,(0,2), this.explodePercentages)\n(0,2, key)\n(0,2, this)\n(0,(0,2), this)"];
-3420 [shape=box,style=filled,color=".0 .0 .83",label="(0,(0,1), this.explodePercentages)\n(0,(0,1), this)"];
-3421 [label="(0,1, result)"];
-3419 -> 3417;
-3419 -> 3418;
-3421 -> 3418;
-3421 -> 3420;
+3897 [shape=box,style=filled,color=".0 .0 .83",label="[1615,1618,result]\n[1613,1615,percent]\n[1613,(1614,1615),percent]"];
+3898 [shape=box,style=filled,color=".0 .0 .83",label="[1613,(1614,1618),percent]"];
+3899 [label="[1611,1613,this.explodePercentages]\n[1611,(1612,1613),this.explodePercentages]\n[1611,1613,key]\n[1611,1613,this]\n[1611,(1612,1613),this]"];
+3900 [shape=box,style=filled,color=".0 .0 .83",label="[1611,(1612,1618),this.explodePercentages]\n[1611,(1612,1618),this]"];
+3901 [label="[1611,1618,result]"];
+3899 -> 3897;
+3899 -> 3898;
+3901 -> 3898;
+3901 -> 3900;
 }

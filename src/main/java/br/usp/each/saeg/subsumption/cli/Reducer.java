@@ -20,7 +20,7 @@ public class Reducer {
     public static int reduceAll(File src, InputStream input, String path) {
         int n = 0; // # of methods analyzed
         StringBuffer sb = new StringBuffer();
-        boolean printReductionInfoFile = true;
+        boolean printReductionInfoFile = false;
 
         try {
             ClassInfo ci = new ClassInfo(input);
@@ -59,7 +59,7 @@ public class Reducer {
                 rg.setDua2DefUseChains(mi.getDefChainsMap());
                 rg.setLines(mi.getLines());
 
-                rg.findTransitiveClosure();
+                //rg.findTransitiveClosure();
                 final long milliseconds = tw.time(TimeUnit.MILLISECONDS);
 
                 mi.setSubsumptionGraph(sg);

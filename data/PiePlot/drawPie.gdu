@@ -1,70 +1,70 @@
 digraph drawPie {
-8 [label="8\n2633-2633"]
+3 [label="3\n2598-2598"]
 9 [label="9\n2626-2626"]
+10 [label="10\n2608-2609"]
+14 [label="14\n2609-2609"]
+19 [label="19"]
+8 [label="8\n2633-2633"]
+16 [label="16\n2614-2616"]
+1 [label="1\n2635-2635"]
+5 [label="5\n2607-2607"]
+4 [label="4\n2600-2607"]
+6 [label="6\n2625-2625"]
+15 [label="15\n2612-2613"]
+17 [label="17\n2619-2619"]
+12 [label="12\n2607-2607"]
+13 [label="13\n2610-2611"]
+11 [label="11\n2609-2609"]
+7 [label="7\n2630-2630"]
 0 [label="0\n2567-2598"]
 2 [label="2\n2637-2637"]
-15 [label="15\n2612-2613"]
-19 [label="19"]
-7 [label="7\n2630-2630"]
-10 [label="10\n2608-2609"]
-11 [label="11\n2609-2609"]
-1 [label="1\n2635-2635"]
-16 [label="16\n2614-2616"]
-17 [label="17\n2619-2619"]
-14 [label="14\n2609-2609"]
-4 [label="4\n2600-2607"]
-5 [label="5\n2607-2607"]
-6 [label="6\n2625-2625"]
 18 [label="18\n2617-2617"]
-13 [label="13\n2610-2611"]
-3 [label="3\n2598-2598"]
-12 [label="12\n2607-2607"]
 {
 node [shape=plaintext, fontsize=14];
 setsNode_9 [label="use(9)={this,g2,plotArea,this.simpleLabels,linkArea,n,value}"];
-setsNode_0 [label="def(0)={this,g2,plotArea,this.dataset,this.simpleLabels,state,linkArea,explodeArea}"];
-setsNode_15 [label="def(15)={value}\nuse(15)={}"];
-setsNode_7 [label="use(7)={this,g2,plotArea,this.simpleLabels,linkArea,n,value}"];
 setsNode_10 [label="def(10)={runningTotal,section}"];
-setsNode_1 [label="use(1)={this,g2,plotArea}"];
-setsNode_16 [label="def(16)={runningTotal,selected}\nuse(16)={}"];
-setsNode_17 [label="use(17)={this,g2,this.simpleLabels,explodeArea}"];
 setsNode_14 [label="def(14)={section}\nuse(14)={}"];
+setsNode_16 [label="def(16)={runningTotal,selected}\nuse(16)={}"];
+setsNode_1 [label="use(1)={this,g2,plotArea}"];
 setsNode_4 [label="def(4)={ss,keys,totalValue,passesRequired,pass}\nuse(4)={this,this.simpleLabels,runningTotal}"];
-setsNode_18 [label="def(18)={selected}\nuse(18)={this,runningTotal,section}"];
-setsNode_13 [label="def(13)={n}\nuse(13)={this,runningTotal}"];
+setsNode_15 [label="def(15)={value}\nuse(15)={}"];
+setsNode_17 [label="use(17)={this,g2,this.simpleLabels,explodeArea}"];
 setsNode_12 [label="def(12)={pass}\nuse(12)={}"];
+setsNode_13 [label="def(13)={n}\nuse(13)={this,runningTotal}"];
+setsNode_7 [label="use(7)={this,g2,plotArea,this.simpleLabels,linkArea,n,value}"];
+setsNode_0 [label="def(0)={this,g2,plotArea,this.dataset,this.simpleLabels,state,linkArea,explodeArea}"];
+setsNode_18 [label="def(18)={selected}\nuse(18)={this,runningTotal,section}"];
 }
 {rank = same; 9 ;  setsNode_9}
-{rank = same; 0 ;  setsNode_0}
-{rank = same; 15 ;  setsNode_15}
-{rank = same; 7 ;  setsNode_7}
 {rank = same; 10 ;  setsNode_10}
-{rank = same; 1 ;  setsNode_1}
-{rank = same; 16 ;  setsNode_16}
-{rank = same; 17 ;  setsNode_17}
 {rank = same; 14 ;  setsNode_14}
+{rank = same; 16 ;  setsNode_16}
+{rank = same; 1 ;  setsNode_1}
 {rank = same; 4 ;  setsNode_4}
-{rank = same; 18 ;  setsNode_18}
-{rank = same; 13 ;  setsNode_13}
+{rank = same; 15 ;  setsNode_15}
+{rank = same; 17 ;  setsNode_17}
 {rank = same; 12 ;  setsNode_12}
-8 -> 2;
+{rank = same; 13 ;  setsNode_13}
+{rank = same; 7 ;  setsNode_7}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 18 ;  setsNode_18}
+3 -> 4[label="use(3,4)={this,runningTotal}",fontsize=14];3 -> 1[label="use(3,1)={this,runningTotal}",fontsize=14];
 9 -> 8;
+10 -> 11;
+14 -> 11;
+8 -> 2;
+16 -> 18[label="use(16,18)={section}",fontsize=14];16 -> 17[label="use(16,17)={section}",fontsize=14];
+1 -> 2;
+5 -> 10[label="use(5,10)={selected}",fontsize=14];5 -> 6[label="use(5,6)={selected}",fontsize=14];
+4 -> 5;
+6 -> 9[label="use(6,9)={this}",fontsize=14];6 -> 7[label="use(6,7)={this}",fontsize=14];
+15 -> 16[label="use(15,16)={}",fontsize=14];15 -> 14[label="use(15,14)={}",fontsize=14];
+17 -> 14;
+12 -> 5;
+13 -> 15[label="use(13,15)={}",fontsize=14];13 -> 14[label="use(13,14)={}",fontsize=14];
+11 -> 13[label="use(11,13)={n}",fontsize=14];11 -> 12[label="use(11,12)={n}",fontsize=14];
+7 -> 8;
 0 -> 3[label="use(0,3)={this,runningTotal}",fontsize=14];0 -> 1[label="use(0,1)={this,runningTotal}",fontsize=14];
 2 -> 19;
-15 -> 16[label="use(15,16)={}",fontsize=14];15 -> 14[label="use(15,14)={}",fontsize=14];
-7 -> 8;
-10 -> 11;
-11 -> 13[label="use(11,13)={n}",fontsize=14];11 -> 12[label="use(11,12)={n}",fontsize=14];
-1 -> 2;
-16 -> 18[label="use(16,18)={section}",fontsize=14];16 -> 17[label="use(16,17)={section}",fontsize=14];
-17 -> 14;
-14 -> 11;
-4 -> 5;
-5 -> 10[label="use(5,10)={selected}",fontsize=14];5 -> 6[label="use(5,6)={selected}",fontsize=14];
-6 -> 9[label="use(6,9)={this}",fontsize=14];6 -> 7[label="use(6,7)={this}",fontsize=14];
 18 -> 17;
-13 -> 15[label="use(13,15)={}",fontsize=14];13 -> 14[label="use(13,14)={}",fontsize=14];
-3 -> 4[label="use(3,4)={this,runningTotal}",fontsize=14];3 -> 1[label="use(3,1)={this,runningTotal}",fontsize=14];
-12 -> 5;
 }

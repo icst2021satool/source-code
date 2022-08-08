@@ -20,7 +20,7 @@ public class NodeSubsumer {
     public static int nodeSubsumeAll(File src, InputStream input, String path) {
         int n = 0; // # of methods analyzed
         boolean printLocalDuaNodeFile = false;
-        boolean printDuaJsonNodeFile = true;
+        boolean printDuaJsonNodeFile = false;
         try {
             ClassInfo ci = new ClassInfo(input);
             path = path + File.separator;

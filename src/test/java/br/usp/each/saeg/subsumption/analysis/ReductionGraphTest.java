@@ -234,8 +234,9 @@ public class ReductionGraphTest extends TestCase {
             ReductionNode u = it.next();
             System.out.println(u);
         }
-
-        System.out.println("Transitive Clousure:");
+        System.out.println("Before Transitive Closure:");
+        System.out.println(rg.toDot());
+        System.out.println("Transitive Closure:");
 
         rg.findTransitiveClosure();
         System.out.println(rg.toDot());
@@ -677,7 +678,7 @@ public class ReductionGraphTest extends TestCase {
                 System.out.println("#" + mi.getName() + "# Reduction nodes:" + rg.size());
 
 
-                rg.findTransitiveClosure();
+                //rg.findTransitiveClosure();
                 //writeBufferToFile(dir, mi.getName()+".dot",rg.toDot());
             }
 
@@ -732,7 +733,7 @@ public class ReductionGraphTest extends TestCase {
                 System.out.println("#" + mi.getName() + "# Unconstrained duas:" + rg.unconstrainedNodes().size());
                 System.out.println("#" + mi.getName() + "# Reduction nodes:" + rg.size());
 
-                rg.findTransitiveClosure();
+                //rg.findTransitiveClosure();
                 writeBufferToFile(dir, mi.getName() + ".red", rg.toDot());
                 writeBufferToFile(dir, mi.getName() + ".csv", mi.toDuasCSV());
             }
@@ -788,7 +789,7 @@ public class ReductionGraphTest extends TestCase {
                 System.out.println("#" + mi.getName() + "# Unconstrained duas:" + rg.unconstrainedNodes().size());
                 System.out.println("#" + mi.getName() + "# Reduction nodes:" + rg.size());
 
-                rg.findTransitiveClosure();
+                //rg.findTransitiveClosure();
                 if (methodNames.contains(mi.getName())) {
                     writeBufferToFile(dir, mi.getName() + methodId + ".red", rg.toDot());
                     methodId++;
@@ -833,7 +834,7 @@ public class ReductionGraphTest extends TestCase {
                 System.out.println("#" + mi.getName() + "# Unconstrained duas:" + rg.unconstrainedNodes().size());
                 System.out.println("#" + mi.getName() + "# Reduction nodes:" + rg.size());
 
-                rg.findTransitiveClosure();
+                //rg.findTransitiveClosure();
                 writeBufferToFile(dir, mi.getName() + ".dot", rg.toDot());
             }
 
@@ -844,9 +845,10 @@ public class ReductionGraphTest extends TestCase {
     }
 
     public void test6() {
-        System.out.println("searchForPath");
-        String dir = "/Users/marcoschaim/projetos/data/searchForPath/";
-        String clazzname = "Path.class";
+
+        String dir = "/Users/marcoschaim/experimentos/subsumption-experiment/programs/stanford-corenlp-4.4.0/target/classes/edu/stanford/nlp/patterns/";
+        String clazzname = "GetPatternsFromDataMultiClass$PatternScoring.class";
+        System.out.println(clazzname);
         try {
             cl = new ClassInfo(dir, clazzname);
             cl.genAllMethodInfo();
@@ -855,22 +857,23 @@ public class ReductionGraphTest extends TestCase {
                 mi.createMethodCFG();
                 mi.createMethodDuas();
 
-                writeBufferToFile(dir, mi.getName() + ".csv", mi.toDuasCSV());
-                writeBufferToFile(dir, mi.getName() + ".gdu", mi.graphDefUseToDot());
+                //writeBufferToFile(dir, mi.getName() + ".csv", mi.toDuasCSV());
+                //writeBufferToFile(dir, mi.getName() + ".gdu", mi.graphDefUseToDot());
                 sg = new SubsumptionGraph(mi.getProgram(), mi.getDuas(), false);
-                //System.out.println(sg);
+                System.out.println(mi.toDuasCSV());
+                System.out.println(mi.graphDefUseToDot());
 
                 rg = new ReductionGraph(sg);
                 rg.setDua2DefUseChains(mi.getDefChainsMap());
                 rg.setLines(mi.getLines());
-                rg.findTransitiveClosure();
+                //rg.findTransitiveClosure();
                 mi.setSubsumptionGraph(sg);
                 mi.setReductionGraph(rg);
-                writeBufferToFile(dir, mi.getName() + ".dot", rg.toDot());
+                //writeBufferToFile(dir, mi.getName() + ".dot", rg.toDot());
             }
 
             System.out.println(cl.toJsonSubsumption());
-            writeBufferToFile(dir, "JDOMNodePointer.sub.json", cl.toJsonSubsumption());
+            //writeBufferToFile(dir, "JDOMNodePointer.sub.json", cl.toJsonSubsumption());
         } catch (Exception e) {
             e.printStackTrace();
         }

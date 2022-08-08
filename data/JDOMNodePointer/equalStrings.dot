@@ -1,0 +1,20 @@
+digraph { 
+150 [shape=box,style=filled,color=".0 .0 .83",label="[398,(398,399),s2]"];
+151 [shape=box,style=filled,color=".0 .0 .83",label="[398,(398,401),s2]"];
+152 [label="[398,(398,398),s1]"];
+153 [shape=box,style=filled,color=".0 .0 .83",label="[398,(398,401),s1]"];
+154 [shape=box,style=filled,color=".0 .0 .83",label="[398,(401,402),s2]"];
+155 [shape=box,style=filled,color=".0 .0 .83",label="[398,(401,405),s2]"];
+156 [label="[398,(401,401),s1]"];
+157 [shape=box,style=filled,color=".0 .0 .83",label="[398,(401,405),s1]"];
+158 [shape=box,style=filled,color=".0 .0 .83",label="[398,(405,406),s2]\n[398,(405,406),s1]"];
+159 [shape=box,style=filled,color=".0 .0 .83",label="[398,(405,409),s2]\n[398,(405,409),s1]"];
+160 [label="[398,(405,405),s1]"];
+161 [shape=box,style=filled,color=".0 .0 .83",label="[398,(405,409),s1]"];
+152 -> 150;
+152 -> 151;
+156 -> 154;
+156 -> 155;
+160 -> 158;
+160 -> 159;
+}

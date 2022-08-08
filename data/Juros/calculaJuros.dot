@@ -1,0 +1,10 @@
+digraph { 
+0 [shape=box,style=filled,color=".0 .0 .83",label="[7,9,out]\n[7,(8,9),meses]"];
+1 [shape=box,style=filled,color=".0 .0 .83",label="[12,14,i]\n[12,(12,13),i]\n[13,13,juros]"];
+2 [label="[12,(12,16),i]\n[13,16,juros][13,17,juros]\n[12,14,i]\n[12,(12,13),i]\n[7,13,juros]\n[7,13,n]\n[7,(12,13),meses]"];
+3 [shape=box,style=filled,color=".0 .0 .83",label="[12,(12,16),i]\n[7,16,juros][7,17,juros]"];
+4 [label="[7,16,out]\n[7,(12,16),meses]\n[7,(8,12),meses]"];
+2 -> 1;
+4 -> 2;
+4 -> 3;
+}

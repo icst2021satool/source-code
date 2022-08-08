@@ -109,7 +109,12 @@ public class SubsumptionAnalyzer {
 
             while (itNode.hasNext()) {
                 Node n = itNode.next();
-//                System.out.println("Node "+printNode(n));
+
+//                System.out.println("==> Node "+printNode(n));
+//                System.out.println("In      "+printNode(n)+": "+n.getIn());
+//                System.out.println("Covered "+printNode(n)+": "+n.getCovered());
+//                System.out.println("Out     "+printNode(n)+": "+n.getOut());
+
                 if (graphdua.predecessors(n).isEmpty()) {
                     if (program.getGraph().entry().id() != n.block().id())
                         continue; // Graphnode's dangling node
@@ -126,8 +131,6 @@ public class SubsumptionAnalyzer {
 //                    System.out.println("Pred Out "+printNode(pred)+ ":"+pred.getOut());
                 }
 
-//                System.out.println("Out: "+temp);
-
                 for (Node pred : graphdua.predecessors(n)) {
                     temp2.and(pred.getCovered());
 //                    System.out.println("Pred Covered "+printNode(pred)+":"+pred.getCovered());
@@ -136,6 +139,8 @@ public class SubsumptionAnalyzer {
 
                 n.getIn().clear();
                 n.getIn().or(temp);
+
+//                System.out.println("In      "+printNode(n)+": "+n.getIn());
 
                 n.getLiveDuas().clear();
                 n.getLiveDuas().or(n.getIn());
@@ -265,6 +270,10 @@ public class SubsumptionAnalyzer {
 //                System.out.println("OldCove "+printNode(n)+": "+oldcov);
 //                System.out.println("Out     "+printNode(n)+": "+n.getOut());
 //                System.out.println("Oldout  "+printNode(n)+": "+oldout);
+//            System.out.println("==> Node "+printNode(n));
+//            System.out.println("In      "+printNode(n)+": "+n.getIn());
+//            System.out.println("Covered "+printNode(n)+": "+n.getCovered());
+//            System.out.println("Out     "+printNode(n)+": "+n.getOut());
 
         }
 

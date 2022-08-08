@@ -1,0 +1,196 @@
+{
+"Class" : "com.google.javascript.jscomp.Compiler", 
+"Methods" : [{ "Name" : "initOptions" ,
+"Duas" : "66" ,
+"Subsumers" : 0 
+},{ "Name" : "init" ,
+"Duas" : "8" ,
+"Subsumers" : 0 
+},{ "Name" : "initModules" ,
+"Duas" : "9" ,
+"Subsumers" : 0 
+},{ "Name" : "initBasedOnOptions" ,
+"Duas" : "12" ,
+"Subsumers" : 0 
+},{ "Name" : "makeCompilerInput" ,
+"Duas" : "6" ,
+"Subsumers" : 0 
+},{ "Name" : "checkFirstModule" ,
+"Duas" : "11" ,
+"Subsumers" : 0 
+},{ "Name" : "fillEmptyModules" ,
+"Duas" : "6" ,
+"Subsumers" : 0 
+},{ "Name" : "getAllInputsFromModules" ,
+"Duas" : "10" ,
+"Subsumers" : 0 
+},{ "Name" : "initInputsByIdMap" ,
+"Duas" : "20" ,
+"Subsumers" : 0 
+},{ "Name" : "compile" ,
+"Duas" : "20" ,
+"Subsumers" : 0 
+},{ "Name" : "compileModules" ,
+"Duas" : "20" ,
+"Subsumers" : 0 
+},{ "Name" : "runInCompilerThread" ,
+"Duas" : "36" ,
+"Subsumers" : 0 
+},{ "Name" : "compileInternal" ,
+"Duas" : "55" ,
+"Subsumers" : 0 
+},{ "Name" : "getPassConfig" ,
+"Duas" : "8" ,
+"Subsumers" : 0 
+},{ "Name" : "setPassConfig" ,
+"Duas" : "6" ,
+"Subsumers" : 0 
+},{ "Name" : "check" ,
+"Duas" : "68" ,
+"Subsumers" : 0 
+},{ "Name" : "maybeSanityCheck" ,
+"Duas" : "9" ,
+"Subsumers" : 0 
+},{ "Name" : "stripCode" ,
+"Duas" : "8" ,
+"Subsumers" : 0 
+},{ "Name" : "runCustomPasses" ,
+"Duas" : "17" ,
+"Subsumers" : 0 
+},{ "Name" : "startPass" ,
+"Duas" : "8" ,
+"Subsumers" : 0 
+},{ "Name" : "endPass" ,
+"Duas" : "12" ,
+"Subsumers" : 0 
+},{ "Name" : "newTracer" ,
+"Duas" : "15" ,
+"Subsumers" : 0 
+},{ "Name" : "stopTracer" ,
+"Duas" : "10" ,
+"Subsumers" : 0 
+},{ "Name" : "areNodesEqualForInlining" ,
+"Duas" : "16" ,
+"Subsumers" : 0 
+},{ "Name" : "removeExternInput" ,
+"Duas" : "15" ,
+"Subsumers" : 0 
+},{ "Name" : "newExternInput" ,
+"Duas" : "14" ,
+"Subsumers" : 0 
+},{ "Name" : "addIncrementalSourceAst" ,
+"Duas" : "8" ,
+"Subsumers" : 0 
+},{ "Name" : "replaceIncrementalSourceAst" ,
+"Duas" : "29" ,
+"Subsumers" : 0 
+},{ "Name" : "addNewSourceAst" ,
+"Duas" : "24" ,
+"Subsumers" : 0 
+},{ "Name" : "getDegenerateModuleGraph" ,
+"Duas" : "8" ,
+"Subsumers" : 0 
+},{ "Name" : "getTypeRegistry" ,
+"Duas" : "12" ,
+"Subsumers" : 0 
+},{ "Name" : "buildKnownSymbolTable" ,
+"Duas" : "39" ,
+"Subsumers" : 0 
+},{ "Name" : "getReverseAbstractInterpreter" ,
+"Duas" : "19" ,
+"Subsumers" : 0 
+},{ "Name" : "getTypeValidator" ,
+"Duas" : "9" ,
+"Subsumers" : 0 
+},{ "Name" : "parseInputs" ,
+"Duas" : "151" ,
+"Subsumers" : 0 
+},{ "Name" : "hoistExterns" ,
+"Duas" : "34" ,
+"Subsumers" : 0 
+},{ "Name" : "hoistNoCompileFiles" ,
+"Duas" : "17" ,
+"Subsumers" : 0 
+},{ "Name" : "processAMDAndCommonJSModules" ,
+"Duas" : "85" ,
+"Subsumers" : 0 
+},{ "Name" : "initCompilerOptionsIfTesting" ,
+"Duas" : "5" ,
+"Subsumers" : 0 
+},{ "Name" : "parseTestCode" ,
+"Duas" : "9" ,
+"Subsumers" : 0 
+},{ "Name" : "toSource" ,
+"Duas" : "10" ,
+"Subsumers" : 0 
+},{ "Name" : "optimize" ,
+"Duas" : "17" ,
+"Subsumers" : 0 
+},{ "Name" : "isInliningForbidden" ,
+"Duas" : "16" ,
+"Subsumers" : 0 
+},{ "Name" : "reportCodeChange" ,
+"Duas" : "3" ,
+"Subsumers" : 0 
+},{ "Name" : "getCodingConvention" ,
+"Duas" : "5" ,
+"Subsumers" : 0 
+},{ "Name" : "acceptEcmaScript5" ,
+"Duas" : "9" ,
+"Subsumers" : 0 
+},{ "Name" : "getParserConfig" ,
+"Duas" : "28" ,
+"Subsumers" : 0 
+},{ "Name" : "report" ,
+"Duas" : "25" ,
+"Subsumers" : 0 
+},{ "Name" : "throwInternalError" ,
+"Duas" : "5" ,
+"Subsumers" : 0 
+},{ "Name" : "hasHaltingErrors" ,
+"Duas" : "4" ,
+"Subsumers" : 0 
+},{ "Name" : "getSourceFileByName" ,
+"Duas" : "8" ,
+"Subsumers" : 0 
+},{ "Name" : "getSourceLine" ,
+"Duas" : "8" ,
+"Subsumers" : 0 
+},{ "Name" : "getSourceRegion" ,
+"Duas" : "8" ,
+"Subsumers" : 0 
+},{ "Name" : "getNodeForCodeInsertion" ,
+"Duas" : "13" ,
+"Subsumers" : 0 
+},{ "Name" : "getAstDotGraph" ,
+"Duas" : "9" ,
+"Subsumers" : 0 
+},{ "Name" : "getErrorManager" ,
+"Duas" : "7" ,
+"Subsumers" : 0 
+},{ "Name" : "updateGlobalVarReferences" ,
+"Duas" : "15" ,
+"Subsumers" : 0 
+},{ "Name" : "getSynthesizedExternsInput" ,
+"Duas" : "8" ,
+"Subsumers" : 0 
+},{ "Name" : "setProgress" ,
+"Duas" : "5" ,
+"Subsumers" : 0 
+},{ "Name" : "replaceScript" ,
+"Duas" : "8" ,
+"Subsumers" : 0 
+},{ "Name" : "addNewScript" ,
+"Duas" : "7" ,
+"Subsumers" : 0 
+},{ "Name" : "runHotSwap" ,
+"Duas" : "6" ,
+"Subsumers" : 0 
+},{ "Name" : "runHotSwapPass" ,
+"Duas" : "7" ,
+"Subsumers" : 0 
+},{ "Name" : "ensureLibraryInjected" ,
+"Duas" : "27" ,
+"Subsumers" : 0 
+}]
+}

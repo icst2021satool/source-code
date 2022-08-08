@@ -1,0 +1,8 @@
+digraph namespacePointer {
+1 [label="1"]
+0 [label="0\n184-184"]
+{
+node [shape=plaintext, fontsize=14];
+}
+0 -> 1;
+}

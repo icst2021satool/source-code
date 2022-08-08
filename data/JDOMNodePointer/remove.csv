@@ -1,0 +1,27 @@
+Number of Variables;3;
+Variables:;
+0;;this;
+1;;this.node;
+2;;parent;
+
+Number of Block duas;5;
+Line Duas for method; remove;
+Number;Def Line; Origin Line; Use Line; Var Id; Var Name;
+1;557;;561;0;this;
+2;557;;561;2;this.node;
+3;557;558;559;1;parent;
+4;557;558;561;1;parent;
+5;557;;561;1;parent;
+
+Block Duas for method; remove;
+Number;Def Block; Origin Block; Use Block; Var Id; Var Name;
+1;0;;1;0;this;
+;557;;561;0;this;
+2;0;;1;1;this.node;
+;557;;561;2;this.node;
+3;0;0;2;2;parent;
+;557;558;559;1;parent;
+4;0;0;1;2;parent;
+;557;558;561;1;parent;
+5;0;;1;2;parent;
+;557;;561;1;parent;

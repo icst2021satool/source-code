@@ -1,0 +1,82 @@
+{
+"Class" : "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer", 
+"Methods" : [{ "Name" : "testNode" ,
+"Duas" : "43" ,
+"Subsumers" : 0 
+},{ "Name" : "equalStrings" ,
+"Duas" : "18" ,
+"Subsumers" : 0 
+},{ "Name" : "getName" ,
+"Duas" : "15" ,
+"Subsumers" : 0 
+},{ "Name" : "getNamespaceURI" ,
+"Duas" : "81" ,
+"Subsumers" : 0 
+},{ "Name" : "getDefaultNamespaceURI" ,
+"Duas" : "50" ,
+"Subsumers" : 0 
+},{ "Name" : "isLeaf" ,
+"Duas" : "4" ,
+"Subsumers" : 0 
+},{ "Name" : "isLanguage" ,
+"Duas" : "6" ,
+"Subsumers" : 0 
+},{ "Name" : "getLanguage" ,
+"Duas" : "17" ,
+"Subsumers" : 0 
+},{ "Name" : "setValue" ,
+"Duas" : "62" ,
+"Subsumers" : 0 
+},{ "Name" : "createChild" ,
+"Duas" : "29" ,
+"Subsumers" : 0 
+},{ "Name" : "createAttribute" ,
+"Duas" : "28" ,
+"Subsumers" : 0 
+},{ "Name" : "remove" ,
+"Duas" : "5" ,
+"Subsumers" : 0 
+},{ "Name" : "asPath" ,
+"Duas" : "72" ,
+"Subsumers" : 0 
+},{ "Name" : "escape" ,
+"Duas" : "22" ,
+"Subsumers" : 0 
+},{ "Name" : "getRelativePositionByName" ,
+"Duas" : "22" ,
+"Subsumers" : 0 
+},{ "Name" : "getRelativePositionOfElement" ,
+"Duas" : "14" ,
+"Subsumers" : 0 
+},{ "Name" : "getRelativePositionOfTextNode" ,
+"Duas" : "18" ,
+"Subsumers" : 0 
+},{ "Name" : "getRelativePositionOfPI" ,
+"Duas" : "20" ,
+"Subsumers" : 0 
+},{ "Name" : "equals" ,
+"Duas" : "15" ,
+"Subsumers" : 0 
+},{ "Name" : "getPrefix" ,
+"Duas" : "8" ,
+"Subsumers" : 0 
+},{ "Name" : "getLocalName" ,
+"Duas" : "9" ,
+"Subsumers" : 0 
+},{ "Name" : "getNamespaceURI" ,
+"Duas" : "32" ,
+"Subsumers" : 0 
+},{ "Name" : "stringValue" ,
+"Duas" : "40" ,
+"Subsumers" : 0 
+},{ "Name" : "getPointerByID" ,
+"Duas" : "18" ,
+"Subsumers" : 0 
+},{ "Name" : "getAbstractFactory" ,
+"Duas" : "4" ,
+"Subsumers" : 0 
+},{ "Name" : "compareChildNodePointers" ,
+"Duas" : "58" ,
+"Subsumers" : 0 
+}]
+}

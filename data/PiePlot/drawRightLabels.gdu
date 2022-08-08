@@ -1,48 +1,48 @@
 digraph drawRightLabels {
-11 [label="11\n2998-2998"]
-4 [label="4\n3024-3024"]
-9 [label="9\n3001-3001"]
-1 [label="1\n2985-2985"]
-0 [label="0\n2981-2985"]
-10 [label="10\n3003-3008"]
-12 [label="12"]
-8 [label="8\n2990-2997"]
 3 [label="3\n3019-3019"]
-5 [label="5\n3020-3019"]
 2 [label="2\n3015-3019"]
 6 [label="6\n2986-2989"]
+0 [label="0\n2981-2985"]
+11 [label="11\n2998-2998"]
+8 [label="8\n2990-2997"]
+4 [label="4\n3024-3024"]
 7 [label="7\n2985-2985"]
+9 [label="9\n3001-3001"]
+10 [label="10\n3003-3008"]
+12 [label="12"]
+1 [label="1\n2985-2985"]
+5 [label="5\n3020-3019"]
 {
 node [shape=plaintext, fontsize=14];
-setsNode_11 [label="use(11)={this,verticalLinkRadius}"];
-setsNode_9 [label="use(9)={verticalLinkRadius}"];
-setsNode_0 [label="def(0)={this,keys,g2,plotArea,maxLabelWidth,state,this.labelDistributor,this.labelGenerator,this.dataset,this.labelFont,this.labelPaint,this.labelBackgroundPaint,this.labelOutlinePaint,this.labelOutlineStroke,this.shadowGenerator,this.labelShadowPaint,this.labelPadding,lGap,verticalLinkRadius,i}"];
-setsNode_10 [label="use(10)={this,keys,g2,this.labelDistributor,this.labelGenerator,this.dataset,this.labelPaint,this.labelBackgroundPaint,verticalLinkRadius}"];
-setsNode_8 [label="def(8)={labelBox}\nuse(8)={this,g2,state,this.labelOutlinePaint,this.labelPadding,lGap,i,label,labelBox}"];
-setsNode_5 [label="def(5)={i}\nuse(5)={this,g2,this.labelDistributor,this.labelGenerator}"];
 setsNode_2 [label="def(2)={i}\nuse(2)={this,plotArea,this.labelGenerator}"];
 setsNode_6 [label="def(6)={label}\nuse(6)={this,keys,this.labelBackgroundPaint,this.labelOutlineStroke,this.shadowGenerator}"];
+setsNode_0 [label="def(0)={this,keys,g2,plotArea,maxLabelWidth,state,this.labelDistributor,this.labelGenerator,this.dataset,this.labelFont,this.labelPaint,this.labelBackgroundPaint,this.labelOutlinePaint,this.labelOutlineStroke,this.shadowGenerator,this.labelShadowPaint,this.labelPadding,lGap,verticalLinkRadius,i}"];
+setsNode_11 [label="use(11)={this,verticalLinkRadius}"];
+setsNode_8 [label="def(8)={labelBox}\nuse(8)={this,g2,state,this.labelOutlinePaint,this.labelPadding,lGap,i,label,labelBox}"];
 setsNode_7 [label="def(7)={i}\nuse(7)={this.labelBackgroundPaint}"];
+setsNode_9 [label="use(9)={verticalLinkRadius}"];
+setsNode_10 [label="use(10)={this,keys,g2,this.labelDistributor,this.labelGenerator,this.dataset,this.labelPaint,this.labelBackgroundPaint,verticalLinkRadius}"];
+setsNode_5 [label="def(5)={i}\nuse(5)={this,g2,this.labelDistributor,this.labelGenerator}"];
 }
-{rank = same; 11 ;  setsNode_11}
-{rank = same; 9 ;  setsNode_9}
-{rank = same; 0 ;  setsNode_0}
-{rank = same; 10 ;  setsNode_10}
-{rank = same; 8 ;  setsNode_8}
-{rank = same; 5 ;  setsNode_5}
 {rank = same; 2 ;  setsNode_2}
 {rank = same; 6 ;  setsNode_6}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 11 ;  setsNode_11}
+{rank = same; 8 ;  setsNode_8}
 {rank = same; 7 ;  setsNode_7}
-11 -> 10;
-4 -> 12;
-9 -> 10;
-1 -> 6[label="use(1,6)={keys,this.labelBackgroundPaint}",fontsize=14];1 -> 2[label="use(1,2)={keys,this.labelBackgroundPaint}",fontsize=14];
-0 -> 1;
-10 -> 7;
-8 -> 11[label="use(8,11)={this,i}",fontsize=14];8 -> 9[label="use(8,9)={this,i}",fontsize=14];
+{rank = same; 9 ;  setsNode_9}
+{rank = same; 10 ;  setsNode_10}
+{rank = same; 5 ;  setsNode_5}
 3 -> 5[label="use(3,5)={this,this.labelGenerator}",fontsize=14];3 -> 4[label="use(3,4)={this,this.labelGenerator}",fontsize=14];
-5 -> 3;
 2 -> 3;
 6 -> 8[label="use(6,8)={this.labelOutlinePaint}",fontsize=14];6 -> 7[label="use(6,7)={this.labelOutlinePaint}",fontsize=14];
+0 -> 1;
+11 -> 10;
+8 -> 11[label="use(8,11)={this,i}",fontsize=14];8 -> 9[label="use(8,9)={this,i}",fontsize=14];
+4 -> 12;
 7 -> 1;
+9 -> 10;
+10 -> 7;
+1 -> 6[label="use(1,6)={keys,this.labelBackgroundPaint}",fontsize=14];1 -> 2[label="use(1,2)={keys,this.labelBackgroundPaint}",fontsize=14];
+5 -> 3;
 }

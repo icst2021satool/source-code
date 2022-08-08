@@ -1,0 +1,50 @@
+digraph getDefaultNamespaceURI {
+0 [label="0\n243-243"]
+12 [label="12\n252-253"]
+8 [label="8\n248-248"]
+10 [label="10\n256-256"]
+9 [label="9\n249-249"]
+7 [label="7\n244-245"]
+1 [label="1\n259-259"]
+11 [label="11\n250-251"]
+2 [label="2\n263-263"]
+3 [label="3\n263-263"]
+14 [label="14"]
+13 [label="13\n246-246"]
+6 [label="6\n260-260"]
+4 [label="4\n263-263"]
+5 [label="5\n263-263"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_0 [label="def(0)={this,this.defaultNamespace,this.node}"];
+setsNode_12 [label="def(12)={this.defaultNamespace}\nuse(12)={this,attr}"];
+setsNode_10 [label="def(10)={aNode}\nuse(10)={this.node}"];
+setsNode_7 [label="def(7)={aNode}\nuse(7)={this,aNode}"];
+setsNode_11 [label="def(11)={attr}\nuse(11)={this.node}"];
+setsNode_13 [label="def(13)={aNode}\nuse(13)={this.node}"];
+setsNode_6 [label="def(6)={this.defaultNamespace}\nuse(6)={this}"];
+setsNode_4 [label="use(4)={this,this.defaultNamespace}"];
+}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 12 ;  setsNode_12}
+{rank = same; 10 ;  setsNode_10}
+{rank = same; 7 ;  setsNode_7}
+{rank = same; 11 ;  setsNode_11}
+{rank = same; 13 ;  setsNode_13}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 4 ;  setsNode_4}
+0 -> 7[label="use(0,7)={this,this.defaultNamespace}",fontsize=14];0 -> 1[label="use(0,1)={this,this.defaultNamespace}",fontsize=14];
+12 -> 1;
+8 -> 9[label="use(8,9)={this.node}",fontsize=14];8 -> 1[label="use(8,1)={this.node}",fontsize=14];
+10 -> 8;
+9 -> 11[label="use(9,11)={this.node}",fontsize=14];9 -> 10[label="use(9,10)={this.node}",fontsize=14];
+7 -> 13[label="use(7,13)={this.node}",fontsize=14];7 -> 8[label="use(7,8)={this.node}",fontsize=14];
+1 -> 6[label="use(1,6)={this,this.defaultNamespace}",fontsize=14];1 -> 2[label="use(1,2)={this,this.defaultNamespace}",fontsize=14];
+11 -> 12[label="use(11,12)={attr}",fontsize=14];11 -> 10[label="use(11,10)={attr}",fontsize=14];
+2 -> 5[label="use(2,5)={this,this.defaultNamespace}",fontsize=14];2 -> 3[label="use(2,3)={this,this.defaultNamespace}",fontsize=14];
+3 -> 4;
+13 -> 8;
+6 -> 2;
+4 -> 14;
+5 -> 4;
+}

@@ -1,12 +1,14 @@
 digraph { 
-3407 [shape=box,style=filled,color=".0 .0 .83",label="(2,3, result)\n(0,2, this.baseSectionOutlineStroke)\n(0,(1,2), autoPopulate)\n(0,2, this)"];
-3408 [shape=box,style=filled,color=".0 .0 .83",label="(5,3, result)\n(4,(4,5), ds)\n(0,5, this.baseSectionOutlineStroke)\n(0,5, this)"];
-3409 [shape=box,style=filled,color=".0 .0 .83",label="(7,3, result)\n(4,7, ds)\n(4,(4,7), ds)\n(0,7, this.sectionOutlineStrokeMap)\n(0,7, key)\n(0,7, this)"];
-3410 [label="(0,(1,4), autoPopulate)\n(0,4, this)"];
-3411 [shape=box,style=filled,color=".0 .0 .83",label="(0,8, result)\n(0,(0,8), result)"];
-3412 [label="(0,(0,1), result)"];
-3410 -> 3408;
-3410 -> 3409;
-3412 -> 3407;
-3412 -> 3410;
+3887 [shape=box,style=filled,color=".0 .0 .83",label="[1403,1405,result]\n[1383,1403,this.baseSectionOutlineStroke]\n[1383,(1392,1403),autoPopulate]\n[1383,1403,this]"];
+3888 [shape=box,style=filled,color=".0 .0 .83",label="[1399,1405,result]\n[1393,(1394,1399),ds]\n[1383,1399,this.baseSectionOutlineStroke]\n[1383,1399,this]"];
+3889 [shape=box,style=filled,color=".0 .0 .83",label="[1395,1405,result]\n[1393,1395,ds]\n[1393,(1394,1395),ds]\n[1383,1396,this.sectionOutlineStrokeMap]\n[1383,1396,key]\n[1383,1396,this]"];
+3890 [label="[1383,(1392,1393),autoPopulate]\n[1383,1393,this]"];
+3891 [shape=box,style=filled,color=".0 .0 .83",label="[1386,1388,result]\n[1386,(1387,1388),result]"];
+3892 [label="[1386,(1387,1392),result]"];
+3890 -> 3888;
+3890 -> 3889;
+3892 -> 3887;
+3892 -> 3888;
+3892 -> 3889;
+3892 -> 3890;
 }

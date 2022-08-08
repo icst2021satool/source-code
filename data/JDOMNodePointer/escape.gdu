@@ -1,0 +1,30 @@
+digraph escape {
+7 [label="7"]
+2 [label="2\n635-635"]
+3 [label="3\n636-636"]
+4 [label="4\n643-643"]
+0 [label="0\n627-627"]
+5 [label="5\n637-641"]
+6 [label="6\n629-633"]
+1 [label="1\n628-628"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_2 [label="def(2)={index}\nuse(2)={index}"];
+setsNode_4 [label="use(4)={index}"];
+setsNode_0 [label="def(0)={string,index}"];
+setsNode_5 [label="def(5)={string,index}\nuse(5)={index}"];
+setsNode_6 [label="def(6)={string,index}\nuse(6)={index}"];
+}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 6 ;  setsNode_6}
+2 -> 3;
+3 -> 5[label="use(3,5)={}",fontsize=14];3 -> 4[label="use(3,4)={}",fontsize=14];
+4 -> 7;
+0 -> 1;
+5 -> 3;
+6 -> 1;
+1 -> 6[label="use(1,6)={}",fontsize=14];1 -> 2[label="use(1,2)={}",fontsize=14];
+}

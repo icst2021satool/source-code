@@ -1,0 +1,4 @@
+digraph { 
+355 [shape=box,style=filled,color=".0 .0 .83",label="[760,(761,762),factory]\n[760,762,this]"];
+356 [shape=box,style=filled,color=".0 .0 .83",label="[760,766,factory]\n[760,(761,766),factory]"];
+}

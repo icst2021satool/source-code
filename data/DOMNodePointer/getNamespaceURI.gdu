@@ -1,0 +1,56 @@
+digraph getNamespaceURI {
+11 [label="11\n641-641"]
+7 [label="7\n649-649"]
+8 [label="8\n655-655"]
+6 [label="6\n657-657"]
+5 [label="5\n648-648"]
+9 [label="9\n650-651"]
+1 [label="1\n631-634"]
+0 [label="0\n627-627"]
+12 [label="12\n635-635"]
+3 [label="3\n644-644"]
+4 [label="4\n647-647"]
+14 [label="14"]
+2 [label="2\n639-640"]
+13 [label="13\n628-628"]
+10 [label="10\n652-652"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_11 [label="def(11)={qname}"];
+setsNode_8 [label="def(8)={aNode}\nuse(8)={attr}"];
+setsNode_9 [label="def(9)={attr}\nuse(9)={aNode,attr}"];
+setsNode_1 [label="def(1)={uri}\nuse(1)={node}"];
+setsNode_0 [label="def(0)={node}"];
+setsNode_12 [label="use(12)={prefix}"];
+setsNode_3 [label="def(3)={qname}\nuse(3)={qname}"];
+setsNode_4 [label="def(4)={aNode}\nuse(4)={node}"];
+setsNode_2 [label="def(2)={prefix}\nuse(2)={node}"];
+setsNode_13 [label="def(13)={node}\nuse(13)={node}"];
+setsNode_10 [label="use(10)={}"];
+}
+{rank = same; 11 ;  setsNode_11}
+{rank = same; 8 ;  setsNode_8}
+{rank = same; 9 ;  setsNode_9}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 12 ;  setsNode_12}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 13 ;  setsNode_13}
+{rank = same; 10 ;  setsNode_10}
+11 -> 4;
+7 -> 9[label="use(7,9)={attr}",fontsize=14];7 -> 8[label="use(7,8)={attr}",fontsize=14];
+8 -> 5;
+6 -> 14;
+5 -> 7[label="use(5,7)={attr}",fontsize=14];5 -> 6[label="use(5,6)={attr}",fontsize=14];
+9 -> 10[label="use(9,10)={}",fontsize=14];9 -> 8[label="use(9,8)={}",fontsize=14];
+1 -> 12[label="use(1,12)={prefix}",fontsize=14];1 -> 2[label="use(1,2)={prefix}",fontsize=14];
+0 -> 13[label="use(0,13)={node}",fontsize=14];0 -> 1[label="use(0,1)={node}",fontsize=14];
+12 -> 14;
+3 -> 4;
+4 -> 5;
+2 -> 11[label="use(2,11)={qname}",fontsize=14];2 -> 3[label="use(2,3)={qname}",fontsize=14];
+13 -> 1;
+10 -> 14;
+}

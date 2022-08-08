@@ -1,4 +1,4 @@
 digraph { 
-3398 [shape=box,style=filled,color=".0 .0 .83",label="(0,1, paint)\n(0,(0,1), paint)\n(0,1, this)"];
-3399 [shape=box,style=filled,color=".0 .0 .83",label="(0,(0,2), paint)"];
+3878 [shape=box,style=filled,color=".0 .0 .83",label="[1295,1298,paint]\n[1295,(1295,1298),paint]\n[1295,1298,this][1295,1299,this]"];
+3879 [shape=box,style=filled,color=".0 .0 .83",label="[1295,(1295,1296),paint]"];
 }

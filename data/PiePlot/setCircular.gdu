@@ -1,16 +1,16 @@
 digraph setCircular {
-1 [label="1\n825-825"]
-0 [label="0\n821-822"]
-2 [label="2\n823-823"]
 3 [label="3"]
+2 [label="2\n823-823"]
+0 [label="0\n821-822"]
+1 [label="1\n825-825"]
 {
 node [shape=plaintext, fontsize=14];
-setsNode_0 [label="def(0)={this,notify}"];
 setsNode_2 [label="use(2)={this}"];
+setsNode_0 [label="def(0)={this,notify}"];
 }
-{rank = same; 0 ;  setsNode_0}
 {rank = same; 2 ;  setsNode_2}
-1 -> 3;
-0 -> 2[label="use(0,2)={}",fontsize=14];0 -> 1[label="use(0,1)={}",fontsize=14];
+{rank = same; 0 ;  setsNode_0}
 2 -> 1;
+0 -> 2[label="use(0,2)={}",fontsize=14];0 -> 1[label="use(0,1)={}",fontsize=14];
+1 -> 3;
 }

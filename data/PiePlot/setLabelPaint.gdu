@@ -1,7 +1,7 @@
 digraph setLabelPaint {
+0 [label="0\n1940-1940"]
 3 [label="3"]
 2 [label="2\n1941-1941"]
-0 [label="0\n1940-1940"]
 1 [label="1\n1943-1945"]
 {
 node [shape=plaintext, fontsize=14];
@@ -10,7 +10,7 @@ setsNode_1 [label="use(1)={this,paint}"];
 }
 {rank = same; 0 ;  setsNode_0}
 {rank = same; 1 ;  setsNode_1}
-2 -> 3;
 0 -> 2[label="use(0,2)={paint}",fontsize=14];0 -> 1[label="use(0,1)={paint}",fontsize=14];
+2 -> 3;
 1 -> 3;
 }

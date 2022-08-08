@@ -1,0 +1,30 @@
+Number of Variables;3;
+Variables:;
+0;;this;
+1;;lang;
+2;;current;
+
+Number of Block duas;6;
+Line Duas for method; isLanguage;
+Number;Def Line; Origin Line; Use Line; Var Id; Var Name;
+1;440;;442;0;this;
+2;440;;444;1;lang;
+3;440;;442;1;lang;
+4;440;441;442;2;current;
+5;440;441;444;2;current;
+6;440;;444;2;current;
+
+Block Duas for method; isLanguage;
+Number;Def Block; Origin Block; Use Block; Var Id; Var Name;
+1;0;;2;0;this;
+;440;;442;0;this;
+2;0;;1;1;lang;
+;440;;444;1;lang;
+3;0;;2;1;lang;
+;440;;442;1;lang;
+4;0;0;2;2;current;
+;440;441;442;2;current;
+5;0;0;1;2;current;
+;440;441;444;2;current;
+6;0;;1;2;current;
+;440;;444;2;current;

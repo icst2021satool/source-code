@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="10" failures="0" name="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" time="2.438" errors="0" skipped="0">
+<testsuite tests="10" failures="0" name="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" time="2.818" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="12+33"/>
@@ -58,14 +58,14 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.endian" value="little"/>
   </properties>
-  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test31" time="0.128"/>
-  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test32" time="0.062"/>
-  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test1" time="0.185"/>
-  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test2" time="0.004"/>
-  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test3" time="0.003"/>
-  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test4" time="0.134"/>
-  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test5" time="1.473"/>
-  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test6" time="0.016"/>
-  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test7" time="0.005"/>
-  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test8" time="0.428"/>
+  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test31" time="0.131"/>
+  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test32" time="0.064"/>
+  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test1" time="0.149"/>
+  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test2" time="0.003"/>
+  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test3" time="0.004"/>
+  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test4" time="0.113"/>
+  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test5" time="1.826"/>
+  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test6" time="0.009"/>
+  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test7" time="0.007"/>
+  <testcase classname="br.usp.each.saeg.subsumption.analysis.DuaSubsumptionTest" name="test8" time="0.512"/>
 </testsuite>

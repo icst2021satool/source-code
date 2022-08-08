@@ -1,4 +1,4 @@
 digraph { 
-3451 [shape=box,style=filled,color=".0 .0 .83",label="(0,1, generator)\n(0,(0,1), generator)\n(0,1, this)"];
-3452 [shape=box,style=filled,color=".0 .0 .83",label="(0,(0,2), generator)"];
+3931 [shape=box,style=filled,color=".0 .0 .83",label="[2291,2294,generator]\n[2291,(2291,2294),generator]\n[2291,2294,this][2291,2295,this]"];
+3932 [shape=box,style=filled,color=".0 .0 .83",label="[2291,(2291,2292),generator]"];
 }

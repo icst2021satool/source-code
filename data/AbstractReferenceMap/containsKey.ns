@@ -1,0 +1,20 @@
+digraph { /* Duas covered at duas */
+3 [label="0\n"];
+1034 [label="1\n(0,(0,1), entry)\n"];
+2065 [label="2\n(0,(0,1), entry)\n(0,(1,2), entry)\n"];
+4127 [label="4\n(0,(0,1), entry)\n(0,(1,4), entry)\n"];
+3096 [label="3\n(0,(0,1), entry)\n"];
+5158 [label="5\n(0,(0,5), entry)\n"];
+6189 [label="6\n"];
+ 3 -> 5158;
+ 3 -> 1034;
+ 1034 -> 4127;
+ 1034 -> 2065;
+ 2065 -> 3096;
+ 4127 -> 3096;
+ 3096 -> 6189;
+ 5158 -> 6189;
+}
+/*
+#Covered Duas by nodes: 4
+*/

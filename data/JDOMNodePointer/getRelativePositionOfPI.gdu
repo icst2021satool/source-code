@@ -1,0 +1,42 @@
+digraph getRelativePositionOfPI {
+1 [label="1\n726-728"]
+11 [label="11\n724-724"]
+10 [label="10\n730-730"]
+4 [label="4\n729-730"]
+9 [label="9\n734-734"]
+3 [label="3\n740-740"]
+5 [label="5\n736-736"]
+6 [label="6\n728-728"]
+0 [label="0\n722-723"]
+8 [label="8\n730-730"]
+2 [label="2\n728-728"]
+7 [label="7\n737-737"]
+12 [label="12"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_1 [label="def(1)={children,count,i}\nuse(1)={this.node}"];
+setsNode_4 [label="def(4)={child}\nuse(4)={children,i}"];
+setsNode_9 [label="def(9)={count}\nuse(9)={count}"];
+setsNode_3 [label="use(3)={count}"];
+setsNode_6 [label="def(6)={i}\nuse(6)={i}"];
+setsNode_0 [label="def(0)={this,target,this.node,parent}"];
+}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 9 ;  setsNode_9}
+{rank = same; 3 ;  setsNode_3}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 0 ;  setsNode_0}
+1 -> 2;
+11 -> 12;
+10 -> 9[label="use(10,9)={target,child}",fontsize=14];10 -> 5[label="use(10,5)={target,child}",fontsize=14];
+4 -> 8[label="use(4,8)={child}",fontsize=14];4 -> 5[label="use(4,5)={child}",fontsize=14];
+9 -> 5;
+3 -> 12;
+5 -> 7[label="use(5,7)={this,parent,child}",fontsize=14];5 -> 6[label="use(5,6)={this,parent,child}",fontsize=14];
+6 -> 2;
+0 -> 11[label="use(0,11)={this.node}",fontsize=14];0 -> 1[label="use(0,1)={this.node}",fontsize=14];
+8 -> 10[label="use(8,10)={target}",fontsize=14];8 -> 9[label="use(8,9)={target}",fontsize=14];
+2 -> 4[label="use(2,4)={children,i}",fontsize=14];2 -> 3[label="use(2,3)={children,i}",fontsize=14];
+7 -> 3;
+}

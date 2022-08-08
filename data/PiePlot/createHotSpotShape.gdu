@@ -1,68 +1,68 @@
 digraph createHotSpotShape {
+7 [label="7\n3450-3452"]
+8 [label="8\n3455-3459"]
+12 [label="12\n3437-3438"]
 2 [label="2\n3440-3440"]
-15 [label="15\n3431-3432"]
-3 [label="3\n3445-3445"]
+6 [label="6\n3461-3461"]
+9 [label="9\n3453-3453"]
+5 [label="5\n3448-3449"]
 13 [label="13\n3429-3430"]
-16 [label="16\n3433-3433"]
+1 [label="1\n3421-3427"]
+3 [label="3\n3445-3445"]
+0 [label="0\n3417-3418"]
+17 [label="17\n3419-3419"]
+14 [label="14\n3428-3428"]
+15 [label="15\n3431-3432"]
 4 [label="4\n3441-3442"]
 10 [label="10\n3428-3428"]
-5 [label="5\n3448-3449"]
-7 [label="7\n3450-3452"]
-14 [label="14\n3428-3428"]
-1 [label="1\n3421-3427"]
-0 [label="0\n3417-3418"]
-12 [label="12\n3437-3438"]
-9 [label="9\n3453-3453"]
-6 [label="6\n3461-3461"]
-8 [label="8\n3455-3459"]
-17 [label="17\n3419-3419"]
-11 [label="11\n3428-3428"]
+16 [label="16\n3433-3433"]
 18 [label="18"]
+11 [label="11\n3428-3428"]
 {
 node [shape=plaintext, fontsize=14];
-setsNode_15 [label="def(15)={value}\nuse(15)={this.direction}"];
-setsNode_13 [label="def(13)={n}\nuse(13)={this,ANTICLOCKWISE,angle}"];
-setsNode_16 [label="def(16)={lead}\nuse(16)={n,i}"];
-setsNode_4 [label="def(4)={angle1,angle2}\nuse(4)={this,n,lead,i}"];
-setsNode_10 [label="def(10)={i}"];
-setsNode_5 [label="def(5)={angle}\nuse(5)={value,total}"];
 setsNode_7 [label="def(7)={ep,mep}\nuse(7)={this}"];
-setsNode_14 [label="def(14)={i}\nuse(14)={angle}"];
-setsNode_1 [label="def(1)={value,total,lead}\nuse(1)={this,this.direction,ANTICLOCKWISE}"];
-setsNode_0 [label="def(0)={this,dataArea,section,this.dataset,CLOCKWISE,this.direction,ANTICLOCKWISE,n}"];
+setsNode_8 [label="use(8)={this,section,value,angle,mep}"];
 setsNode_12 [label="def(12)={angle1,angle2}\nuse(12)={this,n,lead,i}"];
 setsNode_9 [label="def(9)={ep}\nuse(9)={this,this.dataset}"];
-setsNode_8 [label="use(8)={this,section,value,angle,mep}"];
+setsNode_5 [label="def(5)={angle}\nuse(5)={value,total}"];
+setsNode_13 [label="def(13)={n}\nuse(13)={this,ANTICLOCKWISE,angle}"];
+setsNode_1 [label="def(1)={value,total,lead}\nuse(1)={this,this.direction,ANTICLOCKWISE}"];
+setsNode_0 [label="def(0)={this,dataArea,section,this.dataset,CLOCKWISE,this.direction,ANTICLOCKWISE,n}"];
+setsNode_14 [label="def(14)={i}\nuse(14)={angle}"];
+setsNode_15 [label="def(15)={value}\nuse(15)={this.direction}"];
+setsNode_4 [label="def(4)={angle1,angle2}\nuse(4)={this,n,lead,i}"];
+setsNode_10 [label="def(10)={i}"];
+setsNode_16 [label="def(16)={lead}\nuse(16)={n,i}"];
 }
-{rank = same; 15 ;  setsNode_15}
-{rank = same; 13 ;  setsNode_13}
-{rank = same; 16 ;  setsNode_16}
-{rank = same; 4 ;  setsNode_4}
-{rank = same; 10 ;  setsNode_10}
-{rank = same; 5 ;  setsNode_5}
 {rank = same; 7 ;  setsNode_7}
-{rank = same; 14 ;  setsNode_14}
-{rank = same; 1 ;  setsNode_1}
-{rank = same; 0 ;  setsNode_0}
+{rank = same; 8 ;  setsNode_8}
 {rank = same; 12 ;  setsNode_12}
 {rank = same; 9 ;  setsNode_9}
-{rank = same; 8 ;  setsNode_8}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 13 ;  setsNode_13}
+{rank = same; 1 ;  setsNode_1}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 14 ;  setsNode_14}
+{rank = same; 15 ;  setsNode_15}
+{rank = same; 4 ;  setsNode_4}
+{rank = same; 10 ;  setsNode_10}
+{rank = same; 16 ;  setsNode_16}
+7 -> 9[label="use(7,9)={}",fontsize=14];7 -> 8[label="use(7,8)={}",fontsize=14];
+8 -> 18;
+12 -> 5;
 2 -> 4[label="use(2,4)={this,angle2,ep}",fontsize=14];2 -> 3[label="use(2,3)={this,angle2,ep}",fontsize=14];
-15 -> 16[label="use(15,16)={n}",fontsize=14];15 -> 14[label="use(15,14)={n}",fontsize=14];
-3 -> 18;
+6 -> 18;
+9 -> 8;
+5 -> 7[label="use(5,7)={this,angle}",fontsize=14];5 -> 6[label="use(5,6)={this,angle}",fontsize=14];
 13 -> 15[label="use(13,15)={this.direction}",fontsize=14];13 -> 14[label="use(13,14)={this.direction}",fontsize=14];
-16 -> 14;
+1 -> 10[label="use(1,10)={this,angle1,angle2}",fontsize=14];1 -> 2[label="use(1,2)={this,angle1,angle2}",fontsize=14];
+3 -> 18;
+0 -> 17[label="use(0,17)={this.direction}",fontsize=14];0 -> 1[label="use(0,1)={this.direction}",fontsize=14];
+17 -> 18;
+14 -> 11;
+15 -> 16[label="use(15,16)={n}",fontsize=14];15 -> 14[label="use(15,14)={n}",fontsize=14];
 4 -> 5;
 10 -> 11;
-5 -> 7[label="use(5,7)={this,angle}",fontsize=14];5 -> 6[label="use(5,6)={this,angle}",fontsize=14];
-7 -> 9[label="use(7,9)={}",fontsize=14];7 -> 8[label="use(7,8)={}",fontsize=14];
-14 -> 11;
-1 -> 10[label="use(1,10)={this,angle1,angle2}",fontsize=14];1 -> 2[label="use(1,2)={this,angle1,angle2}",fontsize=14];
-0 -> 17[label="use(0,17)={this.direction}",fontsize=14];0 -> 1[label="use(0,1)={this.direction}",fontsize=14];
-12 -> 5;
-9 -> 8;
-6 -> 18;
-8 -> 18;
-17 -> 18;
+16 -> 14;
 11 -> 13[label="use(11,13)={this.dataset,angle}",fontsize=14];11 -> 12[label="use(11,12)={this.dataset,angle}",fontsize=14];
 }

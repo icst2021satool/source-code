@@ -1,16 +1,22 @@
 digraph { 
-3388 [shape=box,style=filled,color=".0 .0 .83",label="(3,4, result)\n(0,3, this.baseSectionOutlinePaint)\n(0,(2,3), autoPopulate)\n(0,3, this)"];
-3389 [shape=box,style=filled,color=".0 .0 .83",label="(6,4, result)\n(5,(5,6), ds)\n(0,6, this.baseSectionOutlinePaint)\n(0,6, this)"];
-3390 [shape=box,style=filled,color=".0 .0 .83",label="(8,4, result)\n(5,8, ds)\n(5,(5,8), ds)\n(0,8, this.sectionOutlinePaintMap)\n(0,8, key)\n(0,8, this)"];
-3391 [label="(0,(2,5), autoPopulate)\n(0,5, this)"];
-3392 [shape=box,style=filled,color=".0 .0 .83",label="(1,9, result)\n(1,(1,9), result)"];
-3393 [label="(1,(1,2), result)"];
-3394 [label="(0,1, this.sectionOutlinePaintMap)\n(0,(0,1), selected)\n(0,1, key)\n(0,1, this)"];
-3395 [shape=box,style=filled,color=".0 .0 .83",label="(0,10, WHITE)\n(0,(0,10), selected)"];
-3391 -> 3389;
-3391 -> 3390;
-3393 -> 3388;
-3393 -> 3391;
-3394 -> 3392;
-3394 -> 3393;
+3868 [shape=box,style=filled,color=".0 .0 .83",label="[1210,1212,result]\n[1187,1210,this.baseSectionOutlinePaint]\n[1187,(1199,1210),autoPopulate]\n[1187,1210,this]"];
+3869 [shape=box,style=filled,color=".0 .0 .83",label="[1206,1212,result]\n[1200,(1201,1206),ds]\n[1187,1206,this.baseSectionOutlinePaint]\n[1187,1206,this]"];
+3870 [shape=box,style=filled,color=".0 .0 .83",label="[1202,1212,result]\n[1200,1202,ds]\n[1200,(1201,1202),ds]\n[1187,1203,this.sectionOutlinePaintMap]\n[1187,1203,key]\n[1187,1203,this]"];
+3871 [label="[1187,(1199,1200),autoPopulate]\n[1187,1200,this]"];
+3872 [shape=box,style=filled,color=".0 .0 .83",label="[1193,1195,result]\n[1193,(1194,1195),result]"];
+3873 [label="[1193,(1194,1199),result]"];
+3874 [label="[1187,1193,this.sectionOutlinePaintMap]\n[1187,(1189,1193),selected]\n[1187,1193,key]\n[1187,1193,this]"];
+3875 [shape=box,style=filled,color=".0 .0 .83",label="[1187,1190,WHITE]\n[1187,(1189,1190),selected]"];
+3871 -> 3869;
+3871 -> 3870;
+3873 -> 3868;
+3873 -> 3869;
+3873 -> 3870;
+3873 -> 3871;
+3874 -> 3868;
+3874 -> 3869;
+3874 -> 3870;
+3874 -> 3871;
+3874 -> 3872;
+3874 -> 3873;
 }

@@ -1,26 +1,26 @@
 digraph setDataset {
 2 [label="2\n666-669"]
 4 [label="4\n655-655"]
+0 [label="0\n653-654"]
 1 [label="1\n659-660"]
 5 [label="5"]
-0 [label="0\n653-654"]
 3 [label="3\n661-662"]
 {
 node [shape=plaintext, fontsize=14];
 setsNode_2 [label="use(2)={this,dataset}"];
 setsNode_4 [label="use(4)={this,UPDATE}"];
-setsNode_1 [label="use(1)={this,dataset}"];
 setsNode_0 [label="def(0)={this,dataset,UPDATE,existing}"];
+setsNode_1 [label="use(1)={this,dataset}"];
 setsNode_3 [label="use(3)={this,dataset}"];
 }
 {rank = same; 2 ;  setsNode_2}
 {rank = same; 4 ;  setsNode_4}
-{rank = same; 1 ;  setsNode_1}
 {rank = same; 0 ;  setsNode_0}
+{rank = same; 1 ;  setsNode_1}
 {rank = same; 3 ;  setsNode_3}
 2 -> 5;
 4 -> 1;
-1 -> 3[label="use(1,3)={dataset}",fontsize=14];1 -> 2[label="use(1,2)={dataset}",fontsize=14];
 0 -> 4[label="use(0,4)={UPDATE}",fontsize=14];0 -> 1[label="use(0,1)={UPDATE}",fontsize=14];
+1 -> 3[label="use(1,3)={dataset}",fontsize=14];1 -> 2[label="use(1,2)={dataset}",fontsize=14];
 3 -> 2;
 }

@@ -1,0 +1,16 @@
+digraph isLeaf {
+2 [label="2\n287-287"]
+0 [label="0\n287-287"]
+3 [label="3\n287-287"]
+4 [label="4"]
+1 [label="1\n287-287"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_0 [label="def(0)={this,this.node}"];
+}
+{rank = same; 0 ;  setsNode_0}
+2 -> 4;
+0 -> 3[label="use(0,3)={this,this.node}",fontsize=14];0 -> 1[label="use(0,1)={this,this.node}",fontsize=14];
+3 -> 2;
+1 -> 2;
+}

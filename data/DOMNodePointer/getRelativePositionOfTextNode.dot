@@ -1,0 +1,32 @@
+digraph { 
+273 [shape=box,style=filled,color=".0 .0 .83",label="[555,(556,563),n]"];
+274 [label="[554,563,count]"];
+275 [shape=box,style=filled,color=".0 .0 .83",label="[555,(557,559),n]"];
+276 [shape=box,style=filled,color=".0 .0 .83",label="[555,(557,559),n]"];
+277 [shape=box,style=filled,color=".0 .0 .83",label="[559,559,count]"];
+278 [shape=box,style=filled,color=".0 .0 .83",label="[561,(557,559),n]"];
+279 [shape=box,style=filled,color=".0 .0 .83",label="[561,(557,559),n]"];
+280 [label="[559,563,count]\n[554,559,count]"];
+281 [shape=box,style=filled,color=".0 .0 .83",label="[555,(557,561),n]"];
+282 [label="[555,(557,557),n]"];
+283 [shape=box,style=filled,color=".0 .0 .83",label="[561,(557,561),n]"];
+284 [label="[561,(557,557),n]"];
+285 [label="[561,561,n]\n[561,(556,557),n]"];
+286 [label="[561,(556,563),n]\n[555,561,n]\n[555,(556,557),n]"];
+274 -> 273;
+280 -> 275;
+280 -> 276;
+280 -> 277;
+280 -> 278;
+280 -> 279;
+282 -> 276;
+282 -> 281;
+284 -> 279;
+284 -> 283;
+285 -> 277;
+285 -> 278;
+285 -> 284;
+286 -> 280;
+286 -> 282;
+286 -> 285;
+}

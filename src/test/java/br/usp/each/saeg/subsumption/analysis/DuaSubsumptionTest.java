@@ -484,9 +484,9 @@ public class DuaSubsumptionTest extends TestCase {
     }
 
     public void test7() {
-        System.out.println("RegEx");
-        String dir = "/Users/marcoschaim/projetos/data/RegEx/";
-        String clazzname = "Main.class";
+        System.out.println("MaxRogue");
+        String dir = "/Users/marcoschaim/projetos/data/max/";
+        String clazzname = "MaxRogue.class";
         try {
             cl = new ClassInfo(dir, clazzname);
             cl.genAllMethodInfo();
@@ -499,39 +499,14 @@ public class DuaSubsumptionTest extends TestCase {
                     continue;
 
                 System.out.println(mi.getName());
+                System.out.println(mi.toDuasCSV());
 
-
-                Dua d;
-                int counter = 0;
-                Iterator<Dua> itdua = mi.getDuas().iterator();
-
-
-                duaSubAnalyzer = new SubsumptionAnalyzer(mi.getProgram(), mi.getDuas());
-
-                while (itdua.hasNext()) {
-                    d = itdua.next();
-                    if (counter == 17) {
-                        flowAnalyzer = new CoverageAnalyzer(mi.getProgram().getGraph(), d);
-                        System.out.println(counter + ":" + d.toString());
-                        Graphdua grf = flowAnalyzer.findGraphdua();
-                        System.out.println("forward graphdua:\n" + grf.toDot());
-                        BitSet subsumed = duaSubAnalyzer.findDua2DuasSubsumption(d);
-//
-                        System.out.println(counter + ":" + d.toString() + ":" + subsumed);
-
-                        if (!subsumed.isEmpty()) {
-                            int idDua = -1;
-                            while ((idDua = subsumed.nextSetBit(idDua + 1)) != -1) {
-                                Dua subDua = duaSubAnalyzer.getDuaFromId(idDua);
-                                System.out.println("\t" + idDua + ":" + subDua.toString());
-                            }
-                        } else
-                            System.out.println("\tUnconstrained");
-                    }
-                    ++counter;
+                SubsumptionAnalyzer duaSubAnalyzer = new SubsumptionAnalyzer(mi.getProgram(), mi.getDuas());
+                Graphdua grd = duaSubAnalyzer.findNode2DuasSubsumption();
+                mi.setGraphDua(grd);
+                mi.setSubsumptionAnalyzer(duaSubAnalyzer);
+                System.out.println(grd.toDotNodeSubsumption(duaSubAnalyzer));
                 }
-
-            }
 
 
         } catch (Exception e) {

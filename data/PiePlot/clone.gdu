@@ -1,44 +1,44 @@
 digraph clone {
-9 [label="9\n3659-3659"]
 11 [label="11"]
-10 [label="10\n3656-3656"]
-1 [label="1\n3658-3658"]
-3 [label="3\n3667-3667"]
-0 [label="0\n3654-3655"]
-2 [label="2\n3662-3663"]
 4 [label="4\n3671-3671"]
-5 [label="5\n3675-3675"]
-7 [label="7\n3668-3668"]
 8 [label="8\n3664-3664"]
+0 [label="0\n3654-3655"]
+5 [label="5\n3675-3675"]
+2 [label="2\n3662-3663"]
+1 [label="1\n3658-3658"]
+10 [label="10\n3656-3656"]
+9 [label="9\n3659-3659"]
+3 [label="3\n3667-3667"]
 6 [label="6\n3672-3672"]
+7 [label="7\n3668-3668"]
 {
 node [shape=plaintext, fontsize=14];
-setsNode_9 [label="use(9)={this,this.urlGenerator,this.legendLabelGenerator}"];
-setsNode_10 [label="use(10)={this.urlGenerator,this.legendItemShape}"];
-setsNode_0 [label="def(0)={this,this.urlGenerator,this.legendItemShape,this.legendLabelGenerator,this.legendLabelToolTipGenerator,this.legendLabelURLGenerator,clone,clone.dataset}"];
-setsNode_2 [label="use(2)={this,this.urlGenerator,clone}"];
-setsNode_5 [label="use(5)={this.urlGenerator}"];
-setsNode_7 [label="use(7)={this,this.urlGenerator}"];
 setsNode_8 [label="use(8)={this,this.urlGenerator,clone.dataset}"];
+setsNode_0 [label="def(0)={this,this.urlGenerator,this.legendItemShape,this.legendLabelGenerator,this.legendLabelToolTipGenerator,this.legendLabelURLGenerator,clone,clone.dataset}"];
+setsNode_5 [label="use(5)={this.urlGenerator}"];
+setsNode_2 [label="use(2)={this,this.urlGenerator,clone}"];
+setsNode_10 [label="use(10)={this.urlGenerator,this.legendItemShape}"];
+setsNode_9 [label="use(9)={this,this.urlGenerator,this.legendLabelGenerator}"];
 setsNode_6 [label="use(6)={this,this.urlGenerator}"];
+setsNode_7 [label="use(7)={this,this.urlGenerator}"];
 }
-{rank = same; 9 ;  setsNode_9}
-{rank = same; 10 ;  setsNode_10}
-{rank = same; 0 ;  setsNode_0}
-{rank = same; 2 ;  setsNode_2}
-{rank = same; 5 ;  setsNode_5}
-{rank = same; 7 ;  setsNode_7}
 {rank = same; 8 ;  setsNode_8}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 2 ;  setsNode_2}
+{rank = same; 10 ;  setsNode_10}
+{rank = same; 9 ;  setsNode_9}
 {rank = same; 6 ;  setsNode_6}
-9 -> 2;
-10 -> 1;
-1 -> 9[label="use(1,9)={this,this.legendLabelGenerator}",fontsize=14];1 -> 2[label="use(1,2)={this,this.legendLabelGenerator}",fontsize=14];
-3 -> 7[label="use(3,7)={this}",fontsize=14];3 -> 4[label="use(3,4)={this}",fontsize=14];
-0 -> 10[label="use(0,10)={this.urlGenerator,this.legendItemShape}",fontsize=14];0 -> 1[label="use(0,1)={this.urlGenerator,this.legendItemShape}",fontsize=14];
-2 -> 8[label="use(2,8)={this,clone.dataset}",fontsize=14];2 -> 3[label="use(2,3)={this,clone.dataset}",fontsize=14];
+{rank = same; 7 ;  setsNode_7}
 4 -> 6[label="use(4,6)={this}",fontsize=14];4 -> 5[label="use(4,5)={this}",fontsize=14];
-5 -> 11;
-7 -> 4;
 8 -> 3;
+0 -> 10[label="use(0,10)={this.urlGenerator,this.legendItemShape}",fontsize=14];0 -> 1[label="use(0,1)={this.urlGenerator,this.legendItemShape}",fontsize=14];
+5 -> 11;
+2 -> 8[label="use(2,8)={this,clone.dataset}",fontsize=14];2 -> 3[label="use(2,3)={this,clone.dataset}",fontsize=14];
+1 -> 9[label="use(1,9)={this,this.legendLabelGenerator}",fontsize=14];1 -> 2[label="use(1,2)={this,this.legendLabelGenerator}",fontsize=14];
+10 -> 1;
+9 -> 2;
+3 -> 7[label="use(3,7)={this}",fontsize=14];3 -> 4[label="use(3,4)={this}",fontsize=14];
 6 -> 5;
+7 -> 4;
 }

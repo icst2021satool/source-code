@@ -1,0 +1,50 @@
+digraph { /* Duas covered at duas */
+3 [label="0\n"];
+1034 [label="1\n(0,1, coll1)\n(0,(0,1), coll2)\n(0,1, coll2)\n"];
+2065 [label="2\n(0,1, coll1)\n(0,(0,1), coll2)\n(0,1, coll2)\n"];
+3096 [label="3\n(0,1, coll1)\n(0,(0,1), coll2)\n(0,1, coll2)\n"];
+4127 [label="4\n(0,1, coll1)\n(0,(0,1), coll2)\n(0,1, coll2)\n"];
+5158 [label="5\n(0,1, coll1)\n(0,(0,1), coll2)\n(0,1, coll2)\n(1,(4,5), elementsAlreadySeen)\n(4,(4,5), nextElement)\n"];
+6189 [label="6\n(0,1, coll1)\n(0,(0,1), coll2)\n(0,1, coll2)\n(1,(4,5), elementsAlreadySeen)\n(4,(4,5), nextElement)\n"];
+10313 [label="10\n(0,1, coll1)\n(0,(0,1), coll2)\n(0,1, coll2)\n(1,(6,10), it)\n(1,10, it)\n(1,(4,5), elementsAlreadySeen)\n(1,10, elementsAlreadySeen)\n(4,(4,5), nextElement)\n"];
+11344 [label="11\n(0,1, coll1)\n(0,(0,1), coll2)\n(0,1, coll2)\n(1,(6,10), it)\n(1,10, it)\n(1,(4,5), elementsAlreadySeen)\n(1,10, elementsAlreadySeen)\n(4,(4,5), nextElement)\n(4,(10,11), nextElement)\n"];
+14437 [label="14\n(0,1, coll1)\n(0,(0,1), coll2)\n(0,1, coll2)\n(1,(6,10), it)\n(1,10, it)\n(1,(4,5), elementsAlreadySeen)\n(1,10, elementsAlreadySeen)\n(4,(4,5), nextElement)\n(4,(10,14), nextElement)\n"];
+12375 [label="12\n(0,1, coll1)\n(0,(0,1), coll2)\n(0,1, coll2)\n(1,(6,10), it)\n(1,10, it)\n(1,(4,5), elementsAlreadySeen)\n(1,10, elementsAlreadySeen)\n(4,(4,5), nextElement)\n"];
+15468 [label="15\n(0,1, coll1)\n(0,(0,1), coll2)\n(0,1, coll2)\n(1,(6,10), it)\n(1,10, it)\n(1,(4,5), elementsAlreadySeen)\n(1,10, elementsAlreadySeen)\n(4,(4,5), nextElement)\n(4,(10,14), nextElement)\n(10,(14,15), p)\n"];
+13406 [label="13\n(0,1, coll1)\n(0,(0,1), coll2)\n(0,1, coll2)\n(1,(6,10), it)\n(1,10, it)\n(1,(4,5), elementsAlreadySeen)\n(1,10, elementsAlreadySeen)\n(4,(4,5), nextElement)\n"];
+7220 [label="7\n(0,1, coll1)\n(0,(0,1), coll2)\n(0,1, coll2)\n(1,(4,5), elementsAlreadySeen)\n(4,(4,5), nextElement)\n"];
+8251 [label="8\n(0,1, coll1)\n(0,(0,1), coll2)\n(0,1, coll2)\n(1,(4,5), elementsAlreadySeen)\n(4,(4,5), nextElement)\n"];
+9282 [label="9\n(0,1, coll1)\n(0,(0,1), coll2)\n(0,1, coll2)\n(1,(4,5), elementsAlreadySeen)\n(4,(4,5), nextElement)\n"];
+16499 [label="16\n(0,1, coll1)\n(0,(0,1), coll2)\n(0,1, coll2)\n(1,(4,16), elementsAlreadySeen)\n(4,(4,16), nextElement)\n"];
+17530 [label="17\n(0,(0,17), coll2)\n"];
+18561 [label="18\n"];
+ 3 -> 17530;
+ 3 -> 1034;
+ 1034 -> 2065;
+ 2065 -> 4127;
+ 2065 -> 3096;
+ 3096 -> 18561;
+ 4127 -> 16499;
+ 4127 -> 5158;
+ 5158 -> 6189;
+ 6189 -> 10313;
+ 6189 -> 7220;
+ 10313 -> 14437;
+ 10313 -> 11344;
+ 11344 -> 13406;
+ 11344 -> 12375;
+ 14437 -> 15468;
+ 14437 -> 12375;
+ 12375 -> 6189;
+ 15468 -> 13406;
+ 13406 -> 7220;
+ 7220 -> 9282;
+ 7220 -> 8251;
+ 8251 -> 18561;
+ 9282 -> 2065;
+ 16499 -> 2065;
+ 17530 -> 18561;
+}
+/*
+#Covered Duas by nodes: 14
+*/

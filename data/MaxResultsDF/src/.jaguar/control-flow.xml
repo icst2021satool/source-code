@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<HierarchicalFaultClassification heuristic="OCHIAI" project="fault localization" requirementType="LINE">
+    <package cef="0" cep="0" cnf="0" cnp="0" name="br.usp.each.sfl" number="1" suspicious-value="1.0">
+        <location>-1</location>
+        <class location="3" cef="0" cep="0" cnf="0" cnp="0" name="br.usp.each.sfl.Max" number="1" suspicious-value="1.0">
+            <location>3</location>
+            <method id="1" location="3" methodsusp="1.0" position="1" cef="0" cep="0" cnf="0" cnp="0" name="Max()" number="1" suspicious-value="1.0">
+                <location>3</location>
+                <requirement xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="lineRequirement" location="3" type="LINE" cef="2" cep="4" cnf="0" cnp="0" name="3" number="1" suspicious-value="1.0">
+                    <location>3</location>
+                </requirement>
+            </method>
+        </class>
+    </package>
+</HierarchicalFaultClassification>

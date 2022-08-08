@@ -1,0 +1,32 @@
+digraph { /* Duas covered at duas */
+3 [label="0\n"];
+1034 [label="1\n(0,1, this)\n(0,1, key)\n(0,(0,1), selected)\n(0,1, this.sectionOutlinePaintMap)\n"];
+2065 [label="2\n(0,1, this)\n(0,1, key)\n(0,(0,1), selected)\n(0,1, this.sectionOutlinePaintMap)\n(1,(1,2), result)\n"];
+3096 [label="3\n(0,1, this)\n(0,3, this)\n(0,1, key)\n(0,(0,1), selected)\n(0,(2,3), autoPopulate)\n(0,1, this.sectionOutlinePaintMap)\n(0,3, this.baseSectionOutlinePaint)\n(1,(1,2), result)\n"];
+5158 [label="5\n(0,1, this)\n(0,5, this)\n(0,1, key)\n(0,(0,1), selected)\n(0,(2,5), autoPopulate)\n(0,1, this.sectionOutlinePaintMap)\n(1,(1,2), result)\n"];
+6189 [label="6\n(0,1, this)\n(0,5, this)\n(0,6, this)\n(0,1, key)\n(0,(0,1), selected)\n(0,(2,5), autoPopulate)\n(0,1, this.sectionOutlinePaintMap)\n(0,6, this.baseSectionOutlinePaint)\n(1,(1,2), result)\n(5,(5,6), ds)\n"];
+8251 [label="8\n(0,1, this)\n(0,5, this)\n(0,8, this)\n(0,1, key)\n(0,8, key)\n(0,(0,1), selected)\n(0,(2,5), autoPopulate)\n(0,1, this.sectionOutlinePaintMap)\n(0,8, this.sectionOutlinePaintMap)\n(1,(1,2), result)\n(5,(5,8), ds)\n(5,8, ds)\n"];
+7220 [label="7\n(0,1, this)\n(0,5, this)\n(0,1, key)\n(0,(0,1), selected)\n(0,(2,5), autoPopulate)\n(0,1, this.sectionOutlinePaintMap)\n(1,(1,2), result)\n"];
+4127 [label="4\n(0,1, this)\n(0,1, key)\n(0,(0,1), selected)\n(0,1, this.sectionOutlinePaintMap)\n(1,(1,2), result)\n"];
+9282 [label="9\n(0,1, this)\n(0,1, key)\n(0,(0,1), selected)\n(0,1, this.sectionOutlinePaintMap)\n(1,(1,9), result)\n(1,9, result)\n"];
+10313 [label="10\n(0,(0,10), selected)\n(0,10, WHITE)\n"];
+11344 [label="11\n"];
+ 3 -> 10313;
+ 3 -> 1034;
+ 1034 -> 9282;
+ 1034 -> 2065;
+ 2065 -> 5158;
+ 2065 -> 3096;
+ 3096 -> 4127;
+ 5158 -> 8251;
+ 5158 -> 6189;
+ 6189 -> 7220;
+ 8251 -> 7220;
+ 7220 -> 4127;
+ 4127 -> 11344;
+ 9282 -> 11344;
+ 10313 -> 11344;
+}
+/*
+#Covered Duas by nodes: 22
+*/

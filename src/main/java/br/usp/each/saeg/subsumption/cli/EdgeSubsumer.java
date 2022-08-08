@@ -20,7 +20,7 @@ public class EdgeSubsumer {
     public static int edgeSubsumeAll(File src, InputStream input, String path) {
         int n = 0; // # of methods analyzed
         boolean printLocalDuaEdgeFile = false;
-        boolean printDuaJsonEdgeFile = true;
+        boolean printDuaJsonEdgeFile = false;
         try {
             ClassInfo ci = new ClassInfo(input);
             path = path + File.separator;

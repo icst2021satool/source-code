@@ -1,0 +1,28 @@
+digraph { /* Duas covered at duas */
+3 [label="0\n"];
+2065 [label="2\n(0,(0,2), collection)\n"];
+3096 [label="3\n(0,(0,2), collection)\n(0,(2,3), transformer)\n"];
+4127 [label="4\n(0,(0,2), collection)\n(0,(3,4), collection)\n(0,4, collection)\n(0,(2,3), transformer)\n(0,4, transformer)\n"];
+5158 [label="5\n(0,(0,2), collection)\n(0,(3,5), collection)\n(0,5, collection)\n(0,(2,3), transformer)\n"];
+6189 [label="6\n(0,(0,2), collection)\n(0,(3,5), collection)\n(0,5, collection)\n(0,(2,3), transformer)\n"];
+7220 [label="7\n(0,(0,2), collection)\n(0,(3,5), collection)\n(0,5, collection)\n(0,(2,3), transformer)\n(5,(6,7), it)\n"];
+1034 [label="1\n"];
+9282 [label="9\n"];
+8251 [label="8\n(0,(0,2), collection)\n(0,(3,5), collection)\n(0,5, collection)\n(0,(2,3), transformer)\n(0,8, transformer)\n(5,(6,8), it)\n(5,8, it)\n"];
+ 3 -> 2065;
+ 3 -> 1034;
+ 2065 -> 3096;
+ 2065 -> 1034;
+ 3096 -> 5158;
+ 3096 -> 4127;
+ 4127 -> 1034;
+ 5158 -> 6189;
+ 6189 -> 8251;
+ 6189 -> 7220;
+ 7220 -> 1034;
+ 1034 -> 9282;
+ 8251 -> 6189;
+}
+/*
+#Covered Duas by nodes: 11
+*/

@@ -1,0 +1,8 @@
+digraph <init> {
+0 [label="0\n73-75"]
+1 [label="1"]
+{
+node [shape=plaintext, fontsize=14];
+}
+0 -> 1;
+}

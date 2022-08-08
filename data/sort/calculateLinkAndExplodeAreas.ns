@@ -1,0 +1,26 @@
+digraph { /* Duas covered at duas */
+3 [label="0\n"];
+6189 [label="6\n(0,(0,6), this)\n(0,(0,6), this.labelGenerator)\n"];
+7220 [label="7\n(0,(0,6), this)\n(0,(6,7), this)\n(0,7, this)\n(0,(0,6), this.labelGenerator)\n(0,(6,7), this.simpleLabels)\n(0,7, this.labelGap)\n(0,7, this.maximumLabelWidth)\n"];
+1034 [label="1\n(0,1, this)\n(0,1, plotArea)\n(0,1, this.interiorGap)\n"];
+5158 [label="5\n(0,1, this)\n(0,(1,5), this)\n(0,1, plotArea)\n(0,1, this.interiorGap)\n(0,(1,5), this.circular)\n(1,5, linkX)\n(1,5, linkY)\n(1,5, linkW)\n(1,5, linkH)\n"];
+2065 [label="2\n(0,1, this)\n(0,1, plotArea)\n(0,1, this.interiorGap)\n(0,2, result)\n"];
+4127 [label="4\n(0,1, this)\n(0,(2,4), this)\n(0,4, this)\n(0,1, plotArea)\n(0,(2,4), this.simpleLabels)\n(0,1, this.interiorGap)\n(0,4, this.labelLinkMargin)\n(0,2, result)\n"];
+3096 [label="3\n(0,1, this)\n(0,1, plotArea)\n(0,1, this.interiorGap)\n(0,2, result)\n(0,3, result)\n(2,3, linkArea)\n"];
+8251 [label="8\n(0,1, this)\n(0,1, plotArea)\n(0,1, this.interiorGap)\n(0,2, result)\n(0,3, result)\n(2,3, linkArea)\n"];
+ 3 -> 6189;
+ 3 -> 1034;
+ 6189 -> 7220;
+ 6189 -> 1034;
+ 7220 -> 1034;
+ 1034 -> 5158;
+ 1034 -> 2065;
+ 5158 -> 2065;
+ 2065 -> 4127;
+ 2065 -> 3096;
+ 4127 -> 3096;
+ 3096 -> 8251;
+}
+/*
+#Covered Duas by nodes: 23
+*/

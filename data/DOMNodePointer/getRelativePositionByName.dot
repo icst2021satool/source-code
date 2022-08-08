@@ -1,0 +1,24 @@
+digraph { 
+252 [shape=box,style=filled,color=".0 .0 .83",label="[533,533,count]"];
+253 [label="[533,538,count]\n[531,(532,533),nm]\n[527,533,count]\n[527,(532,533),this.node]\n[527,(532,533),this]"];
+254 [shape=box,style=filled,color=".0 .0 .83",label="[531,(532,536),nm]\n[527,(532,536),this.node]\n[527,(532,536),this]"];
+255 [shape=box,style=filled,color=".0 .0 .83",label="[528,(529,538),n]"];
+256 [label="[527,538,count]"];
+257 [shape=box,style=filled,color=".0 .0 .83",label="[528,531,n]\n[528,(530,531),n]"];
+258 [shape=box,style=filled,color=".0 .0 .83",label="[528,(530,536),n]"];
+259 [label="[536,531,n]\n[536,(530,531),n]"];
+260 [shape=box,style=filled,color=".0 .0 .83",label="[536,(530,536),n]"];
+261 [label="[536,536,n]\n[536,(529,530),n]"];
+262 [label="[536,(529,538),n]\n[528,536,n]\n[528,(529,530),n]"];
+253 -> 252;
+256 -> 255;
+259 -> 252;
+261 -> 259;
+261 -> 260;
+262 -> 253;
+262 -> 254;
+262 -> 257;
+262 -> 258;
+262 -> 259;
+262 -> 261;
+}

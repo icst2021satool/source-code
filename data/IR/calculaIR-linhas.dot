@@ -1,0 +1,28 @@
+digraph { 
+0 [shape=box,style=filled,color=".0 .0 .83",label="[20,23,out]\n[20,22,n]\n[20,(21,22),n]"];
+1 [shape=box,style=filled,color=".0 .0 .83",label="[20,(21,26),n]"];
+2 [label="[20,(21,21),n]"];
+3 [shape=box,style=filled,color=".0 .1 .83",label="[20,(21,26),n]"];
+4 [shape=box,style=filled,color=".0 .0 .83",label="[20,28,out]\n[20,27,n]\n[20,(26,27),n]"];
+5 [shape=box,style=filled,color=".0 .0 .83",label="[20,(26,31),n]"];
+6 [label="[20,(26,26),n]"];
+7 [shape=box,style=filled,color=".0 .3 .83",label="[20,(26,31),n]"];
+8 [shape=box,style=filled,color=".0 .0 .83",label="[20,33,out]\n[20,32,n]\n[20,(31,32),n]"];
+9 [shape=box,style=filled,color=".0 .0 .83",label="[20,(31,36),n]"];
+10 [label="[20,(31,31),n]"];
+11 [shape=box,style=filled,color=".0 .5 .83",label="[20,(31,36),n]"];
+12 [shape=box,style=filled,color=".0 .0 .83",label="[20,38,out]\n[20,37,n]\n[20,(36,37),n]"];
+13 [shape=box,style=filled,color=".0 .0 .83",label="[20,(36,41),n]"];
+14 [label="[20,(36,36),n]"];
+15 [shape=box,style=filled,color=".0 .5 .83",label="[20,(36,41),n]"];
+16 [shape=box,style=filled,color=".0 .0 .83",label="[20,43,out]\n[20,42,n]\n[20,(41,42),n]"];
+17 [shape=box,style=filled,color=".0 .5 .83",label="[20,47,out]\n[20,(41,46),n]"];
+2 -> 0;
+2 -> 1;
+6 -> 4;
+6 -> 5;
+10 -> 8;
+10 -> 9;
+14 -> 12;
+14 -> 13;
+}

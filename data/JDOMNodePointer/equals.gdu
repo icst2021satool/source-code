@@ -1,0 +1,26 @@
+digraph equals {
+4 [label="4\n757-757"]
+0 [label="0\n748-748"]
+3 [label="3\n757-757"]
+8 [label="8"]
+2 [label="2\n756-757"]
+1 [label="1\n752-752"]
+7 [label="7\n749-749"]
+5 [label="5\n757-757"]
+6 [label="6\n753-753"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_0 [label="def(0)={this,object,this.node}"];
+setsNode_2 [label="def(2)={other,other.node}\nuse(2)={object}"];
+}
+{rank = same; 0 ;  setsNode_0}
+{rank = same; 2 ;  setsNode_2}
+4 -> 8;
+0 -> 7[label="use(0,7)={this,object}",fontsize=14];0 -> 1[label="use(0,1)={this,object}",fontsize=14];
+3 -> 4;
+2 -> 5[label="use(2,5)={this,this.node,other,other.node}",fontsize=14];2 -> 3[label="use(2,3)={this,this.node,other,other.node}",fontsize=14];
+1 -> 6[label="use(1,6)={object}",fontsize=14];1 -> 2[label="use(1,2)={object}",fontsize=14];
+7 -> 8;
+5 -> 4;
+6 -> 8;
+}

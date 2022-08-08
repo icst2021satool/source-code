@@ -1,0 +1,24 @@
+digraph { 
+195 [shape=box,style=filled,color=".0 .0 .83",label="[465,467,parent]\n[465,(466,467),parent]"];
+196 [shape=box,style=filled,color=".0 .0 .83",label="[465,(466,469),parent]"];
+197 [label="[464,465,node]\n[464,(464,465),node]"];
+198 [shape=box,style=filled,color=".0 .0 .83",label="[464,471,node]\n[464,(470,471),node]"];
+199 [shape=box,style=filled,color=".0 .0 .83",label="[464,474,node]\n[464,(473,474),node]"];
+200 [shape=box,style=filled,color=".0 .0 .83",label="[464,477,node]\n[464,(476,477),node]"];
+201 [shape=box,style=filled,color=".0 .0 .83",label="[464,480,node]\n[464,(479,480),node]"];
+202 [shape=box,style=filled,color=".0 .0 .83",label="[464,(479,482),node]"];
+203 [label="[464,(476,479),node]"];
+204 [label="[464,(473,476),node]"];
+205 [label="[464,(470,473),node]"];
+206 [label="[464,(464,470),node]"];
+197 -> 195;
+197 -> 196;
+203 -> 201;
+203 -> 202;
+204 -> 200;
+204 -> 203;
+205 -> 199;
+205 -> 204;
+206 -> 198;
+206 -> 205;
+}

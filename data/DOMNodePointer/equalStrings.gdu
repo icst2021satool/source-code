@@ -1,0 +1,40 @@
+digraph equalStrings {
+9 [label="9\n143-143"]
+1 [label="1\n142-142"]
+7 [label="7\n143-143"]
+14 [label="14\n139-139"]
+5 [label="5\n147-147"]
+13 [label="13\n139-139"]
+15 [label="15\n139-139"]
+8 [label="8\n143-143"]
+12 [label="12\n139-139"]
+16 [label="16"]
+11 [label="11\n139-139"]
+4 [label="4\n146-146"]
+0 [label="0\n138-138"]
+2 [label="2\n146-146"]
+6 [label="6\n143-143"]
+10 [label="10\n143-143"]
+3 [label="3\n150-150"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_0 [label="def(0)={s1,s2}"];
+}
+{rank = same; 0 ;  setsNode_0}
+9 -> 7[label="use(9,7)={s1}",fontsize=14];9 -> 10[label="use(9,10)={s1}",fontsize=14];
+1 -> 6[label="use(1,6)={s2}",fontsize=14];1 -> 2[label="use(1,2)={s2}",fontsize=14];
+7 -> 8;
+14 -> 12[label="use(14,12)={s2}",fontsize=14];14 -> 15[label="use(14,15)={s2}",fontsize=14];
+5 -> 16;
+13 -> 16;
+15 -> 13;
+8 -> 16;
+12 -> 13;
+11 -> 14[label="use(11,14)={s2}",fontsize=14];11 -> 12[label="use(11,12)={s2}",fontsize=14];
+4 -> 5[label="use(4,5)={s1,s2}",fontsize=14];4 -> 3[label="use(4,3)={s1,s2}",fontsize=14];
+0 -> 11[label="use(0,11)={s1}",fontsize=14];0 -> 1[label="use(0,1)={s1}",fontsize=14];
+2 -> 4[label="use(2,4)={s1}",fontsize=14];2 -> 3[label="use(2,3)={s1}",fontsize=14];
+6 -> 9[label="use(6,9)={s1}",fontsize=14];6 -> 7[label="use(6,7)={s1}",fontsize=14];
+10 -> 8;
+3 -> 16;
+}

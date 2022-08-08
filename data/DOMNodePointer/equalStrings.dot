@@ -1,0 +1,32 @@
+digraph { 
+36 [shape=box,style=filled,color=".0 .0 .83",label="[138,(139,139),s2]"];
+37 [shape=box,style=filled,color=".0 .0 .83",label="[138,(139,139),s2]"];
+38 [label="[138,(139,139),s2]"];
+39 [shape=box,style=filled,color=".0 .0 .83",label="[138,(139,139),s2]"];
+40 [label="[138,(138,139),s1]"];
+41 [shape=box,style=filled,color=".0 .0 .83",label="[138,(146,147),s2]\n[138,(146,147),s1]"];
+42 [shape=box,style=filled,color=".0 .0 .83",label="[138,(146,150),s2]\n[138,(146,150),s1]"];
+43 [label="[138,(146,146),s1]"];
+44 [shape=box,style=filled,color=".0 .0 .83",label="[138,(146,150),s1]"];
+45 [shape=box,style=filled,color=".0 .0 .83",label="[138,(143,143),s1]"];
+46 [shape=box,style=filled,color=".0 .0 .83",label="[138,(143,143),s1]"];
+47 [label="[138,(143,143),s1]"];
+48 [shape=box,style=filled,color=".0 .0 .83",label="[138,(143,143),s1]"];
+49 [label="[138,(142,143),s2]"];
+50 [label="[138,(142,146),s2]"];
+51 [label="[138,(138,142),s1]"];
+38 -> 36;
+38 -> 37;
+40 -> 38;
+40 -> 39;
+43 -> 41;
+43 -> 42;
+47 -> 45;
+47 -> 46;
+49 -> 47;
+49 -> 48;
+50 -> 43;
+50 -> 44;
+51 -> 49;
+51 -> 50;
+}

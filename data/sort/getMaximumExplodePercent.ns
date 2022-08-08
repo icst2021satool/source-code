@@ -1,0 +1,25 @@
+digraph { /* Duas covered at duas */
+3 [label="0\n"];
+1034 [label="1\n(0,(0,1), this)\n(0,1, this)\n(0,(0,1), this.dataset)\n(0,1, this.dataset)\n"];
+2065 [label="2\n(0,(0,1), this)\n(0,1, this)\n(0,(0,1), this.dataset)\n(0,1, this.dataset)\n"];
+3096 [label="3\n(0,(0,1), this)\n(0,1, this)\n(0,(0,1), this.dataset)\n(0,1, this.dataset)\n(1,(2,3), iterator)\n"];
+4127 [label="4\n(0,(0,1), this)\n(0,1, this)\n(0,4, this)\n(0,(0,1), this.dataset)\n(0,1, this.dataset)\n(0,4, this.explodePercentages)\n(1,(2,4), iterator)\n(1,4, iterator)\n"];
+6189 [label="6\n(0,(0,1), this)\n(0,1, this)\n(0,4, this)\n(0,(0,1), this.dataset)\n(0,1, this.dataset)\n(0,4, this.explodePercentages)\n(1,6, result)\n(1,(2,4), iterator)\n(1,4, iterator)\n(4,(4,6), explode)\n(4,6, explode)\n"];
+5158 [label="5\n(0,(0,1), this)\n(0,1, this)\n(0,4, this)\n(0,(0,1), this.dataset)\n(0,1, this.dataset)\n(0,4, this.explodePercentages)\n(1,(2,4), iterator)\n(1,4, iterator)\n"];
+7220 [label="7\n(0,(0,7), this)\n(0,(0,7), this.dataset)\n"];
+8251 [label="8\n"];
+ 3 -> 7220;
+ 3 -> 1034;
+ 1034 -> 2065;
+ 2065 -> 4127;
+ 2065 -> 3096;
+ 3096 -> 8251;
+ 4127 -> 6189;
+ 4127 -> 5158;
+ 6189 -> 5158;
+ 5158 -> 2065;
+ 7220 -> 8251;
+}
+/*
+#Covered Duas by nodes: 14
+*/

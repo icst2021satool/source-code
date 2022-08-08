@@ -1,0 +1,50 @@
+digraph calculaIR {
+8 [label="8\n37-39"]
+15 [label="15"]
+11 [label="11\n26-26"]
+3 [label="3\n36-36"]
+9 [label="9\n31-31"]
+1 [label="1\n26-26"]
+14 [label="14\n22-24"]
+10 [label="10\n32-34"]
+4 [label="4\n41-41"]
+13 [label="13\n21-21"]
+7 [label="7\n36-36"]
+5 [label="5\n46-48"]
+2 [label="2\n31-31"]
+6 [label="6\n42-44"]
+12 [label="12\n27-29"]
+0 [label="0\n20-21"]
+{
+node [shape=plaintext, fontsize=14];
+setsNode_8 [label="use(8)={out}"];
+setsNode_14 [label="use(14)={out}"];
+setsNode_10 [label="use(10)={out}"];
+setsNode_5 [label="use(5)={}"];
+setsNode_6 [label="use(6)={out}"];
+setsNode_12 [label="use(12)={out}"];
+setsNode_0 [label="def(0)={n,out}"];
+}
+{rank = same; 8 ;  setsNode_8}
+{rank = same; 14 ;  setsNode_14}
+{rank = same; 10 ;  setsNode_10}
+{rank = same; 5 ;  setsNode_5}
+{rank = same; 6 ;  setsNode_6}
+{rank = same; 12 ;  setsNode_12}
+{rank = same; 0 ;  setsNode_0}
+8 -> 15;
+11 -> 12[label="use(11,12)={out}",fontsize=14];11 -> 2[label="use(11,2)={out}",fontsize=14];
+3 -> 7[label="use(3,7)={out}",fontsize=14];3 -> 4[label="use(3,4)={out}",fontsize=14];
+9 -> 10[label="use(9,10)={out}",fontsize=14];9 -> 3[label="use(9,3)={out}",fontsize=14];
+1 -> 11[label="use(1,11)={out}",fontsize=14];1 -> 2[label="use(1,2)={out}",fontsize=14];
+14 -> 15;
+10 -> 15;
+4 -> 6[label="use(4,6)={out}",fontsize=14];4 -> 5[label="use(4,5)={out}",fontsize=14];
+13 -> 14[label="use(13,14)={out}",fontsize=14];13 -> 1[label="use(13,1)={out}",fontsize=14];
+7 -> 8[label="use(7,8)={out}",fontsize=14];7 -> 4[label="use(7,4)={out}",fontsize=14];
+5 -> 15;
+2 -> 9[label="use(2,9)={out}",fontsize=14];2 -> 3[label="use(2,3)={out}",fontsize=14];
+6 -> 15;
+12 -> 15;
+0 -> 13[label="use(0,13)={out}",fontsize=14];0 -> 1[label="use(0,1)={out}",fontsize=14];
+}
